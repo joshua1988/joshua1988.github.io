@@ -24,6 +24,11 @@ Mozilla Developer Network, *Open Source Contributor* <br>
 RealTime Vote Application, *Software Engineer* <br>
 POSCO Reporting Process Automation, *Software Engineer*
 
+## Communities
+Google Developer Group, *Web Tech Organizer* <br>
+Weird Meetup, *Technical Writter* <br>
+9XD, *Staff Member*
+
 ## Social
 [Github](https://github.com/joshua1988) <br>
 [Linkedin](https://kr.linkedin.com/in/gihyojoshuajang) <br>
