@@ -4,7 +4,7 @@ description: "Learn, code and sing"
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: kr
-url: https://joshua1988.github.io/
+url: https://joshua1988.github.io
 feed:
   path: atom.xml
 

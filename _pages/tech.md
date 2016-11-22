@@ -1,5 +1,5 @@
 ---
-permalink: /tech/
+permalink: tech/
 layout: archive
 title: Web & Mobile Technology
 ---
