@@ -1,0 +1,62 @@
+# Site wide configuration
+title: "Captain Pangyo"
+description: "Learn, code and sing"
+logo: # 120x120 px default image used for Twitter summary card
+teaser: # 400x250 px default teaser image used in image archive grid
+locale: kr
+url: https://joshua1988.github.io/
+feed:
+  path: atom.xml
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+# Site owner
+owner:
+  name:
+  email: jangkeehyo@gmail.com
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio: Singing Computer Scientist
+  avatar: josh.jpg # 160x160 px image for author byline
+  disqus-shortname: captain_pangyo
+
+include: ["_pages"]
+# include:
+#   - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
