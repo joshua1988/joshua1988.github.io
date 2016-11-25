@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "크롬 V8 엔진에서 자바스크립트 성능 향상"
+title: "Chrome V8 엔진에서 자바스크립트 성능 향상 방법"
 date: 2016-07-30 18:51:13 +0900
 categories: web_dev
 image:
@@ -14,7 +14,6 @@ comments: true
 ---
 {% include toc.html %}
 
-# Chrome V8 엔진의 자바스크립트 처리 성능 향상 기법
 
 ## 개요
 - 웹 어플리케이션 성능 튜닝을 위한 기본적인 절차
