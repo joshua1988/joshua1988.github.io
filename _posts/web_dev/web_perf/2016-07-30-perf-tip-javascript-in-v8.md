@@ -4,8 +4,8 @@ title: "Chrome V8 엔진에서 자바스크립트 성능 향상 방법"
 date: 2016-07-30 18:51:13 +0900
 categories: web_dev
 image:
-  teaser: posts/web/chrome-v8.png
-  feature: posts/web/chrome-v8.png
+  teaser: posts/web/web_perf/chrome-v8.png
+  feature: posts/web/web_perf/chrome-v8.png
   credit: Modus Create #name of the person or site you want to credit
   creditlink: http://moduscreate.com/dynamic-memory-and-v8-with-javascript/ #url to their site or licensing
 locale: "kr"

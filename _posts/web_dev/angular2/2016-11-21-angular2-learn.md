@@ -4,8 +4,8 @@ title: "Angular 2 개념정리 (초급)"
 date: 2016-11-21 18:51:13 +0900
 categories: web_dev
 image:
-  teaser: posts/web/angular2.png
-  feature: posts/web/angular2.png
+  teaser: posts/web/angular2/angular2.png
+  feature: posts/web/angular2/angular2.png
   credit: Axilis #name of the person or site you want to credit
   creditlink: http://www.slideshare.net/axilis/angular-2-49397263 #url to their site or licensing
 locale: "kr"
@@ -149,7 +149,7 @@ locale: "kr"
   - `car-parts.component.css` : css 스타일
 
 
-![구조 이미지]({{ site.url }}/images/posts/web/1.png)
+![구조 이미지]({{ site.url }}/images/posts/web/angular2/1.png)
 
 ## Best Practices about Mocks and Models
 - TypeScript 에서는 클래스를 이용하여 데이터를 모델링한다.
@@ -178,7 +178,7 @@ locale: "kr"
 ## Services
 - 서비스 : 앱의 코드를 공유하거나 구성하는데 사용되고, 주로 데이터 접근 메서드를 생성할 때 사용한다.
 
-![서비스 그림]({{ site.url }}/images/posts/web/2.png)
+![서비스 그림]({{ site.url }}/images/posts/web/angular2/2.png)
 
 - Dependency Injection 은 서비스를 생성하고 클래스에 보낼 때 사용된다.
 - DI 에 Provider 를 제공함으로써 어떤 클래스가 서비스 생성이 필요한지를 알 수 있다.
@@ -193,7 +193,7 @@ locale: "kr"
   2. 인젝터에 서비스를 프로바이더로 명명하여 알게한다
   3. 디펜던시를 ts 파일에 주입한다.
 
-![DI Provider 등록]({{ site.url }}/images/posts/web/3.png)
+![DI Provider 등록]({{ site.url }}/images/posts/web/angular2/3.png)
 
 #### 주입할 수 있는 데코레이터를 Service 에 추가
 
@@ -274,7 +274,7 @@ locale: "kr"
   {% endhighlight %}
 
   - 위 코드에 관한 설명은 다음 이미지 참조
-  - ![http response]({{ site.url }}/images/posts/web/4.png)
+  - ![http response]({{ site.url }}/images/posts/web/angular2/4.png)
 
 - http 는 Observable 이라는 형태의 데이터로 반환해준다.
 - 테스트나 오프라인시에는 RacingDataServiceMock 같은 서비스 명을 활용하여 테스트 하도록 한다.
