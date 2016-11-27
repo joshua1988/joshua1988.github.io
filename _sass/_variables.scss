@@ -5,8 +5,10 @@
 /*
    Typography variables
    ========================================================================== */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-$base-font                   	: Georgia,Times,"Times New Roman",serif;
+// $base-font                   	: Georgia,Times,"Times New Roman",serif;
+$base-font                   	: 'Noto Sans KR', sans-serif;
 $heading-font                	: "Helvetica Neue","Segoe UI",Arial,sans-serif;
 $caption-font                	: $base-font;
 $code-font                   	: monospace;
