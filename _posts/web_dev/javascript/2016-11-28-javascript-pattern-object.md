@@ -4,8 +4,8 @@ title: "Javascript Pattern 객체생성패턴"
 date: 2016-11-28 22:16:13 +0900
 categories: web_dev
 image:
-  teaser: posts/web/javascript/javascript_path.png
-  feature: posts/web/javascript/javascript_path.png
+  teaser: posts/web/javascript/javascript_pattern.png
+  feature: posts/web/javascript/javascript_pattern.png
   credit: CodeSchool #name of the person or site you want to credit
   creditlink: https://kr.pinterest.com/codeschool/code-school-javascript/ #url to their site or licensing
 locale: "kr"
