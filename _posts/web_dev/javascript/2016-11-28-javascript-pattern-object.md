@@ -1,13 +1,14 @@
 ---
 layout: article
-title: "Javascript Pattern 객체생성패턴"
+title: "Javascript Pattern 요약 - 객체 생성 패턴"
 date: 2016-11-28 22:16:13 +0900
 categories: web_dev
 image:
   teaser: posts/web/javascript/javascript_pattern.png
   feature: posts/web/javascript/javascript_pattern.png
-  credit: CodeSchool #name of the person or site you want to credit
-  creditlink: https://kr.pinterest.com/codeschool/code-school-javascript/ #url to their site or licensing
+  credit: O'Reilly #name of the person or site you want to credit
+  creditlink: http://blog.cakemail.com/jquery-spaghetti-tips-and-tricks-for-cleaner-code/
+  #url to their site or licensing
 locale: "kr"
 # 리플 옵션
 comments: true
