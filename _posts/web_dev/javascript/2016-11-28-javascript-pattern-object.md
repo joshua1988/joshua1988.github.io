@@ -5,7 +5,6 @@ date: 2016-11-28 22:16:13 +0900
 categories: web_dev
 image:
   teaser: posts/web/javascript/javascript_pattern.png
-  feature: posts/web/javascript/javascript_pattern.png
   credit: O'Reilly #name of the person or site you want to credit
   creditlink: http://blog.cakemail.com/jquery-spaghetti-tips-and-tricks-for-cleaner-code/
   #url to their site or licensing
