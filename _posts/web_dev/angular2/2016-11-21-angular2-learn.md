@@ -5,7 +5,6 @@ date: 2016-11-21 18:51:13 +0900
 categories: web_dev
 image:
   teaser: posts/web/angular2/angular2.png
-  feature: posts/web/angular2/angular2.png
   credit: Axilis #name of the person or site you want to credit
   creditlink: http://www.slideshare.net/axilis/angular-2-49397263 #url to their site or licensing
 locale: "kr"

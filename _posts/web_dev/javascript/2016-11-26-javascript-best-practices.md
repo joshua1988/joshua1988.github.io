@@ -5,7 +5,6 @@ date: 2016-11-26 17:26:13 +0900
 categories: web_dev
 image:
   teaser: posts/web/javascript/javascript_path.png
-  feature: posts/web/javascript/javascript_path.png
   credit: CodeSchool #name of the person or site you want to credit
   creditlink: https://kr.pinterest.com/codeschool/code-school-javascript/ #url to their site or licensing
 locale: "kr"
