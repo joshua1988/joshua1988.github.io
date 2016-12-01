@@ -11,12 +11,11 @@ image:
 locale: "kr"
 # 리플 옵션
 comments: true
+tags: fcm
 ---
 {% include toc.html %}
 
-> GCM 으로 Mobile Push 하는데 익숙한 나는 FCM 을 이용한 Web Push 에서 GCM 과 FCM 에 대한 개념에 혼동이 생겼다.
-
-> 이 글에서는 GCM 과 FCM 의 차이점에 대해서 알아본다.
+> GCM 으로 Mobile Push 하는데 익숙한 나는 FCM 을 이용한 Web Push 에서 GCM 과 FCM 에 대한 개념에 혼동이 생겼다. 이 글에서는 GCM 과 FCM 의 차이점에 대해서 알아본다.
 
 ## FCM 과 GCM 용어
 - 먼저 간단히 용어부터 정리하자.
