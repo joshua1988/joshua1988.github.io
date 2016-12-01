@@ -9,7 +9,7 @@ image:
   creditlink: http://www.slideshare.net/axilis/angular-2-49397263 #url to their site or licensing
 locale: "kr"
 # 리플 옵션
-# comments: true
+comments: true
 ---
 {% include toc.html %}
 
