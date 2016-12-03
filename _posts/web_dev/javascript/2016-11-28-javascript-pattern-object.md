@@ -14,7 +14,7 @@ comments: true
 ---
 {% include toc.html %}
 
-> Javascript 패턴 책 5장 "객체 생성 패턴" 요약
+> Javascipt Patterns 책의 5장 "객체 생성 패턴" 을 요약하였습니다.
 
 ## 네임스페이스 패턴
 - 쉽게 구현할 수 있는 패턴이며 전역변수의 개수를 줄이고, 변수명이 불필요하게 길어짐을 방지한다.
