@@ -5,8 +5,8 @@ date: 2016-12-09 10:20:13 +0900
 categories: web_dev
 image:
   teaser: posts/web/progressive_web_app/tomcat_https.png
-  credit: #name of the person or site you want to credit
-  creditlink:
+  credit: tomcat #name of the person or site you want to credit
+  creditlink: http://tomcat.apache.org/
     #url to their site or licensing
 locale: "kr"
 # 리플 옵션
