@@ -73,7 +73,7 @@ comments: true
 - 아래의 명령어를 보자.
 
   {% highlight text %}
-  "%JAVA_HOME%\bin\keytool" -certreq -alias tomcat_https -keyalg rsa -file csr.txt "-keystore c:\https_setup_for_push\.keystore"
+  "%JAVA_HOME%\bin\keytool" -certreq -alias tomcat_https -keyalg rsa -file csr.txt -keystore c:\https_setup_for_push\.keystore
   {% endhighlight %}
 
   - **"-certreq -alias tomcat_https"** : tomcat_https 라는 별칭을 가진 keystore 를 접근
