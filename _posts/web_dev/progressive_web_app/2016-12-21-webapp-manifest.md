@@ -49,7 +49,7 @@ comments: true
 ## Building Manifest File
 - 메니페스트 파일은 JSON 파일과 비슷한 형태를 갖고 있다.
 
-  {% highlight javascript %}
+  {% highlight json %}
   {
     "name": "Super Racer 2000",
     "short_name": "Racer2K",
