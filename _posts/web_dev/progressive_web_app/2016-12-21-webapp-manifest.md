@@ -21,35 +21,35 @@ comments: true
 ## 구현? 사용법?
 - Web App 에 Native 느낌을 더하기 위해 Apple 이 추가한 몇 가지 태그는 아래와 같다.
 
-  ``` xml
+  {% highlight html %}
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-startup-image" href="/splash-startup.png">
-  ```
+  {% endhighlight %}
 
 - 그리고 이후에 Google 이 다음과 같은 태그를 추가한다.
 
-  ``` xml
+  {% highlight html %}
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" sizes="72x72"href="/icon72.png">
   <link rel="icon" sizes="114x114"href="/icon114.png">
   <link rel="icon" sizes="192x192"href="/icon.png">
   <link rel="icon" sizes="57x57"href="/icon57.png">
-  ```
+  {% endhighlight %}
 
 - 결국 이들의 종착지는 바로 [Web App Manifest File](https://w3c.github.io/manifest/) 이다.
 
-  ``` xml
+  {% highlight html %}
   <link rel="manifest" href="manifest.json">
-  ```
+  {% endhighlight %}
 
 ## Building Manifest File
 - 메니페스트 파일은 JSON 파일과 비슷한 형태를 갖고 있다.
 
-  ``` javascript
+  {% highlight javascript %}
   {
     "name": "Super Racer 2000",
     "short_name": "Racer2K",
@@ -70,9 +70,10 @@ comments: true
     "display": "fullscreen",
     "orientation": "landscape"
   }
-  ```
+  {% endhighlight %}
 
 - 위의 속성들을 설명하자면,
+
   - `name` : icon 에 표시되는 이름
   - `short_name` : Web Application 이름의 짧은 버전. 공간이 충분하지 않아 full name 이 나올 수 없을 때 사용된다.
   - `start_url` : 실행시에 시작되는 URL 주소
@@ -82,6 +83,7 @@ comments: true
 ### Icon
 - 아이콘은 앱을 표시하기 위한 이미지
 - 아이콘에는 앱 표시에 사용되는 여러가지의 이미지들의 특성이 포함되어 있다.
+
   - `src` : 이미지 위치를 가리킨다
   - `type` : 아이콘 파일 유형을 정한다
   - `sizes` : 이미지 크기를 정한다
