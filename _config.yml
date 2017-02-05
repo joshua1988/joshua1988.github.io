@@ -31,7 +31,7 @@ owner:
     ad-client:
     ad-slot:
   bio: Captain Pangyo
-  avatar: josh.jpg # 160x160 px image for author byline
+  avatar: josh.png # 160x160 px image for author byline
   disqus-shortname: captain_pangyo
 
 include: ["_pages"]
