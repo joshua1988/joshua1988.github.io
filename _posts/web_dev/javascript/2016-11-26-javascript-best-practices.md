@@ -7,7 +7,7 @@ image:
   teaser: posts/web/javascript/javascript_path.png
   credit: CodeSchool #name of the person or site you want to credit
   creditlink: https://kr.pinterest.com/codeschool/code-school-javascript/ #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 ---

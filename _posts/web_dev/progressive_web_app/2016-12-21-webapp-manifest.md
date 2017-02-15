@@ -8,7 +8,7 @@ image:
   credit: google #name of the person or site you want to credit
   creditlink: https://developers.google.com/web/updates/2015/08/using-manifest-to-set-sitewide-theme-color
     #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 ---

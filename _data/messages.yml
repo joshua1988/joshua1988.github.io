@@ -41,12 +41,12 @@ locales:
 
   # Korean translation
   # -------------------
-  kr: &DEFAULT_KR
+  ko: &DEFAULT_KR
     <<: *DEFAULT_EN
     overview: "목차"
     toc: "컨텐츠 목차"
     written_by: "작성자"
     updated: "업데이트 되었음"
     share: "공유"
-  kr_KR:
+  ko_KR:
     <<: *DEFAULT_KR

@@ -8,7 +8,7 @@ image:
   credit: O'Reilly #name of the person or site you want to credit
   creditlink: http://blog.cakemail.com/jquery-spaghetti-tips-and-tricks-for-cleaner-code/
   #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 ---

@@ -7,7 +7,7 @@ image:
   teaser: posts/web/angular2/angular2.png
   credit: Axilis #name of the person or site you want to credit
   creditlink: http://www.slideshare.net/axilis/angular-2-49397263 #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 ---

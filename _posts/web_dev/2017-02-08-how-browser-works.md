@@ -8,7 +8,7 @@ image:
   credit: HTML5 Rocks #name of the person or site you want to credit
   creditlink: https://www.html5rocks.com/
   #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 tags: web browser

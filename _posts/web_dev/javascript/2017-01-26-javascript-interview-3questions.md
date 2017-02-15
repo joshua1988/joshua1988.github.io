@@ -8,7 +8,7 @@ image:
   credit: Daniel Borowski #name of the person or site you want to credit
   creditlink: https://medium.freecodecamp.com/3-questions-to-watch-out-for-in-a-javascript-interview-725012834ccb#.74j9s42fb
   #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 ---

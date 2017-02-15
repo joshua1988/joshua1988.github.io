@@ -8,7 +8,7 @@ image:
   credit: Google #name of the person or site you want to credit
   creditlink: https://firebase.google.com/docs/cloud-messaging/
   #url to their site or licensing
-locale: "kr"
+locale: "ko"
 # 리플 옵션
 comments: true
 tags: fcm
