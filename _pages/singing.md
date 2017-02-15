@@ -1,6 +1,6 @@
 ---
 permalink: singing/
-layout: media
+layout: archive
 title: Singing is my life
 ---
 Listen up
