@@ -19,9 +19,9 @@ tags: web protocols
 - 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
 - URL 의 일반적인 형식은
 
-  ``` text
+  {% highlight text %}
   protocol://computer_name:port/document_name?parameters
-  ```
+  {% endhighlight %}
 
 - 여기서 각 단위의 역할을 살펴보자.
 
@@ -33,9 +33,9 @@ tags: web protocols
 
 - 위의 형식을 이용하여 예제를 보면
 
-  ``` text
+  {% highlight text %}
   http://www.netbook.cs.purdue.edu/toc/toc01.htm
-  ```
+  {% endhighlight %}
 
 - 위 URL 은 http 프로토콜을 이용하고, www.netbook.cs.purdue.edu 의 이름을 갖는 컴퓨터(서버)에서 toc/toc01.htm 파일을 접근한다.
 
@@ -53,9 +53,9 @@ tags: web protocols
 - GET 요청을 받은 서버에서는 *헤더, 빈 줄, 요청한 문서* 를 클라이언트로 보낸다.
 - 이 때 GET 의 요청 형식은 다음과 같다.
 
-  ``` text
+  {% highlight text %}
   GET /item versionCRLF
-  ```
+  {% endhighlight %}
 
 - 위 형식을 해석해보면,
 
@@ -70,14 +70,14 @@ tags: web protocols
 ## HTTP 응답 헤더
 - HTTP 응답 헤더의 일반적인 형태는 아래와 같다.
 
-  ``` text
+  {% highlight text %}
   HTTP/1.0 status_code status_string CRLF
   Server: server_identification CRLF
   Last-Modified : date_document_was_changed CRLF
   Content-Length : datasize CRLF
   Content-Type : document_type CRLF
   CRLF
-  ```
+  {% endhighlight %}
 
 - 위를 자세히 살펴 보면,
 
@@ -86,6 +86,7 @@ tags: web protocols
   - server_identification : 서버정보 설명
   - datasize : 데이터의 크기 (바이트 단위)
   - document_type : 문서 유형 (html 문서는 text/html, jpeg 파일은 image/jpeg)
+
 
 ## 브라우저에서 캐싱하기
 - 웹 페이지 성능을 최적화 하려면 캐시를 이용한다.
@@ -122,12 +123,12 @@ tags: web protocols
 - 바이너리 파일을 출력 가능한 문자열 형태로 인코딩하고, 수신하는 부분에서 디코딩한다.
 - Base64 로 인코딩 하기는 하지만, 다른 형태의 인코딩도 사용할 수 있다.
 - 인코딩 방식은 메시지의 헤더 안에 정의한다.
-- MIME 은 이메일 헤더에 2 줄을 추가하는데, *이메일에 MIME 이 사용되었는지 여부*와 *MIME 정보를 바디에 어떻게 포함시킬 건지* 를 정의한다.
+- MIME 은 이메일 헤더에 2 줄을 추가하는데, 이메일에 MIME 이 사용되었는지 여부와 MIME 정보를 바디에 어떻게 포함시킬 건지 를 정의한다.
 
-  ``` text
+  {% highlight text %}
   MIME-Version : 1.0
   Content-Type : Multipart/Mixed; Boundary=Mime_separator
-  ```
+  {% endhighlight %}
 
 - 위의 MIME 버전은 1.0 이고, 각 메시지의 앞에 Mime_separator 가 나타남을 명시한다.
 - 텍스트만 보내는 경우에 Content-Type 이 *text/plain* 이 된다.
