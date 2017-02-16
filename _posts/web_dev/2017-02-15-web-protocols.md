@@ -9,7 +9,7 @@ image:
   credit: Ibrahim #name of the person or site you want to credit
   creditlink: https://ibrahimabdelkareem.wordpress.com/2016/12/16/building-n-tier-restful-api-using-asp-net-web-api-2-part-2-more-about-http-protocol/
   #url to their site or licensing
-locale: ko
+locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags: web protocols
