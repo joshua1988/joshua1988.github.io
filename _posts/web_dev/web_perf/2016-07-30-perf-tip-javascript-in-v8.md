@@ -28,7 +28,7 @@ comments: true
 - Javascript는 런타임시에 데이터 타입을 변경할 수 있다.
 - V8은 런타임시에 객체 처리를 위해 내부적으로 hidden class를 만들어서 사용한다.
 
-``` javascript
+  ``` javascript
   function Point(x, y) {
     this.x = x;
     this.y = y;
@@ -39,7 +39,7 @@ comments: true
   // 여기에서 p1과 p2는 hidden class를 공유합니다.
   p2.z = 55;
   // 경고! p1과 p2는 이제 다른 hidden class를 갖습니다.
-```
+  ```
 
 - p2에서 z속성을 추가하기 전까지는 같은 hidden class 를 갖지만, z가 추가되고 나면 다른 hidden class를 갖기 때문에 성능에 악영향을 미친다.
 
@@ -53,10 +53,10 @@ comments: true
 - 데이터 타입은 동적으로 변할 수 있기 때문에, 효율적으로 값을 나타내는 태그 사용
 - number타입을 지속적으로 쓰는 것이 중요
 
-```javascript
+  ```javascript
   var i = 42;  // 31비트 부호있는 정수입니다.
   var j = 4.2;  // 이 값은 double 타입의 부동 소수점 숫자 데이터입니다.
-```
+  ```
 
 > #### 결론
 > - **31비트 부호있는 정수를 사용**
@@ -75,7 +75,7 @@ comments: true
 > - **숫자 배열의 요소를 삭제하지 않는다**
 > - **초기화 안한 요소는 호출하지 않는다 (아래 코드 참조)**
 
-```javascript
+  ```javascript
   a = new Array();
   for (var b = 0; b < 10; b++) {
     a[0] |= b;  // 안 좋아요!
@@ -86,13 +86,13 @@ comments: true
   for (var b = 0; b < 10; b++) {
     a[0] |= b;  // 훨씬 좋습니다. 2배 더 빨라요.
   }
-```
+  ```
 
 ## Double Arrays
 - double 타입 배열이 일반 배열보다 빠른 이유 : 배열의 hidden class는 일반적으로 요소의 타입을 검사하여 hidden class를 변경하는 작업이 있으나 double의 경우 여기서 제외된다.
 - 아래와 같이 부주의한 배열요소 변경은 할당과 변환이라는 추가 작업들을 만든다.
 
-``` javascript
+  ``` javascript
   // 비효율적인 코드
   var a = new Array();
   a[0] = 77;    // 할당
@@ -102,7 +102,7 @@ comments: true
 
   // 효율적인 코드
   var a = [77, 88, 0.5, true];
-```
+  ```
 
 - 일반 배열 선언후 `a[2]` 요소에 double 형태를 할당하면, 일반 배열에서 double 배열 형태의 배열 형태가 바뀐다.
 - 그리고 나서 `a[3]` 요소에 다시 일반 배열을 할당하면, double 배열에서 일반배열로 다시 전환된다.
@@ -139,14 +139,14 @@ comments: true
 
 - 아래 예제를 확인해보자
 
-```javascript
+  ```javascript
   function add(x, y) {
     return x + y;
   }
 
   add(1, 2);      // add 함수의 더하기는 단형적 연산입니다.
   add("a", "b");  // add 함수의 더하기는 다형적 연산이 됩니다.
-```
+  ```
 
 - 위의 x, y를 보면 첫번째 `add(1,2);`기본 number 타입에서 두번째 `add("a","b");`에서 일반 object 타입으로 변한다.
 - 이 경우 같은 함수에 대한 두번의 호출이 동일한 hidden class를 쓰는 것이 아니고, 달라지기 때문에 이건 다형적 연산이 된다.
@@ -164,7 +164,7 @@ comments: true
 > #### 결론
 > - **try {} catch {} 사용시 성능에 민감한 코드는 아래 예제처럼 내장함수에 적용한다.**
 
-```javascript
+  ```javascript
   function perf_sensitive() {
     // Do performance-sensitive work here
   }
@@ -174,7 +174,7 @@ comments: true
   } catch (e) {
     // Handle exceptions here
   }
-```
+  ```
 
 ## De-optimization
 - 이 컴파일러는 추론을 이용하여 최적화를 한다.

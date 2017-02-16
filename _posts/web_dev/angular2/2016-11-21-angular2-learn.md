@@ -55,11 +55,11 @@ comments: true
 - *ngFor : Loop the array
 - *ngIf : conditional statement
 
-  {% highlight javascript %}
+  ``` javascript
   <li *ngFor="let carPart of carParts">
   <p *ngIf="carPart.inStock > 0">{{carPart.inStock}} in Stock</p>
   <p *ngIf="carPart.inStock === 0">Out of Stock</p>
-  {% endhighlight %}
+  ```
 
 ## Pipes & Methods
 - Pipes : 템플릿의 데이터를 우리가 원하는 방식으로 가공해서 보여줄 수 있는 기능
@@ -69,7 +69,7 @@ comments: true
 ## ES 2015 Fat Arrow
 - ES2015 에 등장하는 새로운 함수 정의법 `=>` 을 살펴보자.
 
-  {% highlight javascript %}
+  ``` javascript
   // Old Javascript
   totalCarParts() {
     return this.carParts.reduce(function(prev, current) {return prev + current.inStock; }, 0);
@@ -79,7 +79,7 @@ comments: true
   totalCarParts() {
     return this.carParts.reduce((prev, current) => prev + current.inStock, 0);
   }
-  {% endhighlight %}
+  ```
 
 ## 파일 구조화 하기
 - `main.ts` 파일을 다음 3개의 파일로 분할
@@ -93,19 +93,19 @@ comments: true
 2. main.ts 파일에서 `import` 로 파일의 클래스 접근 : `import { AppComponent } from './app.component';`
 3. @NgModule 데코레이션에 해당 컴포넌트 추가
 
-  {% highlight javascript %}
+  ``` javascript
   @NgModule({
     declarations: [
       AppComponent,
       CarPartsComponent // 추가된 컴포넌트
     ],
   })
-  {% endhighlight %}
+  ```
 
 ## CSS 의 컴포넌트 Scoping
 - 특정 컴포넌트에 해당하는 CSS 스타일링이 가능하다. (아래 챕터에서 나온 구조화를 진행하면 별도의 지정어 없이도 Angular 에서 자동으로 컴포넌트에만 국한되는 스코핑을 한다)
 
-  {% highlight html %}
+  ``` html
   <p _ngcontent-dcy-2 class="description">
   <p _ngcontent-dcy-2 class="price">
 
@@ -118,12 +118,12 @@ comments: true
   }
 
   <!-- 위 스타일링은 해당 클래스 중  _ngcontent-dcy-2 를 갖고 있는 태그에만 적용된다 -->
-  {% endhighlight %}
+  ```
 
 ## Javascript & HTML & CSS 의 구조화
 - 한개의 Component 안에 너저분하게 html, css 가 모두 들어가는 것 보단 아래와 같이 scalable 하게 구조화가 가능하다.
 
-  {% highlight javascript %}
+  ``` javascript
   import { Component } from '@angular/core';
 
   @Component({
@@ -131,7 +131,7 @@ comments: true
     templateUrl: "app/car-parts.component.html",
     styleUrls: ['app/car-parts.component.css']
   })
-  {% endhighlight %}
+  ```
 
 ## Mocks & Models
 - `const` : 해당 변수의 내용이 재정의 되지 않도록 설정 (ES2015)
@@ -170,9 +170,9 @@ comments: true
 
 - Model 의 *Banana in a box* : 네모 괄호 안에 둥근 괄호를 넣으면 Model 이 양방향으로 바인딩 된다. **`[( )]`**
 
-  {% highlight javascript %}
+  ``` javascript
   [(ngModel)] = "cash"
-  {% endhighlight %}
+  ```
 
 ## Services
 - 서비스 : 앱의 코드를 공유하거나 구성하는데 사용되고, 주로 데이터 접근 메서드를 생성할 때 사용한다.
@@ -196,28 +196,28 @@ comments: true
 
 #### 주입할 수 있는 데코레이터를 Service 에 추가
 
-  {% highlight javascript %}
+  ``` javascript
   import { Injectable } from '@angular/core';
 
   @Injectable()
   export class ~~ {
 
   }
-  {% endhighlight %}
+  ```
 
 #### 인젝터에 서비스를 프로바이더로 명명하여 알게한다
 
-  {% highlight javascript %}
+  ``` javascript
   import { RacingDataService } from `./racing-data.service`;
 
   @NgModule({
     providers: [ RacingDataService]
   })
-  {% endhighlight %}
+  ```
 
 #### 디펜던시를 ts 파일에 주입한다
 
-  {% highlight javascript %}
+  ``` javascript
   import { RacingDataService } from `./racing-data.service`;
 
   @Component({ ... })
@@ -232,7 +232,7 @@ comments: true
       this.racingDataService = racingDataService;
     }
   }
-  {% endhighlight %}
+  ```
 
 ## HTTP
 - HTTP 라이브러리 등록 절차
@@ -245,7 +245,7 @@ comments: true
 
 - main.ts 에 아래와 같이 포함
 
-  {% highlight javascript %}
+  ``` javascript
   import { HttpModule } from "@angular/http";
 
   @NgModule({
@@ -253,11 +253,11 @@ comments: true
     providers: [],
     // http 모듈을 보면 이미 provider 리스트에 등록이 되어 있으므로, 프로바이더에 따로 등록할 필요는 없다.
   })
-  {% endhighlight %}
+  ```
 
 - service.ts 에 아래와 같이 포함
 
-  {% highlight javascript %}
+  ``` javascript
   import { Http } from "@angular/http";
   import "rxjs/add/operator/map";
 
@@ -270,7 +270,7 @@ comments: true
       return this.http.get('app/car-parts.json').map(response => <CapPart[]>response.json().data);
     }
   }
-  {% endhighlight %}
+  ```
 
   - 위 코드에 관한 설명은 다음 이미지 참조
   - ![http response]({{ site.url }}/images/posts/web/angular2/4.png)

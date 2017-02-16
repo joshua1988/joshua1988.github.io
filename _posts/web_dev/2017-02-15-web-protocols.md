@@ -35,9 +35,9 @@ tags: web protocols
 
 - 위의 형식을 이용하여 예제를 보면
 
-  {% highlight text %}
+  ``` text
   http://www.netbook.cs.purdue.edu/toc/toc01.htm
-  {% endhighlight %}
+  ```
 
 - 위 URL 은 http 프로토콜을 이용하고, www.netbook.cs.purdue.edu 의 이름을 갖는 컴퓨터(서버)에서 toc/toc01.htm 파일을 접근한다.
 
@@ -55,9 +55,9 @@ tags: web protocols
 - GET 요청을 받은 서버에서는 *헤더, 빈 줄, 요청한 문서* 를 클라이언트로 보낸다.
 - 이 때 GET 의 요청 형식은 다음과 같다.
 
-  {% highlight text %}
+  ``` text
   GET /item versionCRLF
-  {% endhighlight %}
+  ```
 
 - 위 형식을 해석해보면,
 
@@ -72,14 +72,14 @@ tags: web protocols
 ## HTTP 응답 헤더
 - HTTP 응답 헤더의 일반적인 형태는 아래와 같다.
 
-  {% highlight text %}
+  ``` text
   HTTP/1.0 status_code status_string CRLF
   Server: server_identification CRLF
   Last-Modified : date_document_was_changed CRLF
   Content-Length : datasize CRLF
   Content-Type : document_type CRLF
   CRLF
-  {% endhighlight %}
+  ```
 
 - 위를 자세히 살펴 보면,
 
@@ -127,10 +127,10 @@ tags: web protocols
 - 인코딩 방식은 메시지의 헤더 안에 정의한다.
 - MIME 은 이메일 헤더에 2 줄을 추가하는데, 이메일에 MIME 이 사용되었는지 여부와 MIME 정보를 바디에 어떻게 포함시킬 건지 를 정의한다.
 
-  {% highlight text %}
+  ``` text
   MIME-Version : 1.0
   Content-Type : Multipart/Mixed; Boundary=Mime_separator
-  {% endhighlight %}
+  ```
 
 - 위의 MIME 버전은 1.0 이고, 각 메시지의 앞에 Mime_separator 가 나타남을 명시한다.
 - 텍스트만 보내는 경우에 Content-Type 이 *text/plain* 이 된다.
