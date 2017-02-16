@@ -4,7 +4,7 @@ title: "웹 개발자를 위한 Web Protocols 정리"
 date: 2017-02-15 18:00:32 +0900
 categories: web_dev
 # description: "웹 통신 프로토콜인 URL, HTTP, SMTP, MIME, FTP 을 정리"
-excerpt: "웹 통신 프로토콜인 URL, HTTP, SMTP, MIME, FTP 을 정리"
+excerpt: "웹 프로토콜 HTTP, SMTP, MIME, FTP 와 URL"
 image:
   teaser: posts/web/http.png
   credit: Ibrahim #name of the person or site you want to credit
