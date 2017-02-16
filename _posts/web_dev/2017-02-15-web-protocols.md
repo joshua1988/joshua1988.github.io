@@ -21,11 +21,9 @@ tags: web protocols
 - 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
 - URL 의 일반적인 형식은
 
-  <!-- {% highlight text %} -->
   ``` text
   protocol://computer_name:port/document_name?parameters
   ```
-  <!-- {% endhighlight %} -->
 
 - 여기서 각 단위의 역할을 살펴보자.
 
