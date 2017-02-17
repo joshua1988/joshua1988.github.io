@@ -17,7 +17,7 @@ tags: web protocols
 ---
 {% include toc.html %}
 
-## URL (Uniform Resource Identifier)
+## URL (Uniform Resource Locator)
 - 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
 - URL 의 일반적인 형식은
 
