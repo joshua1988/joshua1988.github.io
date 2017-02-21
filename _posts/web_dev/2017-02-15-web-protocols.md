@@ -13,7 +13,19 @@ image:
 locale: "ko_KR"
 # 리플 옵션
 comments: true
-tags: web protocols
+tags:
+- web protocols
+- web developer
+- web development basic
+- 웹 개발 기초
+- 웹 개발자
+- 웹 개발자를 위한
+- 웹 개발자를 위한 웹 프로토콜
+- 웹 프로토콜
+- HTTP
+- MIME
+- SMTP
+- URL
 ---
 {% include toc.html %}
 
