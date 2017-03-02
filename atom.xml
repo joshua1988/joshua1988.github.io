@@ -7,10 +7,11 @@ layout: null
     <title>Captain Pangyo - Articles</title>
     <description>Your Latest Posts</description>
     <link>{{ site.url }}</link>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:10 %}
       {% unless post.draft %}
         <item>
           <title>{{ post.title | xml_escape }}</title>
+          <link href="{{ site.url }}{{ post.url }}"/>
           <description>{{ post.content | xml_escape }}</description>
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
           <link>{{ post.url | prepend: site.url }}</link>
