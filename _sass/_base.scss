@@ -13,7 +13,7 @@ body {
 }
 
 p {
-	@include font-size(18,yes,28);
+	@include font-size(16,yes,28);
 }
 
 li {
@@ -99,7 +99,7 @@ li code {
 	@include font-size(16,no);
 	color: $text-color;
 	white-space: nowrap;
-	
+
 	// to correct the styling effect on code highlighting
 	// margin: 0 2px;
 	// padding: 0 5px;

@@ -40,12 +40,12 @@ protocol://computer_name:port/document_name?parameters
 
 
 - 여기서 각 단위의 역할을 살펴보자.
-
   - protocol : 문서를 접근하기 위해 사용하는 프로토콜 이름
   - computer_name : 문서가 있는 컴퓨터의 도메인 이름
   - port : 서버가 어떤 포트 숫자를 바라보고 있는지 (선택 사항)
   - document_name : 서버 컴퓨터에 있는 특정 문서의 이름
   - parameters : 페이지에 넘기는 변수 (선택 사항)
+
 
 - 위의 형식을 이용하여 예제를 보면
 
