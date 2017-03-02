@@ -30,28 +30,28 @@ tags:
 {% include toc.html %}
 
 ## URL (Uniform Resource Locator)
-- 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
-- URL 의 일반적인 형식은
+웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
+URL 의 일반적인 형식은
 
-``` text
-protocol://computer_name:port/document_name?parameters
-```
+  ``` text
+  protocol://computer_name:port/document_name?parameters
+  ```
 
-- 여기서 각 단위의 역할을 살펴보자.
-  - protocol : 문서를 접근하기 위해 사용하는 프로토콜 이름
-  - computer_name : 문서가 있는 컴퓨터의 도메인 이름
-  - port : 서버가 어떤 포트 숫자를 바라보고 있는지 (선택 사항)
-  - document_name : 서버 컴퓨터에 있는 특정 문서의 이름
-  - parameters : 페이지에 넘기는 변수 (선택 사항)
+여기서 각 단위의 역할을 살펴보자.
 
+- protocol : 문서를 접근하기 위해 사용하는 프로토콜 이름
+- computer_name : 문서가 있는 컴퓨터의 도메인 이름
+- port : 서버가 어떤 포트 숫자를 바라보고 있는지 (선택 사항)
+- document_name : 서버 컴퓨터에 있는 특정 문서의 이름
+- parameters : 페이지에 넘기는 변수 (선택 사항)
 
-- 위의 형식을 이용하여 예제를 보면
+위의 형식을 이용하여 예제를 보면
 
 ``` text
 http://www.netbook.cs.purdue.edu/toc/toc01.htm
 ```
 
-- 위 URL 은 http 프로토콜을 이용하고, www.netbook.cs.purdue.edu 의 이름을 갖는 컴퓨터(서버)에서 toc/toc01.htm 파일을 접근한다.
+위 URL 은 http 프로토콜을 이용하고, www.netbook.cs.purdue.edu 의 이름을 갖는 컴퓨터(서버)에서 toc/toc01.htm 파일을 접근한다.
 
 ## HTTP (Hyper Text Transfer Protocol)
 - HTTP 는 브라우저가 웹 서버와 통신하기 위해 사용하는 주요 프로토콜이다.
