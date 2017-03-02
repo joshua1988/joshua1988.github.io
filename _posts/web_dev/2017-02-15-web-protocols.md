@@ -33,13 +33,12 @@ tags:
 - 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
 - URL 의 일반적인 형식은
 
-
-``` text
-protocol://computer_name:port/document_name?parameters
-```
-
+  ``` text
+  protocol://computer_name:port/document_name?parameters
+  ```
 
 - 여기서 각 단위의 역할을 살펴보자.
+
   - protocol : 문서를 접근하기 위해 사용하는 프로토콜 이름
   - computer_name : 문서가 있는 컴퓨터의 도메인 이름
   - port : 서버가 어떤 포트 숫자를 바라보고 있는지 (선택 사항)
