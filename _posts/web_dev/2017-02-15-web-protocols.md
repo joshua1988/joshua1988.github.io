@@ -139,10 +139,12 @@ tags:
 - 인코딩 방식은 메시지의 헤더 안에 정의한다.
 - MIME 은 이메일 헤더에 2 줄을 추가하는데, 이메일에 MIME 이 사용되었는지 여부와 MIME 정보를 바디에 어떻게 포함시킬 건지 를 정의한다.
 
+
   ``` text
   MIME-Version : 1.0
   Content-Type : Multipart/Mixed; Boundary=Mime_separator
   ```
+
 
 - 위의 MIME 버전은 1.0 이고, 각 메시지의 앞에 Mime_separator 가 나타남을 명시한다.
 - 텍스트만 보내는 경우에 Content-Type 이 *text/plain* 이 된다.
