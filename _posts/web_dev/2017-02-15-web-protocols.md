@@ -33,12 +33,11 @@ tags:
 - 웹에서 웹 페이지를 정의하고 접근하기 위해 URL 을 사용한다.
 - URL 의 일반적인 형식은
 
-  ``` text
-  protocol://computer_name:port/document_name?parameters
-  ```
+``` text
+protocol://computer_name:port/document_name?parameters
+```
 
 - 여기서 각 단위의 역할을 살펴보자.
-
   - protocol : 문서를 접근하기 위해 사용하는 프로토콜 이름
   - computer_name : 문서가 있는 컴퓨터의 도메인 이름
   - port : 서버가 어떤 포트 숫자를 바라보고 있는지 (선택 사항)
@@ -48,16 +47,15 @@ tags:
 
 - 위의 형식을 이용하여 예제를 보면
 
-  ``` text
-  http://www.netbook.cs.purdue.edu/toc/toc01.htm
-  ```
+``` text
+http://www.netbook.cs.purdue.edu/toc/toc01.htm
+```
 
 - 위 URL 은 http 프로토콜을 이용하고, www.netbook.cs.purdue.edu 의 이름을 갖는 컴퓨터(서버)에서 toc/toc01.htm 파일을 접근한다.
 
 ## HTTP (Hyper Text Transfer Protocol)
 - HTTP 는 브라우저가 웹 서버와 통신하기 위해 사용하는 주요 프로토콜이다.
 - HTTP 4가지 요청 형식은 아래와 같다.
-
   - GET : 문서를 요청. 서버가 클라이언트에 상태 정보와 복제된 문서를 보냄으로써 응답을 함. (조회)
   - HEAD : 상태 정보를 요청. GET 과 동일한 형태로 응답을 하지만, 문서를 복제하지는 않는다.
   - POST : 데이터를 서버로 송신. 서버는 해당 데이터를 특정 아이템에 덧붙인다. (생성)
@@ -68,12 +66,11 @@ tags:
 - GET 요청을 받은 서버에서는 *헤더, 빈 줄, 요청한 문서* 를 클라이언트로 보낸다.
 - 이 때 GET 의 요청 형식은 다음과 같다.
 
-  ``` text
-  GET /item versionCRLF
-  ```
+``` text
+GET /item versionCRLF
+```
 
 - 위 형식을 해석해보면,
-
   - item : 요청한 문서의 URL
   - version : 프로토콜의 버전을 의미. 보통은 HTTP/1.0 이나 HTTP/1.1 이다.
   - CRLF : 텍스트 줄의 끝을 의미하는 2 개의 아스키 코드를 의미 (Carriage Return : 커서를 행의 맨 좌측 이동, Line Feed : 커서를 다음 행으로 이동)
@@ -85,17 +82,16 @@ tags:
 ## HTTP 응답 헤더
 - HTTP 응답 헤더의 일반적인 형태는 아래와 같다.
 
-  ``` text
-  HTTP/1.0 status_code status_string CRLF
-  Server: server_identification CRLF
-  Last-Modified : date_document_was_changed CRLF
-  Content-Length : datasize CRLF
-  Content-Type : document_type CRLF
-  CRLF
-  ```
+``` text
+HTTP/1.0 status_code status_string CRLF
+Server: server_identification CRLF
+Last-Modified : date_document_was_changed CRLF
+Content-Length : datasize CRLF
+Content-Type : document_type CRLF
+CRLF
+```
 
 - 위를 자세히 살펴 보면,
-
   - status_code : 상태를 나타내는 숫자 값
   - status_string : 사람이 식별 가능한 상태 문자 값
   - server_identification : 서버정보 설명
@@ -115,7 +111,6 @@ tags:
 - 컴퓨터 간의 호환성이라는 것은 예를 들어, 한 컴퓨터에서는 JPEG 이미지가 .jpg 로 저장되지만 다른 컴퓨터에서는 .jpeg 로 저장될 수 있다. 또한 어떤 컴퓨터는 파일 경로를 (/) 를 사용하지만 다른 컴퓨터는 (\) 를 사용할 수도 있다.
 - 이렇기 때문에 파일 전송에 대한 규약인 프로토콜을 이용하여 상호 컴퓨터 간에 파일 전송이 가능하다.
 - FTP 의 특성은 다음과 같다.
-
   - 어떤 형태의 데이터든 전송이 가능하다.
   - 파일을 다운로드 & 업로드 할 수 있다.
   - 파일에 대한 권한을 설정할 수 있다.
@@ -140,12 +135,10 @@ tags:
 - 인코딩 방식은 메시지의 헤더 안에 정의한다.
 - MIME 은 이메일 헤더에 2 줄을 추가하는데, 이메일에 MIME 이 사용되었는지 여부와 MIME 정보를 바디에 어떻게 포함시킬 건지 를 정의한다.
 
-
-  ``` text
-  MIME-Version : 1.0
-  Content-Type : Multipart/Mixed; Boundary=Mime_separator
-  ```
-
+``` text
+MIME-Version : 1.0
+Content-Type : Multipart/Mixed; Boundary=Mime_separator
+```
 
 - 위의 MIME 버전은 1.0 이고, 각 메시지의 앞에 Mime_separator 가 나타남을 명시한다.
 - 텍스트만 보내는 경우에 Content-Type 이 *text/plain* 이 된다.
