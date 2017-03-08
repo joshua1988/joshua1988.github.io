@@ -190,4 +190,6 @@ tags:
 ```
 
 ## 튜토리얼 결과 페이지
+- 위 튜토리얼 결과물은 아래와 같다.
+
 ![위의 튜토리얼 코드를 붙여 만든 간단한 AMP]({{ site.url }}/images/posts/web/amp/getting-started-result.png)
