@@ -195,3 +195,7 @@ tags:
 - 위 코드들의 결과물은 아래와 같다.
 
 ![위의 튜토리얼 코드를 붙여 만든 간단한 AMP]({{ site.url }}/images/posts/web/amp/getting-started-result.png)
+
+## 참고
+- [AMP 공식 사이트](https://www.ampproject.org/)
+- [Google 공식 블로그](https://googleblog.blogspot.kr/2015/10/introducing-accelerated-mobile-pages.html)
