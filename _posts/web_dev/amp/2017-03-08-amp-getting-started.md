@@ -3,7 +3,7 @@ layout: article
 title: "최신 웹 트렌드 AMP 시작하기"
 date: 2017-03-08 14:36:32 +0900
 categories: web_dev
-excerpt: "AMP 소개, 동작원리, 입문용 튜토리얼"
+excerpt: "AMP 소개, 동작원리, 입문용 5분 튜토리얼"
 image:
   teaser: posts/web/amp/amp.png
   credit: Brian Jackson
@@ -26,7 +26,7 @@ tags:
 
 ## AMP (Accelarated Mobile Page)
 - 모바일 기기에서 웹 사이트의 접근성을 높이기 위한 가속화 모바일 페이지
-- 거의 즉시에 가까운 페이지 로딩을 위해 여러 기법들로 최적화 하였고, AMP HTML / JS / CSS 로 구성되어 있다.
+- 거의 즉시에 가까운 페이지 로딩을 위해 여러 기법들로 최적화 하였고 AMP HTML / JS / CSS 로 구성되어 있다.
 
 ## AMP 동작 원리
 - AMP 에 포함되는 모든 자바스크립트는 비동기 방식으로 실행된다.
