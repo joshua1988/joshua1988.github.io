@@ -9,12 +9,13 @@ feed:
   path: atom.xml
 
 # Jekyll configuration
-
 sass:
   sass_dir: _sass
   style: compressed
 permalink: /:categories/:title/
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [footnotes]
 kramdown:
   toc_levels: 1..2
 highlighter: rouge
