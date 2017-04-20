@@ -26,7 +26,7 @@ tags:
 - 개발자가 되는 방법
 ---
 
-![프론트엔드 개발자 로드맵]({{ site.url }}/images/posts/web/frontend-roadmap.png =800x500)
+![프론트엔드 개발자 로드맵]({{ site.url }}/images/posts/web/frontend-roadmap.png)
 
 최근 Github 의 한 웹 개발자가 올린 몇 장의 웹 개발자 로드맵 슬라이드가 인터넷을 달궜습니다.
 그 중 한 장이 바로 위에서 보시는 그림입니다.
