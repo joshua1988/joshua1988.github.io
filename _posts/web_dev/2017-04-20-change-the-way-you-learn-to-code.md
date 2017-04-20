@@ -67,7 +67,7 @@ tags:
 - "내가 생각하는 목표를 이룰 더 나은 방법이 있나?"
 
 ## 소스코드 읽는 법 배우기
-이 [링크](https://github.com/python/cpython/blob/3.6/Lib/json/encoder.py) 는 Python 에서 JSON 인코드를 구현하는 코드입니다.
+이 [링크](https://github.com/python/cpython/blob/3.6/Lib/json/encoder.py) 는 Python 에서 JSON 인코더를 구현하는 코드입니다.
 만약 이 코드가 예상대로 동작하지 않거나 기술문서의 설명이 부족하다면, 덜 선호되는 방법이지만 구현 코드에서 원하는 답을 찾을 수 있습니다.
 
 코드 읽는 법과 관련해서 몇가지 팁은
