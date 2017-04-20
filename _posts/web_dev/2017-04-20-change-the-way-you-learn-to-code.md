@@ -7,8 +7,8 @@ excerpt: "(번역) 그림을 통해 들려주고 싶은 15 년차 개발자의 �
 image:
   # feature: posts/web/frontend-roadmap.png
   teaser: posts/web/frontend-roadmap.png
-  credit: Saul Costa
-  creditlink: https://medium.freecodecamp.com/this-picture-will-change-the-way-you-learn-to-code-557ac1e109bd
+  credit: Kamran Ahmed
+  creditlink: https://github.com/kamranahmedse/developer-roadmap
   #url to their site or licensing
 locale: "ko_KR"
 # 리플 옵션
@@ -110,5 +110,5 @@ tags:
 
 **기억하세요. 아무도 당신이 모든 것을 알고 있기를 바라지 않습니다. 과정을 즐기시고, 절대 배우는 걸 멈추지 마세요 Happy Coding! :)**
 
-## 참고 (원문)
-- [This Picture Will Change the Way You Learn to Code](https://medium.freecodecamp.com/this-picture-will-change-the-way-you-learn-to-code-557ac1e109bd)
+## 원문
+- 원작자의 허가를 얻고 번역하였습니다 - [This Picture Will Change the Way You Learn to Code](https://medium.freecodecamp.com/this-picture-will-change-the-way-you-learn-to-code-557ac1e109bd)
