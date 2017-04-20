@@ -5,7 +5,7 @@ date: 2017-04-20 13:37:32 +0900
 categories: web_dev
 excerpt: "(번역) 그림을 통해 들려주고 싶은 15 년차 개발자의 이야기"
 image:
-  feature: posts/web/frontend-roadmap.png
+  # feature: posts/web/frontend-roadmap.png
   teaser: posts/web/frontend-roadmap.png
   credit: Saul Costa
   creditlink: https://medium.freecodecamp.com/this-picture-will-change-the-way-you-learn-to-code-557ac1e109bd
@@ -25,7 +25,7 @@ tags:
 - 개발자가 되기 위한 방법
 - 개발자가 되는 방법
 ---
-{% include toc.html %}
+![프론트엔드 개발자 로드맵](C:\github\joshua1988.github.io\images\posts\web\frontend-roadmap.png)
 
 최근 Github 의 한 웹 개발자가 올린 몇 장의 웹 개발자 로드맵 슬라이드가 인터넷을 달궜습니다.
 그 중 한 장이 바로 위에서 보시는 그림입니다.
