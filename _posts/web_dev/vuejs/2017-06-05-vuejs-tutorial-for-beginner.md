@@ -432,7 +432,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 ## Vue Resource
 Vue 에서 HTTP 통신을 위해 제공하는 [플러그인](https://github.com/pagekit/vue-resource)
 
-```
+```text
 npm install vue-resource --save
 ```
 
