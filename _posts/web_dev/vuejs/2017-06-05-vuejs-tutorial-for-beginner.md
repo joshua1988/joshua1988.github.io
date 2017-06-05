@@ -570,7 +570,7 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
   </script>
   ```
 
-## Single File Components with js(ES6)
+## Single File Components with JSX(ES6)
 앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 [방법]((https://vuejs.org/v2/guide/single-file-components.html))
 - 복잡도가 커짐에 따라 야기될 수 있는 문제들
   1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
