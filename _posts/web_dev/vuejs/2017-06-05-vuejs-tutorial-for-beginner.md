@@ -47,7 +47,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 View 단 라이브러리
 ## MVVM 패턴이란?
 [위키](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) 에 명시된 것처럼, Backend 로직과 Client 의 마크업 & 데이터 표현단을 분리하기 위한 구조로 전통적인 MVC 패턴의 방식에서 기인하였다. 간단하게 생각해서 화면 앞단의 회면 동작 관련 로직과 뒷단의 DB 데이터 처리 및 서버 로직을 분리하고, 뒷단에서 넘어온 데이터를 Model 에 담아 View 로 넘어주는 중간 지점이라고 보면 되겠다.
 
-[mvvm-pattern]({{ site.url }}/images/posts/web/vuejs/mvvm-pattern.png)
+![mvvm-pattern]({{ site.url }}/images/posts/web/vuejs/mvvm-pattern.png)
 
 ## Vue 시작하기
 다른 주요 Front-End Framework (Angular, React) 보다 Vue 가 가지는 가장 큰 강점은 바로 시작하기가 정말 쉽다는 점이다.
@@ -385,7 +385,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
   };
   ```
 
-  ![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
+  ![common-error-when-using-nested-router]({{ site.url !}}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
 
 - 따라서 아래와 같이 최상위 Element 는 한개만 지정해야 한다.
 
@@ -425,7 +425,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
 
-[Nested View vs Named View]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
+![Nested View vs Named View]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
 
 ## [Vue Resource](https://github.com/pagekit/vue-resource)
 Vue 에서 HTTP 통신을 위해 제공하는 플러그인
