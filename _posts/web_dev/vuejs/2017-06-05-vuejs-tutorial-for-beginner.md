@@ -512,7 +512,6 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
   ```html
   <div>{{ number + 1 }}</div> <!-- O -->
   <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
-  <div>{{ if (ok) { return message } }}</div> <!-- X -->
   ```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
