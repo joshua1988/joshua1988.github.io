@@ -83,35 +83,35 @@ Vue JS 라이브러리를 따로 받을 필요도 없이 CDN 으로 코드 땡�
 #### Vue Instance 생성자
 - Vue 생성자를 만드는 방법은 아래와 같다.
 
-  ```javascript
-  // vm 은 ViewModel 을 뜻한다. (관행적인 코딩 컨벤션)
-  var vm = new Vue({
-    // options
-  })
-  ```
+```javascript
+// vm 은 ViewModel 을 뜻한다. (관행적인 코딩 컨벤션)
+var vm = new Vue({
+  // options
+})
+```
 
 - Vue 객체를 생성할 때 아래와 같이 *data, template, el, methods, life cycle callback* 등의 options 을 포함할 수 있다.
 
-  ```javascript
-  var vm = new Vue({
-    template: ...,
-    el: ...,
-    methods: {
+```javascript
+var vm = new Vue({
+  template: ...,
+  el: ...,
+  methods: {
 
-    },
-    // ...
-  })
-  ```
+  },
+  // ...
+})
+```
 
 - 각 options 으로 미리 정의한 vue 객체를 확장하여 재사용이 가능하다. 하지만 아래 방법 보다는 template 에서 custom element 로 작성하는 것이 더 좋다.
 
-  ```javascript
-  var MyComponent = Vue.extend({
-    // template, el, methods 와 같은 options 정의
-  })
-  // 위에서 정의한 options 를 기본으로 하는 컴포넌트 생성
-  var myComponentInstance = new MyComponent()
-  ```
+```javascript
+var MyComponent = Vue.extend({
+  // template, el, methods 와 같은 options 정의
+})
+// 위에서 정의한 options 를 기본으로 하는 컴포넌트 생성
+var myComponentInstance = new MyComponent()
+```
 
 
 #### Vue Instance 라이프싸이클 초기화
@@ -146,78 +146,78 @@ var vm = new Vue({
 
 - 컴포넌트 등록은 아래와 같은 코드로 생성 가능하다.
 
-  ```html
-  <div id="app">
-    <my-component></my-component>
-  </div>
-  ```
+```html
+<div id="app">
+  <my-component></my-component>
+</div>
+```
 
-  ```js
-  // 등록
-  Vue.component('my-component', {
-    template: '<div>A custom component!</div>'
-  })
-  // Vue 인스턴스 생성
-  new Vue({
-    el: '#app'
-  })
-  ```
+```js
+// 등록
+Vue.component('my-component', {
+  template: '<div>A custom component!</div>'
+})
+// Vue 인스턴스 생성
+new Vue({
+  el: '#app'
+})
+```
 
 **주의할 점 : Vue 인스턴스를 생성하기전에 꼭 Component 부터 등록!**
 
 - 컴포넌트의 `data` 속성은 꼭 함수로 작성해야한다.
 
-  ```js
-  // 아래 Vue 컴포넌트는 오류를 발생시킨다.
-  Vue.component('my-component', {
-    data: {
-      message: 'hello'
-    }
-  })
+```js
+// 아래 Vue 컴포넌트는 오류를 발생시킨다.
+Vue.component('my-component', {
+  data: {
+    message: 'hello'
+  }
+})
 
-  var data = { text: 'hello' }
-  Vue.component('my-component', {
-    data: function () {
-      return data;
-    }
-    // 모든 컴포넌트가 같은 값을 공유하지 않게 아래와 같이 수정
-    // data: function () {
-    //   return {
-    //     text: 'hello'
-    //   }
-    // }
-  })
-  ```
+var data = { text: 'hello' }
+Vue.component('my-component', {
+  data: function () {
+    return data;
+  }
+  // 모든 컴포넌트가 같은 값을 공유하지 않게 아래와 같이 수정
+  // data: function () {
+  //   return {
+  //     text: 'hello'
+  //   }
+  // }
+})
+```
 
 #### Global or Local Component
 - 컴포넌트를 뷰 인스턴스에 등록해서 사용할 때 다음과 같이 global 하게 등록할 수 있다.
 
-  ```js
-  Vue.component('my-component', {
-    // ...
-  })
-  ```
+```js
+Vue.component('my-component', {
+  // ...
+})
+```
 
 
 - local 하게 등록하는 방법은 다음과 같다.
 
-  ```js
-  var cmp = {
-    data: function () {
-      return {
-        // ...
-      };
-    }
-    template: '<hr>',
-    methods: {}
+```js
+var cmp = {
+  data: function () {
+    return {
+      // ...
+    };
   }
+  template: '<hr>',
+  methods: {}
+}
 
-  new Vue({
-    components: {
-      'my-cmp' : cmp
-    }
-  })
-  ```
+new Vue({
+  components: {
+    'my-cmp' : cmp
+  }
+})
+```
 
 #### 부모와 자식 컴포넌트 관계
 - 구조상 상-하 관계에 있는 컴포넌트의 통신은
@@ -265,110 +265,110 @@ var app = new Vue({
 Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용할 수 있다.
 - Event Bus 를 위해 새로운 Vue 를 생성하여 아래와 같이 Vue Root Instance 가 위치한 파일에 등록
 
-  ```js
-  // Vue Root Instance 전에 꼭 등록 순서가 중요.
-  export const eventBus = new Vue();
-  new Vue({
-    // ...
-  })
-  ```
+```js
+// Vue Root Instance 전에 꼭 등록 순서가 중요.
+export const eventBus = new Vue();
+new Vue({
+  // ...
+})
+```
 
 - 이벤트를 발생시킬 컴포넌트에 `eventBus` import 후 `$emit` 으로 이벤트 발생
 
-  ```js
-  import { eventBus } from '../../main';
+```js
+import { eventBus } from '../../main';
 
-  eventBus.$emit('refresh', 10);
-  ```
+eventBus.$emit('refresh', 10);
+```
 
 - 해당 이벤트를 받을 컴포넌트에도 동일하게 import 후 콜백으로 이벤트 수신
 
-  ```js
-  import { eventBus } from '../../main';
+```js
+import { eventBus } from '../../main';
 
-  // 등록 위치는 해당 컴포넌트의 created 메서드에 등록
-  created() {
-    eventBus.$on('refresh', function (data) {
-      console.log(data); // 10
-    });
-  }
-  ```
+// 등록 위치는 해당 컴포넌트의 created 메서드에 등록
+created() {
+  eventBus.$on('refresh', function (data) {
+    console.log(data); // 10
+  });
+}
+```
 
 - 참고 : eventBus 의 콜백함수 안에서 해당 소스의 메서드를 참고하려면 `self` 사용
 
-  ```js
-  methods: {
-    callAnyMethod() {
-      // ...
-    }
+```js
+methods: {
+  callAnyMethod() {
+    // ...
   }
-  created() {
-    var self = this;
-    eventBus.$on('refresh', function (data) {
-      console.log(this); // this 는 빈 Vue 인스턴스를 접근
-      self.callAnyMethod() // self 는 이 created 의 Vue 컴포넌트에 접근, 따라서 이 컴포넌트에 미리 선언된 메서드에 접근 가능
-    });
-  }
-  ```
+}
+created() {
+  var self = this;
+  eventBus.$on('refresh', function (data) {
+    console.log(this); // this 는 빈 Vue 인스턴스를 접근
+    self.callAnyMethod() // self 는 이 created 의 Vue 컴포넌트에 접근, 따라서 이 컴포넌트에 미리 선언된 메서드에 접근 가능
+  });
+}
+```
 
 ## Vue Routers
 Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - Vue 코어 라이브러리 외에 Router 라이브러리를 공식 지원하고 있고 아래와 같이 설치한다.
 
-  ```
-  npm install vue-router --save
-  ```
+```
+npm install vue-router --save
+```
 
 - Vue 라우터는 기본적으로 **`RootUrl`/#/`Router name`** 의 구조로 되어 있다.
 
-  ```
-  example.com/#/user
-  ```
+```
+example.com/#/user
+```
 
 - 여기서 # 태그 값을 제외하고 기본 URL 방식을 사용하여 요청 때마다 index.html 을 받아 라우팅을 하려면
 
-  ```js
-  const router = new VueRouter({
-    routes,
-    // 아래와 같이 history 모드를 추가해주면 된다.
-    mode: 'history'
-  })
-  ```
+```js
+const router = new VueRouter({
+  routes,
+  // 아래와 같이 history 모드를 추가해주면 된다.
+  mode: 'history'
+})
+```
 
 #### Nested Routers
 라우터를 이용한 화면을 이동할 때 Nested Routers 를 이용하여 여러개의 컴포넌트를 렌더링 할 수 있다.
 - 렌더링 되는 컴포넌트의 구조는 가장 큰 상위의 컴포넌트가 하위의 컴포넌트를 포함하는 `Parent - Child` 형태와 같다.
 
-  ```html
-  <!-- localhost:5000 -->
-  <div id="app">
-    <router-view></router-view>
-  </div>
+```html
+<!-- localhost:5000 -->
+<div id="app">
+  <router-view></router-view>
+</div>
 
-  <!-- localhost:5000/home -->
-  <div>
-    <p>Main Component rendered</p>
-    <app-header></app-header>
-  </div>
-  ```
+<!-- localhost:5000/home -->
+<div>
+  <p>Main Component rendered</p>
+  <app-header></app-header>
+</div>
+```
 
-  ```js
-  // localhost:5000/home 에 접근하면 Main 과 Header 컴포넌트 둘다 렌더링 된다.
-  {
-    path : '/home',
-    component: Main,
-    children: [
-      {
-        path: '/',
-        component: AppHeader
-      },
-      {
-        path: '/list',
-        component: List
-      },
-    ]
-  }
-  ```
+```js
+// localhost:5000/home 에 접근하면 Main 과 Header 컴포넌트 둘다 렌더링 된다.
+{
+  path : '/home',
+  component: Main,
+  children: [
+    {
+      path: '/',
+      component: AppHeader
+    },
+    {
+      path: '/list',
+      component: List
+    },
+  ]
+}
+```
 
 #### 주의사항 - Vue Template Root Element
 - 아래는 Template 의 HTML 태그를 정의할 때 주의해야 하는 Vue 의 성질이다.
@@ -376,52 +376,50 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - 여러 개의 태그를 최상위 태그에 동시에 위치시킬 수 없음
 - 아래 에러는 기존에 렌더하는 tag 의 안에 router-view 를 사용하지 않고 밖에 넣었을 때 발생. `Component template should contain exactly one root element`
 
-  ```js
-  var Foo = {
-    template: `
-      <div>foo</div>
-      <router-view></router-view>
-    ` // 에러 발생
-  };
-  ```
+```js
+var Foo = {
+  template: `
+    <div>foo</div>
+    <router-view></router-view>
+  ` // 에러 발생. 아래 이미지 참고
+};
+```
 
-아래 에러는
-
-  ![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
+![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
 
 - 따라서 아래와 같이 최상위 Element 는 한개만 지정해야 한다.
 
-  ```js
-  var Foo = {
-    // div 태그 안에 텍스트와 `router-view` 포함하여 정상 동작
-    template: `
-      <div>foo
-        <router-view></router-view>
-      </div>
-    `
-  };
-  ```
+```js
+var Foo = {
+  // div 태그 안에 텍스트와 `router-view` 포함하여 정상 동작
+  template: `
+    <div>foo
+      <router-view></router-view>
+    </div>
+  `
+};
+```
 
 #### Named Views
 라우터를 이용하여 특정 URL 로 이동시, 해당 URL 에 해당하는 여러개의 View(컴포넌트) 를 동시에 렌더링 한다.
 
-  ```html
-  <div id="app">
-    <router-view name="nestedHeader"></router-view>
-    <router-view></router-view>
-  </div>
-  ```
+```html
+<div id="app">
+  <router-view name="nestedHeader"></router-view>
+  <router-view></router-view>
+</div>
+```
 
-  ```js
-  {
-    path : '/home',
-    // Named Router
-    components: {
-      nestedHeader: AppHeader,
-      default: Body
-    }
-  },
-  ```
+```js
+{
+  path : '/home',
+  // Named Router
+  components: {
+    nestedHeader: AppHeader,
+    default: Body
+  }
+},
+```
 
 #### Nested View vs Named Views
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
@@ -449,47 +447,47 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 
 - Attributes : HTML Attirubtes 를 Vue 의 변수와 연결할 때는 `v-bind` 를 이용
 
-  ```html
-  <div v-bind:id="dynamicId"></div>
-  ```
+```html
+<div v-bind:id="dynamicId"></div>
+```
 
 - JS Expressions : `{{ }}` 안에 다음과 같이 javascript 표현식도 가능하다.
 
-  ```
-  <div>{{ number + 1 }}</div>
-  <div>{{ message.split('').reverse().join('') }}</div>
-  ```
+```
+<div>{{ number + 1 }}</div>
+<div>{{ message.split('').reverse().join('') }}</div>
+```
 
 - Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
 
-  ```html
-  <p v-if="seen">Now you see me</p>
-  <!-- : 뒤에 선언한 href 인자를 받아 url 값이랑 매핑 -->
-  <a v-bind:href="url"></a>
-  <!-- click 이라는 이벤트를 받아 Vue 에 넘겨준다. -->
-  <a v-on:click="doSomething">
-  ```
+```html
+<p v-if="seen">Now you see me</p>
+<!-- : 뒤에 선언한 href 인자를 받아 url 값이랑 매핑 -->
+<a v-bind:href="url"></a>
+<!-- click 이라는 이벤트를 받아 Vue 에 넘겨준다. -->
+<a v-on:click="doSomething">
+```
 
 - Filters : 화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며, `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
 
-  ```
-  // html 파일
-  message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다.
-  {{ message | capitalize }}
-  ```
+```
+// html 파일
+message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다.
+{{ message | capitalize }}
+```
 
-  ```js
-  new Vue({
-    // ...
-    filters: {
-      capitalize: function (value) {
-        if (!value) return ''
-        value = value.toString()
-        return value.charAt(0).toUpperCase() + value.slice(1)
-      }
+```js
+new Vue({
+  // ...
+  filters: {
+    capitalize: function (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0).toUpperCase() + value.slice(1)
     }
-  })
-  ```
+  }
+})
+```
 
 ## Data Binding
 Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은 아래와 같이 크게 3가지가 있다.
@@ -500,40 +498,40 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 #### Interpolation - 값 대입
 - Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ }}` 를 따른다.
 
-  ```
-  html 파일
-  <span>Message: {{ msg }}</span>
-  <span>This will never change: {{* msg }}</span>
-  <div id="item-{{ id }}"></div>
-  ```
+```
+html 파일
+<span>Message: {{ msg }}</span>
+<span>This will never change: {{* msg }}</span>
+<div id="item-{{ id }}"></div>
+```
 
 #### Binding Expressions - 값 연결
 - `{{ }}` 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
 
-  ```
-  html 파일
-  <div>{{ number + 1 }}</div>
-  <div>{{ message.split('').reverse().join('') }}</div>
-  ```
+```
+html 파일
+<div>{{ number + 1 }}</div>
+<div>{{ message.split('').reverse().join('') }}</div>
+```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
 
-  ```
-  html 파일
-  {{ message | capitalize }}
-  {{ message | capitalize | upcapitalize}}
-  ```
+```
+html 파일
+{{ message | capitalize }}
+{{ message | capitalize | upcapitalize}}
+```
 
 #### Directives
 - Vue 에서 제공하는 특별한 Attributes 이며 `-v` 의 prefix (접두사) 를 갖는다.
 - *자바스크립트 표현식, filter* 모두 적용된다.
 
-  ```html
-  <!-- login 의 결과에 따라 p 가 존재 또는 미존재 -->
-  <p v-if="login">Hello!</p>
-  <!-- click = {{doSomething}} 와 같은 역할 -->
-  <a v-on:click="doSomething">
-  ```
+```html
+<!-- login 의 결과에 따라 p 가 존재 또는 미존재 -->
+<p v-if="login">Hello!</p>
+<!-- click = {{doSomething}} 와 같은 역할 -->
+<a v-on:click="doSomething">
+```
 
 #### Class Binding
 - CSS 스타일링을 위해서 class 를 아래 2가지 방법으로 추가가 가능하다.
@@ -542,33 +540,33 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 - 주의할 점은 위의 두 방법을 함께 사용하지 않고 한 가지만 적용해야 에러를 미연에 방지할 수 있다.
 - 아래와 같이 `class` 속성과 `v-bind:class` 속성을 동시에 사용해도 된다.
 
-  ```html
-  <div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }"></div>
-  <script>
-  data: {
-    isA: true,
-    isB: false
-  }
-  </script>
-  ```
+```html
+<div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }"></div>
+<script>
+data: {
+  isA: true,
+  isB: false
+}
+</script>
+```
 
 - 위 결과 값은
 
-  ```html
-  <div class="static class-a"></div>
-  ```
+```html
+<div class="static class-a"></div>
+```
 
 - 아래와 같이 Array 구문도 사용할 수 있다.
 
-  ```html
-  <div v-bind:class="[classA, classB]">
-  <script>
-    data: {
-      classA: 'class-a',
-      classB: 'class-b'
-    }
-  </script>
-  ```
+```html
+<div v-bind:class="[classA, classB]">
+<script>
+  data: {
+    classA: 'class-a',
+    classB: 'class-b'
+  }
+</script>
+```
 
 ## Single File Components with JSX(ES6)
 앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 [방법]((https://vuejs.org/v2/guide/single-file-components.html))
@@ -580,19 +578,19 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 
 - `.vue` 파일을 브라우저가 렌더할 수 있는 파일들로 변환하려면 webpack 의 [vue-loader](https://github.com/vuejs/vue-loader) 또는 [browserify](http://browserify.org/) 이용
 
-  ```html
-  <template>
-  <!-- ... -->
-  </template>
+```html
+<template>
+<!-- ... -->
+</template>
 
-  <script>
-  // ...
-  </script>
+<script>
+// ...
+</script>
 
-  <style>
-  /*...*/
-  </style>
-  ```
+<style>
+/*...*/
+</style>
+```
 
 **참고 : ES5 를 사용하는 경우 single file components 의 혜택을 볼 수 없음**
 
