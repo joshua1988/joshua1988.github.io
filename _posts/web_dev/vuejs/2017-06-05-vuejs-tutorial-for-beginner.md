@@ -60,7 +60,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 View 단 라이브러리
   </head>
   <body>
     <div id="app">
-      {{ "{{ message " }} }}
+      {{ "{{ message" }} }}
     </div>
 
     <script src="https://unpkg.com/vue@2.3.3"></script>
@@ -233,7 +233,7 @@ new Vue({
 ```js
 Vue.component('child-component', {
   props: ['passedData'],
-  template: '<p>{{ "{{ passedData " }} }}</p>'
+  template: '<p>{{ "{{ passedData" }} }}</p>'
 });
 
 var app = new Vue({
@@ -452,8 +452,8 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 - JS Expressions : "{{ "{{ " }} }}" 안에 다음과 같이 javascript 표현식도 가능하다.
 
 ```html
-<div>{{ "{{ number + 1 " }} }}</div>
-<div>{{ "{{ message.split('').reverse().join('') " }} }}</div>
+<div>{{ "{{ number + 1" }} }}</div>
+<div>{{ "{{ message.split('').reverse().join('')" }} }}</div>
 ```
 
 - Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
@@ -470,7 +470,7 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 
 ```html
 <!-- message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다. -->
-{{ "{{ message | capitalize " }} }}
+{{ "{{ message | capitalize" }} }}
 ```
 
 ```js
@@ -493,11 +493,11 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
   - Directives (디렉티브 사용)
 
 #### Interpolation - 값 대입
-- Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ }}` 를 따른다.
+- Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ "{{ " }} }}` 를 따른다.
 
 ```html
-<span>Message: {{ "{{ msg " }} }}</span>
-<span>This will never change: {{ "{{* msg " }} }}</span>
+<span>Message: {{ "{{ msg" }} }}</span>
+<span>This will never change: {{ "{{* msg" }} }}</span>
 <div id="item-'{{ '{{ id ' }} }}'"></div>
 ```
 
@@ -505,14 +505,14 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 - "{{ '{{ ' }} }}" 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
 
 ```html
-<div>{{ "{{ number + 1 " }} }}</div>
-<div>{{ "{{ message.split('').reverse().join('') " }} }}</div>
+<div>{{ "{{ number + 1" }} }}</div>
+<div>{{ "{{ message.split('').reverse().join('')" }} }}</div>
 ```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
 
 ```html
-{{ "{{ message | capitalize " }} }}
+{{ "{{ message | capitalize" }} }}
 {{ "{{ message | capitalize | upcapitalize" }} }}
 ```
 
@@ -523,7 +523,7 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 ```html
 <!-- login 의 결과에 따라 p 가 존재 또는 미존재 -->
 <p v-if="login">Hello!</p>
-<!-- click = {{ "{{ doSomething " }} }} 와 같은 역할 -->
+<!-- click = {{ "{{ doSomething" }} }} 와 같은 역할 -->
 <a v-on:click="doSomething">
 ```
 
