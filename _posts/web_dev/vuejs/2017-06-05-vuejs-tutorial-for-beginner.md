@@ -319,7 +319,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
   npm install vue-router --save
   ```
 
-- Vue 라우터는 기본적으로 RootUrl'/#/'{Router name} 의 구조로 되어 있다.
+- Vue 라우터는 기본적으로 **`RootUrl`/#/`Router name`** 의 구조로 되어 있다.
 
   ```
   example.com/#/user
