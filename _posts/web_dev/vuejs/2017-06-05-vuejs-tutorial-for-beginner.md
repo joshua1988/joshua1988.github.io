@@ -310,3 +310,330 @@ Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용
     });
   }
   ```
+
+## Vue Routers
+Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
+- Vue 코어 라이브러리 외에 Router 라이브러리를 공식 지원하고 있고 아래와 같이 설치한다.
+
+  ```
+  npm install vue-router --save
+  ```
+
+- Vue 라우터는 기본적으로 RootUrl'/#/'{Router name} 의 구조로 되어 있다.
+
+  ```
+  example.com/#/user
+  ```
+
+- 여기서 # 태그 값을 제외하고 기본 URL 방식을 사용하여 요청 때마다 index.html 을 받아 라우팅을 하려면
+
+  ```js
+  const router = new VueRouter({
+    routes,
+    // 아래와 같이 history 모드를 추가해주면 된다.
+    mode: 'history'
+  })
+  ```
+
+#### Nested Routers
+라우터를 이용한 화면을 이동할 때 Nested Routers 를 이용하여 여러개의 컴포넌트를 렌더링 할 수 있다.
+- 렌더링 되는 컴포넌트의 구조는 가장 큰 상위의 컴포넌트가 하위의 컴포넌트를 포함하는 `Parent - Child` 형태와 같다.
+
+  ```html
+  <!-- localhost:5000 -->
+  <div id="app">
+    <router-view></router-view>
+  </div>
+
+  <!-- localhost:5000/home -->
+  <div>
+    <p>Main Component rendered</p>
+    <app-header></app-header>
+  </div>
+  ```
+
+  ```js
+  // localhost:5000/home 에 접근하면 Main 과 Header 컴포넌트 둘다 렌더링 된다.
+  {
+    path : '/home',
+    component: Main,
+    children: [
+      {
+        path: '/',
+        component: AppHeader
+      },
+      {
+        path: '/list',
+        component: List
+      },
+    ]
+  }
+  ```
+
+#### 주의사항 - Vue Template Root Element
+- 아래는 Template 의 HTML 태그를 정의할 때 주의해야 하는 Vue 의 성질이다.
+- **Vue 의 Template 에 최상위 태그가 1개만 있어야 렌더가 가능하다.**
+- 여러 개의 태그를 최상위 태그에 동시에 위치시킬 수 없음
+- 아래 에러는 기존에 렌더하는 tag 의 안에 router-view 를 사용하지 않고 밖에 넣었을 때 발생. `Component template should contain exactly one root element`
+
+  ```js
+  var Foo = {
+    template: `
+      <div>foo</div>
+      <router-view></router-view>
+    ` // 에러 발생
+  };
+  ```
+
+아래 에러는
+
+  ![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
+
+- 따라서 아래와 같이 최상위 Element 는 한개만 지정해야 한다.
+
+  ```js
+  var Foo = {
+    // div 태그 안에 텍스트와 `router-view` 포함하여 정상 동작
+    template: `
+      <div>foo
+        <router-view></router-view>
+      </div>
+    `
+  };
+  ```
+
+#### Named Views
+라우터를 이용하여 특정 URL 로 이동시, 해당 URL 에 해당하는 여러개의 View(컴포넌트) 를 동시에 렌더링 한다.
+
+  ```html
+  <div id="app">
+    <router-view name="nestedHeader"></router-view>
+    <router-view></router-view>
+  </div>
+  ```
+
+  ```js
+  {
+    path : '/home',
+    // Named Router
+    components: {
+      nestedHeader: AppHeader,
+      default: Body
+    }
+  },
+  ```
+
+#### Nested View vs Named Views?
+- 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
+- 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
+
+![nested-routes-named-view]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
+
+## Vue Resource
+Vue 에서 HTTP 통신을 위해 제공하는 플러그인 `npm install vue-resource --save` 명령어로 설치.
+Root Vue Instance 를 선언하는 js 파일에 아래와 같이 등록
+
+```js
+import VueResource from 'vue-resource';
+...
+Vue.use(VueResource);
+```
+
+사용법은 아래와 같다.
+
+```js
+this.$http.get(url).then(successCallback, failCallback);
+```
+
+## Vue Templates
+Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template 을 사용. Vue 는 template 으로 렌더링 할 때 Virtual DOM 을 사용하여 DOM 조작을 최소화 하고 렌더링을 꼭 다시 해야만 하는 요소를 계산하여 성능 부하를 최소화. 원하면 render function 을 직접 구현하여 사용할 수 있음
+
+- Attributes : HTML Attirubtes 를 Vue 의 변수와 연결할 때는 `v-bind` 를 이용
+
+  ```html
+  <div v-bind:id="dynamicId"></div>
+  ```
+
+- JS Expressions : `{{ }}` 안에 다음과 같이 javascript 표현식도 가능하다.
+
+  ```html
+  <div>{{ number + 1 }}</div> <!-- O -->
+  <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
+  <div>{{ if (ok) { return message } }}</div> <!-- X -->
+  ```
+
+- Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
+
+  ```html
+  <p v-if="seen">Now you see me</p>
+  <!-- : 뒤에 선언한 href 인자를 받아 url 값이랑 매핑 -->
+  <a v-bind:href="url"></a>
+  <!-- click 이라는 이벤트를 받아 Vue 에 넘겨준다. -->
+  <a v-on:click="doSomething">
+  ```
+
+- Filters : 화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며, `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
+
+  ```html
+  <!-- message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다. -->
+  {{ message | capitalize }}
+  ```
+
+  ```js
+  new Vue({
+    // ...
+    filters: {
+      capitalize: function (value) {
+        if (!value) return ''
+        value = value.toString()
+        return value.charAt(0).toUpperCase() + value.slice(1)
+      }
+    }
+  })
+  ```
+
+## Data Binding
+Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은 아래와 같이 크게 3가지가 있다.
+  - Interpolation (값 대입)
+  - Binding Expressions (값 연결)
+  - Directives (디렉티브 사용)
+
+#### Interpolation - 값 대입
+- Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ }}` 를 따른다.
+
+  ```html
+  <span>Message: {{ msg }}</span>
+  <span>This will never change: {{* msg }}</span>
+  <div id="item-{{ id }}"></div>
+  ```
+
+#### Binding Expressions - 값 연결
+- `{{ }}` 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
+
+  ```html
+  <div>{{ number + 1 }}</div> <!-- O -->
+  <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
+  <div>{{ if (ok) { return message } }}</div> <!-- X -->
+  ```
+
+- Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
+
+  ```html
+  {{ message | capitalize }}
+  {{ message | capitalize | upcapitalize}}
+  ```
+
+#### Directives
+- Vue 에서 제공하는 특별한 Attributes 이며 `-v` 의 prefix (접두사) 를 갖는다.
+- *자바스크립트 표현식, filter* 모두 적용된다.
+
+  ```html
+  <!-- login 의 결과에 따라 p 가 존재 또는 미존재 -->
+  <p v-if="login">Hello!</p>
+  <!-- click = {{doSomething}} 와 같은 역할 -->
+  <a v-on:click="doSomething">
+  ```
+
+#### Class Binding
+- CSS 스타일링을 위해서 class 를 아래 2가지 방법으로 추가가 가능하다.
+  - `class="{{ className }}"`
+  - `v-bind:class`
+- 주의할 점은 위의 두 방법을 함께 사용하지 않고 한 가지만 적용해야 에러를 미연에 방지할 수 있다.
+- 아래와 같이 `class` 속성과 `v-bind:class` 속성을 동시에 사용해도 된다.
+
+  ```html
+  <div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }"></div>
+  <script>
+  data: {
+    isA: true,
+    isB: false
+  }
+  </script>
+  ```
+
+- 위 결과 값은
+
+  ```html
+  <div class="static class-a"></div>
+  ```
+
+- 아래와 같이 Array 구문도 사용할 수 있다.
+
+  ```html
+  <div v-bind:class="[classA, classB]">
+  <script>
+  data: {
+    classA: 'class-a',
+    classB: 'class-b'
+  }
+  </script>
+  ```
+
+## [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) with JSX(ES6)
+앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 방법
+- 복잡도가 커짐에 따라 야기될 수 있는 문제들
+  1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
+  2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
+  3. js 파일상에서 **css 스타일링 작업이 거의 불가**
+  4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
+
+
+- `.vue` 파일을 브라우저가 렌더할 수 있는 파일들로 변환하려면 webpack 의 [vue-loader](https://github.com/vuejs/vue-loader) 또는 [browserify](http://browserify.org/) 이용
+
+  ```html
+  <template>
+  <!-- ... -->
+  </template>
+
+  <script>
+  // ...
+  </script>
+
+  <style>
+  /*...*/
+  </style>
+  ```
+
+**참고 : ES5 를 사용하는 경우 single file components 의 혜택을 볼 수 없음**
+
+## Vue Loader
+`.vue` 형태의 파일을 javascript 모듈 형태로 변환해주는 webpack loader.
+Vue Loader 로 인해 얻게 되는 장점들은 아래와 같다.
+  1. **ES6 지원**
+  2. `<style>` 과 `<template>` 에 대한 각각의 webpack loader 지원. ex) sass, jade
+  3. **각 `.vue` 컴포넌트의 스코프로 좁힌 css 스타일링 지원**
+  4. webpack 의 모듈 번들링에 대한 지원과 의존성 관리가 제공
+  5. 개발 시 **hot reloading** 지원
+
+## Vue Development Workflow
+vue cli 로 간단한 webpack 설정이 되어 있는 프로젝트 생성이 가능하다.
+
+```node
+npm install -global vue-cli
+vue init webpack-simple
+npm install
+npm run dev
+```
+
+```js
+export default {
+  // 이 안의 내용은 모두 Vue Instance 에 포함되어 생성된다.
+}
+```
+
+## Glossory for Reference
+#### Virtual Dom in Vue?
+- React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual DOM 을 Vue 도 사용하고 있다.
+- Virtual DOM 은 화면의 DOM 조작시 유용하게 사용되는 기술이다
+  - 화면의 DOM 을 추가하거나 삭제하는 등의 변경이 일어날 때 마다, 전체 DOM 을 Reflow 하는 것이 아니라, 가상의 DOM 을 이용하여 추가되거나 삭제될 DOM 의 모양을 잡아놓고 한번만 DOM Reflow 를 수행함으로서 화면의 부하를 줄여 빠르게 그릴 수 있는 장점이 있다.
+
+## 참고
+- [Vue Official Doc](https://vuejs.org/v2/guide/)
+- [Vue Router Offical Doc](https://router.vuejs.org/en/)
+- [Vue Router - Slide Share](https://www.slideshare.net/takuyatejima1/how-to-build-spa-with-vue-router-20)
+- [Learn ES2015 Guide](https://babeljs.io/learn-es2015/)
+- [webpack-simple, Github Repo](https://github.com/vuejs-templates/webpack-simple)
+- [webpack from first principles](https://www.youtube.com/watch?v=WQue1AN93YU)
+- [webpack advanced](https://egghead.io/courses/using-webpack-for-production-javascript-applications)
+- [NHN Enter](http://meetup.toast.com/posts/99)
+- [Vue Loader Docs](https://vue-loader.vuejs.org/en/)
