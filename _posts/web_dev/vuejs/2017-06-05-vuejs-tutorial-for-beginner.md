@@ -385,6 +385,8 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
   };
   ```
 
+아래 에러는
+
   ![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
 
 - 따라서 아래와 같이 최상위 Element 는 한개만 지정해야 한다.
@@ -427,8 +429,8 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 
 ![nested-routes-named-view]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
 
-## [Vue Resource](https://github.com/pagekit/vue-resource)
-Vue 에서 HTTP 통신을 위해 제공하는 플러그인
+## Vue Resource
+Vue 에서 HTTP 통신을 위해 제공하는 [플러그인](https://github.com/pagekit/vue-resource)
 
 ```
 npm install vue-resource --save
