@@ -60,7 +60,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 View 단 라이브러리
   </head>
   <body>
     <div id="app">
-      {{ message }}
+      \{{ message }}\
     </div>
 
     <script src="https://unpkg.com/vue@2.3.3"></script>
@@ -251,15 +251,14 @@ var app = new Vue({
 </div>
 ```
 
-**주의 할점 : js 에서 props 변수 명명을 카멜 기법으로 하면 html 에서 접근은 케밥 기법(`-`) 으로 가야한다.**
+**주의 할점 : js 에서 props 변수 명명을 카멜 기법(aBow)으로 하면 html 에서 접근은 케밥 기법(`-`) 으로 가야한다.**
 
 ![props-parsing-rules-between-components]({{ site.url }}/images/posts/web/vuejs/props-name-parsing-tip.png)
 
 #### 같은 레벨의 컴포넌트 간 통신
 동일한 상위 컴포넌트를 가진 2개의 하위 컴포넌트 간의 통신은
 - Child (하위) -> Parent(상위) -> 다시 2개의 Children (하위)
-
-**컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
+순으로 이루어진다. **컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
 
 #### Event Bus
 Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용할 수 있다.
@@ -421,7 +420,7 @@ var Foo = {
 },
 ```
 
-#### Nested View vs Named Views
+#### Nested Routes vs Named Views
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
 
@@ -451,11 +450,11 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 <div v-bind:id="dynamicId"></div>
 ```
 
-- JS Expressions : `{{ }}` 안에 다음과 같이 javascript 표현식도 가능하다.
+- JS Expressions : "\{{ }}\" 안에 다음과 같이 javascript 표현식도 가능하다.
 
-```
-<div>{{ number + 1 }}</div>
-<div>{{ message.split('').reverse().join('') }}</div>
+```html
+<div>"{{ number + 1 }}"</div>
+<div>"{ message.split('').reverse().join('') }"</div>
 ```
 
 - Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
@@ -470,10 +469,9 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 
 - Filters : 화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며, `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
 
-```
-// html 파일
+```html
 message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다.
-{{ message | capitalize }}
+"{{ message | capitalize }}"
 ```
 
 ```js
@@ -498,28 +496,25 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 #### Interpolation - 값 대입
 - Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ }}` 를 따른다.
 
-```
-html 파일
-<span>Message: {{ msg }}</span>
-<span>This will never change: {{* msg }}</span>
-<div id="item-{{ id }}"></div>
+```html
+<span>Message: "{{ msg }}"</span>
+<span>This will never change: "{{* msg }}"</span>
+<div id="item-'{{ id }}'"></div>
 ```
 
 #### Binding Expressions - 값 연결
-- `{{ }}` 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
+- "{{ }}" 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
 
-```
-html 파일
-<div>{{ number + 1 }}</div>
-<div>{{ message.split('').reverse().join('') }}</div>
+```html
+<div>"{{ number + 1 }}"</div>
+<div>"{{ message.split('').reverse().join('') }}"</div>
 ```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
 
-```
-html 파일
-{{ message | capitalize }}
-{{ message | capitalize | upcapitalize}}
+```html
+"{{ message | capitalize }}"
+"{{ message | capitalize | upcapitalize}}"
 ```
 
 #### Directives
@@ -535,7 +530,7 @@ html 파일
 
 #### Class Binding
 - CSS 스타일링을 위해서 class 를 아래 2가지 방법으로 추가가 가능하다.
-  - `class="{{ className }}"`
+  - `class= "{{ className }}"`
   - `v-bind:class`
 - 주의할 점은 위의 두 방법을 함께 사용하지 않고 한 가지만 적용해야 에러를 미연에 방지할 수 있다.
 - 아래와 같이 `class` 속성과 `v-bind:class` 속성을 동시에 사용해도 된다.
