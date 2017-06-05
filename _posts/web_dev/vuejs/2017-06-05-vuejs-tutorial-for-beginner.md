@@ -385,7 +385,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
   };
   ```
 
-  ![common-error-when-using-nested-router]({{ site.url !}}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
+  ![common-error-when-using-nested-router]({{ site.url }}/images/posts/web/vuejs/common-nested-view-error-in-vue-router.png)
 
 - 따라서 아래와 같이 최상위 Element 는 한개만 지정해야 한다.
 
