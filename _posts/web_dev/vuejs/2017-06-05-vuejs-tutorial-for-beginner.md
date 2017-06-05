@@ -425,7 +425,9 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
 
-![Nested View vs Named View]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
+
+![nested-routes-named-view]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
+
 
 ## [Vue Resource](https://github.com/pagekit/vue-resource)
 Vue 에서 HTTP 통신을 위해 제공하는 플러그인
