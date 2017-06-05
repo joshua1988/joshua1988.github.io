@@ -1,7 +1,8 @@
 // Off Canvas Sliding
 $(document).ready(function(){
   // Menu button click
-  $('#js-menu-trigger,#js-menu-screen').on('click touchstart', function(e){
+  $('.sliding-menu-content').hide();
+  $('#js-menu-trigger, #js-menu-screen').addEventListener('click', function(e){
     // $('#js-body').toggleClass('no-scroll');
     $('#js-menu, #js-menu-screen').toggleClass('is-visible');
     $('#js-menu-trigger').toggleClass('slide close');
