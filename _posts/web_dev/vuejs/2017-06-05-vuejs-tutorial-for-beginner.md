@@ -423,9 +423,11 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
   },
   ```
 
-#### Nested View vs Named Views?
+#### Nested View vs Named Views
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
+
+![View Model Layer]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
 
 ## [Vue Resource](https://github.com/pagekit/vue-resource)
 Vue 에서 HTTP 통신을 위해 제공하는 플러그인
@@ -442,7 +444,6 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 ```
 
-
 ## Vue Templates
 Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template 을 사용. Vue 는 template 으로 렌더링 할 때 Virtual DOM 을 사용하여 DOM 조작을 최소화 하고 렌더링을 꼭 다시 해야만 하는 요소를 계산하여 성능 부하를 최소화. 원하면 render function 을 직접 구현하여 사용할 수 있음
 
@@ -457,7 +458,7 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
   ```html
   <div>{{ number + 1 }}</div> <!-- O -->
   <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
-  <div>{{ if (ok) { return message } }}</div> <!-- X -->
+  <!-- <div>{{ if (ok) { return message } }}</div>, X --> -->
   ```
 
 - Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
