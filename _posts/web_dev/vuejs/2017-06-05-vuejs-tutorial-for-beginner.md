@@ -152,7 +152,7 @@ var vm = new Vue({
   </div>
   ```
 
-  ```js
+  ```jsx
   // 등록
   Vue.component('my-component', {
     template: '<div>A custom component!</div>'
@@ -167,7 +167,7 @@ var vm = new Vue({
 
 - 컴포넌트의 `data` 속성은 꼭 함수로 작성해야한다.
 
-  ```js
+  ```jsx
   // 아래 Vue 컴포넌트는 오류를 발생시킨다.
   Vue.component('my-component', {
     data: {
@@ -192,7 +192,7 @@ var vm = new Vue({
 #### Global or Local Component
 - 컴포넌트를 뷰 인스턴스에 등록해서 사용할 때 다음과 같이 global 하게 등록할 수 있다.
 
-  ```js
+  ```jsx
   Vue.component('my-component', {
     // ...
   })
@@ -201,7 +201,7 @@ var vm = new Vue({
 
 - local 하게 등록하는 방법은 다음과 같다.
 
-  ```js
+  ```jsx
   var cmp = {
     data: function () {
       return {
@@ -231,7 +231,7 @@ var vm = new Vue({
   - 예를 들어, 하위 컴포넌트가 상위 컴포넌트의 값을 바로 참조할 수 없는 형식
 - **상위에서 하위로 값을 전달하려면 props 속성을 사용한다.**
 
-```js
+```jsx
 Vue.component('child-component', {
   props: ['passedData'],
   template: '<p>{{passedData}}</p>'
@@ -265,7 +265,7 @@ var app = new Vue({
 Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용할 수 있다.
 - Event Bus 를 위해 새로운 Vue 를 생성하여 아래와 같이 Vue Root Instance 가 위치한 파일에 등록
 
-  ```js
+  ```jsx
   // Vue Root Instance 전에 꼭 등록 순서가 중요.
   export const eventBus = new Vue();
   new Vue({
@@ -275,7 +275,7 @@ Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용
 
 - 이벤트를 발생시킬 컴포넌트에 `eventBus` import 후 `$emit` 으로 이벤트 발생
 
-  ```js
+  ```jsx
   import { eventBus } from '../../main';
 
   eventBus.$emit('refresh', 10);
@@ -283,7 +283,7 @@ Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용
 
 - 해당 이벤트를 받을 컴포넌트에도 동일하게 import 후 콜백으로 이벤트 수신
 
-  ```js
+  ```jsx
   import { eventBus } from '../../main';
 
   // 등록 위치는 해당 컴포넌트의 created 메서드에 등록
@@ -296,7 +296,7 @@ Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용
 
 - 참고 : eventBus 의 콜백함수 안에서 해당 소스의 메서드를 참고하려면 `self` 사용
 
-  ```js
+  ```jsx
   methods: {
     callAnyMethod() {
       // ...
@@ -327,7 +327,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 
 - 여기서 # 태그 값을 제외하고 기본 URL 방식을 사용하여 요청 때마다 index.html 을 받아 라우팅을 하려면
 
-  ```js
+  ```jsx
   const router = new VueRouter({
     routes,
     // 아래와 같이 history 모드를 추가해주면 된다.
@@ -438,7 +438,7 @@ npm install vue-resource --save
 
 위 명령어로 설치 후 Root Vue Instance 를 선언하는 js 파일에 아래와 같이 등록
 
-```js
+```jsx
 import VueResource from 'vue-resource';
 ...
 Vue.use(VueResource);
@@ -478,7 +478,7 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
   {{ message | capitalize }}
   ```
 
-  ```js
+  ```jsx
   new Vue({
     // ...
     filters: {
