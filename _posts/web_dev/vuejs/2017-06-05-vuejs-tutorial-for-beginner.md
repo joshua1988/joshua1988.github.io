@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "프론트엔드 개발자를 위한 Vue.js 입문서"
-date: 2017-06-05 17:20:32 +0900
+date: 2017-06-05 17:35:32 +0900
 categories: web_dev
 excerpt: "초심자를 위한 Vue.js 소개, 구성요소, 구조, Vue Router, Vue Resource 등"
 image:
@@ -36,7 +36,7 @@ tags:
 ## Vue 는 무엇인가?
 MVVM 패턴의 ViewModel 레이어에 해당하는 View 단 라이브러리
 
-[View Model Layer]({{ site.url }}/images/posts/web/vuejs/view-model.png)
+![View Model Layer]({{ site.url }}/images/posts/web/vuejs/view-model.png)
 
 - **데이터 바인딩** 과 **화면 단위를 컴포넌트 형태로 제공하며 API 를 지원**하는데에 궁극적인 목적이 있음
 - Angular 에서 지원하는 **2 way data bindings** 을 동일하게 제공
@@ -425,9 +425,7 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
 
-
 ![nested-routes-named-view]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
-
 
 ## [Vue Resource](https://github.com/pagekit/vue-resource)
 Vue 에서 HTTP 통신을 위해 제공하는 플러그인
