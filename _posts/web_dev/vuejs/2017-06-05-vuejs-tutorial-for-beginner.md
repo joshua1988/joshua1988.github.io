@@ -456,9 +456,8 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 - JS Expressions : `{{ }}` 안에 다음과 같이 javascript 표현식도 가능하다.
 
   ```html
-  <div>{{ number + 1 }}</div> <!-- O -->
-  <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
-  <!-- <div>{{ if (ok) { return message } }}</div>, X --> -->
+  <div>{{ number + 1 }}</div>
+  <div>{{ message.split('').reverse().join('') }}</div>
   ```
 
 - Directives : `v-` 접두사를 붙인 attributes 로, javascript 표현식으로 값을 나타내는게 일반적이다. `:` 을 붙여 인자를 받아 취급할 수 있다.
@@ -510,8 +509,8 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 - `{{ }}` 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
 
   ```html
-  <div>{{ number + 1 }}</div> <!-- O -->
-  <div>{{ message.split('').reverse().join('') }}</div> <!-- O -->
+  <div>{{ number + 1 }}</div>
+  <div>{{ message.split('').reverse().join('') }}</div>
   ```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
