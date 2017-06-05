@@ -427,11 +427,14 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 - 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
 - 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
 
-![nested-routes-named-view]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
+## [Vue Resource](https://github.com/pagekit/vue-resource)
+Vue 에서 HTTP 통신을 위해 제공하는 플러그인
 
-## Vue Resource
-Vue 에서 HTTP 통신을 위해 제공하는 플러그인 `npm install vue-resource --save` 명령어로 설치.
-Root Vue Instance 를 선언하는 js 파일에 아래와 같이 등록
+```
+npm install vue-resource --save
+```
+
+위 명령어로 설치 후 Root Vue Instance 를 선언하는 js 파일에 아래와 같이 등록
 
 ```js
 import VueResource from 'vue-resource';
@@ -439,11 +442,6 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 ```
 
-사용법은 아래와 같다.
-
-```js
-this.$http.get(url).then(successCallback, failCallback);
-```
 
 ## Vue Templates
 Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template 을 사용. Vue 는 template 으로 렌더링 할 때 Virtual DOM 을 사용하여 DOM 조작을 최소화 하고 렌더링을 꼭 다시 해야만 하는 요소를 계산하여 성능 부하를 최소화. 원하면 render function 을 직접 구현하여 사용할 수 있음
