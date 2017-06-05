@@ -429,8 +429,8 @@ Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
 
 ![View Model Layer]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
 
-## [Vue Resource](https://github.com/pagekit/vue-resource)
-Vue 에서 HTTP 통신을 위해 제공하는 플러그인
+## Vue Resource
+Vue 에서 HTTP 통신을 위해 제공하는 [플러그인](https://github.com/pagekit/vue-resource)
 
 ```
 npm install vue-resource --save
@@ -455,7 +455,7 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 
 - JS Expressions : `{{ }}` 안에 다음과 같이 javascript 표현식도 가능하다.
 
-  ```html
+  ```
   <div>{{ number + 1 }}</div>
   <div>{{ message.split('').reverse().join('') }}</div>
   ```
@@ -472,8 +472,9 @@ Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template
 
 - Filters : 화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며, `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
 
-  ```html
-  <!-- message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다. -->
+  ```
+  // html 파일
+  message 에 표시될 문자에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경한다.
   {{ message | capitalize }}
   ```
 
@@ -499,7 +500,8 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 #### Interpolation - 값 대입
 - Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ }}` 를 따른다.
 
-  ```html
+  ```
+  html 파일
   <span>Message: {{ msg }}</span>
   <span>This will never change: {{* msg }}</span>
   <div id="item-{{ id }}"></div>
@@ -508,14 +510,16 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 #### Binding Expressions - 값 연결
 - `{{ }}` 를 이용한 데이터 바인딩을 할 때 자바스크립트 표현식을 사용할 수 있다.
 
-  ```html
+  ```
+  html 파일
   <div>{{ number + 1 }}</div>
   <div>{{ message.split('').reverse().join('') }}</div>
   ```
 
 - Vue 에 내장된 Filter 를 `{{ }}` 안에 사용할 수 있다. 여러개 필터 체인 가능
 
-  ```html
+  ```
+  html 파일
   {{ message | capitalize }}
   {{ message | capitalize | upcapitalize}}
   ```
@@ -559,21 +563,20 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
   ```html
   <div v-bind:class="[classA, classB]">
   <script>
-  data: {
-    classA: 'class-a',
-    classB: 'class-b'
-  }
+    data: {
+      classA: 'class-a',
+      classB: 'class-b'
+    }
   </script>
   ```
 
-## [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) with JSX(ES6)
-앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 방법
+## Single File Components with JSX(ES6)
+앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 [방법]((https://vuejs.org/v2/guide/single-file-components.html))
 - 복잡도가 커짐에 따라 야기될 수 있는 문제들
   1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
   2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
   3. js 파일상에서 **css 스타일링 작업이 거의 불가**
   4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
-
 
 - `.vue` 파일을 브라우저가 렌더할 수 있는 파일들로 변환하려면 webpack 의 [vue-loader](https://github.com/vuejs/vue-loader) 또는 [browserify](http://browserify.org/) 이용
 
@@ -605,7 +608,7 @@ Vue Loader 로 인해 얻게 되는 장점들은 아래와 같다.
 ## Vue Development Workflow
 vue cli 로 간단한 webpack 설정이 되어 있는 프로젝트 생성이 가능하다.
 
-```node
+```
 npm install -global vue-cli
 vue init webpack-simple
 npm install
@@ -620,9 +623,7 @@ export default {
 
 ## Glossory for Reference
 #### Virtual Dom in Vue?
-- React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual DOM 을 Vue 도 사용하고 있다.
-- Virtual DOM 은 화면의 DOM 조작시 유용하게 사용되는 기술이다
-  - 화면의 DOM 을 추가하거나 삭제하는 등의 변경이 일어날 때 마다, 전체 DOM 을 Reflow 하는 것이 아니라, 가상의 DOM 을 이용하여 추가되거나 삭제될 DOM 의 모양을 잡아놓고 한번만 DOM Reflow 를 수행함으로서 화면의 부하를 줄여 빠르게 그릴 수 있는 장점이 있다.
+React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual DOM 을 Vue 도 사용하고 있다. Virtual DOM 은 화면의 DOM 조작시 유용하게 사용되는 기술이다. 화면의 DOM 을 추가하거나 삭제하는 등의 변경이 일어날 때 마다, 전체 DOM 을 Reflow 하는 것이 아니라, 가상의 DOM 을 이용하여 추가되거나 삭제될 DOM 의 모양을 잡아놓고 한번만 DOM Reflow 를 수행함으로서 화면의 부하를 줄여 빠르게 그릴 수 있는 장점이 있다.
 
 ## 참고
 - [Vue Official Doc](https://vuejs.org/v2/guide/)
