@@ -261,9 +261,7 @@ var app = new Vue({
 
 - Child (하위) -> Parent(상위) -> 다시 2개의 Children (하위)
 
-순으로 이루어진다.
-
-**컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
+순으로 이루어진다. **컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
 
 #### Event Bus
 Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용할 수 있다.
@@ -446,6 +444,12 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 ```
 
+사용법은 아래와 같다.
+
+```js
+this.$http.get(url).then(successCallback, failCallback);
+```
+
 ## Vue Templates
 Vue 는 DOM 의 요소와 Vue 인스턴스를 매핑할 수 있는 HTML Template 을 사용. Vue 는 template 으로 렌더링 할 때 Virtual DOM 을 사용하여 DOM 조작을 최소화 하고 렌더링을 꼭 다시 해야만 하는 요소를 계산하여 성능 부하를 최소화. 원하면 render function 을 직접 구현하여 사용할 수 있음
 
@@ -505,7 +509,7 @@ Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은
 ```html
 <span>Message: {{ "{{ msg" }} }}</span>
 <span>This will never change: {{ "{{* msg" }} }}</span>
-<div id="item-'{{ '{{ id ' }} }}'"></div>
+<div id="item-'{{ '{{ id' }} }}'"></div>
 ```
 
 #### Binding Expressions - 값 연결
