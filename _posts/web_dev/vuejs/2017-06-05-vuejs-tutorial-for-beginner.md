@@ -17,9 +17,11 @@ tags:
 - Vue JS
 - vue 튜토리얼
 - vue 시작하기
+- vue js 시작하기
+- vue js 한글
 - vue 소개
-- vuejs 튜토리얼
-- vuejs 입문
+- vue js 튜토리얼
+- vue js 입문
 - 강의
 - vue router
 - namedview vs nested routes
@@ -38,7 +40,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 View 단 라이브러리
 
 ![View Model Layer]({{ site.url }}/images/posts/web/vuejs/view-model.png)
 
-- **데이터 바인딩** 과 **화면 단위를 컴포넌트 형태로 제공하며 API 를 지원**하는데에 궁극적인 목적이 있음
+- **데이터 바인딩** 과 **화면 단위를 컴포넌트 형태로 제공하며, 관련 API 를 지원**하는데에 궁극적인 목적이 있음
 - Angular 에서 지원하는 **2 way data bindings** 을 동일하게 제공
 - 하지만 **Component 간 통신**의 기본 골격은 React 의 **1 Way Data Flow (부모 -> 자식)** 와 유사
 - 다른 Front-End FW (Angular, React) 와 [비교](https://vuejs.org/v2/guide/comparison.html)했을 때 훨씬 가볍고 빠름.
@@ -219,15 +221,15 @@ new Vue({
 ```
 
 #### 부모와 자식 컴포넌트 관계
-- 구조상 상-하 관계에 있는 컴포넌트의 통신은
-  - 부모 -> 자식 : props down
-  - 자식 -> 부모 : events up
+구조상 상-하 관계에 있는 컴포넌트의 통신은
+- 부모 -> 자식 : props down
+- 자식 -> 부모 : events up
 
 ![parent-child-components-relationship]({{ site.url }}/images/posts/web/vuejs/parent-child-relationship.png)
 
 #### Props
-- 모든 컴포넌트는 각 컴포넌트 자체의 스코프를 갖는다.
-  - 예를 들어, 하위 컴포넌트가 상위 컴포넌트의 값을 바로 참조할 수 없는 형식
+모든 컴포넌트는 각 컴포넌트 자체의 스코프를 갖는다.
+- 예를 들어, 하위 컴포넌트가 상위 컴포넌트의 값을 바로 참조할 수 없는 형식
 - **상위에서 하위로 값을 전달하려면 props 속성을 사용한다.**
 
 ```js
@@ -256,8 +258,12 @@ var app = new Vue({
 
 #### 같은 레벨의 컴포넌트 간 통신
 동일한 상위 컴포넌트를 가진 2개의 하위 컴포넌트 간의 통신은
+
 - Child (하위) -> Parent(상위) -> 다시 2개의 Children (하위)
-순으로 이루어진다. **컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
+
+순으로 이루어진다.
+
+**컴포넌트 간의 직접적인 통신은 불가능하도록 되어 있는게 Vue 의 기본 구조**
 
 #### Event Bus
 Non Parent - Child 컴포넌트 간의 통신을 위해 **Event Bus** 를 활용할 수 있다.
@@ -310,7 +316,7 @@ created() {
 ```
 
 ## Vue Routers
-Vue 를 이용한 SPA 를 제작할 때 유용한 라우팅 라이브러리
+Vue 를 이용한 SPA 를 제작할 때 유용한 [라우팅 라이브러리](https://router.vuejs.org/en/)
 - Vue 코어 라이브러리 외에 Router 라이브러리를 공식 지원하고 있고 아래와 같이 설치한다.
 
 ```
@@ -488,9 +494,10 @@ new Vue({
 
 ## Data Binding
 Vue 가 DOM 기반 HTMl Template 에 Vue 데이터를 바인딩 하는 방법은 아래와 같이 크게 3가지가 있다.
-  - Interpolation (값 대입)
-  - Binding Expressions (값 연결)
-  - Directives (디렉티브 사용)
+
+- Interpolation (값 대입)
+- Binding Expressions (값 연결)
+- Directives (디렉티브 사용)
 
 #### Interpolation - 값 대입
 - Vue 의 가장 기본적인 데이터 바인딩 체계는 Mustache `{{ "{{ " }} }}` 를 따른다.
@@ -563,8 +570,9 @@ data: {
 ```
 
 ## Single File Components with JSX(ES6)
-앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 [방법]((https://vuejs.org/v2/guide/single-file-components.html))
+앱의 복잡도가 증가할 때, `.vue` 라는 파일 단위 안에 html, js, css 를 관리할 수 있는 [방법](https://vuejs.org/v2/guide/single-file-components.html)
 - 복잡도가 커짐에 따라 야기될 수 있는 문제들
+
   1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
   2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
   3. js 파일상에서 **css 스타일링 작업이 거의 불가**
