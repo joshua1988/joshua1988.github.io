@@ -582,7 +582,7 @@ data: {
   3. js 파일상에서 **css 스타일링 작업이 거의 불가**
   4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
 
-- `.vue` 파일을 브라우저가 렌더할 수 있는 파일들로 변환하려면 webpack 의 [vue-loader](https://github.com/vuejs/vue-loader) 또는 [browserify](http://browserify.org/) 이용
+- `.vue` 파일을 브라우저가 렌더할 수 있는 파일들로 변환하려면 webpack 의 [vue-loader](https://github.com/vuejs/vue-loader) 또는 [browserify](http://browserify.org/) 필요
 
 ```html
 <template>
@@ -602,7 +602,8 @@ data: {
 
 ## Vue Loader
 `.vue` 형태의 파일을 javascript 모듈 형태로 변환해주는 webpack loader.
-Vue Loader 로 인해 얻게 되는 장점들은 아래와 같다.
+- Vue Loader 로 인해 얻게 되는 장점들은 아래와 같다.
+
   1. **ES6 지원**
   2. `<style>` 과 `<template>` 에 대한 각각의 webpack loader 지원. ex) sass, jade
   3. **각 `.vue` 컴포넌트의 스코프로 좁힌 css 스타일링 지원**
