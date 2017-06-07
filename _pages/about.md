@@ -26,11 +26,11 @@ RealTime Vote Application, *Software Engineer* <br>
 POSCO Reporting Process Automation, *Software Engineer*
 
 ## Awards
-The Best Professional Technical Trainer - POSCO ICT, 2017<br>
-[The Korea Software Technology Award](http://www.kosta.or.kr/sub2/sw_tech_award) - KOSTA, 2014
+The Best Professional Technical Trainer by POSCO ICT, 2017<br>
+[The Korea Software Technology Award](http://www.kosta.or.kr/sub2/sw_tech_award) by KOSTA, 2014
 
 ## Communities
-Google Developer Group - Web Tech, *Organizer* <br>
+Google Developer Group Web Technology, *Organizer* <br>
 9XD, *Staff Member*
 
 ## Social
