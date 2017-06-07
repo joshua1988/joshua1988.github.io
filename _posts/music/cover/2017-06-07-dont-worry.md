@@ -3,7 +3,7 @@ layout: article
 title: "걱정말아요 그대(cover) - 이적"
 date: 2017-06-07 17:52:32 +0900
 categories: music
-excerpt: "홈 레코딩 - 걱정말아요 그대"
+excerpt: "홈 레코딩"
 image:
   teaser: posts/music/dont-worry.jpeg
   credit: 푸른바다
@@ -18,8 +18,6 @@ tags:
 - 곽진언
 - 걱정말아요 그대 일반인
 ---
-
-# 걱정말아요 그대(cover) - 이적
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iNkQuEVsKJA" frameborder="0" allowfullscreen></iframe>
 
