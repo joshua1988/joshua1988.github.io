@@ -1,6 +1,10 @@
 ---
 permalink: singing/
 layout: archive
-title: Singing is my life
+title: Love to sing for millions
 ---
-Listen up
+<div class="tiles">
+{% for post in site.categories.music %}
+	{% include post-grid.html %}
+{% endfor %}
+</div>
