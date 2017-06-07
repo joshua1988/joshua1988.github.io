@@ -51,3 +51,5 @@ tags:
 우리 다 함께 노래 합시다<br>
 후회없이 꿈을 꾸었다 말해요<br>
 새로운 꿈을 꾸겠다 말해요﻿<br>
+
+[Youtube Channel](https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg)
