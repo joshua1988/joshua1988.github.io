@@ -52,4 +52,4 @@ tags:
 후회없이 꿈을 꾸었다 말해요<br>
 새로운 꿈을 꾸겠다 말해요﻿<br>
 
-<a class="btn-social youtube" href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube Channel</a>
+<a class="btn-social youtube" href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube Channel</a>
