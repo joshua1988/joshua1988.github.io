@@ -33,6 +33,10 @@ The Best Professional Technical Trainer by POSCO ICT, 2017<br>
 Google Developer Group Web Technology, *Organizer* <br>
 9XD, *Staff Member*
 
+## Lectures
+[Web App Project Camp for Front-End Engineers](http://www.fastcampus.co.kr/dev_camp_wap/) at Fast Campus, *2017 May - 2017 July*
+Hybrid App Development Class at POSCO ICT, *2015 Feb - 2017*
+
 ## Social
 [Github](https://github.com/joshua1988) <br>
 [Linkedin](https://kr.linkedin.com/in/gihyojoshuajang) <br>
