@@ -34,7 +34,7 @@ Google Developer Group Web Technology, *Organizer* <br>
 9XD, *Staff Member*
 
 ## Lectures
-[Web App Project Camp for Front-End Engineers](http://www.fastcampus.co.kr/dev_camp_wap/) at Fast Campus, *2017 May - 2017 July*
+[Web App Project Camp for Front-End Developers](http://www.fastcampus.co.kr/dev_camp_wap/) at Fast Campus, *2017 May - 2017 July* <br>
 Hybrid App Development Class at POSCO ICT, *2015 Feb - 2017*
 
 ## Social
