@@ -38,7 +38,7 @@ Angular, React, Vue 와 같이 요즘 무수히 쏟아져 나오는 Front-End �
 
 본 글은 **React or Vue: Which Javascript UI Library Should You Be Using?** 라는 원문을 번역한 글로써, 현재 가장 인지도가 높은 React 와 새로운 강자 Vue 를 Framework 특성 관점에서 장단점을 비교한 글입니다. 새로 Front-End 에 입문하셔서 어떤 프레임워크를 쓰실지 고민하시는 분이나, 기존 React 나 Vue 개발자분들 모두에게 도움이 될 것 같습니다.
 
-그럼 재밌게 읽으시길 바라며..
+그럼 재밌게 읽으시길 바라며.. <br>
 -Captain Pangyo-
 
 ---
