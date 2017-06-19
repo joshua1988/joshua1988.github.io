@@ -232,24 +232,28 @@ new Vue({
 - 예를 들어, 하위 컴포넌트가 상위 컴포넌트의 값을 바로 참조할 수 없는 형식
 - **상위에서 하위로 값을 전달하려면 props 속성을 사용한다.**
 
+```html
+<!-- 상위 컴포넌트 -->
+<div id="app">
+  <!-- 하위 컴포넌트에 상위 컴포넌트가 갖고 있는 message 를 전달함 -->
+  <child-component v-bind:passed-data="message"></child-component>
+</div>
+```
+
 ```js
+// 하위 컴포넌트 - 아래 상위 컴포넌트의 data 의 message 를 passedData 에 넘겨받음
 Vue.component('child-component', {
   props: ['passedData'],
   template: '<p>{{ "{{ passedData" }} }}</p>'
 });
 
+// 상위 컴포넌트
 var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue! from Parent Component',
   }
 });
-```
-
-```html
-<div id="app">
-  <child-component v-bind:passed-data="message"></child-component>
-</div>
 ```
 
 **주의 할점 : js 에서 props 변수 명명을 카멜 기법(aBow)으로 하면 html 에서 접근은 케밥 기법(`-`) 으로 가야한다.**
