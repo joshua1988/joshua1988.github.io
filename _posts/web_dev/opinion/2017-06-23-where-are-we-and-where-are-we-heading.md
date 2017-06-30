@@ -87,7 +87,9 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 �
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m-sCdS0sQO8" frameborder="0" allowfullscreen></iframe>
 
-모바일 기능을 가졌다 하더라도, 일단은 웹 사이트이기 때문에 브라우저 특성을 타게 됩니다. 따라서, Safari (iOS) 같이 미지원하는 브라우저가 있지만 (Mac OS 는 동작함), Chrome & Firefox & Opera & Samsung Browser 등 모던 브라우저는 다 지원하고 있으며, 최근 [Twitter Lite : 가운데 영상 참고](https://blog.twitter.com/official/en_us/topics/product/2017/introducing-twitter-lite.html) 이나 [Airbnb Roadmap : Breaking Free from Rails 참고](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2), [Lyft : 6분 8초](https://www.youtube.com/watch?v=m-sCdS0sQO8&t=604s) 를 봐도 이미 현재 웹의 방향 자체가 웹 페이지 안에서의 사용자 경험 뿐만 아니라 웹 페이지를 쉽게 접근하고 편하게 다시 찾을 수 있는 관점에서 전반적인 사용자 경험을 향상 시키는 방향으로 나아가고 있다고 생각합니다.
+모바일 기능을 가졌다 하더라도, 일단은 웹 사이트이기 때문에 브라우저 특성을 타게 됩니다. 따라서, Safari (iOS) 같이 미지원하는 브라우저가 있지만 (Mac OS 는 동작함), Chrome & Firefox & Opera & Samsung Browser 등 모던 브라우저는 다 지원하고 있으며, 최근 **Twitter Lite : 아래 영상 참고** 이나 [Airbnb Roadmap : Breaking Free from Rails 참고](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2), [Lyft : 위 영상 6분 8초 참고](https://www.youtube.com/watch?v=m-sCdS0sQO8&t=604s) 를 봐도 이미 현재 웹의 방향 자체가 웹 페이지 안에서의 사용자 경험 뿐만 아니라 웹 페이지를 쉽게 접근하고 편하게 다시 찾을 수 있는 관점에서 전반적인 사용자 경험을 향상 시키는 방향으로 나아가고 있다고 생각합니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tb5eUDG_yQE" frameborder="0" allowfullscreen></iframe>
 
 ## Javascript MVC Frameworks
 #### [Backbone JS](http://backbonejs.org/)
@@ -110,4 +112,3 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 �
 ## 참고
 - [프로그레시브 웹 앱 기사](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160922012153)
 - [Twitter Lite - Progressive Web App](https://blog.twitter.com/official/en_us/topics/product/2017/introducing-twitter-lite.html)
--
