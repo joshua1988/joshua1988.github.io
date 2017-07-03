@@ -110,5 +110,6 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 �
 **To Be Continued ...**
 
 ## 참고
-- [프로그레시브 웹 앱 기사](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160922012153)
+- [Progressive Web App 소개 슬라이드](https://www.slideshare.net/GihyoJoshuaJang/the-future-of-web-progressive-web-app)
+- [프로그레시브 웹 앱 소개 기사, 지디넷](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160922012153)
 - [Twitter Lite - Progressive Web App](https://blog.twitter.com/official/en_us/topics/product/2017/introducing-twitter-lite.html)
