@@ -50,5 +50,6 @@ Google Developer Group Web Technology, *Organizer* <br>
 Hybrid App Development Class at POSCO ICT, *2015 Feb - 2017*
 
 ## Social
-[Github](https://github.com/joshua1988) <br>
-[Linkedin](https://kr.linkedin.com/in/gihyojoshuajang) <br>
+<a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
