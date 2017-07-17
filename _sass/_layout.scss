@@ -321,8 +321,7 @@
 	padding-left: 100px; //avatar width + 20px padding
 	min-height: 80px; //mirrors avatar height
 	a {
-		border-bottom-style: none;
-		border-bottom: 0;
+		border-bottom-style: none !important;
 	}
 	a .author-sns-icon {
 		margin-right: 5px;
