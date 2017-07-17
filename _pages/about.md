@@ -2,6 +2,18 @@
 permalink: about/
 layout: article
 title: About Me
+excerpt: "Singing Computer Scientist"
+tags:
+- 웹 개발
+- 웹 개발자
+- 프론트 엔드 개발자
+- 프론트엔드 개발
+- 프로그레시브 웹앱
+- vue.js
+- 웹 개발 기초
+- 프론트엔드 개발 기초
+- web developer
+- web development basic
 ---
 
 ## Bio
