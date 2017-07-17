@@ -20,7 +20,7 @@ layout: default
 			<div id="content" class="page-content" itemprop="articleBody">
 				{{ content }}
 				<hr />
-				{% if page.permalink != "about/" }
+				{% if page.permalink != "about/" %}
 				<footer class="page-footer">
 					{% if page.categories %}{% include page-author.html %}{% endif %}
 					{% if page.share != false %}{% include share-this.html %}{% endif %}
