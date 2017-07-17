@@ -11,7 +11,12 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
-tags: fcm
+tags:
+- FCM 과 GCM
+- FCM 과 GCM 차이점
+- FCM GCM
+- FCM
+- GCM
 ---
 {% include toc.html %}
 

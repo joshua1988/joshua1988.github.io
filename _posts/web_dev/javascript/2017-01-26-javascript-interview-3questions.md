@@ -11,6 +11,12 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
+tags:
+- 프론트엔드 개발자 면접 질문
+- 자바스크립트
+- 자바스크립트 코딩 면접
+- javascript 코딩 면접
+- 코딩면접 질문
 ---
 
 {% include toc.html %}

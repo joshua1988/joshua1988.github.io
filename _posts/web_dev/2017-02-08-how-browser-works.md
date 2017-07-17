@@ -11,7 +11,16 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
-tags: web browser
+tags:
+- 브라우저 동작원리
+- 브라우저 동작
+- how browser renders a page
+- 브라우저는 어떻게 페이지를 동작시키나
+- 웹 페이지 로딩
+- 브라우저가 페이지를 띄우는 방법
+- 프론트엔드 개발 면접
+- 프론트엔드 개발자 면접 질문
+- 면접 질문
 ---
 {% include toc.html %}
 

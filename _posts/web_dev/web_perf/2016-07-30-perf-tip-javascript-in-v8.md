@@ -10,6 +10,17 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
+tags:
+- 자바스크립트 성능 최적화
+- 자바스크립트 성능
+- 자바스크립트 성능 향상
+- 자바스크립트 성능 개선
+- js 성능
+- 자바스크립트 튜닝
+- 크롬 자바스크립트 튜닝
+- javascript 튜닝
+- 크롬 엔진 성능 향상
+- chrome 엔진 성능 향상
 ---
 {% include toc.html %}
 

@@ -11,6 +11,12 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
+tags:
+- web app manifest
+- 웹 앱 매니페스트
+- 웹 앱 매니페스트 파일
+- 프로그레시브 웹 앱
+- 앱 메니페스트
 ---
 {% include toc.html %}
 

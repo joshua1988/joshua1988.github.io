@@ -11,6 +11,14 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
+tags:
+- 자바스크립트 패턴
+- 자바스크립트 디자인 패턴
+- 자바스크립트 코딩 기법
+- 자바스크립트 패턴 책
+- 자바스크립트
+- 프론트엔드 개발
+- javascript pattern
 ---
 {% include toc.html %}
 
