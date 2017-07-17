@@ -19,17 +19,17 @@ layout: default
 		<div class="inner-wrap">
 			<div id="content" class="page-content" itemprop="articleBody">
 				{{ content }}
-				<hr />
 				{% if page.permalink != "about/" %}
+				<hr />
 				<footer class="page-footer">
 					{% if page.categories %}{% include page-author.html %}{% endif %}
 					{% if page.share != false %}{% include share-this.html %}{% endif %}
 					{% include page-meta.html %}
 				</footer><!-- /.footer -->
-				{% endif %}
 				<aside>
 					{% if page.comments == true %}{% include comments.html %}{% endif %}
 				</aside>
+				{% endif %}
 			</div><!-- /.content -->
 		</div><!-- /.inner-wrap -->
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
