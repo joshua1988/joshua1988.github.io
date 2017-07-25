@@ -34,7 +34,7 @@ tags:
 
 ## 들어가며
 이 글은 Vue.js 의 컴포넌트 구조화 및 기본 통신 방법을 이해하신 분들에게 적합합니다.
-Vue.js 에 막 입문하시는 분들께는 [vue-입문](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 가이드를 먼저 읽어보시길 권고드립니다.
+Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
 
 ## Vuex 란?
 Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
