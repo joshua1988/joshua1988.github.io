@@ -42,11 +42,11 @@ Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
 화면 업데이트가 가능하다는 차이점이 있다.
 
 ## 상태관리 (State Management) 가 왜 필요한가?
-컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트로 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면에서 많은 컴포넌트를 사용하게 되고, 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
+컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트로 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면에서 많은 컴포넌트를 사용하게 된다. 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
 
-달리 말해, header -> button, button -> list , button -> footer 등의 **컴포넌트 간의 데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것**이다.
+달리 말해, header -> button, button -> list , button -> footer 등의 **컴포넌트 간 데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것이 State Management**다.
 
-Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 이미 Redux, Flux 와 같은 상태 라이브러리를 사용하고 있고, Vue 도 따라서 Vuex 라는 상태관리 라이브러리를 사용하게 된다.
+Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 이미 Redux, Flux 와 같은 상태 라이브러리를 사용하고 있고, Vue 도 Vuex 라는 상태관리 라이브러리를 사용한다.
 
 ## 상태관리로 해결할 수 있는 문제점?
 상태관리는 중대형 규모의 앱 컴포넌트들을 더 효율적으로 관리하기 위한 기법이다.
@@ -106,8 +106,8 @@ Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단
 이 앱의 특징은 아래와 같다.
 
 - 위 앱은 `+` 버튼 클릭 시 숫자가 올라가고, `-` 버튼 클릭 시 숫자가 감소된다.
-- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 counter 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/#vue-components)
-- 따라서, Parent counter 와 Child counter 는 같은 counter 값을 공유하고 있다.
+- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/#vue-components)
+- 따라서, Parent counter 와 Child counter 는 같은 데이터 값 (counter) 을 공유하고 있다.
 
 Parent 컴포넌트 (App.vue) 의 코드부터 보면
 
@@ -220,7 +220,7 @@ export const store = new Vuex.Store({
 import Vue from 'vue'
 import App from './App.vue'
 // store.js 를 불러와
-import { store } from './store/store'
+import { store } from './store'
 
 new Vue({
   el: '#app',
@@ -301,13 +301,13 @@ export default {
 위에서 의미하는 건 Parent 에서 관리하던 counter 라는 데이터를 Vuex 에 state 로 넘겨준 것이다.
 Child 컴포넌트에서 접근하던 Parent 컴포넌트의 data 가 Vuex 로 갔기 때문에,
 이제 Child 와 Parent 모두 Vuex 의 state 를 바라본다.
-**따라서, Vuex 라는 저장소의 데이터를 모든 컴포넌트들이 동일한 조건에서 데이터를 접근하여 사용하게 된다.**
+**따라서, Vuex 라는 저장소의 데이터를 모든 컴포넌트들이 동일한 조건에서 접근하여 사용하게 된다.**
 
 ![vuex-data-management]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-data-management.png)
 
 ![parent-state]({{ site.url }}/images/posts/web/vuejs/vuex-1/parent-state.png)
 
-**화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있다는 큰 차이점이 있다.**
+**화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있는 큰 차이가 있다.**
 
 동일하게 Child 컴포넌트의 코드에도 Vuex 를 반영해보면
 
