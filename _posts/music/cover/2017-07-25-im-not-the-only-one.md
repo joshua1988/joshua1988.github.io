@@ -34,38 +34,38 @@ I wish this would be over now <br>
 But I know that I still need you here <br>
 
 You say Im crazy <br>
-Cause you dont think I know what you`ve done <br>
+Cause you dont think I know what youve done <br>
 But when you call me baby <br>
-I know I`m not the only one <br>
+I know Im not the only one <br>
 
-you've been so unavailable <br>
+you`ve been so unavailable <br>
 Now sadly I know why <br>
 Your heart is unobtainable <br>
 Even though Lord knows you kept mine <br>
 
-You say I`m crazy <br>
+You say Im crazy <br>
 Cause you dont think I know what you`ve done <br>
 But when you call me baby <br>
-I know I`m not the only one <br>
+I know Im not the only one <br>
 
 I have loved you for many years <br>
 Maybe I am just not enough <br>
 You`ve made me realize my deepest fear <br>
 By lying and tearing us up <br>
 
-You say I`m crazy <br>
-Cause you dont think I know what you`ve done <br>
+You say Im crazy <br>
+Cause you dont think I know what youve done <br>
 But when you call me baby <br>
-I know I`m not the only one <br>
+I know Im not the only one <br>
 
-You say I`m crazy <br>
-Cause you dont think I know what you`ve done <br>
+You say Im crazy <br>
+Cause you dont think I know what youve done <br>
 But when you call me baby <br>
-I know I`m not the only one <br>
-I know I`m not the only one <br>
-I know I`m not the only one <br>
+I know Im not the only one <br>
+I know Im not the only one <br>
+I know Im not the only one <br>
 And I know and I know and I know and I know <br>
 And I know and I know.. <br>
-I know I`m not the only one
+I know Im not the only one
 
 <a class="btn-social youtube" href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube Channel</a>
