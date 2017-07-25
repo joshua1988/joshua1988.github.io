@@ -333,8 +333,8 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 ## 마무리
 위와 같이 Vuex 의 state 를 이용하여 데이터 관리를 한 곳에서 효율적으로 할 수 있다.
 
-이외에도 변경된 state 값을 받아오기 위한 Getters, state 값을 변경하기 위한 Mutations,
-비동기 mutations 로직을 위한 Actions, 각 속성을 쉽게 사용할 수 있는 기법, 폴더 구조화 등을 알아야
+이외에도 변경된 state 값을 받아오기 위한 **Getters**, state 값을 변경하기 위한 **Mutations**,
+비동기 mutations 로직을 위한 **Actions**, 폴더 구조화 등을 알아야
 Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
 Vuex 나머지 부분은 추가로 연재할 예정이다.
