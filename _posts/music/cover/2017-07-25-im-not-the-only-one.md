@@ -33,8 +33,8 @@ Denying every tear <br>
 I wish this would be over now <br>
 But I know that I still need you here <br>
 
-You say I`m crazy <br>
-Cause you don`t think I know what you`ve done <br>
+You say Im crazy <br>
+Cause you dont think I know what you`ve done <br>
 But when you call me baby <br>
 I know I`m not the only one <br>
 
@@ -44,7 +44,7 @@ Your heart is unobtainable <br>
 Even though Lord knows you kept mine <br>
 
 You say I`m crazy <br>
-Cause you don`t think I know what you`ve done <br>
+Cause you dont think I know what you`ve done <br>
 But when you call me baby <br>
 I know I`m not the only one <br>
 
@@ -54,12 +54,12 @@ You`ve made me realize my deepest fear <br>
 By lying and tearing us up <br>
 
 You say I`m crazy <br>
-Cause you don`t think I know what you`ve done <br>
+Cause you dont think I know what you`ve done <br>
 But when you call me baby <br>
 I know I`m not the only one <br>
 
 You say I`m crazy <br>
-Cause you don`t think I know what you`ve done <br>
+Cause you dont think I know what you`ve done <br>
 But when you call me baby <br>
 I know I`m not the only one <br>
 I know I`m not the only one <br>
