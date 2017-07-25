@@ -3,7 +3,7 @@ layout: article
 title: "Vuex 시작하기"
 date: 2017-07-25 19:28:32 +0900
 categories: web_dev
-excerpt: "초심자를 위한 Vue.js 소개, 구성요소, 구조, Vue Router, Vue Resource 등"
+excerpt: "Vue 중급으로 레벨업 하기 - Vuex 를 이용한 상태관리"
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You
@@ -33,14 +33,20 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-본 글은 Vue.js 의 컴포넌트 구조화 및 각 통신을 이해하신 분들에게 적합한 문서입니다.
+이 글은 Vue.js 의 컴포넌트 구조화 및 각 통신을 이해하신 분들에게 적합합니다.
 Vue.js 에 막 입문하시는 분들께는 [vue-입문](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 가이드를 먼저 읽어보시길 권고드립니다.
 
 ## Vuex 란?
-Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리
+Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
+다른 상태관리 패턴이나 라이브러리와 비교했을 때 Vue 의 Reactivity 체계를 효율적으로 활용하여
+화면 업데이트가 가능하다는 차이점이 있다.
 
 ## 상태관리 (State Management) 가 왜 필요한가?
-컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트화 하여 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위가 컴포넌트 화 되어 한 화면 당 많은 컴포넌트를 사용하게 되고, 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.** 달리 말해, 컴포넌트 header -> button, button -> list , button -> footer 간의 **데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것**이다. Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 이미 Redux, Flux 와 같은 상태 라이브러리를 사용하고 있고, Vue 도 따라서 Vuex 라는 상태관리 라이브러리를 사용하게 된다.
+컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트화 하여 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면 당 많은 컴포넌트를 사용하게 되고, 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
+
+달리 말해, 컴포넌트 header -> button, button -> list , button -> footer 간의 **데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것**이다.
+
+Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 이미 Redux, Flux 와 같은 상태 라이브러리를 사용하고 있고, Vue 도 따라서 Vuex 라는 상태관리 라이브러리를 사용하게 된다.
 
 ## 상태관리로 해결할 수 있는 문제점?
 상태관리는 중대형 규모의 앱 컴포넌트들을 더 효율적으로 관리하기 위한 기법이다.
@@ -49,18 +55,18 @@ Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리
 1. Vue 의 기본 컴포넌트 통신방식인 **상위 - 하위** 에서 중간에 거쳐야 할 컴포넌트가 많아지거나
 2. 이를 피하기 위해 Event Bus 를 활용하여 **상하위 관계가 아닌 컴포넌트 간** 통신 시 관리가 되지 않는 점
 
-이러한 문제점들을 해결하기 위해 모든 데이터 통신 (state) 를 한 곳에서 중앙 집중식으로 관리한다.
+이러한 문제점들을 해결하기 위해 모든 데이터 통신 (state) 을 한 곳에서 중앙 집중식으로 관리한다.
 
 ![vuex-diagram]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-diagram.png)
 
 ## 상태관리 패턴
 상태관리 구성요소는 크게 3가지가 있다.
 
-- state : 컴포넌트 간 공유될 data
-- view : 데이터가 표현될 template
-- actions : 사용자의 입력에 따라 반응할 methods
+- **state** : 컴포넌트 간 공유될 **data**
+- **view** : 데이터가 표현될 **template**
+- **actions** : 사용자의 입력에 따라 반응할 **methods**
 
-```jsx
+```js
 new Vue({
   // state
   data () {
@@ -85,7 +91,7 @@ new Vue({
 
 ![vuex-state-one-way-data-flow]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-state-one-way-data-flow.png)
 
-## Vuex 시작하기 - 간단한 Vue App 구성
+## Vuex 튜토리얼 #1 - 간단한 Vue App 구성
 Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단한 앱을 아래처럼 만들었다.
 
 ![demo-ui]({{ site.url }}/images/posts/web/vuejs/vuex-1/demo-ui.png)
@@ -99,8 +105,8 @@ Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단
 
 이 앱의 특징은 아래와 같다.
 
-- 위 앱은 + 버튼 클릭 시 숫자가 올라가고, - 버튼 클릭 시 숫자가 감소된다.
-- Parent counter 와 Child counter 는 같은 값이다. ([Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/#vue-components))
+- 위 앱은 `+` 버튼 클릭 시 숫자가 올라가고, `-` 버튼 클릭 시 숫자가 감소된다.
+- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 counter 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/#vue-components)
 - 따라서, Parent counter 와 Child counter 는 같은 counter 값을 공유하고 있다.
 
 Parent 컴포넌트 (App.vue) 의 코드부터 보면
@@ -117,7 +123,7 @@ Parent 컴포넌트 (App.vue) 의 코드부터 보면
 </div>
 ```
 
-```jsx
+```js
 // App.vue
 import Child from './Child.vue'
 
@@ -158,7 +164,7 @@ export default {
 </div>
 ```
 
-```jsx
+```js
 // Child.vue
 export default {
   // Parent 에서 넘겨준 counter 속성을 passedCounter 로 받음
@@ -168,16 +174,17 @@ export default {
 
 template 의 경우 구분선을 제외하고는 동일한 코드고, js 의 경우 전달받은 counter 를 `props` 로 등록하였다.
 
-## Vuex 시작하기 - Vue App 분석
-위 앱의 + 버튼을 클릭하면 아래와 같이 Parent 와 Child 컴포넌트의 숫자가 동일하게 올라간다.
+## Vuex 튜토리얼 #2 - Vue App 분석
+위 앱의 `+` 버튼을 클릭하면 Parent 와 Child 컴포넌트의 숫자가 동일하게 올라간다.
 
 ![click-plus]({{ site.url }}/images/posts/web/vuejs/vuex-1/click-plus.png)
 
-숫자가 동일하게 올라가는 이유는 아래와 같이 Parent 의 `counter` 를 Child 에서 props 로 넘겨 받았기 때문이다.
+이유는 Parent 의 `counter` 를 Child 에서 `props` 로 넘겨 받았기 때문이다.
 
 ![counter-reference]({{ site.url }}/images/posts/web/vuejs/vuex-1/counter-reference.png)
 
 달리 말해, **동일한 데이터 속성을 단지 2 개의 컴포넌트에서 동시에 접근하여 같은 값을 표현**하고 있는 것이다.
+
 위 구조는 Vue 의 props 를 이용한 기본적인 Parent - Child 컴포넌트 통신이다.
 화면의 단위를 잘게 쪼개면 쪼갤수록 한 컴포넌트의 데이터를 다른 컴포넌트의 화면에서 표시할 일이 많아진다.
 여기서 컴포넌트의 갯수가 무한정 많아진다면? 천재가 아닌 이상 이걸 다 기억할 수도 없고, 가장 중요한 것은
@@ -185,14 +192,14 @@ template 의 경우 구분선을 제외하고는 동일한 코드고, js 의 경
 
 **이런 비효율적인 컴포넌트 간 통신 관리를 Vuex 로 해결해보자.**
 
-## Vuex 시작하기 - Vuex 설치 및 등록
+## Vuex 튜토리얼 #3 - Vuex 설치 및 등록
 아래 명령어로 Vuex 를 설치하자.
 
 ```shell
 npm install vuex --save
 ```
 
-그리고 vuex 를 등록할 js 파일을 하나 새로 생성한다. 이름은 관례에 따라 `store.js` 로 지정한다.
+그리고 Vuex 를 등록할 js 파일을 하나 새로 생성한다. 이름은 관례에 따라 `store.js` 로 지정한다.
 
 ```js
 // store.js
@@ -208,7 +215,7 @@ export const store = new Vuex.Store({
 
 그리고 Vue App 가 등록된 `main.js` 로 넘어가서 `store.js` 를 불러와 등록하면 된다.
 
-```jsx
+```js
 import Vue from 'vue'
 import App from './App.vue'
 // store.js 를 불러와
@@ -222,7 +229,7 @@ new Vue({
 })
 ```
 
-## Vuex 시작하기 - state 등록
+## Vuex 튜토리얼 #4 - state 등록
 state 는 아래와 같이 Vuex 에 추가할 수 있다.
 
 ```js
@@ -240,13 +247,13 @@ export const store = new Vuex.Store({
 });
 ```
 
-위 `state` 에 정의된 `counter` 속성은
-Parent 컴포넌트 (App.vue) 에서 사용하던 `counter` data 속성과 동일한 역할을 한다.
-이미 앞 [상태관리 패턴 챕터]() 에서 설명했듯이 **"state 는 컴포넌트 간에 공유할 data 속성 의미한다."**
+위 state 에 정의된 `counter` 속성은
+Parent 컴포넌트 에서 사용하던 data 속성 `counter` 와 동일한 역할을 한다.
+이미 앞 [상태관리 패턴 챕터](#상태관리-패턴) 에서 설명했듯이 **"state 는 컴포넌트 간에 공유할 data 속성을 의미한다."**
 
-## Vuex 시작하기 - state 접근
+## Vuex 튜토리얼 #5 - state 접근
 방금 등록한 `counter` 상태를 앱에서 접근하려면 `this.$store.state.counter` 를 활용한다.
-앞의 App.vue 를 Vuex 에 맞게 다시 구조화 해보면
+앞의 App.vue 를 Vuex 에 맞게 다시 정리하면
 
 ```html
 <div id="app">
@@ -260,7 +267,7 @@ Parent 컴포넌트 (App.vue) 에서 사용하던 `counter` data 속성과 동�
 </div>
 ```
 
-```jsx
+```js
 // App.vue
 import Child from './Child.vue'
 
@@ -295,7 +302,7 @@ export default {
 
 ![vuex-data-management]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-data-management.png)
 
-화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있다는 큰 차이점이 생긴다.
+**화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있다는 큰 차이점이 생긴다.**
 
 ![parent-state]({{ site.url }}/images/posts/web/vuejs/vuex-1/parent-state.png)
 
@@ -310,15 +317,15 @@ export default {
 </div>
 ```
 
-```jsx
+```js
 export default {
   // 기존 코드
   // props: ['passedCounter']
 }
 ```
 
-Parent 컴포넌트인 (App.vue) 에서 props 로 `counter` 를 전달받던 방식에서
-이제는 Vuex 의 state 인 `counter` 로 바로 접근한다.
+Parent 컴포넌트 에서 props 로 `counter` 를 전달받던 방식에서,
+Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 
 ## 마무리
 위와 같이 Vuex 의 state 를 이용하여 데이터 관리를 한 곳에서 효율적으로 할 수 있다.
