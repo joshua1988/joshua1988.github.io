@@ -42,9 +42,9 @@ Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
 화면 업데이트가 가능하다는 차이점이 있다.
 
 ## 상태관리 (State Management) 가 왜 필요한가?
-컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트화 하여 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면 당 많은 컴포넌트를 사용하게 되고, 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
+컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트로 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면에서 많은 컴포넌트를 사용하게 되고, 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
 
-달리 말해, 컴포넌트 header -> button, button -> list , button -> footer 간의 **데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것**이다.
+달리 말해, header -> button, button -> list , button -> footer 등의 **컴포넌트 간의 데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것**이다.
 
 Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 이미 Redux, Flux 와 같은 상태 라이브러리를 사용하고 있고, Vue 도 따라서 Vuex 라는 상태관리 라이브러리를 사용하게 된다.
 
@@ -216,6 +216,7 @@ export const store = new Vuex.Store({
 그리고 Vue App 가 등록된 `main.js` 로 넘어가서 `store.js` 를 불러와 등록하면 된다.
 
 ```js
+// main.js
 import Vue from 'vue'
 import App from './App.vue'
 // store.js 를 불러와
@@ -230,7 +231,7 @@ new Vue({
 ```
 
 ## Vuex 튜토리얼 #4 - state 등록
-state 는 아래와 같이 Vuex 에 추가할 수 있다.
+state 를 Vuex 에 아래와 같이 추가할 수 있다.
 
 ```js
 // store.js
@@ -295,18 +296,20 @@ export default {
 기존 코드와의 차이점은
 
 1. data 속성으로 선언한 counter 값 제거
-2. child 컴포넌트로 counter 를 전달하지 않음
+2. Child 컴포넌트로 counter 를 전달하지 않음
 
-위 차이점이 의미하는 바는 **Parent 에서 관리하던 counter 라는 데이터를 Vuex 에 state 로 넘겨준 것이다.**
-따라서, Vuex 라는 저장소의 데이터를 모든 컴포넌트들이 동일한 조건에서 접근하여 사용 가능하게 된다.
+위에서 의미하는 건 Parent 에서 관리하던 counter 라는 데이터를 Vuex 에 state 로 넘겨준 것이다.
+Child 컴포넌트에서 접근하던 Parent 컴포넌트의 data 가 Vuex 로 갔기 때문에,
+이제 Child 와 Parent 모두 Vuex 의 state 를 바라본다.
+**따라서, Vuex 라는 저장소의 데이터를 모든 컴포넌트들이 동일한 조건에서 데이터를 접근하여 사용하게 된다.**
 
 ![vuex-data-management]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-data-management.png)
 
-**화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있다는 큰 차이점이 생긴다.**
-
 ![parent-state]({{ site.url }}/images/posts/web/vuejs/vuex-1/parent-state.png)
 
-동일하게 child 컴포넌트의 코드에도 Vuex 를 반영해보면
+**화면상으로는 이전과 차이가 없지만 내부적으로는 Vuex 로 데이터 관리를 하고 있다는 큰 차이점이 있다.**
+
+동일하게 Child 컴포넌트의 코드에도 Vuex 를 반영해보면
 
 ```html
 <div>
@@ -331,7 +334,7 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 위와 같이 Vuex 의 state 를 이용하여 데이터 관리를 한 곳에서 효율적으로 할 수 있다.
 
 이외에도 변경된 state 값을 받아오기 위한 Getters, state 값을 변경하기 위한 Mutations,
-비동기 mutations 로직을 위한 Actions 등이 더 있고, 각 속성을 쉽게 사용할 수 있는 기법이나
-폴더 구조화 하는 방법등이 남아 있다.
+비동기 mutations 로직을 위한 Actions, 각 속성을 쉽게 사용할 수 있는 기법, 폴더 구조화 등을 활용해야
+Vuex 를 잘 활용할 수 있고 가독성 있는 코드를 짤 수 있다.
 
 나머지 Vuex 의 사용에 대해서는 추가로 연재할 예정이다.
