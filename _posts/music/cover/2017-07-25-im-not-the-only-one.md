@@ -3,7 +3,7 @@ layout: article
 title: "I am not the only one(cover) - Sam Smith"
 date: 2017-07-25 19:15:32 +0900
 categories: music
-excerpt: "홈 레코딩, i am not the only one (cover) - sam smith"
+excerpt: "홈 레코딩"
 image:
   teaser: posts/music/im-not-the-only-one.png
   credit: Sam Smith
