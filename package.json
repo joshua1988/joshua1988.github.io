@@ -1,10 +1,9 @@
 {
-  "name": "skinny-bones-jekyll",
+  "name": "captain-pangyo-tech-blog",
   "version": "1.0.0",
   "private": true,
-  "description": "A Jekyll starter site",
-  "author": "Michael Rose <michael@mademistakes.com>",
-  "homepage": "http://mademistakes.com/",
+  "description": "Captain Pangyo's Tech Blog",
+  "author": "joshua1988 <jangkeehyo@gmail.com>",
   "license": "The MIT License (MIT)",
   "devDependencies": {
     "grunt": "~0.4.2",

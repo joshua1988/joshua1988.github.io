@@ -1,0 +1,28 @@
+{
+  "short_name": "Captain Pangyo",
+  "name": "Captain Pangyo's tech blog",
+  "icons": [
+    {
+      "src": "images/icons/48x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/icons/96x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/icons/144x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/icons/192x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "./"
+}
