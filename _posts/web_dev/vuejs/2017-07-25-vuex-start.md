@@ -42,7 +42,7 @@ Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
 화면 업데이트가 가능하다는 차이점이 있다.
 
 ## 상태관리 (State Management) 가 왜 필요한가?
-컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트로 사용하게 된다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면에서 많은 컴포넌트를 사용하게 된다. 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
+컴포넌트 기반 프레임워크에서는 화면 구성을 위해 화면 단위를 매우 잘게 쪼개서 컴포넌트로 사용한다. 예를 들면, header, button, list 등의 작은 단위들이 컴포넌트가 되어 한 화면에서 많은 컴포넌트를 사용하게 된다. 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생긴다.**
 
 달리 말해, header -> button, button -> list , button -> footer 등의 **컴포넌트 간 데이터 전달 및 이벤트 통신 등의 여러 컴포넌트의 관계를 한 곳에서 관리하기 쉽게 구조화 하는 것이 State Management**다.
 
@@ -52,8 +52,8 @@ Vue 와 성격이 유사한 프론트엔드 프레임워크인 React 에서는 �
 상태관리는 중대형 규모의 앱 컴포넌트들을 더 효율적으로 관리하기 위한 기법이다.
 일반적으로 앱의 규모가 커지면서 생기는 문제점들은 아래와 같다.
 
-1. Vue 의 기본 컴포넌트 통신방식인 **상위 - 하위** 에서 중간에 거쳐야 할 컴포넌트가 많아지거나
-2. 이를 피하기 위해 Event Bus 를 활용하여 **상하위 관계가 아닌 컴포넌트 간** 통신 시 관리가 되지 않는 점
+1. Vue 의 기본 컴포넌트 통신방식인 상위 - 하위 에서 **중간에 거쳐야 할 컴포넌트가 많아지거나**
+2. 이를 피하기 위해 Event Bus 를 활용하여 **상하위 관계가 아닌 컴포넌트 간 통신 시 관리가 되지 않는 점**
 
 이러한 문제점들을 해결하기 위해 모든 데이터 통신 (state) 을 한 곳에서 중앙 집중식으로 관리한다.
 
@@ -100,8 +100,8 @@ Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단
 
 ![folder-structure]({{ site.url }}/images/posts/web/vuejs/vuex-1/folder-structure.png)
 
-- `App.vue` : Parent 컴포넌트 또는 상위 컴포넌트
-- `Child.vue` : Child 컴포넌트 또는 하위 컴포넌트
+- `App.vue` : **Parent 컴포넌트** 또는 **상위 컴포넌트**
+- `Child.vue` : **Child 컴포넌트** 또는 **하위 컴포넌트**
 
 이 앱의 특징은 아래와 같다.
 
@@ -172,7 +172,7 @@ export default {
 }
 ```
 
-template 의 경우 구분선을 제외하고는 동일한 코드고, js 의 경우 전달받은 counter 를 `props` 로 등록하였다.
+template 의 경우 구분선을 제외하고는 Parent 컴포넌트와 동일한 코드고, js 의 경우 전달받은 counter 를 `props` 로 등록하였다.
 
 ## Vuex 튜토리얼 #2 - Vue App 분석
 위 앱의 `+` 버튼을 클릭하면 Parent 와 Child 컴포넌트의 숫자가 동일하게 올라간다.
@@ -213,7 +213,7 @@ export const store = new Vuex.Store({
 });
 ```
 
-그리고 Vue App 가 등록된 `main.js` 로 넘어가서 `store.js` 를 불러와 등록하면 된다.
+그리고 Vue App 이 등록된 `main.js` 로 넘어가서 `store.js` 를 불러와 등록하면 된다.
 
 ```js
 // main.js
@@ -248,12 +248,12 @@ export const store = new Vuex.Store({
 });
 ```
 
-위 state 에 정의된 `counter` 속성은
+state 에 정의된 `counter` 속성은
 Parent 컴포넌트 에서 사용하던 data 속성 `counter` 와 동일한 역할을 한다.
 이미 앞 [상태관리 패턴 챕터](#상태관리-패턴) 에서 설명했듯이 **"state 는 컴포넌트 간에 공유할 data 속성을 의미한다."**
 
 ## Vuex 튜토리얼 #5 - state 접근
-방금 등록한 `counter` 상태를 앱에서 접근하려면 `this.$store.state.counter` 를 활용한다.
+방금 state 에 등록한 `counter` 를 앱에서 접근하려면 `this.$store.state.counter` 를 활용한다.
 앞의 App.vue 를 Vuex 에 맞게 다시 정리하면
 
 ```html
@@ -298,7 +298,7 @@ export default {
 1. data 속성으로 선언한 counter 값 제거
 2. Child 컴포넌트로 counter 를 전달하지 않음
 
-위에서 의미하는 건 Parent 에서 관리하던 counter 라는 데이터를 Vuex 에 state 로 넘겨준 것이다.
+결국 Parent 에서 관리하던 counter 라는 데이터를 Vuex 에 state 로 넘겨준 것이다.
 Child 컴포넌트에서 접근하던 Parent 컴포넌트의 data 가 Vuex 로 갔기 때문에,
 이제 Child 와 Parent 모두 Vuex 의 state 를 바라본다.
 **따라서, Vuex 라는 저장소의 데이터를 모든 컴포넌트들이 동일한 조건에서 접근하여 사용하게 된다.**
@@ -337,4 +337,4 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 비동기 mutations 로직을 위한 **Actions**, 폴더 구조화 등을 알아야
 Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
-Vuex 나머지 부분은 추가로 연재할 예정이다.
+나머지 부분은 추가로 연재할 예정이다.
