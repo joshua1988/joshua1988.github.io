@@ -123,7 +123,7 @@ Parent 컴포넌트 (App.vue) 의 코드부터 보면
 </div>
 ```
 
-```js
+```jsx
 // App.vue
 import Child from './Child.vue'
 
