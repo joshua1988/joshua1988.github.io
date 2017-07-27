@@ -34,7 +34,7 @@ Upwardly Global Reporting Process Automation, *2012 June - 2013 Jan*
 Google Web Fundamental, *[Open Source Contributor](https://developers.google.com/web/resources/contributors)* <br>
 Google HTML5Rocks, *[Open Source Contributor](https://www.html5rocks.com/ko/tutorials/speed/quick/)* <br>
 Mozilla Developer Network, *[Open Source Contributor](https://developer.mozilla.org/ko/profiles/joshua1988)* <br>
-RealTime Vote Application, *Software Engineer* <br>
+Real-time Vote Application, *Software Engineer* <br>
 POSCO Reporting Process Automation, *Software Engineer*
 
 ## Awards
@@ -42,7 +42,7 @@ The Best Professional Technical Trainer by POSCO ICT, 2017<br>
 [The Korea Software Technology Award](http://www.kosta.or.kr/sub2/sw_tech_award) by KOSTA, 2014
 
 ## Communities
-Google Developer Group Web Technology, *Organizer* <br>
+[Google Developer Group Web Technology](https://www.facebook.com/groups/1724887854499893/), *Organizer* <br>
 9XD, *Staff Member*
 
 ## Lectures

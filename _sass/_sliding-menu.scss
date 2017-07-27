@@ -61,6 +61,7 @@
   top: 0;
   right: 0;
   padding: em(22) 0;
+  display: none;
   visibility: hidden;
   backface-visibility: hidden;
   text-align: left;
@@ -72,6 +73,7 @@
     width: em(900);
   }
   transform: translateX(100%);
+  // this shit has caused the problems
   transition: $sliding-menu-animation;
   background: $sliding-menu-background;
   z-index: 20;
@@ -79,6 +81,7 @@
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   &.is-visible {
+    // display: block;
     visibility: visible;
     transform: translateX(0);
   }
