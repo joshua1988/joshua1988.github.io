@@ -3,6 +3,7 @@ layout: article
 title: "Web App Manifest 소개 및 사용법"
 date: 2016-12-21 17:44:13 +0900
 categories: web_dev
+excerpt: "Progressive Web App 의 주요 기술인 Web App Manifest 소개"
 image:
   teaser: posts/web/progressive_web_app/webapp_manifest.png
   credit: google #name of the person or site you want to credit
@@ -17,6 +18,10 @@ tags:
 - 웹 앱 매니페스트 파일
 - 프로그레시브 웹 앱
 - 앱 메니페스트
+- progressive web app
+- 프로그레시브 웹앱 튜토리얼
+- 프로그레시브 웹앱 입문
+- 프로그레시브 웹앱 시작하기
 ---
 {% include toc.html %}
 

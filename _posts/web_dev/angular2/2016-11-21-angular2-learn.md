@@ -3,6 +3,7 @@ layout: article
 title: "Angular 2 개념정리 (초급)"
 date: 2016-11-21 18:51:13 +0900
 categories: web_dev
+excerpt: "Angular 2 개요 소개, Angular 1 과 차이점.."
 image:
   teaser: posts/web/angular2/angular2.png
   credit: Axilis #name of the person or site you want to credit
@@ -19,6 +20,10 @@ tags:
 - 앵귤러2 튜토리얼
 - 앵귤러2 개념정리
 - 프론트엔드 개발
+- angular2
+- angular
+- 타입스크립트
+- typescript
 ---
 {% include toc.html %}
 

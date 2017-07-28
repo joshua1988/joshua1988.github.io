@@ -3,6 +3,7 @@ layout: article
 title: "자바스크립트 코딩 면접에서 알고 있어야 할 3가지 질문"
 date: 2017-01-26 13:29:13 +0900
 categories: web_dev
+excerpt: "(번역)프론트엔드 개발자가 코딩 면접에서 알고 있으면 유용한 질문"
 image:
   teaser: posts/web/javascript/3questions_interview.png
   credit: Daniel Borowski #name of the person or site you want to credit
@@ -17,6 +18,13 @@ tags:
 - 자바스크립트 코딩 면접
 - javascript 코딩 면접
 - 코딩면접 질문
+- 프론트엔드 면접
+- 프론트엔드 개발
+- 자바스크립트 면접
+- 자바스크립트 개발
+- 자바스크립트 중급
+- 자바스크립트 고급
+- 자바스크립트 면접 질문
 ---
 
 {% include toc.html %}
