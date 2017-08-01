@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Vuex 시작하기 1"
+title: "Vuex 시작하기 1 - Vuex 와 State"
 date: 2017-07-25 19:28:32 +0900
 categories: web_dev
-excerpt: "Vue 중급으로 레벨업 하기, Vuex 를 이용한 상태관리"
+excerpt: "Vue 중급으로 레벨업 하기. Vuex 를 이용한 상태관리 소개. state 소개"
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You
