@@ -26,6 +26,7 @@ tags:
 - vuex js 한글
 - vuex 소개
 - vuex 튜토리얼
+- vuex 시작하기 2
 - vuex 입문
 - vue 강의
 - vue 배우기
@@ -36,7 +37,7 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-이 글은 [Vuex 시작하기](https://joshua1988.github.io/web_dev/vuex-start/)에 이어,
+이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web_dev/vuex-start/)에 이어,
 Vuex 의 Getters, Mutations 를 소개합니다. 지난 글에서는 state 까지 다뤘습니다.
 
 ## Getters 란?
@@ -243,7 +244,7 @@ computed: {
 }
 ```
 
-<p class="notice">다만 Babel stage-2 라이브러리 추가 및 babel preset 에 추가 필요<p>
+<p class="notice">다만 Babel stage-2 라이브러리 추가 및 babel preset 에 추가 필요</p>
 
 ## Mutations 란?
 Mutations 이란 Vuex 의 데이터, 즉 state 값을 변경하는 로직들을 의미한다.

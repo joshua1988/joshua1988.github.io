@@ -19,6 +19,7 @@ tags:
 - vuex
 - vue 튜토리얼
 - vuex 시작하기
+- vuex 시작하기 1
 - vuex js 시작하기
 - vuex js 한글
 - vuex 소개
