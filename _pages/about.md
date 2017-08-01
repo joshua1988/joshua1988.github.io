@@ -46,8 +46,8 @@ The Best Professional Technical Trainer by POSCO ICT, 2017<br>
 9XD, *Staff Member*
 
 ## Lectures
-[Web App Project Camp for Front-End Developers](http://www.fastcampus.co.kr/dev_camp_wap/) at Fast Campus, *2017 May - 2017 July* <br>
-Hybrid App Development Class at POSCO ICT, *2015 Feb - 2017*
+[Web App Project Camp for Front-End Developers](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 May - 2017 July* <br>
+Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Social
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
