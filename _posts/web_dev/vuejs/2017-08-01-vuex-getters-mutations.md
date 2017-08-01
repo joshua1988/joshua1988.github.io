@@ -244,7 +244,8 @@ computed: {
 }
 ```
 
-<p class="notice">다만 Babel stage-2 라이브러리 추가 및 babel preset 에 추가 필요</p>
+다만 `...` 문법을 사용하려면 Babel stage-2 라이브러리 설치 및 babel preset 에 추가가 필요하다.
+상세한 설명은 [여기](https://babeljs.io/docs/plugins/preset-stage-2/)를 참고한다.
 
 ## Mutations 란?
 Mutations 이란 Vuex 의 데이터, 즉 state 값을 변경하는 로직들을 의미한다.
@@ -276,8 +277,6 @@ state 값이 어느 컴포넌트에서 호출해서 변경된건지 추적하기
 아래와 같이 `commit` 을 이용하여 state 를 변경한다.
 
 ![vuex-mutations]({{ site.url }}/images/posts/web/vuejs/vuex-2/vuex-mutations.png)
-
-<!-- > Mutations 가 낯설다면 기억하기 쉽게 Setters 로 이해하자. -->
 
 <p class="notice">Mutations 가 낯설다면 기억하기 쉽게 Setters 로 이해하자.</p>
 
