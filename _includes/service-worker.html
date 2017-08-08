@@ -1,8 +1,12 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      var originDomain = window.location.origin;
+      navigator.serviceWorker.register(originDomain + 'sw.js').then(function(swReg) {
+        console.log('Service Worker is registered', swReg);
+
+        swRegistration = swReg;
+        // initialiseUI();
       }).catch(function(err) {
         console.log('ServiceWorker registration failed: ', err);
       });
