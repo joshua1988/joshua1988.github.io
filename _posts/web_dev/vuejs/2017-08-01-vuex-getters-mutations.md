@@ -3,7 +3,7 @@ layout: article
 title: "Vuex 시작하기 2 - Getters 와 Mutations"
 date: 2017-08-01 16:45:32 +0900
 categories: web_dev
-excerpt: "Vue 중급 개발자가 되기 위한 Vuex 의 Getters 와 Mutations 사용법 배우기"
+excerpt: "Vue 중급으로 레벨업. Vuex 의 Getters 와 Mutations 사용법 배우기"
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You

@@ -3,7 +3,7 @@ layout: article
 title: "Vuex 시작하기 3 - Actions 와 폴더 구조화"
 date: 2017-08-08 20:10:32 +0900
 categories: web_dev
-excerpt: "Vue 중급 개발자가 되기 위한 Vuex 의 Actions 익히기"
+excerpt: "Vue 중급으로 레벨업. Vuex 의 Actions 와 폴더 구조화 익히기"
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You
@@ -42,17 +42,17 @@ tags:
 Actions 와 폴더 구조화 방법을 소개합니다. 지난 글에서는 mutations 까지 다뤘습니다.
 
 ## Actions 란?
-앞선 글에 설명했듯이, Mutations 에는 순차적인 로직들만 선언하고 Actions 에는 비 순차적 또는 비동기 처리 로직들을 선언한다.
-
-왜 처리 로직의 성격에 따라 Mutations 과 Actions 로 나눠 등록해야 할까?
+Mutations 에는 순차적인 로직들만 선언하고 Actions 에는 비 순차적 또는 비동기 처리 로직들을 선언한다.
+그렇다면 왜 처리 로직의 성격에 따라 Mutations 과 Actions 로 나눠 등록해야 할까?
 
 Mutations 에 대해 잠깐 짚어보면, Mutations 의 역할 자체가 State 관리에 주안점을 두고 있다.
 상태관리 자체가 한 데이터에 대해 여러 개의 컴포넌트가 관여하는 것을 효율적으로 관리하기 위함인데,
-그 관점에서 보면 Mutations 에 비동기 처리 로직들이 포함 되었을 때,
-같은 값에 대해 여러 개의 컴포넌트에서 변경을 요청하면 그 변경 순서 파악이 어렵기 떄문이다.
-**이러한 문제를 방지하기 위해 비동기 처리 로직은 Actions 에 동기 처리 로직은 Mutations 에 나눠 구현한다.**
+Mutations 에 비동기 처리 로직들이 포함 되었을 때,
+같은 값에 대해 여러 개의 컴포넌트에서 변경을 요청하면 그 변경 순서 파악이 어렵기 때문이다.
 
-따라서, `setTimeout()` 이나 서버와의 http 통신 처리 같은 로직은 Actions 에 선언한다.
+<p class="notice">이러한 문제를 방지하기 위해 비동기 처리 로직은 Actions 에 동기 처리 로직은 Mutations 에 나눠 구현한다.</p>
+
+따라서, `setTimeout()` 이나 서버와의 http 통신 처리 같이 결과를 받아올 타이밍이 예측되지 않은 로직은 Actions 에 선언한다.
 
 ## Actions 등록
 Vuex 에 Actions 를 등록하는 방법은 다른 속성과 유사하다.
@@ -75,9 +75,7 @@ export const store = new Vuex.Store({
 });
 ```
 
-앞에서도 설명했지만, 상태 변화에 대한 추적을 해야하기 때문에 actions 는 결국
-mutations 의 메서드를 호출하는 구조가 된다. 또한, HTTP get 요청이나 setTimeout 과 같은
-비동기 처리 로직들은 기본적으로 actions 에 포함한다.
+상태가 변화하는 걸 추적하기 위해 actions 는 결국 mutations 의 메서드를 호출하는 구조가 된다.
 
 ```js
 // store.js
@@ -97,9 +95,11 @@ export const store = new Vuex.Store({
 });
 ```
 
+그리고 HTTP get 요청이나 setTimeout 과 같은 비동기 처리 로직들은 기본적으로 actions 에 포함한다.
+
 ## Actions 사용
 앞에서는 mutations 를 이용하여 counter 를 하나씩 늘렸다. 이번엔 actions 를 이용해보자.
-actions 를 호출할 때는 아래와 같이 dispatch() 를 이용한다.
+actions 를 호출할 때는 아래와 같이 **dispatch()** 를 이용한다.
 
 ```js
 // App.vue
@@ -132,6 +132,7 @@ Actions 에 인자를 넘기는 방법은 Mutations 와 유사하다.
 export const store = new Vuex.Store({
   // ...
   actions: {
+    // payload 는 일반적으로 사용하는 인자 명
     asyncIncrement: ({ commit }, payload) => {
       setTimeout (() => {
         commit('increment', payload.by);
@@ -157,14 +158,14 @@ export default {
 }
 ```
 
-## 폴더 구조화 & NameSpacing
+## 폴더 구조화 & Namespacing
 중간 크기 이상의 복잡한 앱을 제작할 때 `getters & mutations & actions` 의 이름을 유일하게 정하지 않으면 namespace 충돌이 난다.
 따라서, 네임스페이스를 구분하기 위해 `types.js` 로 각 속성의 이름들을 빼고, `store.js` 와 각 컴포넌트에 import 하여 사용하는 방법이 있다.
-혹은 modules 라는 폴더로 만들어 각 단위별로 파일을 쪼개서 관린하는 방법도 있다.
+혹은 modules 라는 폴더로 만들어 각 단위별로 파일을 쪼개서 관리하는 방법도 있다.
 
 ![vuex-folder-structure]({{ site.url }}/images/posts/web/vuejs/vuex-3/vuex-folder-structure.png)
 
-생각보다 복잡하므로 중대형 이상의 규모에서만 사용하는게 좋을 듯하다. 간단한 프로토 타이핑에는 오히려 배보다 배꼽이 클 수 있다.
+생각보다 복잡하므로 중대형 이상의 규모에서만 사용하는게 좋을 듯하다. 간단한 화면 프로토타이핑에는 오히려 배보다 배꼽이 클 수 있다.
 
 ## 마무리
 지난 2개의 글과 함께 총 3편의 Vuex 관련 글을 통해,
@@ -173,5 +174,5 @@ Vue 로 앱을 개발할 때 더 효율적으로 코드와 데이터를 관리�
 Vuex 가 가져다 주는 이점도 크지만, 정말 간단한 화면을 만들 때는 오히려 초기 세팅하는데 시간이 많이 걸릴 수 있으니
 유의 하시기 바랍니다 :)
 
-[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web_dev/vuex-start/)
+[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web_dev/vuex-start/)<br>
 [Vuex 시작하기 2 - Getters & Mutations](https://joshua1988.github.io/web_dev/vuex-getters-mutations/)
