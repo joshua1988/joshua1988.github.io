@@ -10,7 +10,7 @@
     {% endif %}
     {% include open-graph.html %}
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="{{ site.url }}/manifest.json">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
@@ -61,7 +61,9 @@
       {% include footer.html %}
     </div>
 
+    <!-- <script src="{{ site.url }}/app.js"></script> -->
     {% include service-worker.html %}
+    <!-- {% include firebase.html %} -->
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
     <script src="{{ site.url }}/js/prism.js"></script>
