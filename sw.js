@@ -31,8 +31,8 @@ self.addEventListener('push', function(event) {
   var title = 'Captain Pangyo Tech News';
   var options = {
     body: 'Yay it works.',
-    icon: 'src/assets/images/logo-192.png',
-    badge: 'src/assets/images/logo-96.png'
+    icon: './images/icons/144x.png',
+    badge: '/images/icons/48x.png'
   };
 
   var notificationPromise = self.registration.showNotification(title, options);
