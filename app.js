@@ -65,7 +65,8 @@ function subscribeUser() {
     console.log('User is subscribed:', subscription);
 
     var endpoint = subscription.endpoint.split('send/')[1];
-    var key = subscription.getKey('p256dh');
+    var p256dh = subscription.getKey('p256dh');
+    var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
 
     sendDeviceKeytoFirebase(endpoint, key);
     isSubscribed = true;
