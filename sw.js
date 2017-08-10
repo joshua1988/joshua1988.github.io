@@ -27,10 +27,14 @@ toolbox.precache(precacheFiles);
 // Push Notification
 self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
+  console.log("[Service Worker] Push Event : ", event);
 
   var title = 'Captain Pangyo Tech News';
+  var data = event.data.json();
+
   var options = {
     body: 'Yay it works.',
+    data: data.url,
     icon: './images/icons/144x.png',
     badge: '/images/icons/48x.png'
   };
@@ -41,7 +45,18 @@ self.addEventListener('push', function(event) {
 
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
+  var siteURL = event.notification.data || 'https://joshua1988.github.io/';
+
   event.waitUntil(
-    clients.openWindow('https://joshua1988.github.io/')
+    clients.matchAll({
+      // type: 'window'
+    }).then(matchedClients => {
+      for (let client of matchedClients) {
+        if (client.url === siteURL) {
+          return client.focus();
+        }
+      }
+      return clients.openWindow(siteURL);
+    })
   );
 });
