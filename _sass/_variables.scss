@@ -37,6 +37,7 @@ $border-color                	: #ddd;
 $link-color                  	: #222;
 
 $primary-color               	: $black;
+$secondary-color              : #ac212e;
 $success-color               	: #2ecc71;
 $warning-color               	: #f1c40f;
 $danger-color                	: #e74c3c;
@@ -84,9 +85,9 @@ $form-font-size              	: $doc-font-size;
    ========================================================================== */
 
 $sliding-menu-border-color	 	 : $black;
-$sliding-menu-background 		   : $black;
+$sliding-menu-background 		   : rgba(35, 40, 58, 0.91); //old: $black
 $sliding-menu-color 	 		     : $white;
-$sliding-menu-background-hover : $black;
+$sliding-menu-background-hover : $secondary-color;//$black
 $sliding-menu-color-hover	 	   : $white;
 $sliding-menu-border   			   : 1px solid $sliding-menu-border-color;
 $button-size		         	     : 30px;

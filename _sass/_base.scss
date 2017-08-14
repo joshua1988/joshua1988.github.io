@@ -5,7 +5,6 @@
 /*
    Typography
    ========================================================================== */
-
 body {
 	font-family: $base-font;
 	color: $text-color;
@@ -40,6 +39,7 @@ h1 {
 	@include font-size(36);
 }
 h2 {
+  margin-top: 4rem;
 	@include font-size(32);
 }
 h3 {
