@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Tiles
-   ========================================================================== */
+Tiles
+========================================================================== */
 
 .tile {
   @include outer-container;
@@ -14,13 +14,20 @@
   }
   .entry-date {
     @include font-size(16,no);
-    color: lighten($text-color,25);
+    color: #a5a5a5;
+    font-weight: 300;
+    font-size: 0.8rem;
   }
   .post-title {
     @include font-size(18,no);
+    margin: 5px 0 !important;
   }
   .post-excerpt {
     @include font-size(16);
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
   }
   .post-teaser {
     position: relative;

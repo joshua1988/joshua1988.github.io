@@ -27,21 +27,22 @@
   top: $gutter;
   right: $gutter;
   display: block;
-  width: $button-size * 2;
-  height: $button-size * 2;
-  background: $primary-color;
+  width: $button-size * 1.8;
+  height: $button-size * 1.8;
+  background: rgba(53, 60, 87, 0.9);
   outline: 0;
   padding: 0;
+  padding-bottom: 7px;
   border: 2.5px solid transparent;
   cursor: pointer;
   z-index: 20;
   box-sizing: border-box;
   &:hover {
-    background: $black;
+    background: $secondary-color;
   }
   transition: $sliding-menu-animation;
   &.slide {
-    background: $danger-color;
+    background: $secondary-color;
     transform: translateX(0); /* don't slide close button on small screens only */
     @include media($medium) {
       transform: translateX(em(-600)); /* reset slide position */

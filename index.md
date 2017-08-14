@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /
-title: "최근 게시글"
+title: ""
 ---
 
 <div class="tiles">
