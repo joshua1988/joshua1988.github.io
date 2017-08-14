@@ -2,7 +2,7 @@
 layout: article
 title: "Angular 2 개념정리 (초급)"
 date: 2016-11-21 18:51:13 +0900
-categories: web_dev
+categories: [web_dev, angular]
 excerpt: "Angular 2 개요 소개, Angular 1 과 차이점.."
 image:
   teaser: posts/web/angular2/angular2.png
@@ -11,19 +11,19 @@ image:
 locale: "ko"
 # 리플 옵션
 comments: true
-tags:
-- 앵귤러2
-- 앵귤러2 초급
-- 앵귤러2 입문
-- 앵귤러2 시작하기
-- 앵귤러2 시작
-- 앵귤러2 튜토리얼
-- 앵귤러2 개념정리
-- 프론트엔드 개발
-- angular2
-- angular
-- 타입스크립트
-- typescript
+tags: [앵귤러2, 앵귤러2 초급, 앵귤러2 입문, 앵귤러2 시작하기, 앵귤러2 시작, 앵귤러2 튜토리얼, 앵귤러2 개념정리, 프론트엔드 개발, angular2, angular, 타입스크립트, typescript]
+# - 앵귤러2
+# - 앵귤러2 초급
+# - 앵귤러2 입문
+# - 앵귤러2 시작하기
+# - 앵귤러2 시작
+# - 앵귤러2 튜토리얼
+# - 앵귤러2 개념정리
+# - 프론트엔드 개발
+# - angular2
+# - angular
+# - 타입스크립트
+# - typescript
 ---
 {% include toc.html %}
 

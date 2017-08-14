@@ -2,7 +2,7 @@
 layout: article
 title: "자바스크립트 코딩 면접에서 알고 있어야 할 3가지 질문"
 date: 2017-01-26 13:29:13 +0900
-categories: web_dev
+categories: [web_dev, javascript]
 excerpt: "(번역)프론트엔드 개발자가 코딩 면접에서 알고 있으면 유용한 질문"
 image:
   teaser: posts/web/javascript/3questions_interview.png

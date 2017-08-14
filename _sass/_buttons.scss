@@ -126,7 +126,9 @@
 		(tumblr, $tumblr-color),
 		(twitter, $twitter-color),
 		(vimeo, $vimeo-color),
-		(youtube, $youtube-color);
+		(youtube, $youtube-color),
+		(chrome, $chrome-color);
+
 	@extend .btn-inverse;
 	color: $text-color !important;
 	&:visited,

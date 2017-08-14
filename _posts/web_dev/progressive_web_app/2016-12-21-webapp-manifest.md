@@ -2,7 +2,7 @@
 layout: article
 title: "Web App Manifest 소개 및 사용법"
 date: 2016-12-21 17:44:13 +0900
-categories: web_dev
+categories: [web_dev, pwa]
 excerpt: "Progressive Web App 의 주요 기술인 Web App Manifest 소개"
 image:
   teaser: posts/web/progressive_web_app/webapp_manifest.png

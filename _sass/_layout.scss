@@ -185,6 +185,11 @@
 					font-family: $alt-font;
 					color: lighten($black,60);
 				}
+				div{
+					@include font-size(14,no);
+					// color: lighten($black,60);
+					font-weight: 500;
+				}
 			}
 		}
 	}

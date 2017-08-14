@@ -3,5 +3,6 @@
 	<a class="btn-social google-plus" href="https://plus.google.com/share?url={{ page.url | replace:'index.html','' | prepend: site.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> {{ site.data.messages.locales[site.locale].share }}</a>
 	<a class="btn-social linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.url }}&title={{ page.title | escape | replace:' ','%20' }}&summary={{ page.description }}&source=CaptainPangyo" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> {{ site.data.messages.locales[site.locale].share }}</a>
 	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ page.url | replace:'index.html','' | prepend: site.url }}&amp;via={{ site.owner.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> {{ site.data.messages.locales[site.locale].share }}</a>
+	<a class="btn-social chrome" href="#" target="_blank"><i class="fa fa-chrome" aria-hidden="true"></i> Push 알람 구독</a>
 	<a class="btn-social rss" href="https://feedburner.google.com/fb/a/mailverify?uri=CaptainPangyo-Articles&amp;loc=en_US" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i> 구독</a>
 </div><!-- /.share-this -->

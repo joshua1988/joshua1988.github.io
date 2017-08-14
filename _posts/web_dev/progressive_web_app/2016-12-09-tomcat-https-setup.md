@@ -2,7 +2,7 @@
 layout: article
 title: "Tomcat HTTPS 설정하기"
 date: 2016-12-09 10:20:13 +0900
-categories: web_dev
+categories: [web_dev, pwa]
 excerpt: "Progressive Web App 적용할 때 필요한 HTTPS 전환 방법"
 image:
   teaser: posts/web/progressive_web_app/tomcat_https.png

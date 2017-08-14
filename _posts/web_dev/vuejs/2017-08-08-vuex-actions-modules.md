@@ -2,7 +2,7 @@
 layout: article
 title: "Vuex 시작하기 3 - Actions 와 폴더 구조화"
 date: 2017-08-08 20:10:32 +0900
-categories: web_dev
+categories: [web_dev, vuejs]
 excerpt: "Vue 중급으로 레벨업. Vuex 의 Actions 와 폴더 구조화 익히기"
 image:
   teaser: posts/web/vuejs/logo.png
