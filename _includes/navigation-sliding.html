@@ -1,15 +1,17 @@
 <nav role="navigation" id="js-menu" class="sliding-menu-content">
   <h5>{{ site.title }}</h5>
   <ul class="menu-item">
-    <!-- {% for link in site.data.navigation %}<li>
+    {% for link in site.data.navigation %}<li>
       <a href="{{ site.url }}{{ link.url }}">
-        {% if link.image %}<img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser">{% endif %}
+        <!-- {% if link.image %}<img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser">{% endif %} -->
+        {% if link.title == "Tech" or link.title == "Enlgish" or link.title == "Singing" or link.title == "About" %}
         <div class="title">{{ link.title }}</div>
+        {% endif %}
         {% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
       </a>
-    </li>{% endfor %} -->
+    </li>{% endfor %}
 
-    {% for link in site.data.navigation %}
+    <!-- {% for link in site.data.navigation %}
       <a href="{{ site.url }}{{ link.url }}">
         <div class="title">{{ link.title }}</div>
         <li>
@@ -18,7 +20,7 @@
           {% endfor %}
         </li>
       </a>
-    {% endfor %}
+    {% endfor %} -->
   </ul>
 </nav>
 <button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
