@@ -1,5 +1,5 @@
 ---
-permalink: js/
+permalink: javascript/
 layout: archive
 title: "Javascript"
 ---
