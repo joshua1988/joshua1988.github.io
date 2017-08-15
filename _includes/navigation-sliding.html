@@ -4,7 +4,7 @@
     {% for link in site.data.navigation %}<li>
       <a href="{{ site.url }}{{ link.url }}">
         <!-- {% if link.image %}<img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser">{% endif %} -->
-        {% if link.title == "Tech" or link.title == "Enlgish" or link.title == "Singing" or link.title == "About" %}
+        {% if link.title == "Tech" or link.title == "English" or link.title == "Singing" or link.title == "About" %}
         <div class="title">{{ link.title }}</div>
         {% endif %}
         {% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
