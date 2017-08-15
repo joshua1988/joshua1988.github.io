@@ -15,3 +15,28 @@
   url: /about/
   excerpt: "Who am I?"
   image:
+# Page navigation for categories on sliding navigation
+- title: Progressive Web Apps
+  url: /pwa/
+  excerpt:
+- title: Vue.js
+  url: /vuejs/
+  excerpt:
+- title: Angular
+  url: /angular/
+  excerpt:
+- title: Javascript
+  url: /javascript/
+  excerpt:
+- title: Web Performance
+  url: /perf/
+  excerpt:
+- title: AMP
+  url: /amp/
+  excerpt:
+- title: Opinions
+  url: /opinions/
+  excerpt:
+- title: Translation
+  url: /translation/
+  excerpt:
