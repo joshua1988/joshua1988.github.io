@@ -1,5 +1,5 @@
 ---
-permalink: opinion/
+permalink: opinions/
 layout: archive
 title: "Opinions"
 ---
