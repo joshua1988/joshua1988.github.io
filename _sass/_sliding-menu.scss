@@ -154,7 +154,7 @@
       @include font-size(24,no);
       font-weight: 700;
       @include media($small) {
-        margin-left: 170px;
+        margin-left: 120px;
         @include font-size(32,no);
       }
     }
