@@ -2,9 +2,9 @@
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       var originDomain = window.location.origin;
-      var flag = window.location.href.split("//");
+      var flag = /io\/$/i.test(location.href);
 
-      if (window.location.href.split("/")[2] != window.location.host) {
+      if (!flag) {
         navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
           console.log('Service Worker is registered', swReg);
 
