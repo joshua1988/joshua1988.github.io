@@ -121,10 +121,10 @@
     display: block;
     position: relative;
     padding-bottom: 1em;
-    min-height: 70px;
-    @include media($small) {
-      min-height: 100px;
-    }
+    // min-height: 70px;
+    // @include media($small) {
+    //   min-height: 100px;
+    // }
   }
   .menu-item {
     a {
@@ -160,10 +160,10 @@
     }
     .excerpt {
       margin-top: 0;
-      margin-left: 60px;
+      margin-left: 85px;
       @include font-size(14,no);
       @include media($small) {
-        margin-left: 170px;
+        margin-left: 150px;
         @include font-size(16,no);
       }
     }
