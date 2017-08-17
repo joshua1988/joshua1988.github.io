@@ -9,7 +9,6 @@ var pushButton = document.querySelector('#pushBtn');
 
 function initialiseUI() {
   pushButton.addEventListener('click', function(event) {
-    // pushButton.disabled = true;
     event.preventDefault();
     if (isSubscribed) {
       // unSubscribeUser();
@@ -78,8 +77,9 @@ function subscribeUser() {
 }
 
 function sendDeviceKeytoFirebase(endpoint, key) {
-  return db.ref('users/endpoint-' + key).set({
+  return db.ref('users/').set({
     endpoint: endpoint,
+    key: key,
     time: getCurrentTime()
   }).then(function () {
     console.log("The key has been sent to Firebase DB");
