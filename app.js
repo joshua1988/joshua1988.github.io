@@ -94,7 +94,7 @@ function getEndpointAndKey(subscription) {
   var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
   var data = {
     endpoint: endpoint,
-    key: key
+    key: key.replace(/\//g, "-")
   };
   return data;
 }
