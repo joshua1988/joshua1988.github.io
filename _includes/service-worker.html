@@ -2,14 +2,16 @@
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       var originDomain = window.location.origin;
-      navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
-        console.log('Service Worker is registered', swReg);
+      if (window.location.href != window.location.host) {
+        navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
+          console.log('Service Worker is registered', swReg);
 
-        swRegistration = swReg;
-        initialiseUI();
-      }).catch(function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
+          swRegistration = swReg;
+          initialiseUI();
+        }).catch(function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      }
     });
   }
 </script>
