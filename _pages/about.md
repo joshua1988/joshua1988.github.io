@@ -46,7 +46,7 @@ The Best Professional Technical Trainer at POSCO ICT, 2017<br>
 9XD, *Staff Member*
 
 ## Lectures
-[Web App Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov*
+[Web App Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
 [Web App Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
 Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
