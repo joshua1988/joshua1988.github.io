@@ -73,7 +73,7 @@ function subscribeUser() {
 }
 
 function sendDeviceKeytoFirebase(endpoint, key) {
-  return db.ref('users/').set({
+  return db.ref('users/' + key + '/').set({
     endpoint: endpoint,
     key: key,
     time: getCurrentTime()
