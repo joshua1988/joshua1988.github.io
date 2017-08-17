@@ -47,11 +47,8 @@ function initialiseUI() {
       if (isSubscribed) {
         console.log('User is subscribed.');
 
-        var endpoint = subscription.endpoint;
-        var p256dh = subscription.getKey('p256dh');
-        var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
-
-        sendDeviceKeytoFirebase(endpoint, key);
+        var result = getEndpointAndKey(subscription);
+        sendDeviceKeytoFirebase(result.endpoint, result.key);
       } else {
         console.log('User is NOT subscribed.');
       }
@@ -66,11 +63,8 @@ function subscribeUser() {
   .then(function(subscription) {
     console.log('User is subscribed:', subscription);
 
-    var endpoint = subscription.endpoint.split('send/')[1];
-    var p256dh = subscription.getKey('p256dh');
-    var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
-
-    sendDeviceKeytoFirebase(endpoint, key);
+    var result = getEndpointAndKey(subscription);
+    sendDeviceKeytoFirebase(result.endpoint, result.key);
     isSubscribed = true;
   })
   .catch(function(err) {
@@ -92,4 +86,15 @@ function sendDeviceKeytoFirebase(endpoint, key) {
 
 function getCurrentTime() {
   return new Date().toLocaleString();
+}
+
+function getEndpointAndKey(subscription) {
+  var endpoint = subscription.endpoint.split('send/')[1];
+  var p256dh = subscription.getKey('p256dh');
+  var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
+  var data = {
+    endpoint: endpoint,
+    key: key
+  };
+  return data;
 }
