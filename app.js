@@ -5,16 +5,18 @@ var db = firebase.database();
 // Service Workers
 var isSubscribed = false;
 var swRegistration = null;
+var pushButton = document.querySelector('#pushBtn');
 
 function initialiseUI() {
-  // pushButton.addEventListener('click', function() {
-  //   pushButton.disabled = true;
-  //   if (isSubscribed) {
-  //     unSubscribeUser();
-  //   } else {
-  //     subscribeUser();
-  //   }
-  // });
+  pushButton.addEventListener('click', function(event) {
+    // pushButton.disabled = true;
+    event.preventDefault();
+    if (isSubscribed) {
+      // unSubscribeUser();
+    } else {
+      subscribeUser();
+    }
+  });
 
   // Notification 구현여부 확인
   if (!(swRegistration.showNotification)) {
@@ -46,12 +48,11 @@ function initialiseUI() {
       if (isSubscribed) {
         console.log('User is subscribed.');
 
-        // var endpoint = subscription.endpoint;
-        // var key = subscription.getKey('p256dh');
-        // sendDeviceKeytoFirebase(endpoint, key);
+        var endpoint = subscription.endpoint;
+        var key = subscription.getKey('p256dh');
+        sendDeviceKeytoFirebase(endpoint, key);
       } else {
         console.log('User is NOT subscribed.');
-        subscribeUser();
       }
     });
   });
