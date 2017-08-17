@@ -48,7 +48,9 @@ function initialiseUI() {
         console.log('User is subscribed.');
 
         var endpoint = subscription.endpoint;
-        var key = subscription.getKey('p256dh');
+        var p256dh = subscription.getKey('p256dh');
+        var key = btoa(String.fromCharCode.apply(null, new Uint8Array(p256dh)));
+
         sendDeviceKeytoFirebase(endpoint, key);
       } else {
         console.log('User is NOT subscribed.');
