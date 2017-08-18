@@ -1,6 +1,6 @@
 {% if page.date %}<div class="page-meta">
 	<p>{{ site.data.messages.locales[site.locale].updated }} {% if page.modified %}<time datetime="{{ page.modified | date: "%Y-%m-%dT%H:%M:%SZ" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% else %}<time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></p>{% endif %}
 	<div class="push-notice">
-		글이 마음에 드셨다면 위 Push 알람 구독 버튼으로 새 글을 받아보세요. 웹 & 모바일 모두 지원됩니다.
+		글이 마음에 드셨다면 위 Push 구독 버튼으로 새 글을 푸시 알람으로 받아보세요. 웹 & 모바일 모두 지원됩니다.
 	</div>
 </div><!-- /.page-meta -->{% endif %}
