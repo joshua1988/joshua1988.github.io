@@ -43,8 +43,7 @@ function initialiseUI() {
       isSubscribed = !(subscription === null);
 
       // updateSubscriptionOnServer(subscription);
-      console.log("subscription : ", subscription);
-
+      
       if (isSubscribed) {
         console.log('User is subscribed.');
 
