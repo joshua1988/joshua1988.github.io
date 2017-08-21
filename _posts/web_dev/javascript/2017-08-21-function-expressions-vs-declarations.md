@@ -3,7 +3,7 @@ layout: article
 title: "함수 표현식 vs 함수 선언식"
 date: 2017-08-21 21:42:13 +0900
 categories: [web_dev, javascript]
-excerpt: "(번역) 함수 표현식과 함수 선언식에는 어떠한 차이점이 있는지 알아봅니다."
+excerpt: "(기본) 함수 표현식과 함수 선언식에는 어떠한 차이점이 있는지 알아봅니다."
 image:
   teaser: posts/web/javascript/js-teaser.png
   credit: Azat Mardan #name of the person or site you want to credit
