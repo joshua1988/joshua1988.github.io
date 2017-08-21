@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "(JS) 함수 표현식 vs 함수 선언식"
+title: "함수 표현식 vs 함수 선언식"
 date: 2017-08-21 21:42:13 +0900
 categories: [web_dev, javascript]
 excerpt: "(번역) 함수 표현식과 함수 선언식에는 어떠한 차이점이 있는지 알아봅니다."
@@ -19,6 +19,7 @@ tags:
 - 함수 표현식 함수 선언식
 - 자바스크립트 함수 표현식 vs 함수 선언식
 - 함수 표현식 vs 함수 선언식
+- 함수 선언문 함수 표현식
 - 함수 선언
 - 함수 선언문
 - 함수 표현
@@ -95,7 +96,7 @@ var sumNumbers = function () {
 };
 ```
 
-호이스팅에 의해 해석기는 아래와 같이 인식한다.
+호이스팅에 의해 자바스크립트 해석기는 코드를 아래와 같이 인식한다.
 
 ```js
 // 실행 시
@@ -115,7 +116,7 @@ sumNumbers = function () {
 
 위 코드 결과는 아래와 같다.
 
-![오류메시지]()
+![오류메시지]({{ site.url }}/images/posts/web/javascript/function-expressions-declarations/error.png)
 
 함수 표현식 sumNumbers 에서 var 도 호이스팅이 적용되어 위치가 상단으로 끌어올려졌다.
 
@@ -139,12 +140,12 @@ sumNumbers 는 함수로 인식하지 않고 변수로 인식한다.
 
 #### 함수 표현식으로 클로져 생성하기
 클로져는 함수를 실행하기 전에 해당 함수에 변수를 넘기고 싶을 때 사용된다.
-이해가 안간다면 아래 예제를 살펴보자.
+더 쉽게 이해하기 위해 아래 예제를 살펴보자.
 
 ```js
 function tabsHandler(index) {
     return function tabClickEvent(event) {
-        // 바깥 함수인 tabsHandler 의 index 인자를 여기서 접근할 수 있다.
+        // 바깥 함수인 tabsHandler() 의 index 인자를 여기서 접근할 수 있다.
         console.log(index); // 탭을 클릭할 때 마다 해당 탭의 index 값을 표시
     };
 }
@@ -161,8 +162,22 @@ for (i = 0; i < tabs.length; i += 1) {
 주목할 점은 클로져를 이용해 tabClickEvent() 에서
 바깥 함수 tabsHandler() 의 인자 값 index 를 접근했다는 점이다.
 
+```js
+function tabsHandler(index) {
+    return function tabClickEvent(event) {
+        console.log(index);
+    };
+}
+```
+
 for 반복문의 실행이 끝난 후, 사용자가 tab 을 클릭했을 때 tabClickEvent() 가 실행된다.
-따라서, 클로져를 쓰지 않았다면 모든 tab 의 index 값이 for 반복문의 마지막 값인 tabs.length 와 같다.
+만약 클로져를 쓰지 않았다면 모든 tab 의 index 값이 for 반복문의 마지막 값인 tabs.length 와 같다.
+
+```js
+for (i = 0; i < tabs.length; i += 1) {
+    tabs[i].onclick = tabsHandler(i);
+}
+```
 
 클로져를 쓰지 않은 예제를 보자.
 
@@ -178,6 +193,7 @@ for (i = 0; i < tabs.length; i += 1) {
 ```
 
 위 소스는 탭이 3개라고 했을 때, 어느 탭을 클릭해도 i 는 for 반복문의 최종 값인 3이 찍힌다.
+
 문제점을 더 파악하기 쉽게 for 문 안의 function() 을 밖으로 꺼내서 선언해보면
 
 ```js
@@ -254,11 +270,11 @@ arr.forEach(function () {
 });
 ```
 
-<p class="notice">콜백 함수란 다른 함수의 인자로 전달된 함수를 의미합니다. 자바스크립트가 일급 객체로서 가지는 특징 중 하나죠. 자세한 내용은 [여기](https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/) 를 참고하세요.</p>
+<p class="notice">콜백 함수란 다른 함수의 인자로 전달된 함수를 의미합니다. 자바스크립트가 일급 객체로서 가지는 특징 중 하나죠. 자세한 내용은 <a href="https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/">여기</a>를 참고하세요.</p>
 
 ## 결론
 함수 표현식이 선언식에 비해 가지는 장점이 많지만, 결국에는 이러한 차이점을 인지한 상태에서 일관된 코딩 컨벤션으로
-코드를 작성하는 게 중요하다는 생각이 듭니다. AirBnb 의 JS Style 가이드 에서도 함수 선언식보다는 함수 표현식을
-지향하고 있는데요. 뭐가 중요하든 간에 자기가 코딩하기 편한 방식으로 구현하는 게 좋지 않을까요?
+코드를 작성하는 게 중요하다는 생각이 듭니다. [AirBnb 의 JS Style 가이드](https://github.com/airbnb/javascript) 에서도 함수 선언식보다는 함수 표현식을
+지향하고 있는데요. 그래도 자기가 코딩하기 편한 방식으로 구현하는 게 좋지 않을까요?
 
-<p class="notice">본 글은 [Site Point 의 Function Expressions vs Function Declarations](https://www.sitepoint.com/function-expressions-vs-declarations/) 를 참고했습니다.</p>
+<p class="notice">본 글은 <a href="https://www.sitepoint.com/function-expressions-vs-declarations/">Site Point 의 Function Expressions vs Function Declarations</a> 를 참고했습니다.</p>
