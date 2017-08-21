@@ -6,8 +6,8 @@ categories: [web_dev, javascript]
 excerpt: "(기본) 함수 표현식과 함수 선언식에는 어떠한 차이점이 있는지 알아봅니다."
 image:
   teaser: posts/web/javascript/js-teaser.png
-  credit: Azat Mardan #name of the person or site you want to credit
-  creditlink: http://nodeframework.com/index.html#home
+  credit: Frank Liu #name of the person or site you want to credit
+  creditlink: http://geekologist.co/tag/javascript/
   #url to their site or licensing
 locale: "ko"
 # 리플 옵션
