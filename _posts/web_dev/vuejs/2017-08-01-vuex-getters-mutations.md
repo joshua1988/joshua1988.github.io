@@ -17,13 +17,15 @@ tags:
 - vue.js
 - Vue JS
 - vuex
-- vuejs vuex
+- vuex 예제
+- vuex 사용
 - vuex 튜토리얼
 - vuex 시작하기
+- vuejs vuex
 - vuex getters
 - vuex mutations
-- vuex js 시작하기
-- vuex js 한글
+- vue vuex 시작하기
+- vuex 한글
 - vuex 소개
 - vuex 튜토리얼
 - vuex 시작하기 2
@@ -388,3 +390,6 @@ methods: {
 [지난 글](https://joshua1988.github.io/web_dev/vuex-start/#vuex-튜토리얼-4---state-등록)의 state 에 이어서, **이번 글에서는 변경된 state 값을 받아오는 Getters** 와
 **state 값을 변경하기 위한 메서드를 정의하는 Mutations** 에 대해 알아보았다.
 Vuex 의 마지막 속성인 Actions 와 Vuex 폴더 구조화는 다음 글에서 다루기로 한다.
+
+[Vuex 시작하기 1탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-start/) <br>
+[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-actions-modules/)

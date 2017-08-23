@@ -17,15 +17,18 @@ tags:
 - vue.js
 - Vue JS
 - vuex
-- vue 튜토리얼
+- vuex 예제
+- vuex 사용
+- vuex 튜토리얼
 - vuex 시작하기
-- vuex 시작하기 1
-- vuex js 시작하기
-- vuex js 한글
+- vue vuex
+- vue vuex 시작하기
+- vuex 한글
 - vuex 소개
 - vuex 튜토리얼
 - vuex 입문
 - vue 강의
+- vuex 강의
 - vue 배우기
 - 패스트캠퍼스
 - 패스트캠퍼스 프론트엔드 웹앱 캠프
@@ -338,4 +341,5 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 비동기 mutations 로직을 위한 **Actions**, 폴더 구조화 등을 알아야
 Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
-나머지 부분은 추가로 연재할 예정이다.
+[Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-getters-mutations/) <br>
+[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-actions-modules/)

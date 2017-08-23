@@ -17,9 +17,11 @@ tags:
 - vue.js
 - Vue JS
 - vuex
-- vuejs vuex
+- vuex 예제
+- vuex 사용
 - vuex 튜토리얼
 - vuex 시작하기
+- vuejs vuex
 - vuex actions
 - vuex getters
 - vuex mutations
