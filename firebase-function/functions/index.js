@@ -21,7 +21,8 @@ function makePostRequest() {
     },
     json: true,
     body: {
-      "registration_ids" : ["e2jClLAYnUA:APA91bHswI9RZUojJncrIl-75cpstV8KYR-y3tM9xcr1HdmftfM4z9v-hYleM6lZZHoaz4FB1bv9ov6KQIvd4GzM56ywHEikCd9J2w8cu7xF7tVbNmM2Q05ZxpVW9xk_dlhgxJWHpbSU"]
+      "registration_ids" : ["e2jClLAYnUA:APA91bHswI9RZUojJncrIl-75cpstV8KYR-y3tM9xcr1HdmftfM4z9v-hYleM6lZZHoaz4FB1bv9ov6KQIvd4GzM56ywHEikCd9J2w8cu7xF7tVbNmM2Q05ZxpVW9xk_dlhgxJWHpbSU"],
+
     }
     // resolveWithFullResponse: true
   }).then(response => {
