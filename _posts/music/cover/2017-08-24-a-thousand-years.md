@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "A Thousand Years (cover) - Christina Perri"
+title: "A Thousand Years(cover) - Christina Perri"
 date: 2017-08-24 23:45:32 +0900
 categories: music
 excerpt: "트와일라이트 OST 남자 버전"
@@ -74,3 +74,5 @@ And all along I believed I would find you<br>
 Time has brought your heart to me<br>
 I have loved you for a thousand years<br>
 I'll love you for a thousand more
+
+<a class="btn-social youtube" href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube Channel</a>
