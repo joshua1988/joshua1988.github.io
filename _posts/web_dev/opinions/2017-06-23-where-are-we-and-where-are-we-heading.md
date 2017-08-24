@@ -75,7 +75,7 @@ Computer Science 로 유명한 학교인 카네기멜론의 학생 4명이서 �
 Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 수 있게 커뮤니티 멤버들이 늘 전용 라이브러리를 만들어서 제공해주고 있습니다. 저희 입장에서는 갖다가 쓰면 될 것 같아요.
 
 ## 자바스크립트가 현대웹에서 지배적으로 쓰이는 이유
-**사용자 경험, 그리고 Rich Experience**
+**"사용자 경험, 그리고 Rich Experience"**
 
 처음 자바스크립트가 나왔을 당시 브라우저에서 작은 단위를 처리하는 스크립트로 사용되었습니다. 초기 웹의 탄생 배경만 봐도, 논문을 서로 쉽게 공유하기 위한 플랫폼으로써 정적인 텍스트를 원격지에서 쉽게 보기 위해서 고안되었죠. 그렇게 공유하는 데이터의 유형이 텍스트 -> 이미지 -> 미디어로 진화함에 따라 웹 페이지의 성격이 동적으로 변화하게 됩니다. HTML 의 정적인 텍스트 데이터와 DB 의 동적인 데이터를 결합하여 화면에 표시하기 위해, 서블릿 기반의 Server Side Rendering 이 주를 이루다가 이제는 앞단 화면에서 자바스크립트를 이용한 비동기 처리로 화면을 동적으로 구성 (Client Side Rendering) 할 수 있게 되었습니다.
 
@@ -89,9 +89,9 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 �
 
 모바일 기능을 가졌다 하더라도, 일단은 웹 사이트이기 때문에 브라우저 특성을 타게 됩니다. 따라서, Safari (iOS) 같이 미지원하는 브라우저가 있지만 (Mac OS 는 동작함), Chrome & Firefox & Opera & Samsung Mobile Browser 등 모던 브라우저는 다 지원하고 있으며
 
-- **Twitter Lite : 아래 영상 참고**
-- [Airbnb Roadmap : Breaking Free from Rails 참고](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
 - [Lyft : 위 영상 6분 8초 참고](https://www.youtube.com/watch?v=m-sCdS0sQO8&t=604s)
+- [Airbnb Roadmap : Breaking Free from Rails 글 참고](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
+- Twitter Lite : 아래 영상 참고
 
 를 봐도 이미 현재 웹의 방향 자체가 웹 페이지 안에서의 사용자 경험 뿐만 아니라 웹 페이지를 쉽게 접근하고 편하게 다시 찾을 수 있는 관점에서 전반적인 사용자 경험을 향상 시키는 방향으로 나아가고 있다고 생각합니다.
 
