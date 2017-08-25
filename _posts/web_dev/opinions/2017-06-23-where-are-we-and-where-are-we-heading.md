@@ -5,7 +5,7 @@ date: 2017-06-23 11:15:32 +0900
 categories: [web_dev, opinions]
 excerpt: "유용한 UI Libraries, Javascript Framework, 그리고 내가 생각하는 웹의 현재 주소와 방향"
 image:
-  teaser: posts/web/opinion/pwa.jpg
+  teaser: posts/web/opinions/pwa.jpg
   credit: Ido Green
   creditlink: https://www.slideshare.net/greenido/progressive-web-apps-tlv
   #url to their site or licensing
@@ -17,6 +17,10 @@ tags:
 - 화면 라이브러리
 - 프론트엔드 개발 라이브러리
 - 프론트엔드 라이브러리
+- 프론트엔드 프레임워크
+- 프론트엔드 개발 프레임워크
+- 프론트엔드 개발
+- 프로그레시브 웹앱
 - Javascript 라이브러리
 - 자바스크립트 라이브러리
 - vue.js
@@ -26,6 +30,7 @@ tags:
 - backbone
 - pwa
 - 프로그레시브 웹앱
+- 프로그레시브 웹앱 만들기
 - progressive web app
 - 프로그레시브 웹앱 주소
 - 웹의 현재와 미래
@@ -107,13 +112,17 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework 에도 결합될 �
 2 Way Data Binding 나, Custom Directives 는 당시 웹 개발자들에게 신선한 충격이었죠. Angular 1 에서는 페이지를 한 View 의 단위로 보는 형태로 가져가다가, Angular 2 에서는 요즘 React 나 Vue 에서 추구하는 Component 형태로 진화했습니다. 성능 개선을 위한 노력들도 Typescript 도입이나 라이브러리 안쪽의 로직을 개선함으로써 부단히 다른 경쟁자들을 앞서기 위해 꾸준히 개선하고 있는것 같습니다.
 
 #### [Vue JS](https://vuejs.org/)
-일단 [이글](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 참고
+React 와 Angular 의 장점을 결합하여 만든 Component 기반의 View 단 라이브러리 입니다. 개인적으로는 요즘 가장 많이 사용하고 있는 프레임워크 입니다. 얼마 전 [프론트엔드 입문 개발자분들을 대상으로 강의](http://www.fastcampus.co.kr/dev_camp_wap/)를 진행하면서 짧은 시간 안에 빠르게 프론트엔드 프레임워크를 소개해드렸어야 해서 아무래도 Angular 나 React 보다는 학습곡선이 낮은 Vue 를 선택하여 학습하기 시작했습니다. ([Vue.js 입문자용 튜토리얼 참고](https://joshua1988.github.io/web_dev/vuejs/vuejs-tutorial-for-beginner/)) 요즘 Front-End 쪽에서 가장 핫한 프레임워크 인 것 같습니다. 아래의 "2016 년 자바스크립트 프레임워크 현황표" 에서 보시는 것처럼 관심도도 상당히 높고, 잘 알려지지 않아 학습 수요가 높은 것으로 생각됩니다.
 
+![front-end-fw-state]({{ site.url }}/images/posts/web/opinions/front-end-fw-state.png)
 
+Vue 로 화면을 개발하면서 Angular 2 를 사용할 때는 와닿지 못했던 컴포넌트 기반 화면 개발 방식에 대해 감을 잡게 되었습니다. 화면을 View 단위가 아니라 Component 단위로 더 잘개 쪼개어서 설계하고, 규격화된 컴포넌트 통신 규칙으로 인해 일관적인 구조화가 가능하기 때문에, 코드 가독성이 더 뛰어나다고 생각합니다. 현재는 React 의 시장 지배율이 더 높지만, 낮은 학습 곡선으로 인해 사용자가 많아진다면 시간이 지남에 따라 어쩌면 평행을 이룰지도 모르겠네요..!
 
-**한번에 다적기 힘드네요, 추가로 연재하겠습니다..**
+#### [React](https://facebook.github.io/react/)
+프론트엔드 개발 프레임워크의 절대 강자 React 입니다. Facebook 이 개발하고 2013 년에 배포했습니다. 전통적인 MVC 웹 개발 방식에서 패러다임 전환을 이루어낸 컴포넌트 기반의 상태관리와 Virtual DOM 을 이용한 빠른 렌더링으로 개발자들의 시선을 한 눈에 사로잡았습니다. 웹 화면에서 사용자의 인터랙션이 점점 더 많아지는 현대 웹앱이 가야할 방향을 정확히 알고 있었던 게 아닐까 싶네요 (Virtual DOM 을 이용한 화면 렌더링이 여기서 빛을 발합니다). 또한 React Native 라는 프레임워크는 React 를 이용하여 HTML, JS, CSS 웹 기술로 네이티브 위젯으로 변환하여 모바일 앱을 만들 수 있습니다. 이러한 강점들 때문에 2016 년 프론트엔드 개발 시장은 React 가 평정하였습니다. 올 해는 과연 어떻게 될 지..? (개인적으로는 React Native 로 영어 사전앱을 만들다가, 실제 화면 로직들보다 Android & iOS 위젯 버전 호환성 맞추는데 시간을 다 보냈던 걸로 기억합니다.. 그 이후로 React 는 안쓴...)
 
-**To Be Continued ...**
+## 마무리
+팀장님한테만 메일로 정리해서 보낼려다가 아까워서 블로그에 쓰다보니 글이 더 길어졌네요. 웹은 다른 소프트웨어에 비해 개발하기도 쉽고 사용자들도 쉽게 일상생활에서 접근할 수 있어서 더 관심이 가는 분야인 것 같습니다. 앞으로도 저희가 더 쉽고 편하게 웹을 사용할 수 있도록 저희 모두가 함께 만들어나갔으면 합니다. (PWA 에 거는 기대치가 그만큼 높습니다..) 부족한 지식으로 적어본 제 글을 읽어주셔서 감사합니다.
 
 ## 참고
 - [Progressive Web App 소개 슬라이드](https://www.slideshare.net/GihyoJoshuaJang/the-future-of-web-progressive-web-app)
