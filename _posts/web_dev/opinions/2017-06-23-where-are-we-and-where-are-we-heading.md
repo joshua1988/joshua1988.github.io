@@ -128,4 +128,3 @@ Vue로 화면을 개발하면서 Angular 2를 사용할 때는 와닿지 못했�
 - [Twitter Lite - Progressive Web App](https://blog.twitter.com/official/en_us/topics/product/2017/introducing-twitter-lite.html)
 - [The Future of Web - Progressive Web App](https://www.slideshare.net/GihyoJoshuaJang/the-future-of-web-progressive-web-app)
 - [State of js](http://stateofjs.com/2016/frontend/)
--
