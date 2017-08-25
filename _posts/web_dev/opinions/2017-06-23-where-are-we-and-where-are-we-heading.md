@@ -105,7 +105,7 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework에도 결합될 수
 
 #### [Angular JS 1](https://angularjs.org/) & [2](https://angular.io/)
 말이 필요할까요. Google이 만든 Javascript MVC Framework입니다. 아래에서 언급 드릴 View 단 라이브러리 React & Vue.js와는 다르게, 기본 Core 라이브러리에 서버 쪽으로 통신할 수 있는 인터페이스 기능과, 라우터 등 이미 라이브러리 자체에 탑재된 기능들이 많아 별도의 플러그인을 구성하지 않고도 충분히 서비스 개발이 가능한 라이브러리입니다.
-2 Way Data Binding이나, Custom Directives는 당시 웹 개발자들에게 신선한 충격이었죠. Angular 1에서는 페이지를 한 View의 단위로 보는 형태로 가져가다가, Angular 2에서는 요즘 React나 Vue에서 추구하는 Component 형태로 진화했습니다. 성능 개선을 위한 노력들도 Typescript 도입이나 라이브러리 안쪽의 로직을 개선함으로써 부단히 다른 경쟁자들을 앞서기 위해 꾸준히 개선하고 있는 것 같습니다.
+2 Way Data Binding이나, Custom Directives는 당시 웹 개발자들에게 신선한 충격이었죠. Angular 1에서는 페이지를 한 View의 단위로 보는 형태로 가져가다가, Angular 2에서는 요즘 React나 Vue에서 추구하는 Component 형태로 진화했습니다. 성능 향상을 위한 노력들도 Typescript 도입이나 라이브러리 안쪽의 로직을 개선함으로써 부단히 다른 경쟁자들을 앞서기 위해 꾸준히 진행되고 있는 것 같습니다.
 
 #### [Vue JS](https://vuejs.org/)
 React와 Angular의 장점을 결합하여 만든 Component 기반의 View 단 라이브러리입니다. 개인적으로는 요즘 가장 많이 사용하고 있는 프레임워크입니다. 얼마 전 [프론트엔드 입문 개발자분들을 대상으로 강의](http://www.fastcampus.co.kr/dev_camp_wap/)를 진행하면서 짧은 시간 안에 빠르게 프론트엔드 프레임워크를 소개해드렸어야 해서 아무래도 Angular나 React보다는 학습곡선이 낮은 Vue를 선택하였습니다. 요즘 Front-End 쪽에서 가장 핫한 프레임워크인 것 같습니다. 아래의 "2016 년 자바스크립트 프레임워크 현황 표" 에서 보시는 것처럼 관심도도 상당히 높고, 잘 알려지지 않아 학습 수요가 높은 것으로 생각됩니다.
