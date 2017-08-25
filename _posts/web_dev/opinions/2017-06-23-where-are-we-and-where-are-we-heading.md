@@ -88,9 +88,9 @@ Angular, Vue.js 같은 대중적인 Javascript MVC Framework에도 결합될 수
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m-sCdS0sQO8" frameborder="0" allowfullscreen></iframe>
 
-모바일 기능을 가졌다 하더라도, 일단은 웹 사이트이기 때문에 브라우저 특성을 타게 됩니다. 따라서, Safari (iOS) 같이 [현재는 미지원(개발 중))](https://m.phillydevshop.com/apples-refusal-to-support-progressive-web-apps-is-a-serious-detriment-to-future-of-the-web-e81b2be29676)하는 브라우저가 있지만 (Mac OS 는 동작함), Chrome & Firefox & Opera & Samsung Mobile Browser 등 모던 브라우저는 다 지원하고 있으며
+모바일 기능을 가졌다 하더라도, 일단은 웹 사이트이기 때문에 브라우저 특성을 타게 됩니다. 따라서, Safari (iOS) 같이 [현재는 미지원(개발 중)](https://m.phillydevshop.com/apples-refusal-to-support-progressive-web-apps-is-a-serious-detriment-to-future-of-the-web-e81b2be29676)하는 브라우저가 있지만 (Mac OS 는 동작함), Chrome & Firefox & Opera & Samsung Mobile Browser 등 모던 브라우저는 다 지원하고 있으며
 
-- [Lyft : 위 영상 6분 8초 참고](https://www.youtube.com/watch?v=m-sCdS0sQO8&t=604s)
+- Lyft : 위 영상 6분 8초 참고
 - [Airbnb Roadmap : Breaking Free from Rails 글 참고](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
 - Twitter Lite : 아래 영상 참고
 
