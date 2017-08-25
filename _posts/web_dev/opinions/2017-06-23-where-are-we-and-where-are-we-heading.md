@@ -126,5 +126,4 @@ Vue로 화면을 개발하면서 Angular 2를 사용할 때는 와닿지 못했�
 - [Progressive Web App 소개 슬라이드](https://www.slideshare.net/GihyoJoshuaJang/the-future-of-web-progressive-web-app)
 - [프로그레시브 웹 앱 소개 기사, 지디넷](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20160922012153)
 - [Twitter Lite - Progressive Web App 기사](https://blog.twitter.com/official/en_us/topics/product/2017/introducing-twitter-lite.html)
-- [The Future of Web - Progressive Web App 슬라이드쉐어](https://www.slideshare.net/GihyoJoshuaJang/the-future-of-web-progressive-web-app)
 - [State of js 사이트](http://stateofjs.com/2016/frontend/)
