@@ -12,17 +12,20 @@ function makePostRequest() {
     },
     json: true,
     body: {
-      "registration_ids" : ["e2jClLAYnUA:APA91bHswI9RZUojJncrIl-75cpstV8KYR-y3tM9xcr1HdmftfM4z9v-hYleM6lZZHoaz4FB1bv9ov6KQIvd4GzM56ywHEikCd9J2w8cu7xF7tVbNmM2Q05ZxpVW9xk_dlhgxJWHpbSU"],
+      "registration_ids" : ["em7OFi2pb0g:APA91bHMJ_Z8Q10cI3I5-SptWGLqFS4CU0R9CtLuxPKpn_FJfV5SWoJkhwMe5aFkz8fdCQ10G9fGSd2y_XOi6QPYpSD62LbRvacAYt0Bk7QHviuReSK5K9JaFkcZ2XiTvF85DSWC73kj"],
       "data": {
-        "message": "This is a Firebase Cloud Messaging Topic Message!",
-       }
+        "post_title": "This is a Firebase Cloud Messaging Topic Message!",
+        "post_content": "This is the content",
+        "post_url": "current url"
+      }
     }
     // resolveWithFullResponse: true
   }).then(response => {
     if (response.statusCode >= 400) {
       throw new Error(`HTTP Error: ${response.statusCode}`);
     }
-    console.log('SUCCESS! Posted', event.data.ref);
+    // console.log('SUCCESS! Posted', event.data.ref);
+    console.log("success", response);
   });
 };
 

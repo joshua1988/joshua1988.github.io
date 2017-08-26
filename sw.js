@@ -30,11 +30,13 @@ self.addEventListener('push', function(event) {
   console.log("[Service Worker] Push Event : ", event);
 
   var title = 'Captain Pangyo Tech News';
-  var data = event.data.json();
+  // var data = event.data.json();
+  var data = event.data;
+  console.log(data);
 
   var options = {
-    body: 'Yay it works.',
-    data: data.url,
+    body: data.post_title,
+    // data: data.url,
     icon: './images/icons/144x.png',
     badge: '/images/icons/48x.png'
   };
