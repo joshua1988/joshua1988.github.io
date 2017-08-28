@@ -5,7 +5,8 @@
     "firebase-admin": "~4.2.1",
     "firebase-functions": "^0.5.7",
     "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "request-promise": "^4.2.1",
+    "web-push": "^3.2.2"
   },
   "private": true
 }
