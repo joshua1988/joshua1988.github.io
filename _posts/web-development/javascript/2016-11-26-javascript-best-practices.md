@@ -2,7 +2,7 @@
 layout: article
 title: "성능덕후를 위한 자바스크립트 코딩 패턴(중급)"
 date: 2016-11-26 17:26:13 +0900
-categories: [web_dev, javascript]
+categories: [web-development, javascript]
 image:
   teaser: posts/web/javascript/javascript_path.png
   credit: CodeSchool #name of the person or site you want to credit

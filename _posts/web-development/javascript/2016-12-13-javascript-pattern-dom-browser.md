@@ -2,7 +2,7 @@
 layout: article
 title: "Javascript Pattern 요약 - DOM 과 브라우저 패턴"
 date: 2016-12-13 20:22:13 +0900
-categories: [web_dev, javascript]
+categories: [web-development, javascript]
 image:
   teaser: posts/web/javascript/javascript_pattern.png
   credit: O'Reilly #name of the person or site you want to credit

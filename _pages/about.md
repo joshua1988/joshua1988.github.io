@@ -14,6 +14,7 @@ tags:
 - 프론트엔드 개발 기초
 - web developer
 - web development basic
+- front end developer
 ---
 
 ## Bio

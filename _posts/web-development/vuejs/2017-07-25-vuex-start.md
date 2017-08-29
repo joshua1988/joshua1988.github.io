@@ -2,7 +2,7 @@
 layout: article
 title: "Vuex 시작하기 1 - Vuex 와 State"
 date: 2017-07-25 19:28:32 +0900
-categories: [web_dev, vuejs]
+categories: [web-development, vuejs]
 excerpt: "Vue 중급으로 레벨업 하기. Vuex 를 이용한 상태관리 소개. state 소개"
 image:
   teaser: posts/web/vuejs/logo.png
@@ -38,7 +38,7 @@ tags:
 
 ## 들어가며
 이 글은 Vue.js 의 컴포넌트 구조화 및 기본 통신 방법을 이해하신 분들에게 적합합니다.
-Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
+Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web-development/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
 
 ## Vuex 란?
 Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
@@ -110,7 +110,7 @@ Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단
 이 앱의 특징은 아래와 같다.
 
 - 위 앱은 `+` 버튼 클릭 시 숫자가 올라가고, `-` 버튼 클릭 시 숫자가 감소된다.
-- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/#vue-components)
+- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web-development/vuejs-tutorial-for-beginner/#vue-components)
 - 따라서, Parent counter 와 Child counter 는 같은 데이터 값 (counter) 을 공유하고 있다.
 
 Parent 컴포넌트 (App.vue) 의 코드부터 보면
@@ -341,5 +341,5 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 비동기 mutations 로직을 위한 **Actions**, 폴더 구조화 등을 알아야
 Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
-[Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-getters-mutations/) <br>
-[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-actions-modules/)
+[Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-getters-mutations/) <br>
+[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)

@@ -2,7 +2,7 @@
 layout: article
 title: "Vuex 시작하기 3 - Actions 와 폴더 구조화"
 date: 2017-08-08 20:10:32 +0900
-categories: [web_dev, vuejs]
+categories: [web-development, vuejs]
 excerpt: "Vue 중급으로 레벨업. Vuex 의 Actions 와 폴더 구조화 익히기"
 image:
   teaser: posts/web/vuejs/logo.png
@@ -40,7 +40,7 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web_dev/vuex-start/), [Vuex 시작하기 2]()에 이어 Vuex 의 마지막 부분인
+이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web-development/vuex-start/), [Vuex 시작하기 2]()에 이어 Vuex 의 마지막 부분인
 Actions 와 폴더 구조화 방법을 소개합니다. 지난 글에서는 mutations 까지 다뤘습니다.
 
 ## Actions 란?
@@ -175,5 +175,5 @@ Vue 로 앱을 개발할 때 더 효율적으로 코드와 데이터를 관리�
 Vuex 가 가져다 주는 이점도 크지만, 정말 간단한 화면을 만들 때는 오히려 초기 세팅하는데 시간이 많이 걸릴 수 있으니
 유의 하시기 바랍니다 :)
 
-[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web_dev/vuex-start/)<br>
-[Vuex 시작하기 2 - Getters & Mutations](https://joshua1988.github.io/web_dev/vuex-getters-mutations/)
+[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web-development/vuex-start/)<br>
+[Vuex 시작하기 2 - Getters & Mutations](https://joshua1988.github.io/web-development/vuex-getters-mutations/)

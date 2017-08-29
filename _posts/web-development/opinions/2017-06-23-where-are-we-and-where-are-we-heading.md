@@ -2,7 +2,7 @@
 layout: article
 title: "현대 웹의 주소와 미래"
 date: 2017-06-23 11:15:32 +0900
-categories: [web_dev, opinions]
+categories: [web-development, opinions]
 excerpt: "유용한 UI Libraries, Javascript Framework, 그리고 내가 생각하는 웹의 현재 주소와 방향"
 image:
   teaser: posts/web/opinions/pwa.jpg
@@ -112,7 +112,7 @@ React와 Angular의 장점을 결합하여 만든 Component 기반의 View 단 �
 
 ![front-end-fw-state]({{ site.url }}/images/posts/web/opinions/front-end-fw-state.png)
 
-Vue로 화면을 개발하면서 Angular 2를 사용할 때는 와닿지 못했던 컴포넌트 기반 화면 개발 방식에 대해 감을 잡게 되었습니다. 화면을 View 단위가 아니라 Component 단위로 더 잘 개 쪼개어서 설계하고, 규격화된 컴포넌트 통신 규칙으로 인해 일관적인 구조화가 가능하기 때문에, 코드 가독성이 더 뛰어나다고 생각합니다. 현재는 React 의 시장 지배율이 더 높지만, 낮은 학습 곡선으로 인해 사용자가 많아진다면 시간이 지남에 따라 평행을 이룰지도 모르겠네요..! [Vue.js 입문자용 튜토리얼 참고](https://joshua1988.github.io/web_dev/vuejs/vuejs-tutorial-for-beginner/)
+Vue로 화면을 개발하면서 Angular 2를 사용할 때는 와닿지 못했던 컴포넌트 기반 화면 개발 방식에 대해 감을 잡게 되었습니다. 화면을 View 단위가 아니라 Component 단위로 더 잘 개 쪼개어서 설계하고, 규격화된 컴포넌트 통신 규칙으로 인해 일관적인 구조화가 가능하기 때문에, 코드 가독성이 더 뛰어나다고 생각합니다. 현재는 React 의 시장 지배율이 더 높지만, 낮은 학습 곡선으로 인해 사용자가 많아진다면 시간이 지남에 따라 평행을 이룰지도 모르겠네요..! [Vue.js 입문자용 튜토리얼 참고](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/)
 
 #### [React](https://facebook.github.io/react/)
 프론트엔드 개발 프레임워크의 절대 강자 React 입니다. Facebook이 개발하고 2013 년에 배포되었습니다. 전통적인 MVC 웹 개발 방식에서 패러다임 전환을 이루어낸 컴포넌트 기반의 상태 관리와 Virtual DOM을 이용한 빠른 렌더링으로 개발자들의 시선을 한눈에 사로잡았습니다. 웹 화면에서 사용자의 인터랙션이 점점 더 많아지는 현대 웹앱이 가야 할 방향을 정확히 알고 있었던 게 아닐까 싶네요 (Virtual DOM 을 이용한 화면 렌더링이 여기서 빛을 발합니다). 또한 [React Native](https://facebook.github.io/react-native/) 라는 프레임워크는 React를 이용하여 HTML, JS, CSS 웹 기술로 네이티브 위젯으로 변환하여 모바일 앱을 만들 수 있습니다. 이러한 강점들 때문에 2016 년 프론트엔드 개발 시장은 React 가 평정하였습니다. 올해는 과연 어떻게 될지..? (개인적으로는 React Native로 영어 사전 앱을 만들다가, 실제 화면 로직들보다 Android & iOS 위젯 버전 호환성 맞추는데 시간을 다 보냈던 걸로 기억합니다.. 그 이후로 React 시리즈는 안쓴..)

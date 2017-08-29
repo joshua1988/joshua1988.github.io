@@ -1,10 +1,10 @@
 ---
-permalink: web_dev/
+permalink: web-development/
 layout: archive
 title: "Web Development"
 ---
 <div class="tiles">
-{% for post in site.categories.web_dev %}
+{% for post in site.categories.web-development %}
 	{% include post-grid.html %}
 {% endfor %}
 </div>

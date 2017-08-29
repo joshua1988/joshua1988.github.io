@@ -2,7 +2,7 @@
 layout: article
 title: "FCM 과 GCM 차이"
 date: 2016-11-30 16:28:13 +0900
-categories: web_dev
+categories: web-development
 image:
   teaser: posts/web/fcm.png
   credit: Google #name of the person or site you want to credit

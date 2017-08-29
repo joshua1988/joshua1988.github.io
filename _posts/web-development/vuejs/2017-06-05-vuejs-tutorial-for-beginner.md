@@ -2,7 +2,7 @@
 layout: article
 title: "Vue.js 입문서 - 프론트엔드 개발자를 위한"
 date: 2017-06-05 17:35:32 +0900
-categories: [web_dev, vuejs]
+categories: [web-development, vuejs]
 excerpt: "초심자를 위한 Vue.js 소개, 구성요소, 구조, Vue Router, Vue Resource 등"
 image:
   teaser: posts/web/vuejs/logo.png
