@@ -19,7 +19,9 @@
         <li>
           {% for category in site.categories %}
             {% unless category contains "music" %}
+            {% unless category contains "web_dev" %}
             <a href="{{ site.url }}/{{ category | first }}" class="excerpt" name="{{ category | first }}">{{ category | first }} ({{ category[1].size }})</a>
+            {% endunless %}
             {% endunless %}
           {% endfor %}
         </li>
