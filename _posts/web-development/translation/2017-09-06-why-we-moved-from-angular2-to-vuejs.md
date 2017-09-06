@@ -37,7 +37,7 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-이 글은 Medium 의 "Why we moved from Angular 2 to Vue.js" 글을 번역한 글입니다.
+이 글은 Medium 의 "Why we moved from Angular 2 to Vue.js(and why we didn’t choose React)" 글을 번역한 글입니다.
 
 항상 이상적일 수만은 없는 실제 프로젝트 여건에서 신중하게 프레임워크를 고민하고 선정해 나가는 과정을 상세하게 기술한 글입니다.
 Angular 2로 구축되어 있는 프로젝트를 업그레이드 & 마이그레이션 하는 과정에서
