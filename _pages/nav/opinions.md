@@ -4,7 +4,7 @@ layout: archive
 title: "Opinions"
 ---
 <div class="tiles">
-{% unless category contains "web_dev" %}
+{% unless site.categories contains "web_dev" %}
 {% for post in site.categories.opinions %}
 	{% include post-grid.html %}
 {% endfor %}
