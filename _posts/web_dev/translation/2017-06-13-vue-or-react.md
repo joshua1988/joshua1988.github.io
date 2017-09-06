@@ -2,7 +2,7 @@
 layout: article
 title: "React 인가 Vue 인가?"
 date: 2017-06-13 17:25:32 +0900
-categories: [web_dev, translation]
+categories: web_dev
 excerpt: "(번역) 프론트엔드 프레임워크 왕 React 와 신흥강자 Vue 를 프레임워크 특성에서 비교한 글"
 image:
   teaser: posts/web/translation/react-or-vue-main.png

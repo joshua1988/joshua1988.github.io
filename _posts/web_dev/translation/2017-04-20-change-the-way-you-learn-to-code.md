@@ -2,7 +2,7 @@
 layout: article
 title: "당신의 코딩 학습 방식을 바꿀 사진"
 date: 2017-04-20 13:37:32 +0900
-categories: [web_dev, translation]
+categories: web_dev
 excerpt: "(번역) 그림을 통해 들려주고 싶은 15 년차 개발자의 이야기"
 image:
   # feature: posts/web/frontend-roadmap.png

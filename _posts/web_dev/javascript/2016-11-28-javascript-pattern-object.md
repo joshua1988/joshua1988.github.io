@@ -2,7 +2,7 @@
 layout: article
 title: "Javascript Pattern 요약 - 객체 생성 패턴"
 date: 2016-11-28 22:16:13 +0900
-categories: [web_dev, javascript]
+categories: web_dev
 image:
   teaser: posts/web/javascript/javascript_pattern.png
   credit: O'Reilly #name of the person or site you want to credit

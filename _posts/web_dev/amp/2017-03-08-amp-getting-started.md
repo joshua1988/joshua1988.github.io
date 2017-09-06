@@ -2,7 +2,7 @@
 layout: article
 title: "최신 웹 트렌드 AMP 시작하기"
 date: 2017-03-08 14:36:32 +0900
-categories: [web_dev, amp]
+categories: web_dev
 excerpt: "AMP 소개, 동작원리, 입문용 5분 튜토리얼"
 image:
   teaser: posts/web/amp/amp.png

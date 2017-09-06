@@ -2,7 +2,7 @@
 layout: article
 title: "Angular 2 개념정리 (초급)"
 date: 2016-11-21 18:51:13 +0900
-categories: [web_dev, angular]
+categories: web_dev
 excerpt: "Angular 2 개요 소개, Angular 1 과 차이점.."
 image:
   teaser: posts/web/angular2/angular2.png
