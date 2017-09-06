@@ -71,7 +71,7 @@ Angular 2 프레임워크에서 추구하는 이상적인 모양이 아니라는
 자바스크립트로 간단하게 할 수 있는 객체 생성도 타입스크립트에서는 오히려 복잡하기만 했습니다.
 혹시 타입스크립트를 시작하시는 분들께는 아래의 기사를 읽어보시길 강력히 권해드립니다. 모든 사람을 위한 해결책은 아닌 거 같아요.
 
-[정적 타입의 충격적인 비밀](https://medium.com/javascript-scene/the-shocking-secret-about-static-types-514d39bf30a3)
+[정적 타입의 충격적인 비밀](https://medium.com/javascript-scene/the-shocking-secret-about-static-types-514d39bf30a3) <br>
 [Angular 2 vs React: 최후의 경쟁](https://medium.com/javascript-scene/angular-2-vs-react-the-ultimate-dance-off-60e7dfbc379c)
 
 전 아직도 Angular 1 이 얼마나 다루기 쉬웠는지 기억합니다, 자체의 문제가 있긴 했지만요.
