@@ -5,7 +5,7 @@ date: 2017-09-11 15:40:32 +0900
 categories: [web-development, translation, javascript]
 excerpt: "(번역) 자바스크립트는 엔진에서 어떻게 돌아가나? 런타임과 호출 스택 해부"
 image:
-  teaser: posts/web/translation/vue-js.jpeg
+  teaser: posts/web/translation/how-js-works/js-engine-structure.png
   credit: Alexander Zlatkov
   creditlink: https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf
   #url to their site or licensing
@@ -27,8 +27,11 @@ tags:
 - 프론트엔드 개발
 - 프론트엔드 개발자
 - 자바스크립트 입문
+- javascript
+- javascript engine
 - javascript runtime
 - javascript call stack
+- how javascript works
 - captain pangyo
 - 캡틴판교
 ---
