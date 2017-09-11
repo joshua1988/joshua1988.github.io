@@ -40,7 +40,7 @@ tags:
 ## 들어가기
 이 글은 "How JavaScript works: an overview of the engine, the runtime, and the call stack" 를 번역한 글입니다.
 
-요즘 자바스크립트를 웹뿐만 아니라, 서버, IOT 등 전 분야에서 사용을 하고 있는데요.
+요즘 자바스크립트를 웹뿐만 아니라 서버, IOT 등 전 분야에서 사용을 하고 있는데요.
 프론트엔드 개발자에게 자바스크립트는 매일 만지게 되는 언어입니다.
 
 기본적인 문법과 API 사용법에 대해서 익히는 것도 중요하지만, 고급 개발자가 되려면
