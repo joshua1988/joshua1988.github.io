@@ -94,7 +94,7 @@ tags:
 
 그럼 얘네들은 대체 어디서 오는 걸까요? 사실 현실은 좀 더 복잡합니다.
 
-![js-engine-runtime]({{ site.url }}/images/posts/web/translation/how-js-works/js-runtime-engine.png)
+![js-engine-runtime]({{ site.url }}/images/posts/web/translation/how-js-works/js-engine-runtime.png)
 
 위 그림처럼, 자바스크립트 엔진 이외에도 자바스크립트에 관여하는 다른 요소들이 많습니다.
 DOM, Ajax, setTimeout 과같이 브라우저에서 제공하는 API 들을 Web API라고 합니다.
