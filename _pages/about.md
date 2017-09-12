@@ -53,9 +53,10 @@ The Best Professional Technical Trainer at POSCO ICT, 2017<br>
 Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Social
-<a class="btn-social google" href="jangkeehyo@gmail.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+<a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 <br>
-jangkeehyo@gmail.com
+Contact me if you have any questions.<br>
+<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
