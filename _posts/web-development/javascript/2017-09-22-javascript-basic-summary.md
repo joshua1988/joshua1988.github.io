@@ -45,7 +45,7 @@ tags:
 {% include toc.html %}
 
 ## 자바스크립트 타입
-기본 타입
+**기본 타입**
 1. Number - 실수, 부동소수점 64비트(double)
 2. String - 문자열
 3. Boolean - True, False
@@ -58,7 +58,7 @@ console.log(typeof nullCheck === null); // false
 console.log(nullCheck === null); // true
 ```
 
-참조 타입(객체 타입)
+**참조 타입(객체 타입)**
 1. Object
 2. Array - 배열도 객체로 취급
 3. Function - 함수도 객체로 취급
@@ -333,7 +333,7 @@ jQuery 와 같은 오픈소스 라이브러리들의 구조.
 ```
 
 ## 클로져
-실행이 끝난 함수의 스코프를 참조할 수 있는 함수 **(정의 더 가다듬을 필요 있음)**
+실행이 끝난 함수의 스코프를 참조할 수 있는 함수
 
 ```js
 function parent() {
