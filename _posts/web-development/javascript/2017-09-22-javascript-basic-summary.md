@@ -707,3 +707,9 @@ var Module = (function() {
 
 Module.privilegedMethod();
 ```
+
+## 참고자료
+- 인사이드 자바스크립트, 한빛미디어
+- [Understanding Scope and Context in Javascript](http://ryanmorr.com/understanding-scope-and-context-in-javascript/)
+- [alex gist - native js implementation](https://gist.github.com/alexhawkins/28aaf610a3e76d8b8264)
+- [Demystifying JavaScript Closures, Callbacks and IIFEs](https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/)
