@@ -456,10 +456,10 @@ console.log(sum(1,2,3)); // 6
 console.log(sum(1,2,3,4,5,6)); // 21
 ```
 
-**참고: arguments는 length 속성과 `arguments[i]`와 같은 index를 지니지만 배열은 아니다. 이러한 객체를 배열과 비슷한 객체(array-like object)라고 한다.**
+<p class="notice">참고: arguments는 length 속성과 `arguments[i]`와 같은 index를 지니지만 배열은 아니다. 이러한 객체를 배열과 비슷한 객체(array-like object)라고 한다.</p>
 
 ## apply() & call()
-위에서 배운 arguments에 apply(), call()을 이용하여 실제 배열 메서드를 사용할 수 있다.
+위에서 배운 arguments에 `apply()`, `call()`을 이용하여 실제 배열 메서드를 사용할 수 있다.
 
 ```js
 // apply() 적용 전
@@ -487,7 +487,7 @@ sum(1,2,3);
 함수명.apply(대상, 인자 배열);
 ```
 
-apply(), call() 메서드는 결국 .apply()를 호출하는 함수를 실행하는 것이다.
+**`apply()`, `call()` 메서드는 결국 .apply()를 호출하는 함수를 실행하는 것** 이다.
 그리고 호출하는 함수의 인자 값에 apply() 로 넘긴 인자 배열을 넣어서
 마지막 실행 결과만 대상에 연결한다라고 보면 되겠다.
 
