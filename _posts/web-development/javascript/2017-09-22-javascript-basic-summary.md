@@ -5,7 +5,7 @@ date: 2017-09-22 16:54:13 +0900
 categories: [web-development, javascript]
 excerpt: "(기본) 자바스크립트 입문자부터 숙련자까지 간단히 보기 좋은 요약본"
 image:
-  teaser: posts/web/javascript/js-basic-summary/keep-calm-and-learn-javascript.jpg
+  teaser: posts/web/javascript/js-basic-summary/keep-calm-and-learn-js.jpg
   credit: Raymond Camden #name of the person or site you want to credit
   creditlink: https://www.keepcalm-o-matic.co.uk/p/keep-calm-and-learn-javascript/
   #url to their site or licensing
@@ -586,7 +586,7 @@ function func() {
   function innerfunc() {
     return a;
   }
-  console.log(innerfunc());
+  console.log(innerfunc()); // 2
 }
 func();
 ```
@@ -601,7 +601,7 @@ function func1() {
 }
 function func2(func1) {
   var a = 2;
-  console.log(func1());
+  console.log(func1()); // 1
 }
 func2(func1);
 ```
