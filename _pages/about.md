@@ -20,7 +20,7 @@ tags:
 ## Bio
 Josh is a singing Mobile & Web Technologist interested in Web Application Performance and Optimization, who is also certified as a professional singer in Korean Entertainment Art Association.
 
-He loves to make things to increase productivity in people's daily routine. During his free time, he loves to [record a music with his own vocal]((https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg)), to [translate technical documents](https://developers.google.com/web/fundamentals/performance/?hl=ko) and to go out exploring the world.
+He loves to make things to increase productivity in people's daily routine. During his free time, he loves to [record a music with his own vocal](https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg), to [translate technical documents](https://developers.google.com/web/fundamentals/performance/?hl=ko) and to go out exploring the world.
 
 ## Works
 POSCO ICT Solution Portal Progressive Web App, *2016 July – 2017 Jan* <br>
