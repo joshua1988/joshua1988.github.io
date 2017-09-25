@@ -15,6 +15,16 @@ tags:
 - web developer
 - web development basic
 - front end developer
+- 패스트캠퍼스
+- 패스트캠퍼스 강사
+- 장기효
+- Captain Pangyo
+- 캡틴판교
+- GDG
+- GDG WebTech
+- GDG Korea
+- 하이브리드앱 개발
+- 하이브리드앱 개발자
 ---
 
 ## Bio
