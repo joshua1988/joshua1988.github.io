@@ -3,11 +3,12 @@ layout: article
 title: "Webpack - Common Chunks Plugin"
 date: 2017-09-26 14:46:13 +0900
 categories: [web-development, webpack]
+excerpt: "(입문) Webpack의 CommonChunksPlugin 소개 및 사용법"
 image:
   teaser: posts/web/webpack/webpack-teaser.png
   credit: Tim Sebastian #name of the person or site you want to credit
   creditlink: https://medium.com/webpack/predictable-long-term-caching-with-webpack-d3eee1d3fa31 #url to their site or licensing
-locale: "ko"
+locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
