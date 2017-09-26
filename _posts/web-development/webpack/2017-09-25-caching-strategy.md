@@ -93,4 +93,5 @@ plugins: [
 <p class="notice">주의 : entry 에 사용된 이름과 초기화 코드를 분리하는 플러그인의 이름이 중복되지 않도록 설정</p>
 
 ## 참고
+- [CommonsChunkPlugin Official Doc](https://webpack.js.org/plugins/commons-chunk-plugin/)
 - [CommonsChunkPlugin 사용법](https://joshua1988.github.io/web-development/webpack/common-chunk-plugin/)
