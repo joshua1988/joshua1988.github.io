@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Webpack - Common Chunks Plugin"
+title: "Webpack(웹팩) - Common Chunks Plugin"
 date: 2017-09-26 14:46:13 +0900
 categories: [web-development, webpack]
-excerpt: "(입문) Webpack의 성능 최적화를 위한 CommonChunksPlugin 소개 및 사용법"
+excerpt: "(입문) Webpack으로 웹 성능을 향상시키기 위한 CommonChunksPlugin 소개 및 사용법"
 image:
   teaser: posts/web/webpack/webpack-teaser.png
   credit: Tim Sebastian #name of the person or site you want to credit
