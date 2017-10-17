@@ -63,8 +63,8 @@ The Best Professional Technical Trainer at POSCO ICT, 2017<br>
 ## Lectures
 [Easy to learn Webpack ](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/), Inflearn, *2017 Oct -* <br>
 [Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/), Inflearn, *2017 Sep -* <br>
-[Web App Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
-[Web App Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
+[Web Application Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
+[Web Application Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
 Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Social
