@@ -9,7 +9,10 @@ tags:
 - 프론트엔드 개발자
 - 프론트엔드 개발
 - 프로그레시브 웹앱
+- pwa
 - vue.js
+- 뷰 시작하기
+- vuejs 시작하기
 - 웹 개발 기초
 - 프론트엔드 개발 기초
 - web developer
@@ -17,6 +20,7 @@ tags:
 - front end developer
 - 패스트캠퍼스
 - 패스트캠퍼스 강사
+- 인프런
 - 장기효
 - Captain Pangyo
 - 캡틴판교
@@ -57,6 +61,7 @@ The Best Professional Technical Trainer at POSCO ICT, 2017<br>
 9XD, *Staff Member*
 
 ## Lectures
+[Easy to learn Webpack ](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/), Inflearn, *2017 Oct -* <br>
 [Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/), Inflearn, *2017 Sep -* <br>
 [Web App Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
 [Web App Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
