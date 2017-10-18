@@ -5,7 +5,7 @@ date: 2017-10-18 18:25:13 +0900
 categories: [web-development, pwa]
 excerpt: "프로그레시브 웹앱의 주요 기능인 푸시 알람의 옵션과 사용법에 대해서 알아보기"
 image:
-  teaser: posts/web/progressive_web_app/push-noti/push-notification-teaser.png
+  teaser: posts/web/progressive_web_app/push-noti/push-notification-teaser.jpg
   credit: mobify #name of the person or site you want to credit
   creditlink: https://www.mobify.com/platform/progressive-web-apps/
     #url to their site or licensing
