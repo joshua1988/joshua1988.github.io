@@ -23,6 +23,14 @@ tags:
 - vue js 튜토리얼
 - vue js 입문
 - 강의
+- vue.js
+- 뷰 시작하기
+- vuejs 강의
+- vue.js 강의
+- vuejs 강좌
+- vue.js 강좌
+- vuejs 시작
+- vuejs 시작하기
 - vue router
 - namedview vs nested routes
 - namedview
@@ -32,6 +40,11 @@ tags:
 - fastcampus
 - pwa
 - vue 배우기
+- 인프런
+- 인프런 vuejs
+- 인프런 뷰
+- 장기효
+- 캡틴판교
 ---
 {% include toc.html %}
 

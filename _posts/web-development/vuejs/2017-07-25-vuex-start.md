@@ -29,16 +29,25 @@ tags:
 - vuex 입문
 - vue 강의
 - vuex 강의
+- vuejs 강의
+- vue.js 강의
+- vuejs 강좌
+- vue.js 강좌
 - vue 배우기
+- 뷰엑스
+- 뷰엑스 예제
 - 패스트캠퍼스
 - 패스트캠퍼스 프론트엔드 웹앱 캠프
+- 인프런
+- 인프런 vuejs
+- 인프런 뷰
 - fastcampus
 ---
 {% include toc.html %}
 
 ## 들어가며
 이 글은 Vue.js 의 컴포넌트 구조화 및 기본 통신 방법을 이해하신 분들에게 적합합니다.
-Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web-development/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
+Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
 
 ## Vuex 란?
 Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.

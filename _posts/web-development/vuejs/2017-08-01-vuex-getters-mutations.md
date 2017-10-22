@@ -17,6 +17,7 @@ tags:
 - vue.js
 - Vue JS
 - vuex
+- 뷰엑스
 - vuex 예제
 - vuex 사용
 - vuex 튜토리얼
@@ -30,8 +31,17 @@ tags:
 - vuex 튜토리얼
 - vuex 시작하기 2
 - vuex 입문
+- vuejs 강의
+- vue.js 강의
+- vuejs 강좌
+- vue.js 강좌
 - vue 강의
 - vue 배우기
+- 뷰엑스 시작하기
+- 뷰엑스 예제
+- 인프런
+- 인프런 vuejs
+- 인프런 뷰
 - 패스트캠퍼스
 - 패스트캠퍼스 프론트엔드 웹앱 캠프
 - fastcampus
@@ -39,7 +49,7 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web-development/vuex-start/)에 이어,
+이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web-development/vuejs/vuex-start/)에 이어,
 Vuex 의 Getters, Mutations 를 소개합니다. 지난 글에서는 state 까지 다뤘습니다.
 
 ## Getters 란?
