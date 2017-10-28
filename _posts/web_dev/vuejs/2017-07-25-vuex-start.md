@@ -38,7 +38,7 @@ tags:
 
 ## 들어가며
 이 글은 Vue.js 의 컴포넌트 구조화 및 기본 통신 방법을 이해하신 분들에게 적합합니다.
-Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web_dev/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
+Vue.js 에 막 입문하시는 분들께는 [Vue 입문 가이드](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/) 를 먼저 읽어보시길 권고드립니다.
 
 ## Vuex 란?
 Vue.js 의 **상태관리** 를 위한 패턴이자 라이브러리.
@@ -341,5 +341,5 @@ Vuex 의 state 인 `counter` 로 바로 접근하는 방식으로 변경됐다.
 비동기 mutations 로직을 위한 **Actions**, 폴더 구조화 등을 알아야
 Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
-[Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-getters-mutations/) <br>
-[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-actions-modules/)
+[Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-getters-mutations/) <br>
+[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)

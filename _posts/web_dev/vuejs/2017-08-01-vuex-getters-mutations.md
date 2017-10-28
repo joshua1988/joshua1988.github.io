@@ -39,7 +39,7 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web_dev/vuex-start/)에 이어,
+이 글은 [Vuex 시작하기 1](https://joshua1988.github.io/web-development/vuejs/vuex-start/)에 이어,
 Vuex 의 Getters, Mutations 를 소개합니다. 지난 글에서는 state 까지 다뤘습니다.
 
 ## Getters 란?
@@ -391,5 +391,5 @@ methods: {
 **state 값을 변경하기 위한 메서드를 정의하는 Mutations** 에 대해 알아보았다.
 Vuex 의 마지막 속성인 Actions 와 Vuex 폴더 구조화는 다음 글에서 다루기로 한다.
 
-[Vuex 시작하기 1탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-start/) <br>
-[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web_dev/vuejs/vuex-actions-modules/)
+[Vuex 시작하기 1탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-start/) <br>
+[Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)
