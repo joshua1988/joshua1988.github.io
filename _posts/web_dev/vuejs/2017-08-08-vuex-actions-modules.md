@@ -175,5 +175,5 @@ Vue 로 앱을 개발할 때 더 효율적으로 코드와 데이터를 관리�
 Vuex 가 가져다 주는 이점도 크지만, 정말 간단한 화면을 만들 때는 오히려 초기 세팅하는데 시간이 많이 걸릴 수 있으니
 유의 하시기 바랍니다 :)
 
-[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web-development/vuejs/vuex-start/)<br>
+[Vuex 시작하기 1 - 상태관리 소개 & States](https://joshua1988.github.io/web-development/vuejs/vuex-start/) <br>
 [Vuex 시작하기 2 - Getters & Mutations](https://joshua1988.github.io/web-development/vuejs/vuex-getters-mutations/)
