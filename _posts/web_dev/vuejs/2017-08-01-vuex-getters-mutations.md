@@ -101,7 +101,7 @@ this.store.state.todos.filter(todo => todo.done)...
 등의 복잡한 로직이라면 왜 Getters 를 쓰는게 편할지 납득이 갈 것이다.
 
 ## Getters 등록을 위한 코드 정리
-[지난 튜토리얼](https://joshua1988.github.io/web_dev/vuex-start/#vuex-튜토리얼-5---state-접근) 에 이어서 getters 를 추가해보자.
+[지난 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuex-start/#vuex-튜토리얼-5---state-접근) 에 이어서 getters 를 추가해보자.
 
 먼저, 지난번 코드에서 정리해야 하는 부분은 아래와 같다.
 
@@ -387,7 +387,7 @@ methods: {
 ```
 
 ## 마무리
-[지난 글](https://joshua1988.github.io/web_dev/vuex-start/#vuex-튜토리얼-4---state-등록)의 state 에 이어서, **이번 글에서는 변경된 state 값을 받아오는 Getters** 와
+[지난 글](https://joshua1988.github.io/web-development/vuejs/vuex-start/#vuex-튜토리얼-4---state-등록)의 state 에 이어서, **이번 글에서는 변경된 state 값을 받아오는 Getters** 와
 **state 값을 변경하기 위한 메서드를 정의하는 Mutations** 에 대해 알아보았다.
 Vuex 의 마지막 속성인 Actions 와 Vuex 폴더 구조화는 다음 글에서 다루기로 한다.
 
