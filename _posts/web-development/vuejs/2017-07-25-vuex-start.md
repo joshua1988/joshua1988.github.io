@@ -119,7 +119,7 @@ Vuex 적용을 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 간단
 이 앱의 특징은 아래와 같다.
 
 - 위 앱은 `+` 버튼 클릭 시 숫자가 올라가고, `-` 버튼 클릭 시 숫자가 감소된다.
-- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web-development/vuejs-tutorial-for-beginner/#vue-components)
+- [Parent 컴포넌트 - Child 컴포넌트 간 데이터 전달을 위해 props 를 사용한다.](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/#vue-components)
 - 따라서, Parent counter 와 Child counter 는 같은 데이터 값 (counter) 을 공유하고 있다.
 
 Parent 컴포넌트 (App.vue) 의 코드부터 보면
