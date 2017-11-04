@@ -34,7 +34,7 @@ tags:
 ## Bio
 Josh is a singing Mobile & Web Technologist interested in Web Application Performance and Optimization, who is also certified as a professional singer in Korean Entertainment Art Association.
 
-He loves to make things to increase productivity in people's daily routine. During his free time, he loves to [record a music with his own vocal](https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg), to [translate technical documents](https://developers.google.com/web/fundamentals/performance/?hl=ko) and to go out exploring the world.
+He loves to make things to increase productivity in people's daily routine. During his free time, he loves to [record a music with his own vocal](https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg), to [translate technical documents](https://developers.google.com/web/resources/contributors/?hl=ko#josh-jang) and to go out exploring the world.
 
 ## Works
 POSCO ICT Solution Portal Progressive Web App, *2016 July – 2017 Jan* <br>
@@ -54,14 +54,14 @@ POSCO Reporting Process Automation, *Software Engineer*
 
 ## Awards
 The Best Professional Technical Trainer at POSCO ICT, 2017<br>
-[The Korea Software Technology Award](http://www.kosta.or.kr/sub2/sw_tech_award) at KOSTA, 2014
+The Korea Software Technology Award at KOSTA, 2014
 
 ## Communities
 [Google Developer Group Web Technology](https://www.facebook.com/groups/1724887854499893/), *Organizer* <br>
 9XD, *Staff Member*
 
 ## Lectures
-[Easy to learn Webpack ](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/), Inflearn, *2017 Oct -* <br>
+[Easy to learn Webpack](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/), Inflearn, *2017 Oct -* <br>
 [Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/), Inflearn, *2017 Sep -* <br>
 [Web Application Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
 [Web Application Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
