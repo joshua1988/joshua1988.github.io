@@ -13,6 +13,10 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
+- vue.js 사용법
+- vue.js 강좌
+- vue.js 한글
+- vue.js 시작
 - vuejs
 - Vue JS
 - vue 튜토리얼
@@ -32,6 +36,9 @@ tags:
 - fastcampus
 - pwa
 - vue 배우기
+- vue.js 사용법
+- vue.js 강좌
+- vue.js 한글
 ---
 {% include toc.html %}
 

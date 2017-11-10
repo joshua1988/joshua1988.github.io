@@ -13,6 +13,10 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
+- vue.js 사용법
+- vue.js 강좌
+- vue.js 한글
+- vue.js 시작
 - vuejs
 - vue.js
 - Vue JS
@@ -33,6 +37,9 @@ tags:
 - 패스트캠퍼스
 - 패스트캠퍼스 프론트엔드 웹앱 캠프
 - fastcampus
+- vue.js 사용법
+- vue.js 강좌
+- vue.js 한글
 ---
 {% include toc.html %}
 
