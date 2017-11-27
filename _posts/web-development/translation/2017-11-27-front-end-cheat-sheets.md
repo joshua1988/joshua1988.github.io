@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "프론트엔드 치트 시트(Cheat Sheet) 한 눈에 보기"
+title: "최신 프론트엔드 치트 시트(Cheat Sheet) 한눈에 보기"
 date: 2017-11-27 11:29:32 +0900
 categories: [web-development, translation]
-excerpt: "(번역) Angular, React, Vue.js, ES6, 자바스크립트, GraphQL, Flexbox, Sass, 정규표현식, Redux, Vuex, Stylus 문법"
+excerpt: "(번역) Angular, React, Vue.js, ES6, 자바스크립트, GraphQL, Flexbox, Sass, 정규표현식, Redux, Vuex, Stylus 의 속성 및 API 치트 시트"
 image:
   teaser: posts/web/translation/cheat-sheets/2.png
   credit: Indrek Lasn
