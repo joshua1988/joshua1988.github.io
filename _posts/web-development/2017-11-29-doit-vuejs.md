@@ -2,7 +2,7 @@
 layout: article
 title: "Do it! Vue.js 자료"
 date: 2017-11-29 20:10:32 +0900
-categories: [web-development, vuejs]
+categories: [web-development]
 excerpt: "이지스 퍼블리싱의 Do it! Vue.js 서적 참고자료. 예제, 퀴즈, 최종 프로젝트 등"
 image:
   teaser: posts/web/vuejs/vuejs-with-blackbg.jpg
