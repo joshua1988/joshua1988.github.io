@@ -62,7 +62,7 @@ tags:
 
 ## 예제
 #### 2장 뷰 시작하기
-[02-1 Hello Vue.js](https://github.com/joshua1988/doit-vuejs/tree/master/%EC%98%88%EC%A0%9C%EC%BD%94%EB%93%9C/03_%EB%B7%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/doit-vuejs)
+[02-1 Hello Vue!](https://github.com/joshua1988/doit-vuejs/tree/master/%EC%98%88%EC%A0%9C%EC%BD%94%EB%93%9C/03_%EB%B7%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/doit-vuejs)
 
 #### 3장 뷰 인스턴스
 [04-5 뷰 인스턴스 라이프 사이클](https://github.com/joshua1988/doit-vuejs/blob/master/%EC%98%88%EC%A0%9C%EC%BD%94%EB%93%9C/04_%EB%B7%B0%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4/04-5/index.html)
