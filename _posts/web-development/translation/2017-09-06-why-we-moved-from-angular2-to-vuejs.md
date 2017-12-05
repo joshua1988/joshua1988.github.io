@@ -5,9 +5,9 @@ date: 2017-09-06 18:04:32 +0900
 categories: [web-development, translation]
 excerpt: "(번역) 실제 프로젝트에서 고민한 프레임워크 선정 과정과 Angular, React, Vue 의 비교"
 image:
-  teaser: posts/web/translation/vue-js.jpeg
-  credit: Luis Elizondo
-  creditlink: https://medium.com/reverdev/why-we-moved-from-angular-2-to-vue-js-and-why-we-didnt-choose-react-ef807d9f4163
+  teaser: posts/web/translation/angular-vue.png
+  credit: Huy Nguyen
+  creditlink: https://blog.holistics.io/why-and-how-we-migrated-from-angularjs-to-vuejs/
   #url to their site or licensing
 locale: "ko_KR"
 # 리플 옵션
@@ -22,7 +22,10 @@ tags:
 - vue js 입문
 - angular vue
 - angular2
+- angular vs vue
 - angular2 vs vue
+- 앵귤러 뷰
+- 뷰
 - react vs vue
 - react
 - react vue
@@ -32,6 +35,9 @@ tags:
 - frontend framework comparison
 - 패스트캠퍼스
 - 패스트캠퍼스 프론트엔드 웹앱 캠프
+- 인프런 뷰 강의
+- 뷰 강의
+- 뷰 강좌
 - vue 배우기
 ---
 {% include toc.html %}
