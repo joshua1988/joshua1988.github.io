@@ -3,7 +3,7 @@ layout: article
 title: "흔하지 않은 웹 개발자가 되는 방법"
 date: 2018-01-02 19:29:32 +0900
 categories: [web-development, translation]
-excerpt: "7년차 비전공 웹 개발자의 경험에서 나오는 고찰과 좋은 웹 개발자가 되는 방법 7가지"
+excerpt: "(번역) 7년차 비전공 웹 개발자의 경험에서 나오는 고찰과 좋은 웹 개발자가 되는 방법 7가지"
 image:
   teaser: posts/web/translation/do-what-is-great.jpeg
   credit: Martin Shreder
@@ -13,6 +13,8 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
+- 흔하지 않은 웹 개발자가 되는 방법
+- 흔하지 않은 웹 개발자
 - 프론트엔드 엔지니어
 - 프론트엔드 개발자
 - 훌륭한 프론트엔드 개발자가 되는 방법
@@ -311,5 +313,3 @@ Captain Pangyo
 ## 마무리
 좋은 웹 개발자가 되는 것에 대한 제 개인 생각을 읽어주셔서 감사합니다.
 혹시 웹 개발을 처음 시작하신 분이라면, 이 글이 도움이 되었으면 좋겠네요 :)
-
-P.S : 이 글은 [원작자 Jessica](https://medium.freecodecamp.org/how-to-be-an-uncommonly-good-web-developer-7f745978351f)의 허가를 받아 번역한 글입니다.
