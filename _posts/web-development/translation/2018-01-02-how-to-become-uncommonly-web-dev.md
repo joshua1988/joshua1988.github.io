@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "흔하지 않은 좋은 웹 개발자가 되는 방법"
+title: "흔치 않게 좋은 웹 개발자가 되는 방법"
 date: 2018-01-02 19:29:32 +0900
 categories: [web-development, translation]
 excerpt: "(번역) 7년차 비전공 웹 개발자의 경험에서 나온 고찰과 좋은 웹 개발자가 되는 방법 7가지"
@@ -35,7 +35,7 @@ tags:
 전 올해로 5년 차를 맞이하는 웹 개발자로서 항상 어떻게 성장해야 하는지 고민하고 있습니다. 올 한 해는 이번 블로그 글을 염두에 두고,
 더 좋은 개발자, 더 좋은 동료가 되보려고 합니다.
 
-아래 글은 "흔하지 않은, 좋은 웹 개발자가 되는 방법([How to become an uncommonly good web developer](https://medium.freecodecamp.org/how-to-be-an-uncommonly-good-web-developer-7f745978351f))"이라는 미디엄 기사를 번역한 글입니다.
+아래 글은 "흔하지 않은, 좋은 웹 개발자가 되는 방법([How to be an uncommonly good web developer](https://medium.freecodecamp.org/how-to-be-an-uncommonly-good-web-developer-7f745978351f))"이라는 미디엄 기사를 번역한 글입니다.
 
 7년의 경력을 가진 비전공 웹 개발자가 겪은 경험과 생각을 글로 잘 풀어냈죠. 훌륭한 웹 개발자가 되려면 어떤 자질이 필요할까?라고 했을 때 다들 프로그래밍 실력을 떠올리실 텐데요.
 저도 마찬가지로 그렇게 생각했습니다. 하지만 아래의 글을 읽는 순간, 이번 년도에 주변 동료들에게 어떤 태도와 마음가짐을 갖고 업무에 임해야 할지를 다짐하게 되었습니다.
