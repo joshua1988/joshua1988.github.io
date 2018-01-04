@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "흔하지 않은 웹 개발자가 되는 방법"
+title: "흔하지 않은 좋은 웹 개발자가 되는 방법"
 date: 2018-01-02 19:29:32 +0900
 categories: [web-development, translation]
 excerpt: "(번역) 7년차 비전공 웹 개발자의 경험에서 나온 고찰과 좋은 웹 개발자가 되는 방법 7가지"
