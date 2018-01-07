@@ -65,6 +65,7 @@ The Korea Software Technology Award at KOSTA, 2014
 9XD, *Staff Member*
 
 ## Lectures
+[Implementing Progressive Web App using Vue.js](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2018 Jan - 2018 Mar* <br>
 [Easy to learn Webpack](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/), Inflearn, *2017 Oct -* <br>
 [Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/), Inflearn, *2017 Sep -* <br>
 [Web Application Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
