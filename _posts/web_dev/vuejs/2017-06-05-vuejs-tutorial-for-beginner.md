@@ -651,3 +651,7 @@ React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual
 - [webpack advanced](https://egghead.io/courses/using-webpack-for-production-javascript-applications)
 - [NHN Enter](http://meetup.toast.com/posts/99)
 - [Vue Loader Docs](https://vue-loader.vuejs.org/en/)
+
+## 참고 서적
+- Do it! Vue.js(2018년 1월 23일부터 온라인 예약 판매 실시)
+![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png)
