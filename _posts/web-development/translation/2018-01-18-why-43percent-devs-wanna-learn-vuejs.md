@@ -51,7 +51,6 @@ tags:
 가볍고 유연한 Vue.js 프레임워크의 특징과 배우기 쉬운 점을 가벼운 설명으로 잘 녹여내었죠.
 
 프런트엔드 개발을 시작하시는 분들에게 좋은 정보가 되었으면 좋겠습니다.<br>
-Captain Pangyo
 
 ## 서문
 전 세계 웹 개발자를 대상으로 한 [2017년 자바스크립트의 현황조사](https://stateofjs.com/2017/front-end/results/)에 따르면
@@ -152,7 +151,7 @@ totalProducts라는 computed 속성을 활용하면 됩니다.
 개발자 도구의 장점 중 하나는 페이지 상에 표시된 데이터를 살펴볼 수 있다는 점입니다.
 ![vue.js 개발자 도구]({{ site.url }}/images/posts/web/translation/why-43percent-devs-wanna-learn-vuejs/18_vue-devtool.gif)
 
-뷰의 반응성(Reactivity, 데이터가 변함에 따라 뷰에서 반사적으로 화면을 변화시키는 특성)을 다시 살펴볼까요.
+뷰의 반응성(Reactivity: 데이터가 변함에 따라 뷰에서 반사적으로 화면을 변화시키는 특성)을 다시 살펴볼까요.
 아이템 2개를 제거해보겠습니다. 아래 보시는 것처럼 상품 목록뿐만 아니라 남은 상품의 총 재고량도 바뀌네요.<br>
 
 ![vue.js 반응성 reactivity]({{ site.url }}/images/posts/web/translation/why-43percent-devs-wanna-learn-vuejs/19_vue-reactivity.gif)
