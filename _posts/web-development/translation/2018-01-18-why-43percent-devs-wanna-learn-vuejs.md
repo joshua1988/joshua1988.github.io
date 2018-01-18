@@ -3,7 +3,7 @@ layout: article
 title: "왜 43%의 프론트엔드 개발자들은 Vue.js를 배우고 싶어하나?"
 date: 2018-01-18 17:45:32 +0900
 categories: [web-development, translation]
-excerpt: "(번역) 2017년에 가장 배우고 싶은 라이브러리 Vue.js 소개 글. 학습 자료와 링크 첨부"
+excerpt: "(번역) 2017년에 가장 배우고 싶은 라이브러리 Vue.js 소개 글. 학습 자료와 링크가 첨부되어 있습니다."
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You
