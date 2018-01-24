@@ -3,7 +3,7 @@ layout: article
 title: "Vue.js 개발을 위한 주요 ES6 문법 4가지"
 date: 2018-01-24 18:22:32 +0900
 categories: [web-development, translation]
-excerpt: "(번역) Vue.js로 개발할 때 도움이 되는 ES6 문법 4가지를 간단한 설명과 예제로 살펴봅니다. 화살표 함수, 템플릿 리터럴, 모듈, 구조 분해"
+excerpt: "(번역) Vue.js로 개발할 때 도움이 되는 ES6 문법 4가지를 간단한 설명과 예제로 살펴봅니다. 화살표 함수, 템플릿 리터럴, 모듈, 구조 분해 등"
 image:
   teaser: posts/web/vuejs/vuejs-es6.jpeg
   credit: kostas mamniatis
