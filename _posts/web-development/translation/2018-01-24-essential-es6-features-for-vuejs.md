@@ -54,11 +54,11 @@ Vue.js가 갖고 있는 가장 큰 장점은 학습 곡선이 낮다는 점이�
 굳이 정말 많은 최신 기술들을 학습하지 않고도 웹 애플리케이션을 개발할 수 있는 프레임워크를
 학습할 수 있다면 괜찮은 선택지이지 않을까요?
 
-이번 글은 ES6를 배우지 않고도 학습할 수 있는 Vue.js 프레임워크를 소개하지 않습니다.
+그렇다고 이번 글은 ES6를 배우지 않고도 학습할 수 있는 Vue.js 프레임워크를 소개하지 않습니다.
 이번 글에서는 Vue.js 프레임워크를 사용할 때 알고 있으면 더 효율적으로 코딩할 수 있는
-최신 자바스크립트 문법(ECMAScript 2015) 4가지를 살펴보겠습니다.
+최신 자바스크립트 문법 4가지를 살펴보겠습니다.
 
-혹시 Vue.js를 아직 ES5로 개발하신다면 한번 눈여겨보면 좋은 글인 것 같아요.
+혹시 Vue.js를 아직 예전 자바스크립트로 개발하신다면 한번 눈여겨보면 좋은 글인 것 같아요.
 그럼 많은 도움 되시길 바라며..
 
 Do it! Vue.js 저자<br>
@@ -465,4 +465,4 @@ new Vue({
 });
 ```
 
-P.S: 이 글은 원작자 Anthony의 허가를 받고 [4 Essential ES2015 Features For Vue.js Development](https://vuejsdevelopers.com/2018/01/22/vue-js-javascript-es6/?jsdojo_id=revue_esv&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)를 번역한 글입니다.
+**P.S: 이 글은 원작자 Anthony의 허가를 받고 [4 Essential ES2015 Features For Vue.js Development](https://vuejsdevelopers.com/2018/01/22/vue-js-javascript-es6/?jsdojo_id=revue_esv&utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Developers)를 번역한 글입니다.**
