@@ -61,7 +61,7 @@ Vue.js의 가장 큰 장점은 학습 곡선이 낮다는 점이라고 강조를
 혹시 Vue.js를 기존 자바스크립트(ES5)로 개발하고 계신다면 한번 읽어보기 좋은 글인 것 같아요.
 그럼 많은 도움 되시길 바랍니다.
 
-Do it! Vue.js 입문서 저자<br>
+[Do it! Vue.js 입문서](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791188612789&orderClick=LAA&Kc#N) 저자<br>
 Captain Pangyo
 
 ## 서문
