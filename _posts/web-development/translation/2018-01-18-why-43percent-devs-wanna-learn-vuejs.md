@@ -203,4 +203,4 @@ totalProducts라는 computed 속성을 활용하면 됩니다.
 그리고 위 블로그 글이 마음에 드셨다면 곧 출간될 저의 Vue.js 입문 책을 소개하려고 합니다 :)
 ![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png)
 
-**해당 서적은 다음 주에 온라인으로 예약 판매가 시작될 예정이며 2월 초에 서점에서 만나보실 수 있습니다 :)**
+**온라인 예약 판매가 시작되었습니다. [구매 링크](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791188612789&orderClick=LAA&Kc#N) 1월 27일부터 서점에서 만나보실 수 있습니다 :)**
