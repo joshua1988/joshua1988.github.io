@@ -140,3 +140,5 @@ Do it! Vue.js 입문서를 잠깐 소개하겠습니다.
 - [왜 43%의 프런트엔드 개발자들은 Vue.js를 배우고 싶어 하나?](https://joshua1988.github.io/web-development/translation/why-43percent-devs-wanna-learn-vuejs/)
 - [Vuex 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuex-start/)
 - [Vue.js 한글 강의, 인프런](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/)
+- [이지스 퍼블리싱 도서 소개 페이지](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
+- [Yes24 온라인 예약 구매 페이지](http://www.yes24.com/24/Goods/58206961?Acode=101)
