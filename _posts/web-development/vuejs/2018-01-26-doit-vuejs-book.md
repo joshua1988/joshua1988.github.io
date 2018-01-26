@@ -131,7 +131,7 @@ Do it! Vue.js 입문서를 잠깐 소개하겠습니다.
 -저자 장기효 올림
 
 **P.S : 여러 명의 땀과 노력이 들어간 Do it! Vue.js 도서는 아래 링크에서 구매하실 수 있습니다 :)** <br>
-[Do it! Vue.js 온라인 판매 링크](http://www.yes24.com/24/Goods/58206961?Acode=101)
+[Do it! Vue.js 온라인 예약 구매 링크](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
 ## Vue.js 관련 자료
 - [프런트엔드 개발자를 위한 Vue.js 입문 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/)
