@@ -136,7 +136,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 아 그리고 지금 출간 기념으로 도서 이벤트를 진행 중입니다 :) <br>
 [이지스 퍼블리싱 Do it! Vue.js 이벤트 페이지](https://www.facebook.com/easyspub/posts/1568634209891378)
 
-## Vue.js 관련 자료
+## Vue.js 학습 자료
 - [프런트엔드 개발자를 위한 Vue.js 입문 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/)
 - [React 인가? Vue 인가?](https://joshua1988.github.io/web-development/translation/vue-or-react/)
 - [Angular 2 대신에 Vue.js를 선택한 이유?](https://joshua1988.github.io/web-development/translation/why-we-moved-from-angular2-to-vuejs/)
