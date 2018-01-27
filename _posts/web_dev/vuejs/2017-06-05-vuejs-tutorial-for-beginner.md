@@ -653,5 +653,5 @@ React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual
 - [Vue Loader Docs](https://vue-loader.vuejs.org/en/)
 
 ## 참고 서적
-- Do it! Vue.js(2018년 1월 23일부터 온라인 예약 판매 실시)
+- [Do it! Vue.js 도서](http://www.yes24.com/24/Goods/58206961?Acode=101)
 ![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png)
