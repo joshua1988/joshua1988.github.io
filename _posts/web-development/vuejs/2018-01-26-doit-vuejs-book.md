@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Do it! Vue.js 입문 책 소개"
+title: "Do it! Vue.js 입문 책을 집필하면서.."
 date: 2018-01-26 13:44:32 +0900
 categories: [web-development, vuejs]
 excerpt: "Vue.js 프레임워크를 소개하고 책의 집필 의도와 집필 과정을 설명합니다. Vue.js 관련 학습 자료도 안내합니다."
