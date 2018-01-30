@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "초심자를 위한 리눅스 기본 명령어"
+title: "웹 개발할 때 알아두면 좋은 리눅스 기본 명령어"
 date: 2018-01-30 16:44:32 +0900
 categories: [web-development]
-excerpt: "(기본) CLI, NPM과 같은 도구를 사용할 때 알아두면 좋은 리눅스 기본 명령어 안내"
+excerpt: "(기본) 웹 개발에서 CLI 도구를 사용할 때 자주 사용하는 리눅스 기본 명령어 안내. pwd, touch, ls, rm, cd 등"
 image:
   teaser: posts/web/linux/terminal.jpeg
   credit: wikimedia commons
@@ -61,48 +61,54 @@ CLI(Command Line Interface)라는 도구인데요. 이 도구를 사용하면서
 명령어로 디렉터리를 조작하는 게 어렵지 않지만, 배경 지식이 없는 분들에게는
 다소 불편한 방식일 수 있습니다.
 
-이번 글에서는 웹 개발할 때 알아두면 좋은 리눅스 기본 명령어들을 알아보겠습니다.
+이번 글에서는 웹 개발할 때 알아두면 좋은 리눅스 기본 명령어들을 알아보겠습니다.<br>
 P.S : 참고로 아래 모든 명령어가 윈도우의 명령 프롬프트에서 동작하지는 않습니다.
 윈도우 사용자분들은 텍스트 편집기의 내장 콘솔 창 또는 [cmder](http://cmder.net/)을 이용해보세요.
 
 ## 현재 위치 확인하기 - pwd
-`pwd`는 현재 폴더 위치를 확인하는 명령어입니다.
+`pwd` 는 현재 폴더 위치를 확인하는 명령어입니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/pwd.gif">
 	<figcaption>pwd 명령어로 현재 폴더 위치를 확인</figcaption>
 </figure>
+위 화면은 commands 라는 폴더에서 pwd 명령어를 입력하여 현재 폴더 위치를 확인하는 그림입니다.
 
 ## 현재 폴더 내의 파일과 폴더 확인 - ls
-`ls`는 현재 폴더 내의 파일과 폴더를 표시합니다.
+`ls` 는 현재 폴더 내의 파일과 폴더를 표시합니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/ls.gif">
 	<figcaption>ls 명령어로 현재 폴더 아래에 파일이 있는지 확인</figcaption>
 </figure>
+위 화면은 현재 폴더 folder2에서 ls 명령어를 입력하여 app.js 파일이 있는 것을 확인하는 모습입니다.
 
 ## 특정 폴더로 이동하기 - cd
-`cd`는 특정 폴더의 위치로 이동하는 명령어입니다. `cd 폴더 위치` 형식으로 콘솔 창에 입력하면 해당 폴더 위치로 이동합니다.
+`cd` 는 특정 폴더의 위치로 이동하는 명령어입니다. `cd 폴더 위치` 형식으로 콘솔 창에 입력하면 해당 폴더 위치로 이동합니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/cd.gif">
 	<figcaption>cd 명령어를 이용하여 folder1에서 folder2로 이동</figcaption>
 </figure>
+위 화면은 현재 폴더 folder1에서 cd folder2 명령어로 folder2 폴더로 이동하는 모습입니다.
 
 ## 새로운 파일 생성하기 - touch
-`touch`는 새로운 파일을 생성하는 명령어입니다. 마우스 오른쪽 클릭으로 '새로운 파일 생성하기' 대신에 명령어로 파일을 생성할 수 있습니다.
+`touch` 는 새로운 파일을 생성하는 명령어입니다. 마우스 오른쪽 클릭으로 '새로운 파일 생성하기' 대신에 명령어로 파일을 생성할 수 있습니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/touch.gif">
 	<figcaption>touch 명령어로 index.html 파일을 새로 생성</figcaption>
 </figure>
+위 화면은 폴더 folder2에서 touch index.html 명령어로 새 파일을 생성한 화면입니다.
 
 ## 새로운 폴더 생성하기 - mkdir
-`mkdir`는 새로운 폴더를 생성하는 명령어입니다. 현재 폴더 내에 새로운 폴더를 생성합니다.
+`mkdir` 는 새로운 폴더를 생성하는 명령어입니다. 현재 폴더 내에 새로운 폴더를 생성합니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/mkdir.gif">
 	<figcaption>mkdir 명령어로 새 폴더 folder3을 생성</figcaption>
 </figure>
+위 화면의 동작 순서를 살펴보겠습니다. 먼저 folder2 폴더에서 ls 명령어를 입력하여 폴더 내부에 app.js, index.html 파일이 있는 것을 확인합니다.
+그리고 mkdir folder3 명령어를 이용하여 새 폴더를 생성합니다.
 
 ## 파일 또는 폴더 지우기 - rm -r
-`rm -r`는 대상 폴더 또는 파일을 삭제하는 명령어입니다. `rm`이 기본적으로 파일을 지우는 명령어이고 옵션으로 `-r` 붙이면 폴더도 삭제할 수 있습니다.
+`rm -r` 는 대상 폴더 또는 파일을 삭제하는 명령어입니다. `rm` 이 기본적으로 파일을 지우는 명령어이고 옵션으로 `-r`을 붙이면 폴더도 삭제할 수 있습니다.
 <figure>
-	<img src="{{ site.url }}/images/posts/web/linux/commands/mkdir.gif">
+	<img src="{{ site.url }}/images/posts/web/linux/commands/rm.gif">
 	<figcaption>rm -r 명령어로 app.js 파일과 folder3 폴더를 삭제</figcaption>
 </figure>
