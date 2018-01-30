@@ -106,9 +106,12 @@ P.S : 참고로 아래 모든 명령어가 윈도우의 명령 프롬프트에�
 위 화면의 동작 순서를 살펴보겠습니다. 먼저 folder2 폴더에서 ls 명령어를 입력하여 폴더 내부에 app.js, index.html 파일이 있는 것을 확인합니다.
 그리고 mkdir folder3 명령어를 이용하여 새 폴더를 생성합니다.
 
-## 파일 또는 폴더 지우기 - rm -r
+## 파일 또는 폴더 지우기 - rm
 `rm -r` 는 대상 폴더 또는 파일을 삭제하는 명령어입니다. `rm` 이 기본적으로 파일을 지우는 명령어이고 옵션으로 `-r`을 붙이면 폴더도 삭제할 수 있습니다.
 <figure>
 	<img src="{{ site.url }}/images/posts/web/linux/commands/rm.gif">
 	<figcaption>rm -r 명령어로 app.js 파일과 folder3 폴더를 삭제</figcaption>
 </figure>
+위 화면의 동작 순서를 살펴보겠습니다,
+먼저 ls 명령어로 folder2 폴더에 app.js, index,html 파일과 folder3 폴더가 있는지 확인합니다.
+그리고 rm -r app.js 명령어를 이용하여 app.js 파일을 삭제합니다. folder3 폴더 역시 rm -r folder3 명령어로 삭제합니다.
