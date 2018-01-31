@@ -62,9 +62,11 @@ tags:
 
 <!-- ![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png) -->
 
-이 책이 어떤 책인지는 출판사 [도서 소개란](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)과 [온라인 서점의 책 소개](http://www.yes24.com/24/Goods/58206961?Acode=101)를 참고하시면 자세히 알 수 있습니다.
-이 글에서는 다른 곳에서 읽을 수 없는 책 집필 과정과 그 과정 속에서 느낀 점들을 공유하려고 합니다.
+이 책이 어떤 책인지는 아래의 두 링크를 참고하시면 자세히 알 수 있습니다.
+- [출판사 도서 소개란](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
+- [온라인 서점의 책 소개](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
+이 글에서는 다른 곳에서 읽을 수 없는 책 집필 과정과 그 과정 속에서 느낀 점들을 공유하려고 합니다.
 그럼 재밌게 읽으시길 바랍니다 :)
 
 ## Vue.js 프레임워크란?
