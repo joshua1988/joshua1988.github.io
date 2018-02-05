@@ -107,7 +107,7 @@ pre {
 p code,
 li code {
 	// @include font-size(16,no);
-	@include font-size(16);
+	@include font-size(16,yes);
 	color: $text-color;
 	white-space: nowrap;
 

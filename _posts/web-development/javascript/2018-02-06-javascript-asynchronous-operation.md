@@ -55,7 +55,7 @@ ajax 통신으로 해당 데이터를 서버로부터 가져올 수 있기 때�
 ```js
 function getData() {
 	var tableData;
-	$.get('test.com/products/1', function (response) {
+	$.get('url 주소/products/1', function (response) {
 		tableData = response;
 	});
 	return tableData;
@@ -64,8 +64,8 @@ function getData() {
 console.log(getData()); // undefined
 ```
 
-여기서 `$.get()`이 ajax 통신을 하는 부분입니다. 'test.com/products/1'이라는 url로
-HTTP GET 요청을 날려 1번 상품(product) 정보를 요청하는 코드죠. 좀 더 쉽게 말하면 지정한 url에다가
+여기서 `$.get()`이 ajax 통신을 하는 부분입니다. 지정한 url 주소로 HTTP GET 요청을 날려
+1번 상품(product) 정보를 요청하는 코드죠. 좀 더 쉽게 말하면 지정한 url에다가
 '데이터를 하나 보내주세요' 라는 요청을 날리는 것과 같습니다.
 
 그렇게 서버에서 받아온 데이터는 `response` 인자에 담깁니다. 그리고 `tableData = response;` 코드로
@@ -119,7 +119,7 @@ setTimeout() 역시 비동기 방식으로 실행되기 때문에 3초를 기다
 
 ```js
 function getData(callback) {
-	$.get('test.com/products/1', function (response) {
+	$.get('url 주소/products/1', function (response) {
 		callback(response); // 서버에서 받은 데이터 response를 callback() 함수에 넘겨줌
 	});
 }
