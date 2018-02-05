@@ -107,7 +107,7 @@ pre {
 p code,
 li code {
 	@include font-size(16, no);
-	font-family: $code-font;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	color: $text-color;
 	white-space: nowrap;
 
