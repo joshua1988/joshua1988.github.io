@@ -137,7 +137,7 @@ function getData(callback) {
 }
 
 getData(function (tableData) {
-	console.log(tableData); // $.get()의 reponse 값이 tableData에 전달됨
+	console.log(tableData); // $.get()의 response 값이 tableData에 전달됨
 });
 ```
 
