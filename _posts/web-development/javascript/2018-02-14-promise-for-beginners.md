@@ -56,7 +56,7 @@ tags:
 프로미스는 서버에서 받아온 데이터를 화면에 표시할 때 주로 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 API를 사용합니다.
 
 ```js
-$.get('https://domain.com/products/1', function (response) {
+$.get('url 주소/products/1', function (response) {
 	console.log(response);
 });
 ```
@@ -385,10 +385,10 @@ function getData() {
 }
 
 getData().then(function (result) {
-	console.log(result);
+	console.log(result); // hi
 	throw new Error("Error in then()");
 }).catch(function (err) {
-	console.log('then error : ', err);
+	console.log('then error : ', err); // then error :  Error: Error in then()
 });
 ```
 
@@ -410,8 +410,8 @@ getData().then(function (result) {
 감사합니다.
 
 ## 다른 시리즈 확인하기
-[1탄 - 자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
-3탄 - async와 await(연재 예정..)
+- [1탄 - 자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
+- 3탄 - async와 await(연재 예정..)
 
 ## 참고
 - [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
