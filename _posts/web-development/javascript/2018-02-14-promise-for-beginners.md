@@ -50,7 +50,7 @@ tags:
 여기서 자바스크립트의 비동기 처리란 '특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성'을 의미합니다.
 비동기 처리에 대한 이해가 없으시다면 [이전 글 '자바스크립트 비동기 처리와 콜백 함수'](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)를 읽어보시길 추천드립니다 :)
 
-**A promise is an object that may produce a single value some time in the future**
+**"A promise is an object that may produce a single value some time in the future"**
 
 ## Promise가 왜 필요한가?
 프로미스는 서버에서 받아온 데이터를 화면에 표시할 때 주로 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 API를 사용합니다.
@@ -133,7 +133,7 @@ new Promise(function (resolve, reject) {
 
 ```js
 new Promise(function (resolve, reject) {
-  resolve();
+	resolve();
 });
 ```
 
@@ -143,7 +143,7 @@ new Promise(function (resolve, reject) {
 function getData() {
 	return new Promise(function (resolve, reject) {
 		var data = 100;
-	  resolve(data);
+		resolve(data);
 	});
 }
 
@@ -168,7 +168,7 @@ reject() 역시 `catch()`로 실패한 이유(실패 처리의 결과 값)를 �
 ```js
 function getData() {
 	return new Promise(function (resolve, reject) {
-	  reject(new Error("Request is failed"));
+		reject(new Error("Request is failed"));
 	});
 }
 
@@ -188,9 +188,9 @@ getData().then(function (data) {
 function getData() {
 	return new Promise(function (resolve, reject) {
 		$.get('url 주소/products/1', function (response) {
-      if (response) {
+			if (response) {
 				resolve(response);
-      }
+			}
 			reject(new Error("Request is failed"));
 		});
 	});
@@ -329,9 +329,8 @@ function getData() {
 }
 
 // 1. then()으로 에러를 처리하는 코드
-getData().then(function (data) {
-  // ...
-	console.log(data);
+getData().then(function () {
+	// ...
 }, function (err) {
 	console.log(err);
 });
@@ -399,7 +398,7 @@ getData().then(function (result) {
 	<figcaption>발생한 에러를 성공적으로 콘솔에 출력한 모습</figcaption>
 </figure>
 
-**따라서, 더 많은 예외를 처리하기 위해서 프로미스는 가급적 catch()로 에러를 처리하시기 바랍니다.**
+**따라서, 더 많은 예외를 처리 상황을 위해 프로미스의 끝에 가급적 catch()를 붙이시기 바랍니다.**
 
 ## 마무리
 여태까지 살펴본 설명과 예제로 프로미스의 동작에 대해 감을 좀 잡으셨나요?
@@ -409,7 +408,7 @@ getData().then(function (result) {
 다음에 연재할 시리즈물 마지막 편은 ES6의 async입니다. 그럼 금방 또 찾아뵙겠습니다.
 감사합니다.
 
-## 다른 시리즈 확인하기
+## 다른 시리즈물 확인하기
 - [1탄 - 자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
 - 3탄 - async와 await(연재 예정..)
 
