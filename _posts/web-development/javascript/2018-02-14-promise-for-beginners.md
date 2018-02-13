@@ -3,7 +3,7 @@ layout: article
 title: "쉽게 이해하는 자바스크립트 Promise"
 date: 2018-02-14 11:54:13 +0900
 categories: [web-development, javascript]
-excerpt: "(중급) 자바스크립트 입문자를 위한 쉬운 Promise 설명. 쉽게 알아보는 자바스크립트 Promise 개념, 사용법, 예제 코드 등. 예제로 알아보는 then(), catch() 활용법"
+excerpt: "(중급) 자바스크립트 입문자를 위한 Promise 쉬운 설명. 쉽게 알아보는 자바스크립트 Promise 개념, 사용법, 예제 코드 등. 예제로 알아보는 then(), catch() 활용법"
 image:
   teaser: posts/web/javascript/promise.png
   credit: Dominik Kundel #name of the person or site you want to credit
@@ -46,11 +46,11 @@ tags:
 {% include toc.html %}
 
 ## Promise가 뭔가요?
+**"A promise is an object that may produce a single value some time in the future"**
+
 프로미스는 자바스크립트 비동기 처리에 사용되는 객체입니다.
 여기서 자바스크립트의 비동기 처리란 '특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성'을 의미합니다.
 비동기 처리에 대한 이해가 없으시다면 [이전 글 '자바스크립트 비동기 처리와 콜백 함수'](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)를 읽어보시길 추천드립니다 :)
-
-**"A promise is an object that may produce a single value some time in the future"**
 
 ## Promise가 왜 필요한가?
 프로미스는 서버에서 받아온 데이터를 화면에 표시할 때 주로 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 API를 사용합니다.
@@ -317,7 +317,6 @@ getData().then(
 getData().then().catch();
 ```
 
-## 에러 처리 예제 코드
 위 2가지 방법 모두 프로미스의 reject()가 호출되어 실패(Rejected) 상태가 된 경우에 실행됩니다.
 간단하게 말해서 프로미스의 로직이 정상적으로 돌아가지 않는 경우 호출되는거죠. 아래와 같이 말입니다.
 
