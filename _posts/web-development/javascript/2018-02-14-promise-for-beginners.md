@@ -87,10 +87,10 @@ getData(function (tableData) {
 
 ```js
 function getData(callback) {
-  // new Promise() 추가
+	// new Promise() 추가
 	return new Promise(function (resolve, reject) {
 		$.get('url 주소/products/1', function (response) {
-      // 데이터를 받으면 resolve 호출
+			// 데이터를 받으면 resolve 호출
 			resolve(response);
 		});
 	})
@@ -98,7 +98,7 @@ function getData(callback) {
 
 // getData()의 실행이 끝나면 호출되는 then()
 getData().then(function (tableData) {
-  // resolve()의 결과 값이 여기로 전달됨
+	// resolve()의 결과 값이 여기로 전달됨
 	console.log(tableData); // $.get()의 reponse 값이 tableData에 전달됨
 });
 ```
@@ -212,20 +212,20 @@ getData().then(function (data) {
 ```js
 function getData() {
 	return new Promise({
-    // ...
+	// ...
 	});
 }
 
 // then() 으로 여러 개의 프로미스를 연결한 형식
 getData()
 	.then(function (data) {
-		// ...
+	// ...
 	})
 	.then(function () {
-		// ...
+	// ...
 	})
 	.then(function () {
-		// ...
+	// ...
 	});
 ```
 
