@@ -108,19 +108,19 @@ getData().then(function (tableData) {
 
 ## 프로미스의 3가지 상태(states)
 프로미스를 사용할 때 알아야 하는 가장 기본적인 개념이 바로 프로미스의 상태(states)입니다.
-여기서 말하는 상태란 프로미스의 처리 과정을 의미합니다. `new Promise()`로 프로미스를 호출하고 종료될 때까지 3가지 상태를 갖습니다.
+여기서 말하는 상태란 프로미스의 처리 과정을 의미합니다. `new Promise()`로 프로미스를 생성하고 종료될 때까지 3가지 상태를 갖습니다.
 - Pending(대기) : 비동기 처리 로직이 아직 완료되지 않은 상태
 - Fulfilled(이행) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
 - Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
 
 #### Pending(대기)
-먼저 아래와 같이 `new Promise()`를 호출하면 Pending(대기) 상태가 됩니다.
+먼저 아래와 같이 `new Promise()`를 생성하면 Pending(대기) 상태가 됩니다.
 
 ```js
 new Promise();
 ```
 
-이렇게 Promise()를 호출하고 나면 콜백 함수의 인자로 resolve, reject에 접근할 수 있습니다.
+이렇게 Promise()를 생성하고 나면 콜백 함수의 인자로 resolve, reject에 접근할 수 있습니다.
 
 ```js
 new Promise(function (resolve, reject) {
@@ -154,16 +154,16 @@ getData().then(function (resolvedData) {
 ```
 
 #### Rejected(실패)
-Promise()를 호출하면 콜백 함수 인자로 resolve와 reject를 사용할 수 있다고 했습니다.
-여기서 resolve가 아닌 reject를 실행하면 Rejected(실패) 상태가 됩니다.
+new Promise()로 프로미스 객체를 생성하면 콜백 함수 인자로 resolve와 reject를 사용할 수 있다고 했습니다.
+여기서 resolve()가 아닌 reject()를 실행하면 Rejected(실패) 상태가 됩니다.
 
 ```js
 new Promise(function (resolve, reject) {
-  reject();
+	reject();
 });
 ```
 
-reject() 역시 `catch()`로 실패한 이유(실패 처리의 결과 값)를 받을 수 있습니다.
+reject() 호출 역시 `catch()`로 실패한 이유(실패 처리의 결과 값)를 받을 수 있습니다.
 
 ```js
 function getData() {
@@ -268,7 +268,7 @@ getData(userInfo)
 ```
 
 위 코드는 페이지에 입력된 사용자 정보(userInfo)를 받아와 파싱, 인증 등의 작업을 거치는 코드를 나타내었습니다.
-여기서 userInfo는 사용자 정보가 담긴 객체를 의미하고, `parseValue`, `auth`, `display`는 각각 프로미스를 반환해주는 함수를 의미합니다.
+여기서 `userInfo`는 사용자 정보가 담긴 객체를 의미하고, `parseValue`, `auth`, `display`는 각각 프로미스를 반환해주는 함수를 의미합니다.
 아래와 같이 말이죠.
 
 ```js
@@ -297,7 +297,7 @@ function display() {
 이처럼 여러 개의 프로미스를 `.then()`으로 연결하여 처리가 가능합니다.
 
 ## 프로미스의 에러 처리 방법
-앞에서 살펴본 프로미스 예제는 항상 코드가 정상적으로 동작한다고 가정하고 구현한 예제입니다.
+앞에서 살펴본 프로미스 예제는 코드가 항상 정상적으로 동작한다고 가정하고 구현한 예제입니다.
 실제 서비스를 구현하다 보면 네트워크 연결, 상태 코드 문제 등으로 인해 오류가 발생할 수 있습니다.
 따라서, 프로미스의 에러 처리 방법에 대해서도 알고 있어야 합니다.
 
@@ -317,7 +317,7 @@ getData().then(
 getData().then().catch();
 ```
 
-#### 에러 처리 예제 코드
+## 에러 처리 예제 코드
 위 2가지 방법 모두 프로미스의 reject()가 호출되어 실패(Rejected) 상태가 된 경우에 실행됩니다.
 간단하게 말해서 프로미스의 로직이 정상적으로 돌아가지 않는 경우 호출되는거죠. 아래와 같이 말입니다.
 
@@ -341,7 +341,7 @@ getData().then().catch(function (err) {
 });
 ```
 
-#### 프로미스 에러 처리는 가급적 catch()로
+## 프로미스 에러 처리는 가급적 catch()로
 앞에서 프로미스 에러 처리 방법으로 2가지를 살펴봤습니다.
 개개인의 코딩 스타일에 따라서 then()의 두 번째 인자로 처리할 수도,
 catch()로 처리할 수도 있겠지만, 가급적 catch()로 에러를 처리하는게 더 효율적입니다.
@@ -398,7 +398,7 @@ getData().then(function (result) {
 	<figcaption>발생한 에러를 성공적으로 콘솔에 출력한 모습</figcaption>
 </figure>
 
-**따라서, 더 많은 예외를 처리 상황을 위해 프로미스의 끝에 가급적 catch()를 붙이시기 바랍니다.**
+**따라서, 더 많은 예외 처리 상황을 위해 프로미스의 끝에 가급적 catch()를 붙이시기 바랍니다.**
 
 ## 마무리
 여태까지 살펴본 설명과 예제로 프로미스의 동작에 대해 감을 좀 잡으셨나요?
