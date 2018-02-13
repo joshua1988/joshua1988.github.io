@@ -57,7 +57,7 @@ tags:
 
 ```js
 $.get('url 주소/products/1', function (response) {
-	console.log(response);
+  console.log(response);
 });
 ```
 
@@ -70,13 +70,13 @@ $.get('url 주소/products/1', function (response) {
 
 ```js
 function getData(callbackFunc) {
-	$.get('url 주소/products/1', function (response) {
-		callbackFunc(response); // 서버에서 받은 데이터 response를 callbackFunc() 함수에 넘겨줌
-	});
+  $.get('url 주소/products/1', function (response) {
+    callbackFunc(response); // 서버에서 받은 데이터 response를 callbackFunc() 함수에 넘겨줌
+  });
 }
 
 getData(function (tableData) {
-	console.log(tableData); // $.get()의 response 값이 tableData에 전달됨
+  console.log(tableData); // $.get()의 response 값이 tableData에 전달됨
 });
 ```
 
@@ -87,24 +87,24 @@ getData(function (tableData) {
 
 ```js
 function getData(callback) {
-	// new Promise() 추가
-	return new Promise(function (resolve, reject) {
-		$.get('url 주소/products/1', function (response) {
-			// 데이터를 받으면 resolve 호출
-			resolve(response);
-		});
-	})
+  // new Promise() 추가
+  return new Promise(function (resolve, reject) {
+    $.get('url 주소/products/1', function (response) {
+      // 데이터를 받으면 resolve 호출
+      resolve(response);
+    });
+  });
 }
 
 // getData()의 실행이 끝나면 호출되는 then()
 getData().then(function (tableData) {
-	// resolve()의 결과 값이 여기로 전달됨
-	console.log(tableData); // $.get()의 reponse 값이 tableData에 전달됨
+  // resolve()의 결과 값이 여기로 전달됨
+  console.log(tableData); // $.get()의 reponse 값이 tableData에 전달됨
 });
 ```
 
 콜백 함수로 처리하던 구조에서 `new Promise()`, `resolve()`, `then()`와 같은 프로미스 API를 사용한 구조로 바뀌었습니다.
-여기서 `new Promise()`는 좀 이해가 가겠는데 resolve, then은 뭐하는 애들일까요? 아래에서 함께 알아보겠습니다.
+여기서 `new Promise()`는 좀 이해가 가겠는데 resolve, reject, then은 뭐하는 애들일까요? 아래에서 함께 알아보겠습니다.
 
 ## 프로미스의 3가지 상태(states)
 프로미스를 사용할 때 알아야 하는 가장 기본적인 개념이 바로 프로미스의 상태(states)입니다.
@@ -133,7 +133,7 @@ new Promise(function (resolve, reject) {
 
 ```js
 new Promise(function (resolve, reject) {
-	resolve();
+  resolve();
 });
 ```
 
@@ -141,15 +141,15 @@ new Promise(function (resolve, reject) {
 
 ```js
 function getData() {
-	return new Promise(function (resolve, reject) {
-		var data = 100;
-		resolve(data);
-	});
+  return new Promise(function (resolve, reject) {
+    var data = 100;
+    resolve(data);
+  });
 }
 
 // resolve()의 결과 값 data를 resolvedData로 받음
 getData().then(function (resolvedData) {
-	console.log(resolvedData);
+  console.log(resolvedData);
 });
 ```
 
@@ -159,7 +159,7 @@ new Promise()로 프로미스 객체를 생성하면 콜백 함수 인자로 res
 
 ```js
 new Promise(function (resolve, reject) {
-	reject();
+  reject();
 });
 ```
 
@@ -167,16 +167,16 @@ reject() 호출 역시 `catch()`로 실패한 이유(실패 처리의 결과 값
 
 ```js
 function getData() {
-	return new Promise(function (resolve, reject) {
-		reject(new Error("Request is failed"));
-	});
+  return new Promise(function (resolve, reject) {
+    reject(new Error("Request is failed"));
+  });
 }
 
 // resolve()의 결과 값 data를 resolvedData로 받음
 getData().then(function (data) {
-	console.log(data);
+  console.log(data);
 }).catch(function (err) {
-	console.log(err);
+  console.log(err);
 });
 ```
 
@@ -186,47 +186,47 @@ getData().then(function (data) {
 
 ```js
 function getData() {
-	return new Promise(function (resolve, reject) {
-		$.get('url 주소/products/1', function (response) {
-			if (response) {
-				resolve(response);
-			}
-			reject(new Error("Request is failed"));
-		});
-	});
+  return new Promise(function (resolve, reject) {
+    $.get('url 주소/products/1', function (response) {
+      if (response) {
+        resolve(response);
+      }
+      reject(new Error("Request is failed"));
+    });
+  });
 }
 
 // Fulfilled 또는 Rejected의 결과 값 출력
 getData().then(function (data) {
-	console.log(data);
+  console.log(data);
 }).catch(function (err) {
-	console.error(err);
+  console.error(err);
 });
 ```
 
 ## 여러 개의 프로미스 연결하기 (Promise Chaining)
 프로미스의 또 다른 특징은 여러 개의 프로미스를 연결하여 사용할 수 있다는 점입니다.
-앞에서 본 예제처럼 `new Promise()` 객체를 받아 `then()` 메서드로 처리하면 새로운 프로미스 객체가 반환됩니다.
+**앞에서 본 예제처럼 new Promise() 객체를 받아 then() 메서드로 처리하면 새로운 프로미스 객체가 반환됩니다. ????**
 따라서, 아래와 같이 코딩이 가능합니다.
 
 ```js
 function getData() {
-	return new Promise({
-	// ...
-	});
+  return new Promise({
+    // ...
+  });
 }
 
 // then() 으로 여러 개의 프로미스를 연결한 형식
 getData()
-	.then(function (data) {
-	// ...
-	})
-	.then(function () {
-	// ...
-	})
-	.then(function () {
-	// ...
-	});
+  .then(function (data) {
+    // ...
+  })
+  .then(function () {
+    // ...
+  })
+  .then(function () {
+    // ...
+  });
 ```
 
 그러면 위의 형식을 참고하여 실제로 돌려볼 수 있는 예제를 살펴보겠습니다.
@@ -234,20 +234,20 @@ getData()
 
 ```js
 new Promise(function(resolve, reject){
-	setTimeout(function() {
-		resolve(1);
-	}, 2000);
+  setTimeout(function() {
+    resolve(1);
+  }, 2000);
 })
 .then(function(result) {
-	console.log(result); // 1
-	return result + 10;
+  console.log(result); // 1
+  return result + 10;
 })
 .then(function(result) {
-	console.log(result); // 11
-	return result + 20;
+  console.log(result); // 11
+  return result + 20;
 })
 .then(function(result) {
-	console.log(result); // 31
+  console.log(result); // 31
 });
 ```
 
@@ -262,9 +262,9 @@ new Promise(function(resolve, reject){
 
 ```js
 getData(userInfo)
-	.then(parseValue)
-	.then(auth)
-	.then(diaplay);
+  .then(parseValue)
+  .then(auth)
+  .then(diaplay);
 ```
 
 위 코드는 페이지에 입력된 사용자 정보(userInfo)를 받아와 파싱, 인증 등의 작업을 거치는 코드를 나타내었습니다.
@@ -273,24 +273,24 @@ getData(userInfo)
 
 ```js
 var userInfo = {
-	id: 'test@abc.com',
-	pw: '****'
+  id: 'test@abc.com',
+  pw: '****'
 };
 
 function parseValue() {
-	return new Promise({
+  return new Promise({
     // ...
-	});
+  });
 }
 function auth() {
-	return new Promise({
+  return new Promise({
     // ...
-	});
+  });
 }
 function display() {
-	return new Promise({
+  return new Promise({
     // ...
-	});
+  });
 }
 ```
 
@@ -306,8 +306,8 @@ function display() {
 
 ```js
 getData().then(
-	handleSuccess,
-	handleError
+  handleSuccess,
+  handleError
 );
 ```
 
@@ -322,21 +322,21 @@ getData().then().catch();
 
 ```js
 function getData() {
-	return new Promise(function (resolve, reject) {
-		reject('failed');
-	});
+  return new Promise(function (resolve, reject) {
+    reject('failed');
+  });
 }
 
 // 1. then()으로 에러를 처리하는 코드
 getData().then(function () {
-	// ...
+  // ...
 }, function (err) {
-	console.log(err);
+  console.log(err);
 });
 
 // 2. catch()로 에러를 처리하는 코드
 getData().then().catch(function (err) {
-	console.log(err);
+  console.log(err);
 });
 ```
 
@@ -350,16 +350,16 @@ catch()로 처리할 수도 있겠지만, 가급적 catch()로 에러를 처리�
 ```js
 // then()의 두 번째 인자로는 감지하지 못하는 오류
 function getData() {
-	return new Promise(function (resolve, reject) {
-		resolve('hi');
-	});
+  return new Promise(function (resolve, reject) {
+    resolve('hi');
+  });
 }
 
 getData().then(function (result) {
-	console.log(result);
-	throw new Error("Error in then()"); // Uncaught (in promise) Error: Error in then()
+  console.log(result);
+  throw new Error("Error in then()"); // Uncaught (in promise) Error: Error in then()
 }, function (err) {
-	console.log('then error : ', err);
+  console.log('then error : ', err);
 });
 ```
 
@@ -377,16 +377,16 @@ getData()의 프로미스에서 resolve()를 이용하여 정상적으로 로직
 ```js
 // catch()로 오류를 감지하는 코드
 function getData() {
-	return new Promise(function (resolve, reject) {
-		resolve('hi');
-	});
+  return new Promise(function (resolve, reject) {
+    resolve('hi');
+  });
 }
 
 getData().then(function (result) {
-	console.log(result); // hi
-	throw new Error("Error in then()");
+  console.log(result); // hi
+  throw new Error("Error in then()");
 }).catch(function (err) {
-	console.log('then error : ', err); // then error :  Error: Error in then()
+  console.log('then error : ', err); // then error :  Error: Error in then()
 });
 ```
 
