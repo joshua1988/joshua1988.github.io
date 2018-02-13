@@ -47,10 +47,10 @@ tags:
 
 ## Promise가 뭔가요?
 프로미스는 자바스크립트 비동기 처리에 사용되는 객체입니다.
-여기서 자바스크립트의 비동기 처리란 *특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성*을 의미합니다.
+여기서 자바스크립트의 비동기 처리란 '특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성'을 의미합니다.
 비동기 처리에 대한 이해가 없으시다면 [이전 글 '자바스크립트 비동기 처리와 콜백 함수'](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)를 읽어보시길 추천드립니다 :)
 
-> A promise is an object that may produce a single value some time in the future
+**A promise is an object that may produce a single value some time in the future**
 
 ## Promise가 왜 필요한가?
 프로미스는 서버에서 받아온 데이터를 화면에 표시할 때 주로 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 API를 사용합니다.
