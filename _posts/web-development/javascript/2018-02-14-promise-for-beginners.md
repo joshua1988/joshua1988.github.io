@@ -65,7 +65,7 @@ $.get('url 주소/products/1', function (response) {
 그런데 여기서 데이터를 받아오기도 전에 마치 데이터를 다 받아온 것 마냥 화면에 데이터를 표시하려고 하면 오류가 발생하거나 빈 화면이 뜹니다.
 이와 같은 문제점을 해결하기 위한 방법 중 하나가 프로미스 입니다.
 
-## 프로미스 동작 코드 - 기초
+## 프로미스 코드 - 기초
 그럼 프로미스가 어떻게 동작하는지 이해하기 위해 간단한 ajax 통신 코드를 살펴보겠습니다.
 
 ```js
@@ -178,7 +178,12 @@ getData().then().catch(function (err) {
 });
 ```
 
-## 프로미스 동작 코드 - 쉬운 예제
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/promise.svg">
+	<figcaption>프로미스 처리 흐름 - 출처 : MDN</figcaption>
+</figure>
+
+## 프로미스 코드 - 쉬운 예제
 그럼 위에서 배운 내용들을 종합하여 간단한 프로미스 코드를 만들어보겠습니다.
 이해하기 수월하게 앞에서 살펴본 ajax 통신 예제 코드에 프로미스를 적용해보겠습니다.
 
@@ -408,11 +413,11 @@ getData().then(function (result) {
 다음에 연재할 시리즈물 마지막 편은 ES6의 async입니다. 그럼 금방 또 찾아뵙겠습니다.
 감사합니다.
 
-## 다른 시리즈물 확인하기
+#### 다른 시리즈물 확인하기
 - [1탄 - 자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
 - 3탄 - async와 await(연재 예정..)
 
-## 참고
+#### 참고
 - [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Master the JS interview: Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 - [Promise/A+ Spec](https://github.com/promises-aplus/promises-spec)
