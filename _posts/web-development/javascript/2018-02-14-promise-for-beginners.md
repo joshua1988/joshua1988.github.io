@@ -52,12 +52,12 @@ tags:
 여기서 자바스크립트의 비동기 처리란 '특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성'을 의미합니다.
 비동기 처리에 대한 이해가 없으시다면 [이전 글 '자바스크립트 비동기 처리와 콜백 함수'](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)를 읽어보시길 추천드립니다 :)
 
-## Promise가 왜 필요한가?
-프로미스는 서버에서 받아온 데이터를 화면에 표시할 때 주로 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 API를 사용합니다.
+## Promise가 왜 필요한가요?
+프로미스는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용합니다. 일반적으로 웹 애플리케이션을 구현할 때는 서버에서 데이터를 요청하고 받아오기 위해 아래와 같은 API를 사용합니다.
 
 ```js
 $.get('url 주소/products/1', function (response) {
-  console.log(response);
+  // ...
 });
 ```
 
@@ -90,7 +90,7 @@ function getData(callback) {
   // new Promise() 추가
   return new Promise(function (resolve, reject) {
     $.get('url 주소/products/1', function (response) {
-      // 데이터를 받으면 resolve 호출
+      // 데이터를 받으면 resolve() 호출
       resolve(response);
     });
   });
@@ -104,7 +104,7 @@ getData().then(function (tableData) {
 ```
 
 콜백 함수로 처리하던 구조에서 `new Promise()`, `resolve()`, `then()`와 같은 프로미스 API를 사용한 구조로 바뀌었습니다.
-여기서 `new Promise()`는 좀 이해가 가겠는데 resolve, reject, then은 뭐하는 애들일까요? 아래에서 함께 알아보겠습니다.
+여기서 `new Promise()`는 좀 이해가 가겠는데 `resolve()`, `then()`은 뭐하는 애들일까요? 아래에서 함께 알아보겠습니다.
 
 ## 프로미스의 3가지 상태(states)
 프로미스를 사용할 때 알아야 하는 가장 기본적인 개념이 바로 프로미스의 상태(states)입니다.
@@ -114,13 +114,13 @@ getData().then(function (tableData) {
 - Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
 
 #### Pending(대기)
-먼저 아래와 같이 `new Promise()`를 생성하면 Pending(대기) 상태가 됩니다.
+먼저 아래와 같이 `new Promise()`를 호출하면 Pending(대기) 상태가 됩니다.
 
 ```js
 new Promise();
 ```
 
-이렇게 Promise()를 생성하고 나면 콜백 함수의 인자로 resolve, reject에 접근할 수 있습니다.
+이렇게 `new Promise()`를 호출할 때 콜백 함수의 인자로 resolve, reject에 접근할 수 있습니다.
 
 ```js
 new Promise(function (resolve, reject) {
@@ -149,12 +149,12 @@ function getData() {
 
 // resolve()의 결과 값 data를 resolvedData로 받음
 getData().then(function (resolvedData) {
-  console.log(resolvedData);
+  console.log(resolvedData); // 100
 });
 ```
 
 #### Rejected(실패)
-new Promise()로 프로미스 객체를 생성하면 콜백 함수 인자로 resolve와 reject를 사용할 수 있다고 했습니다.
+`new Promise()`로 프로미스 객체를 생성하면 콜백 함수 인자로 resolve와 reject를 사용할 수 있다고 했습니다.
 여기서 resolve()가 아닌 reject()를 실행하면 Rejected(실패) 상태가 됩니다.
 
 ```js
@@ -163,7 +163,7 @@ new Promise(function (resolve, reject) {
 });
 ```
 
-reject() 호출 역시 `catch()`로 실패한 이유(실패 처리의 결과 값)를 받을 수 있습니다.
+reject() 호출 역시 실패한 이유(실패 처리의 결과 값)를 `catch()`로 받을 수 있습니다.
 
 ```js
 function getData() {
@@ -172,17 +172,15 @@ function getData() {
   });
 }
 
-// resolve()의 결과 값 data를 resolvedData로 받음
-getData().then(function (data) {
-  console.log(data);
-}).catch(function (err) {
-  console.log(err);
+// reject()의 결과 값 Error를 err에 받음
+getData().then().catch(function (err) {
+  console.log(err); // Error: Request is failed
 });
 ```
 
 ## 프로미스 동작 코드 - 쉬운 예제
 그럼 위에서 배운 내용들을 종합하여 간단한 프로미스 코드를 만들어보겠습니다.
-이해하기 수월하게 앞에서 살펴본 ajax 통신 코드에 프로미스를 적용하겠습니다.
+이해하기 수월하게 앞에서 살펴본 ajax 통신 예제 코드에 프로미스를 적용해보겠습니다.
 
 ```js
 function getData() {
@@ -198,15 +196,18 @@ function getData() {
 
 // Fulfilled 또는 Rejected의 결과 값 출력
 getData().then(function (data) {
-  console.log(data);
+  console.log(data); // response 값 출력
 }).catch(function (err) {
-  console.error(err);
+  console.error(err); // Error 출력
 });
 ```
 
+위 코드는 서버에서 제대로 응답을 받아오면 resolve() 메서드를 호출하고, 응답이 없으면 reject() 메서드를 호출하는 예제입니다.
+호출된 메서드에 따라 then()이나 catch()로 분기하여 데이터 또는 오류를 출력합니다.
+
 ## 여러 개의 프로미스 연결하기 (Promise Chaining)
 프로미스의 또 다른 특징은 여러 개의 프로미스를 연결하여 사용할 수 있다는 점입니다.
-**앞에서 본 예제처럼 new Promise() 객체를 받아 then() 메서드로 처리하면 새로운 프로미스 객체가 반환됩니다. ????**
+앞 예제에서 then() 메서드를 호출하고 나면 새로운 프로미스 객체가 반환됩니다.
 따라서, 아래와 같이 코딩이 가능합니다.
 
 ```js
@@ -230,7 +231,7 @@ getData()
 ```
 
 그러면 위의 형식을 참고하여 실제로 돌려볼 수 있는 예제를 살펴보겠습니다.
-비동기 처리 예제에서 가장 흔하게 사용되는 setTimeout() API를 사용하였습니다.
+비동기 처리 예제에서 가장 흔하게 사용되는 [setTimeout() API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)를 사용하였습니다.
 
 ```js
 new Promise(function(resolve, reject){
@@ -252,7 +253,7 @@ new Promise(function(resolve, reject){
 ```
 
 위 코드는 프로미스 객체를 하나 생성하고 `setTimeout()`을 이용해 2초 후에 `resolve()`를
-호출하는 예제입니다. `resolve()`가 호출되면 프로미스가 대기(Pending) 상태에서 이행(Fulfilled) 상태로 넘어가기 때문에
+호출하는 예제입니다. `resolve()`가 호출되면 프로미스가 대기 상태에서 이행 상태로 넘어가기 때문에
 첫 번째 `.then()`의 로직으로 넘어갑니다. 첫 번째 `.then()`에서는 이행된 결과 값 1을 받아서 10을 더한 후 그 다음 `.then()` 으로 넘겨줍니다.
 두 번째 `.then()`에서도 마찬가지로 바로 이전 프로미스의 결과 값 11을 받아서 20을 더하고 다음 `.then()`으로 넘겨줍니다.
 마지막 `.then()`에서 최종 결과 값 31을 출력합니다.
@@ -267,8 +268,8 @@ getData(userInfo)
   .then(diaplay);
 ```
 
-위 코드는 페이지에 입력된 사용자 정보(userInfo)를 받아와 파싱, 인증 등의 작업을 거치는 코드를 나타내었습니다.
-여기서 `userInfo`는 사용자 정보가 담긴 객체를 의미하고, `parseValue`, `auth`, `display`는 각각 프로미스를 반환해주는 함수를 의미합니다.
+위 코드는 페이지에 입력된 사용자 정보를 받아와 파싱, 인증 등의 작업을 거치는 코드를 나타내었습니다.
+여기서 `userInfo`는 사용자 정보가 담긴 객체를 의미하고, `parseValue`, `auth`, `display`는 각각 프로미스를 반환해주는 함수라고 가정했습니다.
 아래와 같이 말이죠.
 
 ```js
@@ -294,7 +295,7 @@ function display() {
 }
 ```
 
-이처럼 여러 개의 프로미스를 `.then()`으로 연결하여 처리가 가능합니다.
+이처럼 여러 개의 프로미스를 `.then()`으로 연결하여 처리할 수 있습니다.
 
 ## 프로미스의 에러 처리 방법
 앞에서 살펴본 프로미스 예제는 코드가 항상 정상적으로 동작한다고 가정하고 구현한 예제입니다.
@@ -302,7 +303,7 @@ function display() {
 따라서, 프로미스의 에러 처리 방법에 대해서도 알고 있어야 합니다.
 
 에러 처리 방법에는 다음과 같이 2가지 방법이 있습니다.
-1. then()의 두 번째 인자로 에러를 처리하는 방법
+1.then()의 두 번째 인자로 에러를 처리하는 방법
 
 ```js
 getData().then(
@@ -311,13 +312,13 @@ getData().then(
 );
 ```
 
-2. catch()를 이용하는 방법
+2.catch()를 이용하는 방법
 
 ```js
 getData().then().catch();
 ```
 
-위 2가지 방법 모두 프로미스의 reject()가 호출되어 실패(Rejected) 상태가 된 경우에 실행됩니다.
+위 2가지 방법 모두 프로미스의 reject()가 호출되어 실패 상태가 된 경우에 실행됩니다.
 간단하게 말해서 프로미스의 로직이 정상적으로 돌아가지 않는 경우 호출되는거죠. 아래와 같이 말입니다.
 
 ```js
@@ -341,9 +342,9 @@ getData().then().catch(function (err) {
 ```
 
 ## 프로미스 에러 처리는 가급적 catch()로
-앞에서 프로미스 에러 처리 방법으로 2가지를 살펴봤습니다.
-개개인의 코딩 스타일에 따라서 then()의 두 번째 인자로 처리할 수도,
-catch()로 처리할 수도 있겠지만, 가급적 catch()로 에러를 처리하는게 더 효율적입니다.
+앞에서 프로미스 에러 처리 방법 2가지를 살펴봤습니다.
+개개인의 코딩 스타일에 따라서 then()의 두 번째 인자로 처리할 수도 있고
+catch()로 처리할 수도 있겠지만 가급적 catch()로 에러를 처리하는게 더 효율적입니다.
 
 그 이유는 아래의 코드를 보시면 알 수 있습니다.
 
@@ -363,9 +364,9 @@ getData().then(function (result) {
 });
 ```
 
-getData()의 프로미스에서 resolve()를 이용하여 정상적으로 로직을 처리했지만,
-프로미스가 정상적으로 이행됐기 때문에 실행된 then()의 첫 번째 콜백 함수에서
-오류가 나는 경우 오류를 제대로 잡아내지 못합니다. 따라서 코드를 실행하면 아래와 같은 오류가 납니다.
+getData() 함수의 프로미스에서 resolve() 메서드를 호출하여 정상적으로 로직을 처리했지만,
+then()의 첫 번째 콜백 함수 내부에서 오류가 나는 경우 오류를 제대로 잡아내지 못합니다.
+따라서 코드를 실행하면 아래와 같은 오류가 납니다.
 
 <figure>
 	<img src="{{ site.url }}/images/posts/web/javascript/then-not-handling-error.png">
