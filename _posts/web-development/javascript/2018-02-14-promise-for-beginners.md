@@ -308,18 +308,17 @@ function display() {
 따라서, 프로미스의 에러 처리 방법에 대해서도 알고 있어야 합니다.
 
 에러 처리 방법에는 다음과 같이 2가지 방법이 있습니다.
-1.then()의 두 번째 인자로 에러를 처리하는 방법
+1. then()의 두 번째 인자로 에러를 처리하는 방법
+2. catch()를 이용하는 방법
 
 ```js
+// 1.
 getData().then(
   handleSuccess,
   handleError
 );
-```
 
-2.catch()를 이용하는 방법
-
-```js
+// 2.
 getData().then().catch();
 ```
 
