@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "쉽게 이해하는 자바스크립트 Promise"
+title: "자바스크립트 Promise 쉽게 이해하기"
 date: 2018-02-14 11:54:13 +0900
 categories: [web-development, javascript]
 excerpt: "(중급) 자바스크립트 입문자를 위한 Promise 쉬운 설명. 쉽게 알아보는 자바스크립트 Promise 개념, 사용법, 예제 코드 등. 예제로 알아보는 then(), catch() 활용법"
@@ -14,6 +14,7 @@ locale: "ko"
 comments: true
 tags:
 - 자바스크립트 프로미스
+- 자바스크립트 프라미스
 - 자바스크립트 promise
 - 자바스크립트 promise 예제
 - 자바스크립트 promise then
@@ -24,12 +25,9 @@ tags:
 - 자바스크립트 기본
 - 자바스크립트 강좌
 - 자바스크립트 비동기
+- 자바스크립트 비동기 처리
 - 자바스크립트 비동기 프로그래밍
 - 자바스크립트 비동기 함수
-- 콜백 함수
-- 자바스크립트 콜백 함수
-- 콜백 지옥
-- 자바스크립트 콜백 지옥
 - 자바스크립트 입문
 - 자바스크립트 초급
 - 자바스크립트 시작하기
