@@ -3,7 +3,7 @@ layout: article
 title: "자바스크립트 Promise 쉽게 이해하기"
 date: 2018-02-14 11:54:13 +0900
 categories: [web-development, javascript]
-excerpt: "(중급) 자바스크립트 입문자를 위한 Promise 쉬운 설명. 쉽게 알아보는 자바스크립트 Promise 개념, 사용법, 예제 코드 등. 예제로 알아보는 then(), catch() 활용법"
+excerpt: "(중급) 자바스크립트 입문자를 위한 Promise 설명. 쉽게 알아보는 자바스크립트 Promise 개념, 사용법, 예제 코드. 예제로 알아보는 then(), catch() 활용법"
 image:
   teaser: posts/web/javascript/promise.png
   credit: Dominik Kundel #name of the person or site you want to credit

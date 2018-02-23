@@ -48,7 +48,8 @@ tags:
 *'Promise는 자바스크립트 비동기 처리에 사용되는 객체'* 라는 첫 소개 문구를 쓰고 보니
 비동기 처리가 뭔지 궁금해하시는 분들이 많을 것 같았습니다. 그래서 이번 글은 자바스크립트 비동기 처리에 대해서 적어봤습니다.
 자바스크립트가 비동기 처리를 하는 이유, 비동기 처리를 유연하게 하기 위한 콜백 함수, 콜백 함수 지옥 등
-이번 글에서 Promise를 왜 사용해야 되는지에 대해 감을 잡고 나면 다음 편으로 연재할 Promise 글을 재밌게 읽으실 수 있을거에요 :)
+이번 글에서 Promise를 왜 사용해야 되는지에 대해 감을 잡고 나면 [다음 편으로 연재할 Promise 글]
+(https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)을 재밌게 읽으실 수 있을거에요 :)
 
 그럼 오늘도 Happy Coding!
 
@@ -204,3 +205,6 @@ auth() 메서드로 인증을 거치고 나면 콜백 함수 authDone()이 실�
 ## 마무리
 위와 같은 코딩 패턴으로도 콜백 지옥을 해결할 수 있지만 Promise나 Async를 이용하면
 더 편하게 구현할 수 있습니다. 다음 글에서는 Promise에 대해서 알아보겠습니다.
+
+#### 다음 시리즈
+- [자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
