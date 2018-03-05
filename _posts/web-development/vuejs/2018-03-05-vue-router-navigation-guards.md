@@ -76,15 +76,15 @@ var router = new VueRouter();
 
 ```js
 router.beforeEach(function (to, from, next) {
-	// to : 이동할 url
-	// from : 현재 url
-	// next : to에서 지정한 url로 이동하기 위해 꼭 호출해야 하는 함수
+  // to : 이동할 url
+  // from : 현재 url
+  // next : to에서 지정한 url로 이동하기 위해 꼭 호출해야 하는 함수
 });
 ```
 
 여기서 `beforeEach()`를 호출하면 다음과 같이 3개의 인자를 받습니다.
-- to : 이동할 url
-- from : 현재 url
+- to : 이동할 url 정보가 담긴 라우터 객체
+- from : 현재 url 정보가 담긴 라우터 객체
 - next : to에서 지정한 url로 이동하기 위해 꼭 호출해야 하는 함수
 
 `router.beforeEach()`를 호출하고 나면 모든 라우팅이 대기 상태가 됩니다.
@@ -102,10 +102,10 @@ var Home = { template: '<p>Home Component</p>' };
 
 // 라우팅 정보
 var router = new VueRouter({
-	routes: [
-		{ path: '/login', component: Login },
-		{ path: '/home', component: Home }
-	]
+  routes: [
+    { path: '/login', component: Login },
+    { path: '/home', component: Home }
+  ]
 });
 ```
 
@@ -113,25 +113,31 @@ var router = new VueRouter({
 
 위 코드의 실행 결과는 아래와 같습니다.
 
-![vue router 기본]({{ site.url }}/images/posts/web/vuejs/nav-guards/router-sample.gif)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/nav-guards/router-sample.gif">
+	<figcaption>뷰 기본 라우터 예제</figcaption>
+</figure>
 
 여기서 전역 가드를 설정하는 코드를 아래와 같이 추가합니다.
 
 ```js
 router.beforeEach(function (to, from, next) {
-	console.log('every single routing is pending');
+  console.log('every single routing is pending');
 });
 ```
 
 이제 '/login'이나 '/home'으로 이동하더라도 라우팅이 되지 않고 아래와 같이 로그만 출력됩니다.
 
-![전역 가드를 적용한 코드]({{ site.url }}/images/posts/web/vuejs/nav-guards/navigation guard.gif)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/nav-guards/navigation guard.gif">
+	<figcaption>전역 가드를 설정해서 페이지 이동 대신 로그를 출력하는 예제</figcaption>
+</figure>
 
 만약 원하는 url로 이동하고 싶으면 아래와 같이 `next()`를 호출하면 됩니다.
 
 ```js
 router.beforeEach(function (to, from, next) {
-	next();
+  next();
 });
 ```
 
@@ -142,9 +148,9 @@ router.beforeEach(function (to, from, next) {
 ```js
 var router = new VueRouter({
 	routes: [
-		// meta 정보에 authRequired라는 Boolean 값 추가
-		{ path: '/login', component: Login, meta: {authRequired: true} },
-		{ path: '/home', component: Home }
+    // meta 정보에 authRequired라는 Boolean 값 추가
+    { path: '/login', component: Login, meta: {authRequired: true} },
+    { path: '/home', component: Home }
 	]
 });
 ```
@@ -155,13 +161,13 @@ var router = new VueRouter({
 router.beforeEach(function (to, from, next) {
 	// to: 이동할 url에 해당하는 라우팅 객체
 	if (to.matched.some(function(routeInfo) {
-		return routeInfo.meta.authRequired;
+    return routeInfo.meta.authRequired;
 	})) {
-		// 이동할 페이지에 인증 정보가 필요하면 경고 창을 띄우고 페이지 전환은 하지 않음
-		alert('Login Please!');
+    // 이동할 페이지에 인증 정보가 필요하면 경고 창을 띄우고 페이지 전환은 하지 않음
+    alert('Login Please!');
 	} else {
-		console.log("routing success : '" + to.path + "'");
-		next(); // 페이지 전환
+    console.log("routing success : '" + to.path + "'");
+    next(); // 페이지 전환
 	};
 });
 ```
@@ -171,6 +177,11 @@ router.beforeEach(function (to, from, next) {
 '/home' 페이지로 이동할 때는 `next()`로 페이지를 이상 없이 전환합니다. 위 코드를 실행한 결과는 아래와 같습니다.
 
 ![전역 가드 적용 예제]({{ site.url }}/images/posts/web/vuejs/nav-guards/nav-guard-auth.gif)
+
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/nav-guards/nav-guard-auth.gif">
+	<figcaption>인증 값이 필요한 페이지는 라우팅을 막는 화면</figcaption>
+</figure>
 
 <p class="notice">위 예제에서 사용한 `.some()`은 자바스크립트 내장 API입니다. 지정된 배열의 모든 요소를 검사하여 조건을 만족시키면 true 값을 반환하고, 아니면 false 값을 반환합니다.</p>
 
@@ -202,16 +213,16 @@ var router = new VueRouter({
 const Login = {
   template: '<p>Login Component</p>',
   beforeRouteEnter (to, from, next) {
-		// Login 컴포넌트가 화면에 표시되기 전에 수행될 로직
-		// Login 컴포넌트는 아직 생성되지 않은 시점
+    // Login 컴포넌트가 화면에 표시되기 전에 수행될 로직
+    // Login 컴포넌트는 아직 생성되지 않은 시점
   },
   beforeRouteUpdate (to, from, next) {
-		// 화면에 표시된 컴포넌트가 변경될 때 수행될 로직
-		// `this`로 Login 컴포넌트를 접근할 수 있음
+    // 화면에 표시된 컴포넌트가 변경될 때 수행될 로직
+    // `this`로 Login 컴포넌트를 접근할 수 있음
   },
   beforeRouteLeave (to, from, next) {
-		// Login 컴포넌트를 화면에 표시한 url 값이 변경되기 직전의 로직
-		// `this`로 Login 컴포넌트를 접근할 수 있음
+    // Login 컴포넌트를 화면에 표시한 url 값이 변경되기 직전의 로직
+    // `this`로 Login 컴포넌트를 접근할 수 있음
   }
 }
 ```
