@@ -130,7 +130,7 @@ router.beforeEach(function (to, from, next) {
 
 <figure>
 	<img src="{{ site.url }}/images/posts/web/vuejs/nav-guards/navigation guard.gif">
-	<figcaption>전역 가드를 설정해서 페이지 이동 대신 로그를 출력하는 예제</figcaption>
+  <figcaption>전역 가드 설정 때문에 페이지는 이동하지 않고 대신 로그만 출력하는 화면</figcaption>
 </figure>
 
 만약 원하는 url로 이동하고 싶으면 아래와 같이 `next()`를 호출하면 됩니다.
