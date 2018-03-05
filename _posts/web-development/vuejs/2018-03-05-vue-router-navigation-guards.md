@@ -176,8 +176,6 @@ router.beforeEach(function (to, from, next) {
 뷰 라우터 인스턴스에서 '/login'에 해당하는 라우터 객체에만 `authRequired` 값을 설정해놨기 때문에
 '/home' 페이지로 이동할 때는 `next()`로 페이지를 이상 없이 전환합니다. 위 코드를 실행한 결과는 아래와 같습니다.
 
-![전역 가드 적용 예제]({{ site.url }}/images/posts/web/vuejs/nav-guards/nav-guard-auth.gif)
-
 <figure>
 	<img src="{{ site.url }}/images/posts/web/vuejs/nav-guards/nav-guard-auth.gif">
 	<figcaption>인증 값이 필요한 페이지는 라우팅을 막는 화면</figcaption>
