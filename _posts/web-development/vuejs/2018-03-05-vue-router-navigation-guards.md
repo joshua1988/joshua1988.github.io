@@ -147,11 +147,11 @@ router.beforeEach(function (to, from, next) {
 
 ```js
 var router = new VueRouter({
-	routes: [
+  routes: [
     // meta 정보에 authRequired라는 Boolean 값 추가
     { path: '/login', component: Login, meta: {authRequired: true} },
     { path: '/home', component: Home }
-	]
+  ]
 });
 ```
 
