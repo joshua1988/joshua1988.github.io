@@ -73,10 +73,10 @@ The Korea Software Technology Award at KOSTA, 2014
 Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Publications
-[Do it! Vue.js](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018*
+[Do it! Vue.js book](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018*
 
 ## Social
-<a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+<a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com"><i class="fa fa-google" aria-hidden="true"></i></a>
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
