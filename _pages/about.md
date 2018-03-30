@@ -72,6 +72,9 @@ The Korea Software Technology Award at KOSTA, 2014
 [Web Application Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
 Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
+## Publications
+[Do it! Vue.js](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018*
+
 ## Social
 <a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
