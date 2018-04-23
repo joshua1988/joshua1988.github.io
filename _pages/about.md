@@ -68,9 +68,9 @@ The Korea Software Technology Award at KOSTA, 2014
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
-	<img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png">
-	<img src="{{ site.url }}/images/posts/web/inflearn/webpack.png">
-	<figcaption>인프런 온라인 강좌</figcaption>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
+	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Webpack (좌측 부터)</figcaption>
 </figure>
 
 [Implementing Progressive Web App using Vue.js](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2018 Jan - 2018 Mar* <br>
