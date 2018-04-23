@@ -407,3 +407,13 @@ Vuex 의 마지막 속성인 Actions 와 Vuex 폴더 구조화는 다음 글에�
 
 [Vuex 시작하기 1탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-start/) <br>
 [Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)
+
+## 글보다 더 쉽게 배우는 온라인 강좌
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
+	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Webpack (좌측 부터)</figcaption>
+</figure>
