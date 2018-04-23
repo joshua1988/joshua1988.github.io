@@ -206,7 +206,7 @@ totalProducts라는 computed 속성을 활용하면 됩니다.
 - [이지스 퍼블리싱 도서 소개 페이지](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
 
 ## Vue.js 온라인 강좌
-그리고 책을 볼 시간이 없으시다면 아래 온라인 강좌로 빠르게 배워보시는 것도 좋을 것 같습니다 :)
+책을 볼 시간이 없으시다면 아래 온라인 강좌로 빠르게 배워보시는 것도 좋을 것 같습니다 :)
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
