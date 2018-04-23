@@ -200,9 +200,17 @@ totalProducts라는 computed 속성을 활용하면 됩니다.
 위에서 살펴본 그렉의 설명 말고도 가볍게 Vue.js의 특징을 살펴볼 수 있는 글이 있습니다.<br>
 - [프런트엔드 개발자를 위한 Vue.js 입문서](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/)
 
-그리고 위 블로그 글이 마음에 드셨다면 곧 출간될 저의 Vue.js 입문 책을 소개하려고 합니다 :)
-![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png)
-
+그리고 위 블로그 글이 마음에 드셨다면 저의 Vue.js 책으로 Vue.js를 시작해보시는 건 어떨까요? :)
 - [Yes24 온라인 구매 링크](http://www.yes24.com/24/Goods/58206961?Acode=101)
 - [교보문고 온라인 구매 링크](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791188612789&orderClick=LEA&Kc=)
 - [이지스 퍼블리싱 도서 소개 페이지](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
+
+## Vue.js 온라인 강좌
+그리고 책을 볼 시간이 없으시다면 아래 온라인 강좌로 빠르게 배워보시는 것도 좋을 것 같습니다 :)
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
+	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Webpack (좌측 부터)</figcaption>
+</figure>
