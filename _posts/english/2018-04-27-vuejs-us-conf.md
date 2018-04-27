@@ -1,16 +1,16 @@
 ---
 layout: article
-title: "웹 개발할 때 알아두면 좋은 리눅스 기본 명령어"
-date: 2018-01-30 16:44:32 +0900
-categories: [web-development]
-excerpt: "(기본) 웹 개발에서 CLI 도구를 사용할 때 자주 사용하는 리눅스 기본 명령어 안내. pwd, touch, ls, rm, cd 등"
+title: "2018 Vue.js US Conference Experiences"
+date: 2018-04-27 17:44:32 +0900
+categories: [english]
+excerpt: "All the lessons learned through this conference will be shared on this post"
 image:
   teaser: posts/english/vue-us-conf.jpg
   feature: posts/english/vue-conf.jpg
   credit: Captain Pangyo
   creditlink: http://us.vuejs.org/
   #url to their site or licensing
-locale: "ko_KR"
+locale: "en_US"
 # 리플 옵션
 comments: true
 tags:
