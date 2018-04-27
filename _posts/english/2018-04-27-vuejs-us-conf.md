@@ -42,7 +42,7 @@ tags:
 - captain pangyo
 ---
 
-My very first English article is about the Vue.js U.S conference experiences in New Orleans that I attended in March, 2018. I would like touch on some points and insights that I have learned through this amazing event.
+My very first English article is about the Vue.js U.S conference experiences in New Orleans that I attended in March, 2018. I would like to touch on some points and insights that I have learned through this amazing event.
 
 ## Contents
 Detailed information will be delievered soon!
