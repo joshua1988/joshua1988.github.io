@@ -150,5 +150,5 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 - 178 페이지 참고 링크 수정 (뷰엑스 튜토리얼 -> 뷰엑스 한글 강의)
 
 ```html
-뷰엑스 한글 강의 : https://www.inflearn.com/cours e/vue-pwa-vue-js-중급
+뷰엑스 한글 강의 : https://www.inflearn.com/course/vue-pwa-vue-js-중급
 ```
