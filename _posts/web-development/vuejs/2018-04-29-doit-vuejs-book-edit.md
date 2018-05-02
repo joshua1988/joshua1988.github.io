@@ -129,7 +129,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 
 ```html
 <i class="checkBtn fas fa-check" ...>
-<i class="removeBtn far fa-trash-alt" ...>
+<i class="far fa-trash-alt" ...>
 ```
 
 - 171 페이지의 `.list-item`, `.list-move` 스타일 속성 삭제
