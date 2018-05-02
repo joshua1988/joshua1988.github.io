@@ -94,7 +94,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 - 147 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
 
 ```html
-<i class="addBtn fas fa-plus" ...>
+<i class="addBtn fas fa-plus" aria-hidden="true"></i>
 ```
 
 - 148 페이지 : `.addContainer` 스타일 속성을 `inline-block` -> `block`로 수정
@@ -146,6 +146,18 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 ```
 
 - 172 페이지에 설명 추가 : 모달 소스 코드는 ~에서 HTML 부분의 transition 태그 코드와 CSS 부분을 복사해 가져옵니다. 복사한 transition 코드는 ...
+- 173 페이지 상단 코드 수정
+
+```html
+<i class="addBtn fas fa-plus" aria-hidden="true"></i>
+```
+
+- 173 페이지 하단 코드 수정 : `localStorage.setItem(value, value);`와 `this.propsdata.push(value);` 삭제 후 아래와 같이 변경
+
+```js
+this.$emit('addTodo', value);
+```
+
 - 178 페이지 참고 링크 수정 (뷰엑스 튜토리얼 -> 뷰엑스 한글 강의)
 
 ```html
