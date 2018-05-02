@@ -30,11 +30,11 @@ tags:
 - vue.js 강좌
 - vue.js 예제
 - vue.js 강의
+- Vue.js 중급 강좌
+- Vue.js 중급 강의
 - vuejs란
 - vue.js
 - vuejs
-- vuejs vuex
-- vuex 입문
 - 시작하기
 - 튜토리얼
 - vue.js 입문
@@ -115,7 +115,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 
 ```html
 <i class="checkBtn fas fa-check" ...>
-<i class="removeBtn far fa-trash-alt" ...>
+<i class="far fa-trash-alt" ...>
 
 ```
 
