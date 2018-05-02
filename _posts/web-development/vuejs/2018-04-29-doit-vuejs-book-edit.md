@@ -116,7 +116,6 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 ```html
 <i class="checkBtn fas fa-check" ...>
 <i class="far fa-trash-alt" ...>
-
 ```
 
 - 163 페이지 : `v-on: add Todo` 의 불필요한 공백 제거
@@ -136,17 +135,17 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 
 ```html
 <style>
-	.list-enter.active, .list-leave-active {
-		/* ... */
-	}
-	.list-enter, .list-leave-to {
-		/* ... */
-	}
+  .list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 </style>
 ```
 
 - 172 페이지에 설명 추가 : 모달 소스 코드는 ~에서 HTML 부분의 transition 태그 코드와 CSS 부분을 복사해 가져옵니다. 복사한 transition 코드는 ...
-
 - 178 페이지 참고 링크 수정 (뷰엑스 튜토리얼 -> 뷰엑스 한글 강의)
 
 ```html
