@@ -108,7 +108,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 - 153 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
 
 ```html
-<i class="removeBtn far fa-trash-alt" ...>
+<i class="far fa-trash-alt" ...>
 ```
 
 - 155 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
