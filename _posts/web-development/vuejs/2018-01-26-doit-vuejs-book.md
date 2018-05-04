@@ -103,7 +103,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 **Do it! Vue.js 입문서는 Vue.js 프레임워크를 처음 배우는 사람들이 쉽게 프레임워크를 배울 수 있도록 집중한 책입니다.**
 
 처음 출판사와 도서를 기획하고 목차를 구성하면서 어떻게 하면 이 쉬운 Vue.js 프레임워크를 더 쉽게, 빠르게, 재밌게 알려줄 수 있을까? 라는 고민을 했습니다.
-작년에 [패스트 캠퍼스](http://www.fastcampus.co.kr/dev_camp_wap/)와 [인프런](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/)에서 강의를 하면서 검증했던 교재와 자료들을 중심으로
+작년에 [패스트 캠퍼스](http://www.fastcampus.co.kr/dev_camp_wap/)와 [인프런](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner)에서 강의를 하면서 검증했던 교재와 자료들을 중심으로
 수업 중간중간에 수강생들이 이해하지 못하던 부분들, 특히 질문이 많았던 부분들을 어떻게 책에 잘 녹여낼지에 대한 고민을 가장 많이 했습니다.
 생각해보면 이 책을 가장 필요로 하는 웹 개발 입문자, 퍼블리셔, 대학생, 실무자를 대상으로 수업을 진행했기에 수업에서 나온 피드백이 정말 소중했었죠.
 
@@ -144,7 +144,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 - [Angular 2 대신에 Vue.js를 선택한 이유?](https://joshua1988.github.io/web-development/translation/why-we-moved-from-angular2-to-vuejs/)
 - [왜 43%의 프런트엔드 개발자들은 Vue.js를 배우고 싶어 하나?](https://joshua1988.github.io/web-development/translation/why-43percent-devs-wanna-learn-vuejs/)
 - [Vuex 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuex-start/)
-- [Vue.js 한글 강의, 인프런](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/)
+- [Vue.js 한글 강의, 인프런](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner)
 - [이지스 퍼블리싱 도서 소개 페이지](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
 - [Yes24 온라인 구매 페이지](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
@@ -152,8 +152,8 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 뷰를 좀 더 빠르게 학습하고 싶은 분들께 아래 온라인 강좌를 추천합니다.
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
-	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
-	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
+	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
 	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Webpack (좌측 부터)</figcaption>
 </figure>
