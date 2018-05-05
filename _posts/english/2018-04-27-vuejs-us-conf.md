@@ -18,6 +18,7 @@ tags:
 - vue.js conf
 - vue.js conference
 - vue.js us conference
+- vuejs conference
 - do it! Vue.js 입문
 - 이지스 퍼블리싱
 - vue.js 입문서
@@ -39,6 +40,8 @@ tags:
 - 누구나 다루기 쉬운 Vue.js
 - 캡틴판교
 - 장기효
+- josh jang
+- vue.js korean book
 - captain pangyo
 ---
 
