@@ -171,7 +171,7 @@ divs.forEach(function(div) {
 });
 
 function logEvent(event) {
-	console.log(event.currentTarget.className); // one, two, three
+	console.log(event.currentTarget.className);
 }
 ```
 
