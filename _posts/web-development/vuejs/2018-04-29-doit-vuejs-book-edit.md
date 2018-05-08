@@ -50,9 +50,17 @@ tags:
 {% include toc.html %}
 
 ## 들어가며
-Vue.js 입문 책을 출간한 지 3개월가량 되었습니다. 많은 분들이 책에 관심 가져주시고 구매해주신 덕택에 벌써 초판 인쇄량 2,000권이 다 판매되었네요. 이 자리를 빌어 책을 구매해주신 독자분들께 감사드립니다.
+Vue.js 입문 책을 출간한 지 3개월가량 되었습니다. 많은 분들이 책에 관심 가져주시고 구매해주신 덕택에 벌써 초판 인쇄량 2,000권이 다 판매되었네요. 이 자리를 빌려 책을 구매해주신 독자분들께 감사드립니다.
 
 처음 집필하면서 인쇄한 2,000부가 다 나갔기 때문에 추가 2,000부를 찍으려고 합니다. 초판(처음 인쇄한 책)에서 나왔던 오탈자와 오류를 잠깐 돌아보며 어떻게 개정될지 함께 알아보도록 하겠습니다.
+
+## 수정된 부분 요약
+이번에 수정한 부분들을 크게 분류해보면 다음과 같습니다.
+
+1. Font Awesome 라이브러리의 버전 업에 따른 마크업 코드 수정
+2. 책 조판 작업에서 발생한 오탈자와 오류 수정
+
+상세한 수정 사항은 다음 내용을 참고하시기 바랍니다.
 
 ## 수정 사항
 
@@ -105,20 +113,39 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 }
 ```
 
-- 153 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
+- 153 페이지 상단 코드 : 체크 버튼과 삭제 버튼의 i 태그 클래스 명 수정
 
 ```html
-<i class="far fa-trash-alt" ...>
+<li v-for="todoItem in todoItems" class="shadow">
+  <i class="checkBtn fas fa-check" aria-hidden="true"></i>
+  {{ todoItem }}
+  <span class="removeBtn" type="button" @click="removeTodo(todoItem, index)">
+    <i class="far fa-trash-alt" aria-hidden="true"></i>
+  </span>
+</li>
 ```
 
-- 155 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
+- 153 페이지 하단 코드 : style 태그에 scoped 속성 추가
 
 ```html
-<i class="checkBtn fas fa-check" ...>
-<i class="far fa-trash-alt" ...>
+<style scoped>
+
+</style>
 ```
 
-- 163 페이지 : `v-on: add Todo` 의 불필요한 공백 제거
+- 155 페이지 코드 : i 태그의 클래스 명(아이콘 클래스) 수정
+
+```html
+<li v-for="(todoItem, index) in todoItems" class="shadow">
+  <i class="checkBtn fas fa-check" aria-hidden="true"></i>
+  {{ todoItem }}
+  <span class="removeBtn" type="button" @click="removeTodo(todoItem, index)">
+    <i class="far fa-trash-alt" aria-hidden="true"></i>
+  </span>
+</li>
+```
+
+- 163 페이지 : `v-on:add Todo` 의 불필요한 공백 제거
 
 ```html
 <TodoInput v-on:addTodo="addTodo"></TodoInput>
@@ -127,8 +154,13 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 - 165 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
 
 ```html
-<i class="checkBtn fas fa-check" ...>
-<i class="far fa-trash-alt" ...>
+<li v-for="(todoItem, index) in propsdata" class="shadow">
+  <i class="checkBtn fas fa-check" aria-hidden="true"></i>
+  {{ todoItem }}
+  <span class="removeBtn" type="button" @click="removeTodo(todoItem, index)">
+    <i class="far fa-trash-alt" aria-hidden="true"></i>
+  </span>
+</li>
 ```
 
 - 171 페이지의 `.list-item`, `.list-move` 스타일 속성 삭제
@@ -146,10 +178,22 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 ```
 
 - 172 페이지에 설명 추가 : 모달 소스 코드는 ~에서 HTML 부분의 transition 태그 코드와 CSS 부분을 복사해 가져옵니다. 복사한 transition 코드는 ...
-- 173 페이지 상단 코드 수정
+- 173 페이지 상단 코드 수정 : 추가 버튼과 모달의 닫기 버튼의 i 태그 클래스명 수정
 
 ```html
-<i class="addBtn fas fa-plus" aria-hidden="true"></i>
+<div class="inputBox shadow">
+    <input type="text" v-model="newTodoItem" placeholder="Type what you have to do" v-on:keyup.enter="addTodo">
+    <span class="addContainer" v-on:click="addTodo">
+      <i class="addBtn fas fa-plus" aria-hidden="true"></i>
+    </span>
+
+    <modal v-if="showModal" @close="showModal = false">
+      <h3 slot="header">경고</h3>
+      <span slot="footer" @click="showModal = false">할 일을 입력하세요.
+        <i class="closeModalBtn fas fa-times" aria-hidden="true"></i>
+      </span>
+    </modal>
+  </div>
 ```
 
 - 173 페이지 하단 코드 수정 : `localStorage.setItem(value, value);`와 `this.propsdata.push(value);` 삭제 후 아래와 같이 변경
@@ -163,3 +207,10 @@ this.$emit('addTodo', value);
 ```html
 뷰엑스 한글 강의 : https://www.inflearn.com/course/vue-pwa-vue-js-중급
 ```
+
+## 마무리
+이외에도 오류나 오탈자를 제보해주신 분들을 추첨하여 소정의 상품을 드리려고 합니다.
+더 좋은 책을 만들어 나가기 위한 독자분들의 소중한 의견을 기다립니다.
+
+관심 가져주셔서 감사합니다.
+저자 장기효 드림
