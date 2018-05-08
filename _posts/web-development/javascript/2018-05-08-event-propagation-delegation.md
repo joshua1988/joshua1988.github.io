@@ -84,14 +84,17 @@ add one item이라는 간단한 버튼을 만들어 클릭했을 때 addItem이�
 사용자의 입력에 따라 추가 동작을 구현할 수 있는 방법이죠. 여기서 브라우저는 어떻게 이벤트의 발생을 감지했을까요?
 브라우저가 이벤트를 감지하는 방식 2가지를 아래에서 알아보겠습니다.
 
-## 이벤트 버블링 - Event Bubbling up
+## 이벤트 버블링 - Event Bubbling
 이벤트 버블링은 특정 화면 요소에서 이벤트가 발생했을 때 해당 이벤트가 더 상위의 화면 요소들로 전달되어 가는 특성을 의미합니다. 아래와 같은 그림처럼요.
+
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-bubble.png">
+	<figcaption>하위의 클릭 이벤트가 상위로 전달되어 가는 그림</figcaption>
+</figure>
 
 <p class="notice">상위의 화면 요소란? HTML 요소는 기본적으로 트리 구조를 갖습니다. 여기서는 트리 구조상으로 한 단계 위에 있는 요소를 상위 요소라고 하며 body 태그를 최상위 요소라고 부르겠습니다.</p>
 
-![event bubbling]({{ site.url }}/images/posts/web/javascript/event/event-bubble.png)
-
-위 그림은 아래에 예시로 들 코드를 미리 도식화 한 그림입니다.
+위 그림은 아래에 예시로 들 코드를 미리 도식화한 그림입니다.
 세 개의 div 태그가 있고 가장 아래에 있는 div 태그에서 이벤트가 발생했을 때 최상위 요소인 body 태그까지 이벤트가 전달되는 모습을 나타내었습니다.
 그럼 이제 같이 코드를 보겠습니다.
 
@@ -113,14 +116,17 @@ divs.forEach(function(div) {
 });
 
 function logEvent(event) {
-	console.log(event.currentTarget.className); // three, two, one
+	console.log(event.currentTarget.className);
 }
 ```
 
 위 코드는 세 개의 div 태그에 모두 클릭 이벤트를 등록하고 클릭 했을 때 logEvent 함수를 실행시키는 코드입니다.
 여기서 위 그림대로 최하위 div 태그 `<div class="three"></div>`를 클릭하면 아래와 같은 결과가 실행됩니다.
 
-![event-bubble-log]({{ site.url }}/images/posts/web/javascript/event/event-bubble-log.png)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-bubble-log.png">
+	<figcaption>three 클래스를 갖는 div 태그를 클릭했을 때의 결과</figcaption>
+</figure>
 
 div 태그 한 개만 클릭했을 뿐인데 왜 3개의 이벤트가 발생되는 걸까요? 그 이유는 브라우저가 이벤트를 감지하는 방식 때문입니다.
 
@@ -128,18 +134,19 @@ div 태그 한 개만 클릭했을 뿐인데 왜 3개의 이벤트가 발생되�
 따라서, 클래스 명 three -> two -> one 순서로 div 태그에 등록된 이벤트들이 실행됩니다.
 마찬가지로 two 클래스를 갖는 두 번째 태그를 클릭했다면 two -> one 순으로 클릭 이벤트가 동작하겠죠.
 
-여기서 주의해야 할 점은 이벤트가 각 태그마다 등록되어 있기 때문에 상위 요소로 이벤트가 전달되는 것을 확인할 수 있습니다.
-만약 이벤트가 특정 div 태그에만 달려 있다면 위와 같은 동작 결과는 확인할 수 없겠죠.
+여기서 주의해야 할 점은 각 태그마다 이벤트가 등록되어 있기 때문에 상위 요소로 이벤트가 전달되는 것을 확인할 수 있습니다.
+만약 이벤트가 특정 div 태그에만 달려 있다면 위와 같은 동작 결과는 확인할 수 없습니다.
 
 이와 같은 하위에서 상위 요소로의 이벤트 전파 방식을 **이벤트 버블링(Event Bubbling)**이라고 합니다. <br>
 "Trigger clicks all the way up"
 
-<p class="notice">참고 : 이벤트 버블링은 아래에서 설명드릴 이벤트 위임을 이해할 때 알아야 하는 중요한 개념이니 꼭 알고 계세요.</p>
-
-## 이벤트 캡쳐 - Event Capture down
+## 이벤트 캡쳐 - Event Capture
 이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.
 
-![event-capture]({{ site.url }}/images/posts/web/javascript/event/event-capture.png)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-capture.png">
+	<figcaption>클릭 이벤트가 발생한 지점을 찾아내려 가는 그림</figcaption>
+</figure>
 
 위 그림처럼 특정 이벤트가 발생했을 때 최상위 요소인 body 태그에서 해당 태그를 찾아 내려갑니다.
 그럼 이벤트 캡쳐는 코드로 어떻게 구현할 수 있을까요?
@@ -171,12 +178,17 @@ function logEvent(event) {
 `addEventListener()` API에서 옵션 객체에 `capture:true`를 설정해주면 됩니다.
 그러면 해당 이벤트를 감지하기 위해 이벤트 버블링과 반대 방향으로 탐색합니다.
 
-![event-capture]({{ site.url }}/images/posts/web/javascript/event/event-capture-log.png)
+따라서, 아까와 동일하게 `<div class="three"></div>` 를 클릭해도 아래와 같은 결과가 나타납니다.
+
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-capture-log.png">
+	<figcaption>three 클래스를 갖는 div 태그를 클릭했을 때의 결과</figcaption>
+</figure>
 
 ## event.stopPropagation()
-"난 이렇게 복잡한 이벤트 전파 방식 알고 싶지 않고, 그냥 원하는 화면 요소의 이벤트만 신경 쓰고 싶어요."라고 생각하시는 분들이 충분히 있을 수 있습니다.
+"난 이렇게 복잡한 이벤트 전달 방식 알고 싶지 않고, 그냥 원하는 화면 요소의 이벤트만 신경 쓰고 싶어요."라고 생각하시는 분들이 충분히 있을 수 있습니다.
 실제로 마감 기한에 쫓기는 상황에서 이런 동작 방식을 정확히 이해하는 시간보다는 구현에 더 많은 시간을 쏟아야 하기 때문입니다.
-그럴 때는 아래와 같이 `stopPropagation()` 웹 API를 사용합니다.
+그럴 때는 아래처럼 `stopPropagation()` 웹 API를 사용합니다.
 
 ```js
 function logEvent(event) {
@@ -184,7 +196,7 @@ function logEvent(event) {
 }
 ```
 
-위 API는 해당 이벤트가 전달되는 것을 막습니다.
+위 API는 해당 이벤트가 전파되는 것을 막습니다.
 따라서, 이벤트 버블링의 경우에는 클릭한 요소의 이벤트만 발생시키고 상위 요소로 이벤트를 전달하는 것을 방해합니다.
 그리고 이벤트 캡쳐의 경우에는 클릭한 요소의 최상위 요소의 이벤트만 동작시키고 하위 요소들로 이벤트를 전달하지 않습니다.
 
@@ -221,6 +233,7 @@ function logEvent(event) {
 ## 이벤트 위임 - Event Delegation
 앞에서 살펴본 이벤트 버블링과 캡쳐는 사실 이벤트 위임을 위한 선수 지식이라고 해도 과언이 아닙니다.
 이벤트 위임은 실제 바닐라 JS로 웹 앱을 구현할 때 자주 사용하게 되는 코딩 패턴입니다.
+
 이벤트 위임을 한 문장으로 요약해보면 '하위 요소에 각각 이벤트를 붙이지 않고 상위 요소에서 하위 요소의 이벤트들을 제어하는 방식'입니다.
 
 말보다는 코드죠. 아래 코드를 함께 살펴보겠습니다.
@@ -248,9 +261,12 @@ inputs.forEach(function(input) {
 });
 ```
 
-위 코드는 간단한 할 일 목록을 리스트 아이템으로 나타낸 코드입니다.
+위 코드는 할 일 목록을 간단한 리스트 아이템으로 나타낸 코드입니다.
 
-![event-delegation-1]({{ site.url }}/images/posts/web/javascript/event/event-delegation-1.gif)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-delegation-1.gif">
+	<figcaption>할 일 목록의 체크 박스를 클릭했을 때 클릭 이벤트 리스너가 동작하는 모습</figcaption>
+</figure>
 
 자바스크립트 `querySelectorAll()`를 이용해 화면에 존재하는 모든 인풋 박스 요소를 가져온 다음
 각 인풋 박스의 요소에 클릭 이벤트 리스너를 추가합니다. 화면을 실행시키고 각 리스트 아이템의 인풋 박스(체크 박스)를 클릭하면
@@ -260,6 +276,8 @@ inputs.forEach(function(input) {
 
 ```js
 // ...
+
+// 새 리스트 아이템을 추가하는 코드
 var itemList = document.querySelector('.itemList');
 
 var li = document.createElement('li');
@@ -278,7 +296,10 @@ itemList.appendChild(li);
 
 새로 추가한 리스트 아이템에 클릭 이벤트가 정상적으로 동작하는지 한번 확인해봤습니다.
 
-![event-delegation-2]({{ site.url }}/images/posts/web/javascript/event/event-delegation-2.gif)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-delegation-2.gif">
+	<figcaption>새로 추가된 리스트 아이템(이벤트 위임 학습)에서 클릭 이벤트가 동작하지 않는 모습</figcaption>
+</figure>
 
 새로 추가된 리스트 아이템에는 클릭 이벤트 리스너가 동작하지 않네요. 왜 그럴까요?
 
@@ -314,14 +335,17 @@ itemList.addEventListener('click', function(event) {
 
 결과는 다음과 같습니다.
 
-![event-delegation-3]({{ site.url }}/images/posts/web/javascript/event/event-delegation-3.gif)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/javascript/event/event-delegation-3.gif">
+	<figcaption>새로 추가된 리스트 아이템에서 클릭 이벤트가 정상적으로 동작하는 모습</figcaption>
+</figure>
 
 이젠 리스트 아이템을 새로 추가할 때마다 클릭 이벤트를 안 달아도 되겠네요 :)
 
-<p class="notice">위 코드는 현재 인풋 박스의 이벤트만 다루는 것이 아니라 label 태그의 이벤트도 감지합니다. event 객체를 이용하여 인풋 박스의 이벤트만 감지할 수 있도록 구현해보세요.</p>
+<p class="notice">참고 : 위 코드는 현재 인풋 박스의 이벤트만 다루는 것이 아니라 label 태그의 이벤트도 감지합니다. event 객체를 이용하여 인풋 박스의 이벤트만 감지할 수 있도록 구현해보세요.</p>
 
 ## 마무리
 오늘은 브라우저가 어떻게 이벤트를 감지하고 그에 따라 우리는 어떻게 이벤트를 다뤄야 하는지에 대해 알아보았습니다.
 위 내용은 어떤 프레임워크를 쓰느냐와 관계없이 기본적인 브라우저의 이벤트 감지 방식이기 때문에 알아두시면 유용하겠네요 :)
 
-그럼 모두 재밌게 코딩하세요!
+그럼 모두 즐겁게 코딩하세요!
