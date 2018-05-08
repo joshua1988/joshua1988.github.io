@@ -113,7 +113,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 }
 ```
 
-- 153 페이지 상단 코드 : 체크 버튼과 삭제 버튼의 i 태그 클래스 명 수정
+- 153 페이지 상단 코드 : 체크 버튼과 삭제 버튼의 `i` 태그 클래스 명 수정
 
 ```html
 <li v-for="todoItem in todoItems" class="shadow">
@@ -125,7 +125,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 </li>
 ```
 
-- 153 페이지 하단 코드 : style 태그에 scoped 속성 추가
+- 153 페이지 하단 코드 : style 태그에 `scoped` 속성 추가
 
 ```html
 <style scoped>
@@ -133,7 +133,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 </style>
 ```
 
-- 155 페이지 코드 : i 태그의 클래스 명(아이콘 클래스) 수정
+- 155 페이지 코드 : `i` 태그의 클래스 명(아이콘 클래스) 수정
 
 ```html
 <li v-for="(todoItem, index) in todoItems" class="shadow">
@@ -151,7 +151,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 <TodoInput v-on:addTodo="addTodo"></TodoInput>
 ```
 
-- 165 페이지 : i 태그의 클래스 명(아이콘 클래스) 수정
+- 165 페이지 : `i` 태그의 클래스 명(아이콘 클래스) 수정
 
 ```html
 <li v-for="(todoItem, index) in propsdata" class="shadow">
@@ -178,7 +178,7 @@ import 불러온 파일의 내용이 담길 객체 from '불러올 파일 위치
 ```
 
 - 172 페이지에 설명 추가 : 모달 소스 코드는 ~에서 HTML 부분의 transition 태그 코드와 CSS 부분을 복사해 가져옵니다. 복사한 transition 코드는 ...
-- 173 페이지 상단 코드 수정 : 추가 버튼과 모달의 닫기 버튼의 i 태그 클래스명 수정
+- 173 페이지 상단 코드 수정 : 추가 버튼과 모달의 닫기 버튼의 `i` 태그 클래스명 수정
 
 ```html
 <div class="inputBox shadow">
@@ -210,7 +210,7 @@ this.$emit('addTodo', value);
 
 ## 마무리
 이외에도 오류나 오탈자를 제보해주신 분들을 추첨하여 소정의 상품을 드리려고 합니다.
-더 좋은 책을 만들어 나가기 위한 독자분들의 소중한 의견을 기다립니다.
+더 좋은 책을 함께 만들어 나가기 위한 독자분들의 소중한 의견을 기다립니다.
 
-관심 가져주셔서 감사합니다.
+관심 가져주셔서 감사합니다. <br>
 저자 장기효 드림
