@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "자바스크립트의 이벤트 전달 방식과 그 모든 것"
-date: 2018-02-14 11:54:13 +0900
+date: 2018-05-08 17:14:13 +0900
 categories: [web-development, javascript]
 excerpt: "(초급) 이벤트 버블링, 이벤트 캡처링, 그리고 이벤트 위임까지 이벤트 전달 방식과 관련된 모든 것을 파헤쳐 봅니다."
 image:
