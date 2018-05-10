@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "'Do it! Vue.js 입문' 책 개정판 안내"
+title: "'Do it! Vue.js 입문' 책 정오표 안내"
 date: 2018-04-29 21:44:32 +0900
 categories: [web-development, vuejs]
 excerpt: "Do it! Vue.js 입문 책의 초판 수정 사항들을 안내합니다."
