@@ -28,6 +28,7 @@ tags:
 - vuejs vuex
 - vuex actions
 - vuex getters
+- vuex example
 - vuex mutations
 - vuex js 시작하기
 - vuex js 한글

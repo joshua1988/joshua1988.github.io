@@ -23,7 +23,9 @@ tags:
 - vuex
 - vuex 예제
 - vuex 사용
+- vuex 사용법
 - vuex 튜토리얼
+- vuex example
 - vuex 시작하기
 - vue vuex
 - vue vuex 시작하기
