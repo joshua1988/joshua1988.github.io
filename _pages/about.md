@@ -83,14 +83,13 @@ Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 ## Publications
 
 <figure class="third">
-	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png"></a>
-	<a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress"></a>
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit-vue-cover.jpg"></a>
+	<a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a>
 	<figcaption>Do it! Vue.js 입문, ES6 온라인 북</figcaption>
 </figure>
 
-[ES6 for Vue.js beginners](https://joshua1988.github.io/es6-online-book/), e-book, *June 17, 2018* <br>
 [Do it! Vue.js book](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018* <br>
-
+[ES6 for Vue.js beginners](https://joshua1988.github.io/es6-online-book/), e-book, *June 17, 2018* <br>
 
 ## Social
 <a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com"><i class="fa fa-google" aria-hidden="true"></i></a>

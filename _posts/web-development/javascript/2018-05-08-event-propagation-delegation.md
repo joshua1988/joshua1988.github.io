@@ -349,3 +349,5 @@ itemList.addEventListener('click', function(event) {
 위 내용은 어떤 프레임워크를 쓰느냐와 관계없이 기본적인 브라우저의 이벤트 감지 방식이기 때문에 알아두시면 유용하겠네요 :)
 
 그럼 모두 즐겁게 코딩하세요!
+
+“Event bubbling and capturing are two ways of event propagation in the HTML DOM API when an event occurs in an element inside another element, and both elements have registered a handler for that event. The event propagation mode determines in which order the elements receive the event.”
