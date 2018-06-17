@@ -82,7 +82,7 @@ Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Publications
 
-<figure class="three">
+<figure class="third">
 	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png"></a>
 	<!-- <a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a> -->
 	<figcaption>Do it! Vue.js 입문</figcaption>
