@@ -63,7 +63,7 @@ tags:
 
 기존 Do it! Vue.js 입문 책에서 다룬 ES6 내용보다 좀 더 자세하고 추가적으로 알고 있으면 도움 될만한 개념들을 요약했습니다. 이제 막 Vue.js에 재미 붙이신 입문자분들이 보시면 딱 좋을 것 같네요 :)
 
-[Vue.js 개발자를 위한 ES6 온라인 책 바로가기](https://joshua1988.github.io/es6-online-book/)
+[Vue.js 개발자를 위한 ES6 온라인 책 바로가기(클릭)](https://joshua1988.github.io/es6-online-book/)
 
 그럼 많은 도움 되시길 바라며.. 오늘도 재밌게 코딩하세요! :)
 
