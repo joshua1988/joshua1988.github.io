@@ -73,7 +73,7 @@ The Korea Software Technology Award at KOSTA, 2014
 	<figcaption>Vue.js 초급 강의(온라인), Vue.js 중급 강의(온라인), Webpack 강의(온라인)</figcaption>
 </figure>
 
-[Implementing Progressive Web App using Vue.js](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2018 Jan - 2018 Mar* <br>
+[Implementing Progressive Web App using Vue.js](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2018 Jan - 2018 Aug* <br>
 [Easy to learn Webpack](https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner), Inflearn, *2017 Oct -* <br>
 [Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner), Inflearn, *2017 Sep -* <br>
 [Web Application Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
@@ -82,10 +82,10 @@ Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
 
 ## Publications
 
-<figure class="third">
-	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit-vue-cover.jpg"></a>
-	<a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a>
-	<figcaption>Do it! Vue.js 입문, ES6 온라인 북</figcaption>
+<figure class="three">
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.jpg"></a>
+	<!-- <a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a> -->
+	<figcaption>Do it! Vue.js 입문</figcaption>
 </figure>
 
 [Do it! Vue.js book](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018* <br>
