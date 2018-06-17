@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Vue.js 개발자를 위한 ES6 가이드 북(e북) 안내"
+title: "Vue.js 개발자를 위한 ES6 입문서(e북) 안내"
 date: 2018-06-18 18:44:32 +0900
 categories: [web-development, vuejs]
 excerpt: "Vue.js 코딩을 더 편하게 해줄 주요 ES6 문법을 알아봅니다."
