@@ -67,8 +67,8 @@ tags:
 
 그럼 많은 도움 되시길 바라며.. 오늘도 재밌게 코딩하세요! :)
 
-<figure>
-  <a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/es6-vue-book.png"></a>
+<figure class="half">
+  <img src="{{ site.url }}/images/posts/web/vuejs/es6-vue-book.png">
 	<figcaption>Vue.js 개발자를 위한 ES6 전자책 메인 페이지</figcaption>
 </figure>
 
