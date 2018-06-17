@@ -80,3 +80,8 @@ tags:
 - [펼침 연산자](https://joshua1988.github.io/es6-online-book/spread-operator.html) : 인자를 편하게 넘기는 방법
 - [템플릿 리터럴](https://joshua1988.github.io/es6-online-book/template-literal.html) : 문자열을 편하게 정의하는 방법
 - [구조 분해 문법](https://joshua1988.github.io/es6-online-book/destructuring.html) : 객체, 인자를 편하게 정의하고 넘기는 방법
+
+## 참고
+
+- [Vue.js 개발자를 위한 ES6 입문서(무료)](https://joshua1988.github.io/es6-online-book/)
+- [VuePress 공식 사이트](https://vuepress.vuejs.org/)
