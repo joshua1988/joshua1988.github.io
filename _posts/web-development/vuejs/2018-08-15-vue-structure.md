@@ -91,7 +91,7 @@ vue init webpack-simple folder-structure
    ├─ components        컴포넌트
    │  ├─ common
    │  └─ ...
-   ├─ router            라우터
+   ├─ routes            라우터
    │  ├─ index.js
    │  └─ routes.js
    ├─ views             라우터 페이지
@@ -128,6 +128,11 @@ vue init webpack-simple folder-structure
 위와 같이 프로젝트를 구성하기 위해서는 기본적으로 ES6의 Import & Export 기능을 정확히 이해하고 계셔야 합니다.
 그리고 웹팩의 모듈 로딩에 대해서도 이해하고 계시면 다른 파일의 기능들을 좀 더 수월하게 로딩하실 수 있습니다.
 마지막으로, VSCode의 파일 아이콘 테마를 잘 활용하시면 더 수려하고 가독성 높은 폴더 구조를 만드실 수 있습니다 :)
+
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/folder-structure.png">
+	<figcaption>VSCode에서 확인한 프로젝트 구조</figcaption>
+</figure>
 
 ## 마무리
 
