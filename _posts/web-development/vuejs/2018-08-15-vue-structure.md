@@ -132,3 +132,5 @@ vue init webpack-simple folder-structure
 혹시 폴더 구조와 관련하여 더 괜찮은 의견이 있으시면 아래에 편하게 댓글로 남겨주세요 :)
 
 그럼 오늘도 즐겁게 코딩하시기 바랍니다!
+
+[※이미지 출처: 패스트 캠퍼스 Vue.js 강의](https://www.fastcampus.co.kr/dev_camp_vue)
