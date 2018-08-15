@@ -119,10 +119,9 @@ vue init webpack-simple folder-structure
    │  ├─ index.js
    │  ├─ en.json
    │  └─ ...
-   └─ assets            css 등의 웹 자원
-      ├─ css
-      ├─ images
-      └─ ...
+   ├─ images            이미지
+   ├─ fonts             폰트
+   └─ assets            기타 자원
 ```
 
 위와 같이 프로젝트를 구성하기 위해서는 기본적으로 ES6의 Import & Export 기능을 정확히 이해하고 계셔야 합니다.
