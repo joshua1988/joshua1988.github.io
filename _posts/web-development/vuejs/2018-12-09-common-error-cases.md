@@ -5,9 +5,9 @@ date: 2018-12-09 17:25:32 +0900
 categories: [web-development, vuejs]
 excerpt: "콘솔에 출력된 에러 로그로 내 코드의 어디가 잘못되었는지 빠르게 알아보자!"
 image:
-  teaser: posts/web/vuejs/vue-camp.png
-  credit: Fast Campus
-  creditlink: https://www.fastcampus.co.kr/dev_camp_vue/
+  teaser: posts/web/vuejs/logo.png
+  credit: Evan You
+  creditlink: https://vuejs.org/
   #url to their site or licensing
 locale: "ko_KR"
 # 리플 옵션
@@ -41,29 +41,31 @@ tags:
 
 ## 들어가며
 
-얼마 전에 오프라인 강의에서 수강생 분들의 Vue.js 코드를 고쳐주었습니다. 뷰 문법이 이미 익숙한 개발자라면 잘못된 코드가 바로 보이겠지만, 아무래도 처음 시작하시는 분들에게는 나의 코드가 대체 어디가 잘못 되었길래 이런 오류가 나는걸까? 하고 궁금해 하실 것 같아요.
+얼마 전에 오프라인 강의에서 수강생 분들이 작성한 Vue.js 코드를 고쳐주었습니다. 뷰 문법이 이미 익숙한 개발자라면 잘못된 코드가 바로 보이겠지만, 아무래도 처음 시작하시는 분들에게는 나의 코드가 대체 어디가 잘못 되었길래 이런 오류가 나는걸까? 하고 궁금해 하실 것 같아요.
 
-그래서 준비했습니다. 에러 로그로 알아보는 나의 잘못된 코드! Vue.js로 처음 개발을 시작하시는 분들이라면 아래의 로그들을 자주 보시게 될 것 같네요. 그 때 마다 꼭 제가 언급드리는 부분을 되짚어 보세요! :)
+그래서 준비했습니다. 에러 로그로 알아보는 나의 잘못된 코드!
+
+Vue.js로 처음 개발을 시작하시는 분들이라면 아래의 로그들을 자주 보시게 될 것 같네요. 그 때 마다 꼭 제가 언급드리는 부분을 되짚어 보세요! :)
 
 Enjoy your coding!
 
-## 첫 번째 에러 케이스
+## 첫 번째 에러 케이스 - 콧수염 괄호를 사용할 때
 
 첫 번째 에러 케이스를 살펴보기 위해 간단한 Vue.js 코드를 보겠습니다.
 
 ```html
 <div id="app">
-  {{ message }}
+  {{ "{{ message" }} }}
 </div>
+```
 
-<script>
-	new Vue({
-	  el: '#app',
-	  data: {
-	    message: 'Hello Vue.js!'
-	  }
-	});
-</script>
+```js
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+});
 ```
 
 위 코드는 message 속성의 값을 화면에 표시해주는 간단한 코드입니다. 위처럼 간단한 코드를 작성하다가 혹시 이런 에러 나신적 보신 적 있으신가요?
@@ -74,11 +76,11 @@ Enjoy your coding!
 
 **Property or method "meassage" is not defined on the instance but referenced during render**
 
-이 문장의 의미는 다음과 같습니다. "meassage라는 속성이 선언되지 않았는데 화면에 렌더링되려고 했습니다". 일반적으로 데이터 속성 안에 선언한 변수를 화면에서 잘못 입력한 경우죠. 아래와 같이 말입니다.
+이 문장의 의미는 다음과 같습니다. "meassage라는 속성이 선언되지 않았는데 화면에 렌더링되려고 했습니다." 데이터 속성 안에 선언한 변수를 화면에서 잘못 입력한 경우죠. 아래와 같이 말입니다.
 
 ```html
 <div id="app">
-  {{ meassage }} <!-- message가 아니라 meassage로 입력하셨네요 -->
+  {{ "{{ meassage" }} }} <!-- message가 아니라 meassage로 입력하셨네요 -->
 </div>
 ```
 
@@ -88,9 +90,9 @@ data: {
 }
 ```
 
-정리해서 위와 같은 로그가 발생했을 때는 `data`, `computed`, `methods` 속성과 HTML 태그의 콧수염 괄호 `{{ }}` 안에 선언한 변수 명이 같은지 확인해보세요!
+정리해서 위와 같은 로그가 발생했을 때는 `data`, `computed`, `methods` 속성과 HTML 태그의 콧수염 괄호 `"{{ "}}` 안에 선언한 변수 명이 같은지 확인해보세요!
 
-## 두 번째 에러 케이스
+## 두 번째 에러 케이스 - 컴포넌트를 등록할 때
 
 두 번째 에러 케이스를 살펴보기 위해 아래와 같은 코드를 준비하였습니다.
 
@@ -98,19 +100,19 @@ data: {
 <div id="app">
   <app-haeder></app-haeder>
 </div>
+```
 
-<script>
-  var appHeader = {
-    template: '<h1>header</h1>'
-  };
+```js
+var appHeader = {
+  template: '<h1>header</h1>'
+};
 
-  new Vue({
-    el: '#app',
-    components: {
-      'app-header': appHeader
-    }
-  });
-</script>
+new Vue({
+  el: '#app',
+  components: {
+    'app-header': appHeader
+  }
+});
 ```
 
 위 코드는 뷰 컴포넌트를 등록하는 코드입니다. 컴포넌트를 등록하다가 아래와 같은 에러를 본 적 있으신가요?
@@ -119,13 +121,13 @@ data: {
 
 위 로그의 핵심은 아래 문장입니다.
 
-**<app-haeder> - did you register the component correctly?**
+**< app-haeder> - did you register the component correctly?**
 
 "컴포넌트를 제대로 등록하셨나요?" 라는 오류 메시지입니다. 이 때는 등록한 컴포넌트의 이름을 올바르게 컴포넌트 태그에 옮겨 작성했는지 확인하시면 됩니다. 아래와 같이 `app-header`라고 등록해놓고 `app-haeder`라고 작성하시면 안돼요! :)
 
 ```html
 <div id="app">
-  <app-haeder></app-haeder>
+  <app-haeder></app-haeder> <!-- 여기 철자가 틀렸습니다 -->
 </div>
 ```
 
@@ -135,7 +137,7 @@ components: {
 }
 ```
 
-## 세 번째 에러 케이스
+## 세 번째 에러 케이스 - props 속성을 사용할 때
 
 세 번째 에러 케이스를 위한 코드를 보겠습니다.
 
@@ -143,36 +145,36 @@ components: {
 <div id="app">
   <app-header v-bind:propsdata="num"></app-header>
 </div>
+```
 
-<script>
-  var appHeader = {
-    props: ['propsdata'],
-    template: '<h1>header</h1>'
+```js
+var appHeader = {
+  props: ['propsdata'],
+  template: '<h1>{{ "{{ propsdata" }} }}</h1>'
+}
+
+new Vue({
+  el: '#app',
+  data: {
+    num: 100
+  },
+  components: {
+    'app-header': appHeader
   }
-
-  new Vue({
-    el: '#app',
-    data: {
-      num: 100
-    },
-    components: {
-      'app-header': appHeader
-    }
-  });
-</script>
+});
 ```
 
 위 코드는 컴포넌트를 하나 등록하고 props 속성을 하나 내려주는 코드입니다. props를 작성하시다가 아래와 같은 에러를 본 적이 있으신가요?
 
 ![컴포넌트 태그 쪽에 불필요한 인덴팅을 주어 나는 오류]({{ site.url }}/images/posts/web/vuejs/error-cases/error3.png)
 
-에러 로그가 좀 더 구체적이면 좋겠지만.. 여기서는 경험에서 나오는 의견을 드릴 수 밖에 없겠네요. 위와 같은 로그는 대부분 아래와 같이 컴포넌트 태그에 불필요한 띄어 쓰기(인덴팅)를 넣었을 때 발생합니다.
+에러 로그가 좀 더 구체적이면 좋겠지만.. 여기서는 경험에서 나오는 의견을 드릴 수 밖에 없겠네요. 위와 같은 로그는 대부분 아래와 같이 **컴포넌트 태그에 불필요한 띄어 쓰기(인덴팅)를 넣었을 때 발생**합니다.
 
 ```html
 <app-header v-bind: propsdata = "num" ></app-header>
 ```
 
-정리된 코드를 좋아해서 인덴팅을 여기 저기 넣으시는 분들이 있으실거에요. 자바스크립트 쪽에는 얼마든지 넣어주셔도 되지만, HTML 태그는 코드 간격을 띄었을 때 Vue.js 라이브러리에서 정상적으로 인식하지 못하는 일이 발생합니다. 따라서, HTML 태그 쪽에는 띄어 쓰기를 삼가주세요!
+정리된 코드를 좋아해서 인덴팅을 여기 저기 넣으시는 분들이 있으실거에요. 자바스크립트 쪽에는 얼마든지 넣어주셔도 되지만 HTML 태그는 코드 간격을 띄었을 때 Vue.js 라이브러리에서 정상적으로 인식하지 못하는 일이 발생합니다. 따라서, HTML 태그 쪽에는 띄어 쓰기를 삼가주세요!
 
 ## 마무리
 
