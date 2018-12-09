@@ -86,11 +86,11 @@ new Vue({
 
 ```js
 data: {
-	message: 'Hello Vue.js!'
+  message: 'Hello Vue.js!'
 }
 ```
 
-정리해서 위와 같은 로그가 발생했을 때는 `data`, `computed`, `methods` 속성과 HTML 태그의 콧수염 괄호 `"{{ "}}` 안에 선언한 변수 명이 같은지 확인해보세요!
+정리해서 위와 같은 로그가 발생했을 때는 `data`, `computed`, `methods` 속성과 HTML 태그의 콧수염 괄호 안에 선언한 변수 명이 같은지 확인해보세요!
 
 ## 두 번째 에러 케이스 - 컴포넌트를 등록할 때
 
@@ -98,7 +98,7 @@ data: {
 
 ```html
 <div id="app">
-  <app-haeder></app-haeder>
+  <app-header></app-header>
 </div>
 ```
 
