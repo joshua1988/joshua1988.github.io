@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "자바스크립트 간단한 테스팅 함수 만들어보기"
+title: "자바스크립트 간단한 Test 코드 만들어보기"
 date: 2019-01-16 01:45:13 +0900
 categories: [web-development, javascript]
 excerpt: "(중급) 자바스크립트 테스트를 위한 간단한 함수를 만들어보자"
