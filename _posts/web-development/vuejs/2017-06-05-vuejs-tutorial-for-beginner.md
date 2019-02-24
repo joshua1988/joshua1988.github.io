@@ -674,3 +674,12 @@ React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual
 	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-advanced.jpg"></a>
 	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
 </figure>
+
+## 밀착 지도를 받을 수 있는 오프라인 강의
+
+강남역 패스트캠퍼스에서 3월부터 4월까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
+
+<figure class="third">
+	<a href="https://www.fastcampus.co.kr/dev_camp_vue/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/vuejs/vue-camp.png"></a>
+	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.03.04 ~ 19.04.10)</figcaption>
+</figure>

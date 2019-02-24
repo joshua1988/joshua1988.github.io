@@ -372,11 +372,9 @@ Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 
-강남역 패스트캠퍼스에서 3월부터 4월까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 링크를 참고해주세요 :)
+강남역 패스트캠퍼스에서 3월부터 4월까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
 <figure class="third">
 	<a href="https://www.fastcampus.co.kr/dev_camp_vue/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/vuejs/vue-camp.png"></a>
 	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.03.04 ~ 19.04.10)</figcaption>
 </figure>
-
-
