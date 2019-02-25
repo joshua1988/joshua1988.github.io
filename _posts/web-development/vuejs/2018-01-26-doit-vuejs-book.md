@@ -148,7 +148,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 - [이지스 퍼블리싱 도서 소개 페이지](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
 - [Yes24 온라인 구매 페이지](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+<!-- ## 글보다 더 쉽게 배우는 온라인 강좌
 뷰를 좀 더 빠르게 학습하고 싶은 분들께 아래 온라인 강좌를 추천합니다.
 
 <figure class="third">
@@ -156,7 +156,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-advanced.jpg"></a>
 	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
-</figure>
+</figure> -->
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 

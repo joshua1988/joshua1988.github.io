@@ -180,7 +180,7 @@ new Vue({
 
 요즘 Vue.js로 서비스를 구축하는 곳들이 많아진 것 같습니다. 그만큼 더 많은 분들이 Vue.js를 시작하실 것 같은데요. 처음 배우실 때 오류 났다고 당황하지 마시고 조금 더 오류를 찬찬히 살펴보시길 추천드립니다. 그럼 더 재밌게 웹 개발하세요! :)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+<!-- ## 글보다 더 쉽게 배우는 온라인 강좌
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
 
 <figure class="third">
@@ -188,7 +188,7 @@ new Vue({
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-advanced.jpg"></a>
 	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
-</figure>
+</figure> -->
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 
