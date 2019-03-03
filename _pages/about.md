@@ -64,32 +64,30 @@ The Korea Software Technology Award at KOSTA, 2014
 [Google Developer Group Web Technology](https://www.facebook.com/groups/1724887854499893/), *Organizer* <br>
 9XD, *Staff Member*
 
-## Lectures
+## Offline Lectures
 
-<figure class="third">
-	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
-	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
-	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
-	<figcaption>Vue.js 초급 강의(온라인), Vue.js 중급 강의(온라인), Webpack 강의(온라인)</figcaption>
+<figure class="two">
+	<a href="https://www.fastcampus.co.kr/dev_camp_vue"><img src="https://cdn.www.fastcampus.co.kr/wp-content/uploads/2018/08/Artboard-1@2x-350x350.png"></a>
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="https://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/08/dev_camp_wap-700x700.png"></a>
+	<figcaption>Vue.js 정복 캠프(19.03.04 ~ 19.04.10), 패스트캠퍼스 Vue로 구현하는 PWA 캠프(19.04.27 ~ 19.06.22)</figcaption>
 </figure>
 
-[Implementing Progressive Web App using Vue.js](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2018 Jan - 2018 Aug* <br>
-[Easy to learn Webpack](https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner), Inflearn, *2017 Oct -* <br>
-[Learn Vue.js - Crack it within 3 hours](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner), Inflearn, *2017 Sep -* <br>
-[Web Application Project Camp for Front-End Developers #2](http://www.fastcampus.co.kr/dev_camp_wap/), Fast Campus, *2017 Sep - 2017 Nov* <br>
-[Web Application Project Camp for Front-End Developers #1](http://www.fastcampus.co.kr/dev_camp_wap_blog_student_1/), Fast Campus, *2017 May - 2017 July* <br>
-Hybrid App Development Class, POSCO ICT, *2015 Feb - 2017*
+## Online Lectures
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
+	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-advanced.jpg"></a>
+	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<figcaption>Vue.js 중급 강의(온라인), Vue.js 완벽 가이드(온라인), Webpack 강의(온라인)</figcaption>
+</figure>
 
 ## Publications
 
 <figure class="third">
 	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png"></a>
-	<!-- <a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a> -->
-	<figcaption>Do it! Vue.js 입문</figcaption>
+	<a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/vuepress.png"></a>
+	<figcaption>Do it! Vue.js 입문, ES6 온라인 핸드북</figcaption>
 </figure>
-
-[Do it! Vue.js book](http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1), EasysPublishing, *Jan 27, 2018* <br>
-[ES6 for Vue.js beginners](https://joshua1988.github.io/es6-online-book/), e-book, *June 17, 2018* <br>
 
 ## Social
 <a class="btn-social google-plus" href="mailto:jangkeehyo@gmail.com"><i class="fa fa-google" aria-hidden="true"></i></a>
