@@ -370,11 +370,11 @@ Vuex 를 잘 활용하여 가독성 있는 코드를 짤 수 있다.
 	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
 </figure>
 
-<!-- ## 밀착 지도를 받을 수 있는 오프라인 강의
+## 밀착 지도를 받을 수 있는 오프라인 강의
 
-강남역 패스트캠퍼스에서 3월부터 4월까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
+강남역 패스트캠퍼스에서 4월 말부터 6월 말까지 8주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_vue/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/vuejs/vue-camp.png"></a>
-	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.03.04 ~ 19.04.10)</figcaption>
-</figure> -->
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/vuejs/dev_camp_wap.png"></a>
+	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프 8주 과정(19.04.27 ~ 19.06.29)</figcaption>
+</figure>
