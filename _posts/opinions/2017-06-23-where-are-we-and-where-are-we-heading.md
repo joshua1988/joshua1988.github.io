@@ -2,7 +2,7 @@
 layout: article
 title: "현대 웹의 주소와 미래"
 date: 2017-06-23 11:15:32 +0900
-categories: web_dev
+categories: opinions
 excerpt: "유용한 UI Libraries, Javascript Framework, 그리고 내가 생각하는 웹의 현재 주소와 방향"
 image:
   teaser: posts/web/opinions/pwa.jpg
