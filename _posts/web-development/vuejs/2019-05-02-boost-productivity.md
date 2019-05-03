@@ -3,7 +3,7 @@ layout: article
 title: 'Vue.js 개발 생산성을 높여주는 도구 3가지'
 date: 2019-05-02 17:25:32 +0900
 categories: [web-development, vuejs]
-excerpt: '뷰로 개발할 때 반복적인 코드 작성과 코드 리뷰를 편하게 해주는 도구 알아보기'
+excerpt: '뷰로 개발할 때 반복적인 코드 작성을 줄이고 코드 리뷰를 편하게 해주는 도구 알아보기'
 image:
   teaser: posts/web/vuejs/logo.png
   credit: Evan You
@@ -26,6 +26,10 @@ tags:
   - vue.js 강좌
   - vue.js 강의
   - vue.js 입문
+  - eslint
+  - prettier
+  - vue eslint
+  - vue prettier
   - vue.js 프론트엔드 개발자
   - 패스트캠퍼스 vue.js 강의
   - 인프런 장기효
@@ -81,15 +85,16 @@ ESLint와 프리티어를 함께 적용하는 방법은 다다음 섹션을 참�
 
 하지만 이미 뷰 프로젝트를 생성하여 진행 중이신 분들은 아래와 같이 구성하시면 됩니다.
 
-1.노드 패키지 매니저(NPM)로 린트 및 프리티어 라이브러리를 설치합니다.
+**1.**노드 패키지 매니저(NPM)로 린트 및 프리티어 라이브러리를 설치합니다.
 
 ```bash
 npm i eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-vue --save-dev
 ```
 
-2.프로젝트 루트 레벨에 린트 설정 파일(`.eslintrc.js`)을 추가합니다.
+**2.**프로젝트 루트 레벨에 린트 설정 파일인 `.eslintrc.js`를 추가합니다.
 
 ```js
+// .eslintrc.js
 module.exports = {
   // 현재 eslintrc 파일을 기준으로 ESLint 규칙을 적용
   root: true,
@@ -131,9 +136,9 @@ module.exports = {
 - `plugins`: NPM으로 설치하여 사용할 수 있는 확장 규칙입니다. 대중적인 라이브러리와 결합하여 린트를 사용할 수 있습니다.
 - `rules`: 린트를 실행할 때 사용자가 임의로 규칙을 추가하여 검사에서 제외 또는 추가하는 속성입니다.
 
-참고로 `.eslintrc` 파일 대신에 `package.json` 파일에 `eslintConfig` 속성을 사용해도 되지만 규칙 적용에 대한 우선 순위는 `.eslintrc`가 더 높기 때문에 별도의 설정 파일로 분류해서 사용하시는 것을 추천드립니다.
+참고로 린트 설정 파일 대신에 `package.json` 파일에 `eslintConfig` 속성을 사용해도 되지만 규칙 적용에 대한 우선순위는 린트 설정 파일이 더 높기 때문에 설정 파일을 따로 만들어서 사용하시는 것을 추천드립니다.
 
-3.`package.json` 파일에 아래의 NPM 커스텀 명령어를 추가합니다.
+**3.** NPM 설정 파일인 `package.json` 파일에 아래의 NPM 커스텀 명령어를 추가합니다.
 
 ```json
 {
@@ -141,12 +146,13 @@ module.exports = {
 }
 ```
 
-콘솔 창에서 위 명령어를 수행하면 src 폴더 밑의 js, vue 파일에 대해서 린트 검사를 수행합니다. 앞에서 린트 설정에 프리티어를 추가했기 때문에 린트의 기본 문법 규칙과 함께 `rules`에 설정한 프리티어 규칙도 함께 포함하여 코드를 검사합니다.
+콘솔 창에서 위 명령어를 수행하면 src 폴더 밑의 js, vue 파일에 대해서 린트 검사를 수행합니다. 앞에서 린트 설정에 프리티어 내용을 추가했기 때문에 린트의 기본 규칙과 함께 `rules`에 설정한 프리티어 규칙도 함께 적용되어 검사됩니다.
 
-4.마지막으로 비주얼 스튜디오 코드의 프리티어 플러그인을 비활성화하고 `settings.json` 파일을 아래와 같이 수정합니다.
+**4.**마지막으로 비주얼 스튜디오 코드의 프리티어 플러그인을 비활성화하고 `settings.json` 파일에 아래의 내용을 추가합니다.
 
 ```json
 {
+  ...
   "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
@@ -167,16 +173,18 @@ module.exports = {
 }
 ```
 
-프리티어 플러그인을 비활성화하지 않으면 VSCode의 Fommater 기능과 린트 검사 기능이 겹치게 되어 코드가 일관되게 정리되지 않습니다. 꼭 프리티어 플러그인을 사용하지 않음으로 설정하고 VSCode의 오른쪽 아래에 있는 Formatting을 X로 전환해주세요.
+프리티어 플러그인을 비활성화하지 않으면 VSCode의 Formatter 기능과 린트 검사 기능이 겹치게 되어 코드가 일관되게 정리되지 않습니다. 꼭 프리티어 플러그인을 사용하지 않음으로 설정하고 VSCode의 오른쪽 아래에 있는 Formatting을 X로 전환해주세요.
 
 ![VSCode의 Formatting 기능 끄기]({{ site.url }}/images/posts/web/vuejs/productivity1/vscode-format-off.png)
 
 ## Vue VSCode Snippets
 
-마지막으로 살펴볼 도구는 Vue VSCode Snippets이라는 VSCode 확장 플러그인입니다. Vue의 코어팀 멤버이자 마이크로소프트웨어 개발자인 Sarah Drasner가 만들었어요. 개인적으로 자주 사용하는 스니펫은 vdata, vimport, vmethods 정도가 있습니다. 관심 있으신 분들은 다음 링크로 접속해서 살펴보세요. [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+마지막으로 살펴볼 도구는 Vue VSCode Snippets이라는 VSCode 확장 플러그인입니다. Vue의 코어팀 멤버이자 마이크로소프트웨어 개발자인 Sarah Drasner가 제작하였습니다. 개인적으로 자주 사용하는 스니펫은 vdata, vimport, vmethods 정도가 있습니다. 관심 있으신 분들은 아래 링크로 접속해서 살펴보세요. 
+
+[Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 
 ![Vue VSCode Snippets Demonstration]({{ site.url }}/images/posts/web/vuejs/productivity1/vue-vscode-snippets.gif)
 
 ## 마무리
 
-아무래도 이번 글은 개발 환경 구성과 관련된 글이다보니 적용하시는게 쉽진 않겠지만 그래도 구성하시는데 도움이 되었으면 좋겠습니다. 잘 구성하셔서 재밌고 편하게 코딩하세요! :)
+아무래도 이번 글은 개발 환경 구성과 관련된 글이다보니 따라서 적용하시는게 쉽진 않겠지만 그래도 구성하시는데 도움이 되었으면 좋겠습니다. 잘 구성하셔서 재밌고 편하게 코딩하세요! :)
