@@ -677,9 +677,9 @@ React 와 마찬가지로 빠른 화면 렌더링을 위해 사용하는 Virtual
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 
-강남역 패스트캠퍼스에서 4월 말부터 6월 말까지 8주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
+강남역 패스트캠퍼스에서 6월 말부터 7월 말까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/vuejs/dev_camp_wap.png"></a>
-	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프 8주 과정(19.04.27 ~ 19.06.29)</figcaption>
+	<a href="https://www.fastcampus.co.kr/dev_camp_vue/"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
+	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.06.24 ~ 19.07.31)</figcaption>
 </figure>

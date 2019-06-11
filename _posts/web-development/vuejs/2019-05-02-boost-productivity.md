@@ -188,3 +188,12 @@ module.exports = {
 ## 마무리
 
 아무래도 이번 글은 개발 환경 구성과 관련된 글이다보니 따라서 적용하시는게 쉽진 않겠지만 그래도 구성하시는데 도움이 되었으면 좋겠습니다. 잘 구성하셔서 재밌고 편하게 코딩하세요! :)
+
+## 밀착 지도를 받을 수 있는 오프라인 강의
+
+강남역 패스트캠퍼스에서 6월 말부터 7월 말까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
+
+<figure class="third">
+	<a href="https://www.fastcampus.co.kr/dev_camp_vue/"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
+	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.06.24 ~ 19.07.31)</figcaption>
+</figure>
