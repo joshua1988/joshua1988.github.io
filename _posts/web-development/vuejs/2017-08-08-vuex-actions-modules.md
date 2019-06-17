@@ -197,10 +197,10 @@ Vuex 가 가져다 주는 이점도 크지만, 정말 간단한 화면을 만들
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vuejs-basic.png"></a>
+	<a href="https://www.inflearn.com/course/Age-of-Vuejs/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-vue.png"></a>
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-intermediate.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/vue-advanced.jpg"></a>
-	<figcaption>인프런 온라인 강좌 : Vue.js 초급, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
+	<figcaption>인프런 온라인 강좌 : Vue.js 시작하기, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
 </figure>
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
