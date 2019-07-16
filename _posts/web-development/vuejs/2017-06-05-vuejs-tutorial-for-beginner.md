@@ -58,7 +58,7 @@ tags:
 ---
 {% include toc.html %}
 
-## Vue 는 무엇인가?
+## Vue.js란 무엇인가?
 
 MVVM 패턴의 ViewModel 레이어에 해당하는 화면단 라이브러리
 
@@ -76,7 +76,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 화면단 라이브러리
 
 ![mvvm-pattern]({{ site.url }}/images/posts/web/vuejs/mvvm-pattern.png)
 
-## Vue 시작하기
+## Vue.js 시작하기
 
 다른 주요 프런트엔드 프레임워크(Angular, React)와 비교했을 때 뷰위 가장 큰 강점은 바로 시작하기가 정말 쉽다는 점이다.
 
@@ -84,7 +84,7 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 화면단 라이브러리
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vue Sample</title>
+    <title>Vue.js Sample</title>
   </head>
   <body>
     <div id="app">
@@ -281,19 +281,19 @@ new Vue({
 })
 ```
 
-이벤트를 발생시킬 컴포넌트에서 `$emit` API 호출
+이벤트를 발생시킬 컴포넌트에서 `$emit()` 호출
 
 ```js
 eventBus.$emit('refresh', 10);
 ```
 
-이벤트를 받을 컴포넌트에서 `$on` API로 이벤트 수신
+이벤트를 받을 컴포넌트에서 `$on()` 이벤트 수신
 
 ```js
 // 이벤트 버스 이벤트는 일반적으로 라이프 사이클 함수에서 수신
 new Vue({
   created: function() {
-    eventBus.$on('refresh', function (data) {
+    eventBus.$on('refresh', function(data) {
       console.log(data); // 10
     });
   }
@@ -325,7 +325,7 @@ new Vue({
 
 설치는 NPM과 CDN 방식 모두 지원한다.
 
-```js
+```html
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 ```
 
@@ -335,7 +335,7 @@ npm install vue-router --save
 
 #### 라우터 특성
 
-Vue 라우터는 기본적으로 **`루트 URL`/#/`라우터 이름`** 의 구조로 되어 있다.
+Vue 라우터는 기본적으로 `'루트 URL'/#/'라우터 이름'`의 구조로 되어 있다.
 
 ```go
 example.com/#/user
@@ -351,7 +351,7 @@ new VueRouter({
 
 #### Nested Routers
 
-라우터로 화면을 이동할 때 Nested Routers를 이용하여 하위 컴포넌트를 같이 렌더링 할 수 있다. 이 때 컴포넌트의 구조는 가장 큰 상위의 컴포넌트가 하위의 컴포넌트를 포함하는 `Parent - Child` 형태와 같다.
+라우터로 화면을 이동할 때 네스티드 라우터를 이용하여 지정된 하위 컴포넌트를 표시할 수 있다. 이 때 컴포넌트의 구조는 가장 큰 상위의 컴포넌트가 하위의 컴포넌트를 포함하는 `Parent - Child` 형태와 같다.
 
 ```html
 <!-- localhost:5000 -->
@@ -408,16 +408,16 @@ new VueRouter({
 },
 ```
 
-#### Nested Routes vs Named Views
+#### Nested Router vs Named Views
 
-- 특정 URL 에서 1 개의 컴포넌트에 여러 개의 하위 컴포넌트를 갖는 것을 Nested Routes
-- 특정 URL 에서 여러 개의 컴포넌트를 쪼개진 뷰 단위로 렌더링 하는 것을 Named View
+- 특정 URL에 지정된 1개의 컴포넌트가 여러 개의 하위 컴포넌트를 갖는 것을 Nested Router
+- 특정 URL에 여러 개의 컴포넌트를 영역 별로 지정하여 렌더링 하는 것을 Named View
 
 ![View Model Layer]({{ site.url }}/images/posts/web/vuejs/namedview-nestedroutes.png)
 
 ## Axios
 
-Vue에서 가장 많이 사용하는 [HTTP 통신 라이브러리](https://github.com/axios/axios)이다. CDN과 NPM 설치 방식을 모두 지원하며 사용하기 좋은 속성과 API가 많다. 무엇보다도 Promise 기반이라 코드를 간결하게 작성하기 용이하다.
+Vue에서 가장 많이 사용하는 [HTTP 통신 라이브러리](https://github.com/axios/axios)이다. CDN과 NPM 설치 방식을 모두 지원하며 사용하기 좋은 속성과 API가 많다. 무엇보다도 [Promise](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/) 기반이라 코드를 간결하게 작성하기 용이하다.
 
 ```html
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -439,11 +439,11 @@ methods: {
 
 ## Vue Template
 
-템플릿이란 뷰로 화면을 조작하기 위한 방법이자 속성이다. 화면의 DOM 요소와 뷰 인스턴스의 내용을 연결한다. 참고로 뷰는 template으로 렌더링 할 때 Virtual DOM을 사용하여 DOM 조작을 최소화 하고 렌더링을 꼭 다시 해야만 하는 요소를 계산하여 성능 부하를 최소화한다. 만약 원하면 render function 을 직접 구현하여 사용할 수 있다.
+템플릿이란 뷰로 화면을 조작하기 위해 제공되는 문법이다. 뷰 인스턴스에서 관리하는 데이터를 화면에 연결하는 데이터 바인딩과 화면의 조작을 편하게 할 수 있는 디렉티브로 나뉜다.
 
-템플릿 문법에는 크게 데이터 바인딩과 디렉티브가 있다.
+#### Data Binding
 
-- 데이터 바인딩 : 콧수염 문법인 "{{ "{{ " }} }}"를 활용하여 인스턴스의 data, computed, props 속성을 연결할 수 있다. 그리고 간단한 자바스크립트 표현식도 화면에 표시할 수 있다.
+콧수염 문법인 "{{ "{{ " }} }}"를 활용하여 인스턴스의 data, computed, props 속성을 연결할 수 있다. 그리고 간단한 자바스크립트 표현식도 화면에 표시할 수 있다.
 
 ```html
 <div>{{ "{{ str" }} }}</div>
@@ -451,7 +451,9 @@ methods: {
 <div>{{ "{{ message.split('').reverse().join('')" }} }}</div>
 ```
 
-- 디렉티브 : HTML 태그의 속성에 `v-` 접두사가 붙은 특별한 속성으로 화면의 DOM 조작을 쉽게할 수 있는 문법들을 제공한다.
+#### Directive
+
+HTML 태그의 속성에 `v-` 접두사가 붙은 특별한 속성으로 화면의 DOM 조작을 쉽게할 수 있는 문법들을 제공한다.
 
 ```html
 <!-- seen의 진위 값에 따라 p 태그가 화면에 표시 또는 미표시 -->
@@ -462,7 +464,9 @@ methods: {
 <button v-on:click="doSomething"></button>
 ```
 
-- 필터 : 화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며 `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
+#### Filters
+
+화면에 표시되는 텍스트의 형식을 편하게 바꿀 수 있도록 고안된 기능이며 `|` 을 이용하여 여러 개의 필터를 적용할 수 있다.
 
 ```html
 <!-- message 값에 capitalize 필터를 적용하여 첫 글자를 대문자로 변경 -->
@@ -471,7 +475,6 @@ methods: {
 
 ```js
 new Vue({
-  // ...
   filters: {
     capitalize: function(value) {
       if (!value) return '';
@@ -484,26 +487,26 @@ new Vue({
 
 ## Single File Component
 
-특정 화면 영역의 HTML, CSS, JS 코드를 한 파일에서 관리할 수 있는 방법. 파일 확장자는 `.vue`이며 HTML 파일에서 뷰 개발을 진행했을 때의 한계점을 극복할 수 있는 방법이기도 하다. 한계점은 아래와 같다.
+특정 화면 영역의 HTML, CSS, JS 코드를 한 파일에서 관리할 수 있는 방법. 파일 확장자는 `vue`이며 HTML 파일에서 뷰 개발을 진행했을 때의 한계점을 극복할 수 있는 방법이기도 하다. 한계점은 아래와 같다.
 
   1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
   2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
   3. js 파일상에서 **css 스타일링 작업이 거의 불가**
   4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
 
-싱글 파일 컴포넌트로 개발하려면 Webpack과 같은 번들링 도구가 필요하다. 싱글 파일 컴포넌트의 문법은 다음과 같다.
+싱글 파일 컴포넌트로 개발하려면 Webpack과 같은 번들링 도구가 필요하다. 싱글 파일 컴포넌트의 기본 골격은 다음과 같다.
 
 ```html
 <template>
-<!-- ... -->
+<!-- HTML -->
 </template>
 
 <script>
-// ...
+// Javascript
 </script>
 
 <style>
-/*...*/
+/* CSS */
 </style>
 ```
 
@@ -512,9 +515,9 @@ new Vue({
 싱글 파일 컴포넌트를 브라우저에서 실행할 수 있게 자바스크립트 파일로 변환해주는 웹팩 로더. 뷰 로더를 사용하면 다음과 같은 장점이 있다.
 
 1. ES6 지원
-2. `<style>` 과 `<template>` 에 대한 각각의 webpack loader 지원. ex) sass, jade
+2. `<style>` 과 `<template>` 에 대한 각각의 웹팩 로더 지원. ex) sass, jade
 3. 각 `.vue` 컴포넌트의 스코프로 좁힌 css 스타일링 지원
-4. webpack 의 모듈 번들링에 대한 지원과 의존성 관리가 제공
+4. 웹팩의 모듈 번들링에 대한 지원과 의존성 관리가 제공
 5. 개발 시 Hot Module Replacement(HMR) 지원
 
 ## Vue CLI
@@ -531,7 +534,7 @@ CLI가 설치되고 나면 아래의 명령어로 프로젝트를 생성할 수 
 vue create 프로젝트 이름
 ```
 
-명령어를 입력하고 나면 Preset을 선택하라고 나오는데 Default를 선택하면 된다. 프로젝트가 생성되면 콘솔에 안내된 명령어를 입력하여 웹 애플리케이션을 실행할 수 있다.
+명령어를 입력하고 나면 Preset을 선택하라고 나오는데 Default를 선택하면 된다. 프로젝트가 생성되면 콘솔에 아래와 같은 형식으로 안내된 명령어를 입력하여 웹 애플리케이션을 실행할 수 있다.
 
 ```bash
 cd 프로젝트 폴더 이름
@@ -544,9 +547,14 @@ npm run serve
 
 ## 참고 서적
 
-각 주제에 대한 내용을 더 자세히 볼 수 있는 [Do it! Vue.js 입문](http://www.yes24.com/24/Goods/58206961?Acode=101)을 소개합니다 :)
+각 주제에 대한 내용을 더 자세히 볼 수 있는 책을 소개합니다 :)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+<figure class="third">
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png"></a>
+	<figcaption>Do it! Vue.js 입문</figcaption>
+</figure>
+
+## 글보다 더 쉽게 배우는 Vue.js 온라인 강좌
 
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
 
@@ -557,7 +565,7 @@ npm run serve
 	<figcaption>인프런 온라인 강좌 : Vue.js 시작하기, Vue.js 중급, Vue.js 완벽 가이드 (좌측 부터)</figcaption>
 </figure>
 
-## 밀착 지도를 받을 수 있는 오프라인 강의
+## 밀착 지도를 받을 수 있는 Vue.js 오프라인 교육
 
 강남역 패스트캠퍼스에서 6월 말부터 7월 말까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
