@@ -7,7 +7,7 @@ excerpt: "Vue.js 프로젝트 구조가 복잡해졌을 때의 폴더 구조는 
 image:
   teaser: posts/web/vuejs/vue-camp.png
   credit: Fast Campus
-  creditlink: https://www.fastcampus.co.kr/dev_camp_vue/
+  creditlink: https://www.fastcampus.co.kr/dev_camp_wap/
   #url to their site or licensing
 locale: "ko_KR"
 # 리플 옵션
@@ -139,7 +139,7 @@ vue init webpack-simple folder-structure
 혹시 폴더 구조와 관련하여 더 괜찮은 의견이 있으시면 아래에 편하게 댓글로 남겨주세요 :)
 
 그럼 오늘도 즐겁게 코딩하시기 바랍니다!
-[※이미지 출처: 패스트 캠퍼스 Vue.js 강의](https://www.fastcampus.co.kr/dev_camp_vue)
+[※이미지 출처: 패스트 캠퍼스 Vue.js 강의](https://www.fastcampus.co.kr/dev_camp_wap)
 
 ## 글보다 더 쉽게 배우는 온라인 강좌
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
@@ -156,6 +156,6 @@ vue init webpack-simple folder-structure
 강남역 패스트캠퍼스에서 6월 말부터 7월 말까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_vue/"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
-	<figcaption>패스트캠퍼스 Vue.js 정복 캠프 6주 과정(19.06.24 ~ 19.07.31)</figcaption>
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
+	<figcaption>패스트캠퍼스 Vue.js로 구현하는 PWA 캠프 8주 과정(19.08.24 ~ 19.10.26)</figcaption>
 </figure>
