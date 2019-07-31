@@ -5,9 +5,9 @@ date: 2019-07-30 11:59:13 +0900
 categories: [web-development, javascript]
 excerpt: "(중급) 자바스크립트 개발자를 위한 async, await 사용법 설명. 쉽게 알아보는 자바스크립트 async await 개념, 사용법, 예제 코드, 예외 처리 방법"
 image:
-  teaser: posts/web/javascript/js.png
-  credit: Frank Liu #name of the person or site you want to credit
-  creditlink: http://geekologist.co/tag/javascript/
+  teaser: posts/web/javascript/async-await.png
+  credit: Hackernoon #name of the person or site you want to credit
+  creditlink: https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda
   #url to their site or licensing
 locale: "ko"
 # 리플 옵션
