@@ -418,8 +418,9 @@ getData().then(function (result) {
 감사합니다.
 
 #### 다른 시리즈물 확인하기
+
 - [1탄 - 자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
-- 3탄 - async와 await(연재 예정..)
+- [3탄 - 자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
 
 #### 참고
 - [MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

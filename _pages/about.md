@@ -67,9 +67,9 @@ The Korea Software Technology Award at KOSTA, 2014
 ## Offline Lectures
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_vue"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
 	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
-	<figcaption>Vue.js 정복 캠프(19.03.04 ~ 19.04.10), 패스트캠퍼스 Vue로 구현하는 PWA 캠프(19.04.27 ~ 19.06.22)</figcaption>
+	<figcaption>Vue.js 정복 캠프(19.03.04 ~ 19.04.10), 패스트캠퍼스 Vue로 구현하는 PWA 캠프(19.08.24 ~ 19.10.26)</figcaption>
 </figure>
 
 ## Online Lectures
