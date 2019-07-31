@@ -207,7 +207,7 @@ auth() 메서드로 인증을 거치고 나면 콜백 함수 authDone()이 실�
 위와 같은 코딩 패턴으로도 콜백 지옥을 해결할 수 있지만 Promise나 Async를 이용하면
 더 편하게 구현할 수 있습니다. 다음 글에서는 Promise에 대해서 알아보겠습니다.
 
-#### 다음 시리즈
+#### 다음 시리즈물 확인하기
 
-- [자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
-- [자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
+- [2탄 - 자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
+- [3탄 - 자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
