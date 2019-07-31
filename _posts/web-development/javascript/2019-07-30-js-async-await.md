@@ -54,7 +54,7 @@ tags:
 이번 글에서 살펴볼 내용은 자바스크립트의 비동기 처리 시리즈의 마지막 연재물 async & await 문법입니다.
 처음 접하시는 분들이 최대한 이해하기 쉽게 코드와 글을 풀어서 작성했으니 재밌게 읽으셨으면 좋겠습니다 :)
 
-그리고, 이번 글을 읽으시려면 꼭 [비동기 처리 및 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)와 [Promise](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)에 대해 이해하고 계셔야 합니다..!
+그리고, 이번 글을 읽으시려면 꼭 [비동기 처리 및 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)와 [Promise](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)에 대해 이해하고 계셔야 합니다. 만약 아직 개념을 이해하지 못하셨다면 글을 꼭 읽어보시고 오시는 걸 추천드립니다.
 
 그럼 재밌게 읽으세요! :)
 
@@ -78,14 +78,14 @@ if (user.id === 1) {
 }
 ```
 
-이 코드는 `user`라는 변수에 객체를 할당한 뒤 조건문으로 콘솔에 사용자의 `name`을 찍는 간단한 코드입니다.
+이 코드는 `user`라는 변수에 객체를 할당한 뒤 조건문으로 사용자의 아이디를 확인하고 콘솔에 사용자의 `name`을 찍는 간단한 코드입니다.
 
 우리는 이렇게 위에서부터 아래로 한 줄 한 줄 차근히 읽으면서 사고하는 것이 편합니다.
 그렇게 프로그래밍을 배웠으니까요.
 
 ## 그래서 읽기 좋은 코드와 async & await가 무슨 상관이죠?
 
-조금 전에 읽고 이해한 방식대로 코드를 구성하는 것이 async, await 문법의 의도입니다.
+조금 전에 읽고 이해한 방식대로 코드를 구성하는 것이 async, await 문법의 목적입니다.
 다음 코드를 한번 볼까요?
 
 ```js
@@ -95,7 +95,7 @@ if (user.id === 1) {
 }
 ```
 
-`fetchUser()`라는 메서드를 호출하면 앞에서 봤던 코드처럼 사용자 정보 객체를 반환한다고 해보겠습니다.
+`fetchUser()`라는 메서드를 호출하면 앞에서 봤던 코드처럼 사용자 객체를 반환한다고 해보겠습니다.
 그리고 여기서 `fetchUser()` 메서드가 서버에서 사용자 정보를 가져오는 HTTP 통신 코드라고 가정한다면
 위 코드는 async & await 문법이 적용된 형태라고 보셔도 됩니다.
 
@@ -225,6 +225,8 @@ async function logItems() {
 먼저 `fetchItems()` 함수는 프로미스 객체를 반환하는 함수입니다. 프로미스는 [자바스크립트 비동기 처리를 위한 객체]([??](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#promise%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94))라고 배웠었죠. `fetchItems()` 함수를 실행하면 프로미스가 이행(Resolved)되며 값은 `items` 배열을 갖게 됩니다.
 
 그리고 이제 `logItems()` 함수를 보겠습니다. `logItems()` 함수를 실행하면 `fetchItems()` 함수의 결과 값인 `[1,2,3]` 배열이 `resultItems` 변수에 담깁니다. 따라서, 콘솔에는 `[1,2,3]`이 출력되죠.
+
+`await`를 사용하지 않았다면 데이터를 받아온 시점에서 콘솔을 출력할 수 있게 콜백 함수나 `.then()`등을 사용해야 했을 겁니다. 하지만 async await 문법으로 이렇게 비동기에 대한 사고를 하지 않아도 되는 것이죠.
 
 ※참고: 만약 위 코드가 왜 비동기 처리 코드인지 잘 이해가 안 가신다면 `fetchItems()`를 아래의 함수들로 바꿔서 실행해보셔도 괜찮습니다 :)
 
