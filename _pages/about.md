@@ -4,12 +4,16 @@ layout: article
 title: About Me
 excerpt: "Singing Computer Scientist"
 tags:
-- 웹 개발
-- 웹 개발자
-- 프론트엔드 개발자
+- 캡틴판교
+- 장기효
+- vue.js 캡틴판교
 - 프론트엔드 개발
+- 프론트엔드 개발자
 - 프로그레시브 웹앱
 - pwa
+- 웹 개발
+- 웹 개발자
+- captain pangyo
 - vue.js
 - vue.js 사용법
 - vue.js 강좌
@@ -24,15 +28,6 @@ tags:
 - front end developer
 - 패스트캠퍼스
 - 패스트캠퍼스 강사
-- 인프런
-- 장기효
-- Captain Pangyo
-- 캡틴판교
-- GDG
-- GDG WebTech
-- GDG Korea
-- 하이브리드앱 개발
-- 하이브리드앱 개발자
 ---
 
 ## Bio
@@ -67,9 +62,9 @@ The Korea Software Technology Award at KOSTA, 2014
 ## Offline Lectures
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_wap"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
+	<a href="https://www.fastcampus.co.kr/dev_camp_vue"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
 	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
-	<figcaption>Vue.js 정복 캠프(19.03.04 ~ 19.04.10), 패스트캠퍼스 Vue로 구현하는 PWA 캠프(19.08.24 ~ 19.10.26)</figcaption>
+	<figcaption>Vue.js 정복 캠프(19.10.14 ~ 19.11.20), 패스트캠퍼스 Vue로 구현하는 PWA 캠프(19.08.24 ~ 19.11.02)</figcaption>
 </figure>
 
 ## Online Lectures

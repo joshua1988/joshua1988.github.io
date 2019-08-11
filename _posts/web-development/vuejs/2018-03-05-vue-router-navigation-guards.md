@@ -237,9 +237,9 @@ const Login = {
 
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 
-강남역 패스트캠퍼스에서 6월 말부터 7월 말까지 6주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
+강남역 패스트캠퍼스에서 8월 말부터 11월 초까지 8주 동안 Vue.js 집중반을 운영합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 :)
 
 <figure class="third">
 	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
-	<figcaption>패스트캠퍼스 Vue.js로 구현하는 PWA 캠프 8주 과정(19.08.24 ~ 19.10.26)</figcaption>
+	<figcaption>패스트캠퍼스 Vue.js로 구현하는 PWA 캠프 8주 과정(19.08.24 ~ 19.11.02)</figcaption>
 </figure>
