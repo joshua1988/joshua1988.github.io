@@ -222,7 +222,7 @@ async function logItems() {
 }
 ```
 
-먼저 `fetchItems()` 함수는 프로미스 객체를 반환하는 함수입니다. 프로미스는 [자바스크립트 비동기 처리를 위한 객체]([??](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#promise%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94))라고 배웠었죠. `fetchItems()` 함수를 실행하면 프로미스가 이행(Resolved)되며 값은 `items` 배열을 갖게 됩니다.
+먼저 `fetchItems()` 함수는 프로미스 객체를 반환하는 함수입니다. 프로미스는 [자바스크립트 비동기 처리를 위한 객체](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#promise%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94))라고 배웠었죠. `fetchItems()` 함수를 실행하면 프로미스가 이행(Resolved)되며 값은 `items` 배열을 갖게 됩니다.
 
 그리고 이제 `logItems()` 함수를 보겠습니다. `logItems()` 함수를 실행하면 `fetchItems()` 함수의 결과 값인 `[1,2,3]` 배열이 `resultItems` 변수에 담깁니다. 따라서, 콘솔에는 `[1,2,3]`이 출력되죠.
 
