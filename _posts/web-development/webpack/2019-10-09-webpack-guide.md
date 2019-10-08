@@ -52,7 +52,9 @@ tags:
 안녕하세요 오랜만에 인사드립니다. 최근에 블로그 대신에 열심히 E북을 제작하느라 한동안 블로그 글을 못 올렸네요. 다행히 어느 정도 정리 작업이 완료되어서 자료를 공개합니다 😄
 
 <figure class="half">
-  <img src="{{ site.url }}/images/posts/web/webpack/webpack-guide.png">
+  <a href="https://joshua1988.github.io/webpack-guide/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner">
+    <img src="{{ site.url }}/images/posts/web/webpack/webpack-guide.png">
+  </a>
 	<figcaption>웹팩 핸드북 전자책 메인 페이지</figcaption>
 </figure>
 
@@ -60,6 +62,8 @@ tags:
 
 위 사이트에서 해당 내용을 확인해보시고 웹팩을 더 쉽게 배울 수 있으면 좋겠습니다 😄
 참고로 해당 사이트는 PWA로 만들어져있기 때문에 모바일에서도 쉽게 등록하고 읽어볼 수 있습니다.
+
+[웹팩 핸드북 바로가기](https://joshua1988.github.io/webpack-guide/)
 
 ## 사이트 목차 구성
 
