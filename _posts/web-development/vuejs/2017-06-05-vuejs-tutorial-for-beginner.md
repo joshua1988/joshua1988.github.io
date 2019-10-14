@@ -13,13 +13,18 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
-- vue.js 강좌
+- vue.js 시작하기
 - vue.js 예제
-- vue.js 설치
-- vue.js 강의
-- vue.js 오프라인 강의
-- vue.js 실무
+- vue.js 강좌
+- vue 강좌
 - vue.js 동영상 강좌
+- vue.js 교육
+- vue.js 강의
+- vue 강의
+- vue.js 설치
+- vue 설치
+- vue.js 강의
+- vue.js 실무
 - vue.js 가이드
 - vue.js 사용법
 - vue 문법
@@ -29,16 +34,11 @@ tags:
 - Vue JS
 - vue 튜토리얼
 - vue 시작하기
-- vue js 시작하기
 - vue js 한글
 - vue 소개
 - vue js 튜토리얼
 - vue js 입문
 - 뷰 시작하기
-- vuejs 강의
-- vue.js 강의
-- vuejs 강좌
-- vue.js 강좌
 - vuejs 시작
 - vuejs 시작하기
 - vue router
@@ -46,14 +46,13 @@ tags:
 - namedview
 - nested routes
 - 패스트캠퍼스
-- 패스트캠퍼스 프론트엔드 웹앱 캠프
-- fastcampus
+- 패스트캠퍼스 vue.js
+- 장기효 vue.js
+- 장기효
 - pwa
 - vue 배우기
 - 인프런
-- 인프런 vuejs
-- 인프런 뷰
-- 장기효
+- 인프런 vue.js
 - 캡틴판교
 ---
 {% include toc.html %}
