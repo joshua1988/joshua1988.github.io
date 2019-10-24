@@ -16,6 +16,11 @@ tags:
 - 자바스크립트
 - 자바스크립트 기초
 - 자바스크립트 기초 예제
+- 자바스크립트 문법
+- 자바스크립트 문법 정리
+- 자바스크립트 예제
+- 자바스크립트 함수
+- 자바스크립트란
 - 자바스크립트 기본
 - 자바스크립트 강좌
 - 자바스크립트 비동기
@@ -68,7 +73,7 @@ ajax 통신으로 해당 데이터를 서버로부터 가져올 수 있기 때�
 ```js
 function getData() {
 	var tableData;
-	$.get('https://domain.com/products/1', function (response) {
+	$.get('https://domain.com/products/1', function(response) {
 		tableData = response;
 	});
 	return tableData;
@@ -104,7 +109,7 @@ console.log(getData()); // undefined
 // #1
 console.log('Hello');
 // #2
-setTimeout(function () {
+setTimeout(function() {
 	console.log('Bye');
 }, 3000);
 // #3
@@ -132,12 +137,12 @@ setTimeout() 역시 비동기 방식으로 실행되기 때문에 3초를 기다
 
 ```js
 function getData(callbackFunc) {
-	$.get('https://domain.com/products/1', function (response) {
+	$.get('https://domain.com/products/1', function(response) {
 		callbackFunc(response); // 서버에서 받은 데이터 response를 callbackFunc() 함수에 넘겨줌
 	});
 }
 
-getData(function (tableData) {
+getData(function(tableData) {
 	console.log(tableData); // $.get()의 response 값이 tableData에 전달됨
 });
 ```
@@ -160,10 +165,10 @@ getData(function (tableData) {
 아마 아래와 같은 코드를 본 적이 있을 겁니다.
 
 ```js
-$.get('url', function (response) {
-	parseValue(response, function (id) {
-		auth(id, function (result) {
-			display(result, function (text) {
+$.get('url', function(response) {
+	parseValue(response, function(id) {
+		auth(id, function(result) {
+			display(result, function(text) {
 				console.log(text);
 			});
 		});
@@ -191,7 +196,7 @@ function authDone(result) {
 function displayDone(text) {
 	console.log(text);
 }
-$.get('url', function (response) {
+$.get('url', function(response) {
 	parseValue(response, parseValueDone);
 });
 ```
