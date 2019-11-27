@@ -186,7 +186,7 @@ async function logName() {
 }
 ```
 
-**※참고: 만약 위의 콜백 함수 코드가 와닿지 않는 분들은 [비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/) 글을 꼭 다시 읽어보시고 오세요.**
+※참고: 만약 위의 콜백 함수 코드가 와닿지 않는 분들은 [비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/) 글을 꼭 다시 읽어보시고 오세요.
 
 ## async & await 기본 문법
 
@@ -199,8 +199,8 @@ async function 함수명() {
 ```
 
 먼저 함수의 앞에 `async` 라는 예약어를 붙입니다.
-그리고나서 함수의 내부 로직 중 HTTP 통신을 하는 비동기 처리 코드 앞에 `await`를 붙입니다.
-여기서 주의하셔야 할 점은 비동기 처리 메서드가 꼭 프로미스 객체를 반환해야 `await`가 의도한 대로 동작한다는 사실입니다.
+그러고 나서 함수의 내부 로직 중 HTTP 통신을 하는 비동기 처리 코드 앞에 `await`를 붙입니다.
+여기서 주의하셔야 할 점은 비동기 처리 메서드가 꼭 프로미스 객체를 반환해야 `await`가 의도한 대로 동작합니다.
 
 일반적으로 `await`의 대상이 되는 비동기 처리 코드는 [Axios](https://github.com/axios/axios) 등 프로미스를 반환하는 API 호출 함수입니다.
 
@@ -222,9 +222,9 @@ async function logItems() {
 }
 ```
 
-먼저 `fetchItems()` 함수는 프로미스 객체를 반환하는 함수입니다. 프로미스는 [자바스크립트 비동기 처리를 위한 객체](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#promise%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94))라고 배웠었죠. `fetchItems()` 함수를 실행하면 프로미스가 이행(Resolved)되며 값은 `items` 배열을 갖게 됩니다.
+먼저 `fetchItems()` 함수는 프로미스 객체를 반환하는 함수입니다. 프로미스는 "[자바스크립트 비동기 처리를 위한 객체](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/#promise%EA%B0%80-%EB%AD%94%EA%B0%80%EC%9A%94)"라고 배웠었죠. `fetchItems()` 함수를 실행하면 프로미스가 이행(Resolved)되며 결과 값은 `items` 배열이 됩니다.
 
-그리고 이제 `logItems()` 함수를 보겠습니다. `logItems()` 함수를 실행하면 `fetchItems()` 함수의 결과 값인 `[1,2,3]` 배열이 `resultItems` 변수에 담깁니다. 따라서, 콘솔에는 `[1,2,3]`이 출력되죠.
+그리고 이제 `logItems()` 함수를 보겠습니다. `logItems()` 함수를 실행하면 `fetchItems()` 함수의 결과 값인 `items` 배열이 `resultItems` 변수에 담깁니다. 따라서, 콘솔에는 `[1,2,3]`이 출력되죠.
 
 `await`를 사용하지 않았다면 데이터를 받아온 시점에 콘솔을 출력할 수 있게 콜백 함수나 `.then()`등을 사용해야 했을 겁니다. 하지만 async await 문법 덕택에 비동기에 대한 사고를 하지 않아도 되는 것이죠.
 
@@ -253,7 +253,7 @@ function fetchItems() {
 
 ## async & await 실용 예제
 
-async & await 문법이 가장 빛을 발하는 순간은 여러 개의 비동기 처리 코드를 다룰 때입니다. 아래와 같이 각각 사용자와 할 일 목록을 받아오는 HTTP 통신 코드가 있다고 하겠습니다.
+async & await 문법이 가장 빛을 발하는 순간은 여러 개의 비동기 처리 코드를 다룰 때입니다. 아래와 같이 각각 *사용자*와 *할 일 목록*을 받아오는 HTTP 통신 코드가 있다고 하겠습니다.
 
 ```js
 function fetchUser() {
@@ -326,7 +326,7 @@ async function logTodoTitle() {
 실제로 서비스를 만드실 때 위 내용을 적용해보시면 더 쉽게 체득하실 수 있을거에요.
 
 앞으로 더 프런트엔드의 이벤트와 데이터 처리가 많아질 것이기 때문에 async await에 대해서 정확히 알아놓으시면 도움이 많이 되실 겁니다.
-그럼 재밌게 코딩하세요! 감사합니다.
+그럼 재밌게 코딩하세요! 감사합니다 😄
 
 <!-- ## async & await 레이스 컨디션
 
