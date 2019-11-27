@@ -194,7 +194,7 @@ Vuex 가 가져다 주는 이점도 크지만, 정말 간단한 화면을 만들
 [Vuex 시작하기 2 - Getters & Mutations](https://joshua1988.github.io/web-development/vuejs/vuex-getters-mutations/)
 
 ## 글보다 더 쉽게 배우는 온라인 강좌
-좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 :)
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-vue.png"></a>
