@@ -241,7 +241,7 @@ function fetchItems() {
   });
 }
 
-// jQuery Ajax 코드
+// jQuery ajax 코드
 function fetchItems() {
   return new Promise(function(resolve, reject) {
     $.ajax('domain.com/items', function(response) {
