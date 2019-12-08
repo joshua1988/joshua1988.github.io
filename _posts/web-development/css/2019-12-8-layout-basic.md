@@ -2,7 +2,7 @@
 layout: article
 title: "CSS 레이아웃 기초"
 date: 2019-12-8 18:00:32 +0900
-categories: web-development
+categories: [web-development, css]
 # description: "웹 통신 프로토콜인 URL, HTTP, SMTP, MIME, FTP 을 정리"
 excerpt: "(기본) CSS로 레이아웃을 만들 때 알아야 할 display, position, 박스 레이아웃"
 image:
