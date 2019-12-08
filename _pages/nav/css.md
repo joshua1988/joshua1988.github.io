@@ -1,7 +1,7 @@
 ---
 permalink: css/
 layout: archive
-title: "Styling Web Applications"
+title: "CSS"
 ---
 
 <div class="tiles">
