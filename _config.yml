@@ -15,7 +15,9 @@ sass:
 permalink: /:categories/:title/
 kramdown:
   toc_levels: 1..2
-# highlighter: rouge
+  syntax_highlighter_opts:
+    disable : true
+highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-gist
