@@ -56,12 +56,14 @@
 
     <div id="page-wrapper">
       {{ content }}
+      <!-- 페이지 네비게이션 관련 추가 -->
+      <!-- {% include page-nav-buttons.html %} -->
       {% include footer.html %}
     </div>
 
-    {% include firebase.html %}
-    <script src="{{ site.url }}/app.js"></script>
-    {% include service-worker.html %}
+    <!-- {% include firebase.html %} -->
+    <!-- <script src="{{ site.url }}/js/pwa-push.js"></script> -->
+    <!-- {% include service-worker.html %} -->
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
