@@ -1,19 +1,27 @@
 <script>
-  // if ('serviceWorker' in navigator) {
-  //   window.addEventListener('load', function() {
-  //     var originDomain = window.location.origin;
-  //     var flag = /io\/$/i.test(location.href);
-  //
-  //     if (!flag) {
-  //       navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
-  //         console.log('Service Worker is registered', swReg);
-  //
-  //         swRegistration = swReg;
-  //         initialiseUI();
-  //       }).catch(function(err) {
-  //         console.log('ServiceWorker registration failed: ', err);
-  //       });
-  //     }
-  //   });
-  // }
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(function(swReg) {
+          console.log("sw registered", swReg);
+        })
+        .catch(function(error) {
+          console.log("sw registered error", error);
+        });
+      // var originDomain = window.location.origin;
+      // var flag = /io\/$/i.test(location.href);
+
+      // if (!flag) {
+      //   navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
+      //     console.log('Service Worker is registered', swReg);
+
+      //     swRegistration = swReg;
+      //     initialiseUI();
+      //   }).catch(function(err) {
+      //     console.log('ServiceWorker registration failed: ', err);
+      //   });
+      // }
+    });
+  }
 </script>
