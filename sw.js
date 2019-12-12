@@ -414,16 +414,44 @@ self.__precacheManifest = [
     "revision": "fbf27b716f552a299fdf0395b5187360"
   },
   {
+    "url": "images/icons/120x.png",
+    "revision": "a89077ad78c7720b5d7ee01a3b4fa546"
+  },
+  {
+    "url": "images/icons/128x.png",
+    "revision": "e68fb8abc340a0ea296cd6f8649a80a6"
+  },
+  {
     "url": "images/icons/144x.png",
     "revision": "1c6e079b87eea40eb827a19142aaa3bd"
+  },
+  {
+    "url": "images/icons/152x.png",
+    "revision": "36109afa7b277d6dd1759f3d2365f745"
+  },
+  {
+    "url": "images/icons/167x.png",
+    "revision": "07991f1fe3339b888bfcf8b4236e1347"
+  },
+  {
+    "url": "images/icons/180x.png",
+    "revision": "ecf4f28a3a04b77b5a76e5f77e02fa43"
   },
   {
     "url": "images/icons/192x.png",
     "revision": "3e50248f31362a98ee70683cdcd7b2f0"
   },
   {
+    "url": "images/icons/384x.png",
+    "revision": "7d77c6b392a355ca713f5187bdee8c6a"
+  },
+  {
     "url": "images/icons/48x.png",
     "revision": "201c9f543b6828d9674a0bab49e8ec02"
+  },
+  {
+    "url": "images/icons/512x.png",
+    "revision": "e515ff20040ad5522018e901eedca090"
   },
   {
     "url": "images/icons/96x.png",
@@ -1295,7 +1323,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "5d50785aec7a957917f69ebb74537fe0"
+    "revision": "7203fde46dfe121af3935a649a2a0d8b"
   },
   {
     "url": "music/a-daily-song/index.html",
