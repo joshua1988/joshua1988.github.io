@@ -5,6 +5,9 @@
   "description": "Captain Pangyo's Tech Blog",
   "author": "joshua1988 <jangkeehyo@gmail.com>",
   "license": "The MIT License (MIT)",
+  "scripts": {
+    "build": "sh build-blog-command.sh && node pwa-build.js"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-imagemin": "~0.5.0",
