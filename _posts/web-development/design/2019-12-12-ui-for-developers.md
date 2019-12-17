@@ -5,19 +5,28 @@ date: 2019-12-10 17:30:32 +0900
 categories: [web-development, design]
 excerpt: "개발자들도 알아두면 좋은 UI 디자인과 디자인 시스템"
 image:
-  teaser: posts/web/design/labels.png
+  # featured image for upfront
+  # feature: 1024 x 256 pixels
+  teaser: posts/web/design/labels.png # 400 x 250 pixels
   credit: Refactoring UI
   creditlink: https://refactoringui.com/book/
 locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
+- 프론트엔드 디자인
+- 프론트엔드 ui ux
 - 프런트엔드 개발자
 - 프런트엔드 개발
 - 프런트엔드 개발 UI
+- 디자인 프로그래밍
 - UI 디자인
 - UI 디자인 시스템
 - 웹 디자인
+- ui ux
+- ui
+- 프론트엔드 퍼블리싱
+- ui/ux 디자인
 - 애플리케이션 디자인
 ---
 {% include toc.html %}
@@ -200,3 +209,10 @@ Captain Pangyo
 - Opacity
 
 처음부터 이 모든 것을 먼저 정의하고 시작할 필요는 없습니다. 정할 수 있는 것들부터 정하고 디자인 작업을 진행하면서 시스템화하면 좋을 요소들을 하나씩 정의해나가면 됩니다.
+
+## 참고 자료
+
+[Refactoring UI Book](https://refactoringui.com/book/)
+
+※ 블로그에서 사용한 글과 이미지는 저자 분의 허락을 구하고 사용하였습니다 <br>
+**Thanks Adam for allowing me to post a blog about your book 😄**
