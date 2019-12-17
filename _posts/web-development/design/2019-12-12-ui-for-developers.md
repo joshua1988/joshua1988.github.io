@@ -214,5 +214,5 @@ Captain Pangyo
 
 [Refactoring UI Book](https://refactoringui.com/book/)
 
-※ 블로그에서 사용한 글과 이미지는 저자 분의 허락을 구하고 사용하였습니다 <br>
+※ 블로그에서 사용한 글과 이미지는 저자 분의 허락을 구하고 발췌하였습니다. <br>
 **Thanks Adam for allowing me to post a blog about your book 😄**
