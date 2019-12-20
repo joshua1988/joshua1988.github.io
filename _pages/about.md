@@ -63,7 +63,7 @@ tags:
 	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프(20.01.11 ~ 20.03.07), Vue.js 정복 캠프(20.02.24 ~ 20.04.01)</figcaption>
 </figure>
 
-## 출판
+## 저서
 
 <figure class="half">
 	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg"></a>
