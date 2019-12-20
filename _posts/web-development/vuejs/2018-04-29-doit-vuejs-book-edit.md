@@ -5,7 +5,7 @@ date: 2018-04-29 21:44:32 +0900
 categories: [web-development, vuejs]
 excerpt: "Do it! Vue.js 입문 책의 초판 수정 사항들을 안내합니다."
 image:
-  teaser: posts/web/vuejs/doit!_vue.js_cover.png
+  teaser: posts/web/vuejs/vue-small.jpg
   credit: 장기효
   creditlink: http://easyspub.co.kr/20_Menu/BookView/A001/185
   #url to their site or licensing

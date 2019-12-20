@@ -5,7 +5,7 @@ date: 2018-01-26 13:44:32 +0900
 categories: [web-development, vuejs]
 excerpt: "Vue.js 프레임워크를 소개하고 책의 집필 의도와 집필 과정을 설명합니다. Vue.js 관련 학습 자료도 안내합니다."
 image:
-  teaser: posts/web/vuejs/doit!_vue.js_cover.png
+  teaser: posts/web/vuejs/vue-small.jpg
   credit: 장기효
   creditlink: http://easyspub.co.kr/20_Menu/BookView/A001/185
   #url to their site or licensing
