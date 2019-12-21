@@ -23,19 +23,19 @@ workbox.core.skipWaiting();
 self.__precacheManifest = [
   {
     "url": "about/index.html",
-    "revision": "3ff59a0cee38feb5b1b7dc3bb713b9d8"
+    "revision": "96e0de36fa5d3ecaf03134d0e8f242a6"
   },
   {
     "url": "amp/index.html",
-    "revision": "d9fe96b43a7acb59473a0e0f2032a8ec"
+    "revision": "f4b3fd125e453e8145edd8aa8f10238f"
   },
   {
     "url": "angular/index.html",
-    "revision": "88acd4dc82501efc251ee321faaa13ba"
+    "revision": "ef7ca12963e34c2251cf3e04f0b453ba"
   },
   {
     "url": "css/index.html",
-    "revision": "f4101d0f7eb66572f5d312764f662ba8"
+    "revision": "d5306d22f9d225f1c53afbc23748b553"
   },
   {
     "url": "css/main.css",
@@ -371,15 +371,15 @@ self.__precacheManifest = [
   },
   {
     "url": "design/index.html",
-    "revision": "614e8b603a43ec7a85690c33662857f2"
+    "revision": "a19525fce1ff12c454d2b8d30e73acc8"
   },
   {
     "url": "english/index.html",
-    "revision": "7e07bc437c7e13eeb9be9e7f87d0c52e"
+    "revision": "15a88fa2858fc172d643c03aca91ec6f"
   },
   {
     "url": "english/vuejs-us-conf/index.html",
-    "revision": "4a1671897fcd7b5336447f883deff8ce"
+    "revision": "6f2fe22075a7b12cffcdf04954cf0e77"
   },
   {
     "url": "favicon.ico",
@@ -1323,15 +1323,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b29c19beefed5cd06b53bbefb65aeab6"
+    "revision": "ad4640e8be5025a7e10774722e3b5164"
   },
   {
     "url": "javascript/index.html",
-    "revision": "f0f54e715a12b877ced77b504f804140"
-  },
-  {
-    "url": "js/app.js",
-    "revision": "cb6b2838f9dcaa3bbf136938608b466b"
+    "revision": "2ffb48007d1da734ff6ff6fb7ac7a72b"
   },
   {
     "url": "js/main.js",
@@ -1367,364 +1363,363 @@ self.__precacheManifest = [
   },
   {
     "url": "music/a-daily-song/index.html",
-    "revision": "a1689b0851e9556d8f9f64ec84e0262e"
+    "revision": "dfb02de9212616d3d2bbd5f3997587d7"
   },
   {
     "url": "music/a-thousand-years/index.html",
-    "revision": "d61c6d2303f7cfd5154737a3984d1b94"
+    "revision": "4380294cb65c75ee5a8dafa9389a3425"
   },
   {
     "url": "music/dont-worry/index.html",
-    "revision": "718a9223f06410e4240640d9691a7cc5"
+    "revision": "12d165e70d165ef45ddfb53d1fafde13"
   },
   {
     "url": "music/im-not-the-only-one/index.html",
-    "revision": "936561b3d83fe9790bb7c8e7e3ffd5f4"
+    "revision": "0d10c6dead0dd97044b06b61a2acfcb1"
   },
   {
     "url": "music/reply/index.html",
-    "revision": "3a0cf91b4f072eb03d0900bc42d5d3ac"
+    "revision": "be9ced7d78b31c77b7b1c973941d36ce"
   },
   {
     "url": "music/wild-flower/index.html",
-    "revision": "eba0cb60925cd3c2c8ca3012226e9637"
+    "revision": "f1af67d05b35fb75eb2f16facf0a765a"
   },
   {
     "url": "music/you-made-me-impressed/index.html",
-    "revision": "def8199f61027697cd783227b71c2c91"
+    "revision": "e9f5d27f74fb7762d2ebd5439b01764d"
   },
   {
     "url": "npm/index.html",
-    "revision": "896125923f3dbb3c9e20e9392fd8c7c3"
+    "revision": "81326e7d46dbef8eb4e74d91a17c2f27"
   },
   {
     "url": "opinions/index.html",
-    "revision": "adb4a696aa711b484305b3c7b1d8bc38"
+    "revision": "3d2fe38f73732acc9e1f647dca19ef93"
   },
   {
     "url": "opinions/where-are-we-and-where-are-we-heading/index.html",
-    "revision": "cdd016c68f84736295c1eae86e745278"
+    "revision": "b03044dfd20a64c5298ef2c95e51cb06"
   },
   {
     "url": "pwa/index.html",
-    "revision": "5fb9e59713bee1762cc0b6531128a815"
+    "revision": "5711bf0162991d5f6fbefbb5400d4d23"
   },
   {
     "url": "singing/index.html",
-    "revision": "9f980108e666c5b3a3561299b2349787"
+    "revision": "737f980924e28056fe11e38106a54ee6"
   },
   {
     "url": "tech/index.html",
-    "revision": "6ff756278ea896910fb229c9020e9228"
+    "revision": "b6c4ff0aa0e7e8b87edde84304b970bd"
   },
   {
     "url": "translation/index.html",
-    "revision": "717cc940f33a87d0134de14879648833"
+    "revision": "141fdb156f20d0ba9394e78b1c432a7e"
   },
   {
     "url": "vuejs/index.html",
-    "revision": "ea045a6e2b6f0ffbb42a2e935a174f9b"
+    "revision": "58d074d65ad676c97dadded9d26ea9f4"
   },
   {
     "url": "web_dev/amp-getting-started/index.html",
-    "revision": "5e2e228b77ad087494a602fa9718251e"
+    "revision": "4eed0b3ec5d3f808170ce64b453b8666"
   },
   {
     "url": "web_dev/angular2-learn/index.html",
-    "revision": "9698489adb289e85b086c1e2b86d07d5"
+    "revision": "a93a720ec448c3f488117d8ace7be298"
   },
   {
     "url": "web_dev/change-the-way-you-learn-to-code/index.html",
-    "revision": "884894945f7173a61fcfacdc648a5c41"
+    "revision": "8aa5e35ac947122ad396865abd99acd9"
   },
   {
     "url": "web_dev/fcm-gcm-difference/index.html",
-    "revision": "fd8fbbf5cd43a21b2553c6a75fd6fb55"
+    "revision": "cf7f764f98cec4272c321465dc9f7d31"
   },
   {
     "url": "web_dev/function-expressions-vs-declarations/index.html",
-    "revision": "cd21842fff61adf107adf4e37ed48454"
+    "revision": "b211ac814450499d4bd6aeb1b73bc586"
   },
   {
     "url": "web_dev/javascript-best-practices/index.html",
-    "revision": "adbce06e2ae7ad2a21a722945675eea0"
+    "revision": "377bc84b9068c6913b1c3119e613c4e3"
   },
   {
     "url": "web_dev/javascript-interview-3questions/index.html",
-    "revision": "a0d7a7021e2b4d605b75f6c95508dca6"
+    "revision": "b1e688de5181addd4b453db3392817da"
   },
   {
     "url": "web_dev/javascript-pattern-design/index.html",
-    "revision": "1c3b219fad9b1f8bd1b1ce8034b9b208"
+    "revision": "5425b8dba89e2ab305f313e5034426f1"
   },
   {
     "url": "web_dev/javascript-pattern-dom-browser/index.html",
-    "revision": "3735a9be32a83510042fb67c8770a43c"
+    "revision": "7877bf1d52542e8f1d0805f67328420a"
   },
   {
     "url": "web_dev/javascript-pattern-object/index.html",
-    "revision": "ffe86a3a1788926e625a84911711b925"
+    "revision": "c4b3ce5994d836df0fbdded5fcf7a260"
   },
   {
     "url": "web_dev/perf-tip-javascript-in-v8/index.html",
-    "revision": "21734886a39d1c89c2e2986718707afe"
+    "revision": "62c5e64d6bc590ceed3905ce184b97ad"
   },
   {
     "url": "web_dev/tomcat-https-setup/index.html",
-    "revision": "fca3eaac75dae9d446ec94ddd753f02c"
+    "revision": "7ffdd34c071f0e1bbeb004d7f4026fe3"
   },
   {
     "url": "web_dev/vue-or-react/index.html",
-    "revision": "24b375b86505881f3fb6c0059313c919"
+    "revision": "9a67a2aca933083458932e0ac74fbc5a"
   },
   {
     "url": "web_dev/vuejs-tutorial-for-beginner/index.html",
-    "revision": "ef1d5f0a577cd4143ad6ae6227935c7a"
+    "revision": "993a3159769a346b244d1fdee573d2e8"
   },
   {
     "url": "web_dev/vuex-actions-modules/index.html",
-    "revision": "a2e4a6db725b49ce12ddf4ac441e35ed"
+    "revision": "4ac51a872483ad69ad1ce16e7ab080dd"
   },
   {
     "url": "web_dev/vuex-getters-mutations/index.html",
-    "revision": "0d0c7c9248ec14f43cb47a32eafca730"
+    "revision": "7535a253b3a13051d80aa188ab46d303"
   },
   {
     "url": "web_dev/vuex-start/index.html",
-    "revision": "cbbd87868cacf4b835c455453cc89bee"
+    "revision": "3c6b1af6db1dff62cdc6952f96623fbb"
   },
   {
     "url": "web_dev/web-protocols/index.html",
-    "revision": "df306dea535a4b9272e659ba6a0d7ec9"
+    "revision": "7f443b31075f2c76d563702e8ad8fcfc"
   },
   {
     "url": "web_dev/webapp-manifest/index.html",
-    "revision": "51680a76c27080d657fd80dc4c5460f3"
+    "revision": "9291e6d2dea0233a64025c9a9aeeb413"
   },
   {
     "url": "web-development/amp/amp-getting-started/index.html",
-    "revision": "462ad3568cbee7bfa304fa7abf438dde"
+    "revision": "99519504514f90eb845c812bd91648df"
   },
   {
     "url": "web-development/angular/angular2-learn/index.html",
-    "revision": "40bd6bf0831c964b088e59ec9a4bda23"
+    "revision": "2e0a0b4d1e7d5521d70c03814ead4d11"
   },
   {
     "url": "web-development/css/layout-basic/index.html",
-    "revision": "72961bdcd5638b15395962954aba6ef3"
+    "revision": "e5c5ec941263866a8ac1d09b0852b5a4"
   },
   {
     "url": "web-development/design/ui-for-developers/index.html",
-    "revision": "2edaf6e1a24a6264161cb8285affcf2b"
+    "revision": "323aed82ea58f8ecf2047930669e0c13"
   },
   {
     "url": "web-development/fcm-gcm-difference/index.html",
-    "revision": "3f0eed6f0dc50404be493796de1fa31d"
+    "revision": "71ca8e581b9945e71f3bbb25ecd2ffcb"
   },
   {
     "url": "web-development/http-part1/index.html",
-    "revision": "85e5ad8591bbd2c5731d675ce175b6f8"
+    "revision": "8c392c4bf203470145c10be18fb5e2bf"
   },
   {
     "url": "web-development/index.html",
-    "revision": "bde430647115aa2ace95da1785ee5d4d"
+    "revision": "444849ff7c18894e643504a3e862784f"
   },
   {
     "url": "web-development/javascript/event-propagation-delegation/index.html",
-    "revision": "070e2291db016b971d51ecd3959dcfdd"
+    "revision": "5716120be5530e62e3e470ad61c7aeaa"
   },
   {
     "url": "web-development/javascript/function-expressions-vs-declarations/index.html",
-    "revision": "c1ebef65c5d2f7bb09e011167d431d29"
+    "revision": "b3e45ec380cf71ac596592beadfe614f"
   },
   {
     "url": "web-development/javascript/javascript-asynchronous-operation/index.html",
-    "revision": "386e403496de20c25112173bc872fc2a"
+    "revision": "31f044c067842b13b8bcd2940213db6a"
   },
   {
     "url": "web-development/javascript/javascript-basic-summary/index.html",
-    "revision": "addbe38e4dc38bf6847d37c3ce5c8769"
+    "revision": "318f7bfd8da7370f6967a413aca5b33b"
   },
   {
     "url": "web-development/javascript/javascript-best-practices/index.html",
-    "revision": "b1dad26e44a4f1e9c3c41f216f5bc022"
+    "revision": "7c97dfe9cce9ecc10246b4d850e25939"
   },
   {
     "url": "web-development/javascript/javascript-interview-3questions/index.html",
-    "revision": "3ca0c3ed836799734fa67e85c435a2a8"
+    "revision": "cbd6a9b1b3b0d6c04e70cafc0f1fa01c"
   },
   {
     "url": "web-development/javascript/javascript-pattern-design/index.html",
-    "revision": "1a2aa821ebfef8c38c5258fea284ff9a"
+    "revision": "86bafafcfc835c6be66a84cee1524791"
   },
   {
     "url": "web-development/javascript/javascript-pattern-dom-browser/index.html",
-    "revision": "2420fb79bbb4da1b4b8cf589161e9af5"
+    "revision": "4f3241915014d244336d4b29af9fed69"
   },
   {
     "url": "web-development/javascript/javascript-pattern-object/index.html",
-    "revision": "04b22b27f6cbd7b3d84409663b6eadde"
+    "revision": "9527f1e60891a26fb5d57ea7a0e3dca7"
   },
   {
     "url": "web-development/javascript/js-async-await/index.html",
-    "revision": "a2b409a1852cc6ab44e7ec1452e019b7"
+    "revision": "d3c45586b3730e01053658cbf3de5974"
   },
   {
     "url": "web-development/javascript/js-testing/index.html",
-    "revision": "8ea0f81b026102b9a0d5f770b3fcff39"
+    "revision": "824a234a5940cecae5ce85856282bcaa"
   },
   {
     "url": "web-development/javascript/promise-for-beginners/index.html",
-    "revision": "f46e22f8b9a64269c35455161e04f406"
+    "revision": "455d5b63a67dfb3e49ea8456682d4918"
   },
   {
     "url": "web-development/linux-commands-for-beginners/index.html",
-    "revision": "714278e8379b3dc5ad46d0dc3c201717"
+    "revision": "0e425bde9bb48dc91270d8ab4d41f5e1"
   },
   {
     "url": "web-development/npm/vuejs/publish/index.html",
-    "revision": "b16a358041bc9046aa590b67f4d0f27b"
+    "revision": "d2bb724fc94c4d4ccc8a70cea34bda90"
   },
   {
     "url": "web-development/opinions/retrospect-in-2018/index.html",
-    "revision": "704511cfb123c467bbdf0eb58c17181e"
+    "revision": "67c16200e309e7fb39862d1a7690c10f"
   },
   {
     "url": "web-development/opinions/where-are-we-and-where-are-we-heading/index.html",
-    "revision": "db7b4361c98c97b6576480f61247ce16"
+    "revision": "71b81a8b164c9964d0a2db071e03c2bc"
   },
   {
     "url": "web-development/pwa/io-2018-pwa/index.html",
-    "revision": "e7d20cf2d00c3287cb4f1ea6e4b98a86"
+    "revision": "a09cd2275cd1b58c370c722906ae6c06"
   },
   {
     "url": "web-development/pwa/pwa-push-noti-guide/index.html",
-    "revision": "fc795012911dc59f5cabf6214205cdbe"
+    "revision": "7dcaf58d675f255879c9eafa7aa35925"
   },
   {
     "url": "web-development/pwa/tomcat-https-setup/index.html",
-    "revision": "a90d12883a1ab12a3e742266d4511903"
+    "revision": "d182c581de682f79fd3abe66df83a97f"
   },
   {
     "url": "web-development/pwa/webapp-manifest/index.html",
-    "revision": "8ea04efd5ad75d7305a5e7efde735a51"
+    "revision": "c36e5f15d3b256cbcfdde28601de37b1"
   },
   {
     "url": "web-development/translation/change-the-way-you-learn-to-code/index.html",
-    "revision": "15328a3e06c717b35a71d2a4f5944ae0"
+    "revision": "9e017c87009ee34ba9a9459becf291fb"
   },
   {
     "url": "web-development/translation/essential-es6-features-for-vuejs/index.html",
-    "revision": "02e76f7b8479eacb6bcc82729adabf08"
+    "revision": "963c915a32f386411225971f0fa9e1eb"
   },
   {
     "url": "web-development/translation/front-end-cheat-sheets/index.html",
-    "revision": "a444163cb9123ac91cf8cba2820993b9"
+    "revision": "ec12106d7ddd4322fc9ff6b8796d9acb"
   },
   {
     "url": "web-development/translation/how-to-become-uncommonly-web-dev/index.html",
-    "revision": "4d1aac50f69e77fb87d0f9a307db9f2b"
+    "revision": "e964c6ebfb1125a01a97c4aa5995a749"
   },
   {
     "url": "web-development/translation/javascript/how-js-works-inside-engine/index.html",
-    "revision": "e856706d18c03993c696f679eabe7d6d"
+    "revision": "fc5b73d8e1b26f32d2dae6877177791c"
   },
   {
     "url": "web-development/translation/javascript/is-there-any-value-in-ppl-who-cant-write-js/index.html",
-    "revision": "91c602f360330ded1e8a719f4879ae66"
+    "revision": "82f2ab9ceb30e28a08da2fcb92fee7e6"
   },
   {
     "url": "web-development/translation/vue-or-react/index.html",
-    "revision": "8c4c1c4e65cdd043e2e4c68448ef2546"
+    "revision": "a004ce08e6c31fdde359fa6775673634"
   },
   {
     "url": "web-development/translation/why-43percent-devs-wanna-learn-vuejs/index.html",
-    "revision": "3212c94a6e5c929a6e7467ae48f5fc51"
+    "revision": "c1d0723d843ffbb597f753cb12ae8004"
   },
   {
     "url": "web-development/translation/why-we-moved-from-angular2-to-vuejs/index.html",
-    "revision": "78d20d3048d6f6b1083d7354e06fe611"
+    "revision": "191be65029cfc043941373515741c497"
   },
   {
     "url": "web-development/vuejs/boost-productivity/index.html",
-    "revision": "9f73c0559c86fa0a0ea4383f5a3ca296"
+    "revision": "3c37d00caae103ecc72d9bb8eff0c812"
   },
   {
     "url": "web-development/vuejs/common-error-cases/index.html",
-    "revision": "7a844ca65822d34472261016dab9038a"
+    "revision": "741db2d424248b9de99852d85f417f45"
   },
   {
     "url": "web-development/vuejs/doit-vuejs-book-edit/index.html",
-    "revision": "6ad4830d66fa396389e342ca1064a3d6"
+    "revision": "45a0d38ee545103863baa8e7c8468e78"
   },
   {
     "url": "web-development/vuejs/doit-vuejs-book/index.html",
-    "revision": "4a6b7581e768b89065c942f651ac324a"
+    "revision": "9979d11bd188cf0dc73eb718e1d704cd"
   },
   {
     "url": "web-development/vuejs/es6-for-vuejs-beginners/index.html",
-    "revision": "9f5ab7c5d99426f4c3cd216b9a3ade92"
+    "revision": "715777eb595ca4bdaf6e0a6ce51b697d"
   },
   {
     "url": "web-development/vuejs/slots/index.html",
-    "revision": "639e8bcbe4f451033c733292cb683334"
+    "revision": "13dbfc67e697aed0895881a27eb9f7cc"
   },
   {
     "url": "web-development/vuejs/vue-router-navigation-guards/index.html",
-    "revision": "77768cc2638cc67b20f23b892050bba8"
+    "revision": "2e0073a00c444865b234feadf3963eb4"
   },
   {
     "url": "web-development/vuejs/vue-structure/index.html",
-    "revision": "7cf20f1afb15b55ac2263053a10a6ad0"
+    "revision": "05711671ab3ae693446ceac03c39cbf0"
   },
   {
     "url": "web-development/vuejs/vuejs-tutorial-for-beginner/index.html",
-    "revision": "03b09fd809d5230e42011242ef3570b0"
+    "revision": "021aeefee05b18d8566458263594a1db"
   },
   {
     "url": "web-development/vuejs/vuex-actions-modules/index.html",
-    "revision": "f4d37115564b1fef111d50ecb6035bf8"
+    "revision": "740129eadfa96829099dc3368e2073de"
   },
   {
     "url": "web-development/vuejs/vuex-getters-mutations/index.html",
-    "revision": "4f434ebf52d766ac0e4587fc39467478"
+    "revision": "59f4e5a6a24413b16dd03137f3cb3978"
   },
   {
     "url": "web-development/vuejs/vuex-start/index.html",
-    "revision": "a9789b922b2664da10eb517a70284ccd"
+    "revision": "afbb5b766864e038869e6cc2cf6ceb41"
   },
   {
     "url": "web-development/web-perf/perf-tip-javascript-in-v8/index.html",
-    "revision": "42443f07845e5be0d8defcbf2f343bbc"
+    "revision": "d3a1c047924112f548a1dd5669b1cfc1"
   },
   {
     "url": "web-development/web-protocols/index.html",
-    "revision": "63c29e34b3ca23febf3d59b86fb756ca"
+    "revision": "881fe6a1fca26b344278a6e26f586684"
   },
   {
     "url": "web-development/webpack/caching-strategy/index.html",
-    "revision": "c4e9f341fa25b90ecf321c2991893351"
+    "revision": "8ec358c6796491b4ee15ee665d977ed2"
   },
   {
     "url": "web-development/webpack/common-chunk-plugin/index.html",
-    "revision": "c2cad09348e7d9747d363be169a1ab17"
+    "revision": "d3d2904b55ce5431a1ea10b83ceadf80"
   },
   {
     "url": "web-development/webpack/webpack-guide/index.html",
-    "revision": "d9f90e03ed32bc6a359713fff4a483b7"
+    "revision": "11a2006e1c43217e2468f36a34501d0c"
   },
   {
     "url": "web-perf/index.html",
-    "revision": "71234a7bc9f9ebc23c3f8ef4649e8837"
+    "revision": "fca9fa69ddd907afe977b142aa2d89aa"
   },
   {
     "url": "webpack/index.html",
-    "revision": "427bfeb76f9bebd9290bf891569aafeb"
+    "revision": "14da41d129fca806d9e5a67329a6102d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.precaching.cleanupOutdatedCaches();
 
-workbox.routing.registerRoute(/^https:\/\/fonts\.googleapis\.com/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https:\/\/fonts\.gstatic\.com/, new workbox.strategies.CacheFirst({ "cacheName":"google-fonts-webfonts", plugins: [new workbox.expiration.Plugin({ maxAgeSeconds: 604800, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg)$/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({ maxEntries: 10, purgeOnQuotaError: false })] }), 'GET');
