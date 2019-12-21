@@ -194,6 +194,6 @@ module.exports = {
 강남역 패스트캠퍼스에서 2020년 1월부터 3월 초까지 두 달 동안 매주 토요일 Vue와 PWA를 제작하는 수업을 진행합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 😄
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap/" target="_blank"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
 	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프 (20.1.11 ~ 20.3.7)</figcaption>
 </figure>

@@ -13,43 +13,45 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
-- do it! Vue.js 입문
-- do it! vue.js
-- do it! vuejs
-- 두잇 vue.js 입문
-- 두잇 vuejs 입문
-- 두잇 vue.js
-- 두잇 vuejs
-- 이지스 퍼블리싱
-- vue.js 입문서
-- vue.js 시작하기
-- vuejs 시작하기
-- vue.js 튜토리얼
-- vuejs 튜토리얼
-- vue.js 장점
-- vue.js 강좌
-- vue.js 예제
-- vue.js 강의
-- vuejs란
-- vue.js
-- vuejs
-- vuejs vuex
-- vuex 입문
-- 시작하기
-- 튜토리얼
-- vue.js 입문
-- vue.js 프론트엔드 개발자
-- 패스트캠퍼스
-- Vue로 구현하는 PWA 캠프
-- 인프런
-- 누구나 다루기 쉬운 Vue.js
-- 캡틴판교
-- 장기효
-- captain pangyo
+  - do it! Vue.js 입문
+  - do it! vue.js
+  - do it! vuejs
+  - 두잇 vue.js 입문
+  - 두잇 vuejs 입문
+  - 두잇 vue.js
+  - 두잇 vuejs
+  - 이지스 퍼블리싱
+  - vue.js 입문서
+  - vue.js 시작하기
+  - vuejs 시작하기
+  - vue.js 튜토리얼
+  - vuejs 튜토리얼
+  - vue.js 장점
+  - vue.js 강좌
+  - vue.js 예제
+  - vue.js 강의
+  - vuejs란
+  - vue.js
+  - vuejs
+  - vuejs vuex
+  - vuex 입문
+  - 시작하기
+  - 튜토리얼
+  - vue.js 입문
+  - vue.js 프론트엔드 개발자
+  - 패스트캠퍼스
+  - Vue로 구현하는 PWA 캠프
+  - 인프런
+  - 누구나 다루기 쉬운 Vue.js
+  - 캡틴판교
+  - 장기효
+  - captain pangyo
 ---
+
 {% include toc.html %}
 
 ## 들어가며
+
 안녕하세요. 웹 개발을 좋아하고 새로운 기술을 배워 공유하는 것을 즐기는 웹 개발자 캡틴판교입니다.
 2014년부터 기술 블로그를 시작해서 현재의 기술 블로그에 안착하기까지 수백 개의 웹 관련 기술 글을 공유해왔는데요.
 오늘은 특별히 새로운 기술이 아닌 책 하나를 소개하려고 합니다.
@@ -63,6 +65,7 @@ tags:
 <!-- ![Do it! Vue.js 입문]({{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png) -->
 
 이 책이 어떤 책인지는 아래의 두 링크를 참고하시면 자세히 알 수 있습니다.
+
 - [출판사 도서 소개란](http://www.easyspub.co.kr/20_Menu/BookView/PUB/185/PUB)
 - [온라인 서점의 책 소개](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
@@ -70,6 +73,7 @@ tags:
 그럼 재밌게 읽으시길 바랍니다 :)
 
 ## Vue.js 프레임워크란?
+
 먼저 Vue.js 프레임워크가 무엇인지 소개를 하자면 Vue.js는 웹 사이트를 만들 수 있는 웹 개발자들의 도구입니다.
 
 웹 사이트를 만들기 위해서는 HTML, CSS, Javascript와 같은 웹 기술이 필요합니다.
@@ -98,6 +102,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 그리고 기존에 프런트엔드 개발을 하지 않았던 다른 분야의 개발자들도 Vue.js로 쉽게 웹 개발을 시작하고 있습니다.
 
 ## 서적을 집필하면서..
+
 책을 잠깐 소개하겠습니다.
 
 **Do it! Vue.js 입문서는 Vue.js 프레임워크를 처음 배우는 사람들이 쉽게 프레임워크를 배울 수 있도록 집중한 책입니다.**
@@ -129,8 +134,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 그래서인지 이제 내일 서점에 출간될 Do it! Vue.js 입문 책을 자신 있게 추천할 수 있습니다.
 혹시 웹 개발을 시작하고 싶다면 Do it! Vue.js 책으로 시작해보시는 건 어떨까요? :)
 
-읽어주셔서 감사합니다.<br>
--저자 장기효 올림
+읽어주셔서 감사합니다.<br> -저자 장기효 올림
 
 **P.S : 여러 명의 땀과 노력이 들어간 Do it! Vue.js 도서는 아래 링크에서 구매하실 수 있습니다 :)** <br>
 [Do it! Vue.js 온라인 구매 링크](http://www.yes24.com/24/Goods/58206961?Acode=101)
@@ -139,6 +143,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 [이지스 퍼블리싱 Do it! Vue.js 이벤트 페이지](https://www.facebook.com/easyspub/posts/1568634209891378)
 
 ## Vue.js 학습 자료
+
 - [프런트엔드 개발자를 위한 Vue.js 입문 튜토리얼](https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/)
 - [React 인가? Vue 인가?](https://joshua1988.github.io/web-development/translation/vue-or-react/)
 - [Angular 2 대신에 Vue.js를 선택한 이유?](https://joshua1988.github.io/web-development/translation/why-we-moved-from-angular2-to-vuejs/)
@@ -149,6 +154,7 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 - [Yes24 온라인 구매 페이지](http://www.yes24.com/24/Goods/58206961?Acode=101)
 
 ## 글보다 더 쉽게 배우는 온라인 강좌
+
 뷰를 좀 더 빠르게 학습하고 싶은 분들께 아래 온라인 강좌를 추천합니다.
 
 <figure class="third">
@@ -163,6 +169,6 @@ Vue.js 프레임워크는 이런 현재 상황에서 가장 쉽게 접근할 수
 강남역 패스트캠퍼스에서 2020년 1월부터 3월 초까지 두 달 동안 매주 토요일 Vue와 PWA를 제작하는 수업을 진행합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 😄
 
 <figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_wap/"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
+	<a href="https://www.fastcampus.co.kr/dev_camp_wap/" target="_blank"><img src="{{ site.url }}/images/posts/web/fastcampus/wap.png"></a>
 	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프 (20.1.11 ~ 20.3.7)</figcaption>
 </figure>
