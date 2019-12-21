@@ -13,48 +13,49 @@ locale: "ko_KR"
 # 리플 옵션
 comments: true
 tags:
-- vue.js 시작하기
-- vue.js 예제
-- vue.js 강좌
-- vue 강좌
-- vue.js 동영상 강좌
-- vue.js 교육
-- vue.js 강의
-- vue 강의
-- vue.js 설치
-- vue 설치
-- vue.js 강의
-- vue.js 실무
-- vue.js 가이드
-- vue.js 사용법
-- vue 문법
-- vue.js 한글
-- vue.js 시작
-- vuejs
-- Vue JS
-- vue 튜토리얼
-- vue 시작하기
-- vue js 한글
-- vue 소개
-- vue js 튜토리얼
-- vue js 입문
-- 뷰 시작하기
-- vuejs 시작
-- vuejs 시작하기
-- vue router
-- namedview vs nested routes
-- namedview
-- nested routes
-- 패스트캠퍼스
-- 패스트캠퍼스 vue.js
-- 장기효 vue.js
-- 장기효
-- pwa
-- vue 배우기
-- 인프런
-- 인프런 vue.js
-- 캡틴판교
+  - vue.js 시작하기
+  - vue.js 예제
+  - vue.js 강좌
+  - vue 강좌
+  - vue.js 동영상 강좌
+  - vue.js 교육
+  - vue.js 강의
+  - vue 강의
+  - vue.js 설치
+  - vue 설치
+  - vue.js 강의
+  - vue.js 실무
+  - vue.js 가이드
+  - vue.js 사용법
+  - vue 문법
+  - vue.js 한글
+  - vue.js 시작
+  - vuejs
+  - Vue JS
+  - vue 튜토리얼
+  - vue 시작하기
+  - vue js 한글
+  - vue 소개
+  - vue js 튜토리얼
+  - vue js 입문
+  - 뷰 시작하기
+  - vuejs 시작
+  - vuejs 시작하기
+  - vue router
+  - namedview vs nested routes
+  - namedview
+  - nested routes
+  - 패스트캠퍼스
+  - 패스트캠퍼스 vue.js
+  - 장기효 vue.js
+  - 장기효
+  - pwa
+  - vue 배우기
+  - 인프런
+  - 인프런 vue.js
+  - 캡틴판교
 ---
+
 {% include toc.html %}
 
 ## Vue.js란 무엇인가?
@@ -93,11 +94,11 @@ MVVM 패턴의 ViewModel 레이어에 해당하는 화면단 라이브러리
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
       new Vue({
-        el: '#app',
+        el: "#app",
         data: {
-          message: 'Hello Vue.js!'
+          message: "Hello Vue.js!"
         }
-      })
+      });
     </script>
   </body>
 </html>
@@ -117,19 +118,19 @@ Vue 생성자 함수를 이용하여 인스턴스를 생성하는 방법은 아�
 ```javascript
 new Vue({
   // instance option properties
-})
+});
 ```
 
-Vue 객체를 생성할 때 아래와 같이 *data, template, el, methods, life cycle hook* 등의 **인스턴스 옵션 속성**을 포함할 수 있다.
+Vue 객체를 생성할 때 아래와 같이 _data, template, el, methods, life cycle hook_ 등의 **인스턴스 옵션 속성**을 포함할 수 있다.
 
 ```javascript
 new Vue({
   // instance option properties
-  template: '',
-  el: '',
-  methods: {},
+  template: "",
+  el: "",
+  methods: {}
   // ...
-})
+});
 ```
 
 #### Vue Instance 라이프싸이클 초기화
@@ -150,9 +151,9 @@ new Vue({
   },
   created: function() {
     // this 는 vm 을 가리킴
-    console.log('a is: ' + this.a)
+    console.log("a is: " + this.a);
   }
-})
+});
 ```
 
 위 `created` 이외에도 라이프싸이클 단계에 따라 `mounted`, `updated`, `destroyed` 등을 사용할 수 있다.
@@ -174,15 +175,15 @@ new Vue({
 
 ```js
 new Vue({
-  el: '#app',
+  el: "#app",
   // 컴포넌트 등록 코드
   components: {
     // '컴포넌트 이름': 컴포넌트 내용
-    'my-component': {
-      template: '<div>A custom component!</div>'
+    "my-component": {
+      template: "<div>A custom component!</div>"
     }
   }
-})
+});
 ```
 
 #### Global or Local Component
@@ -238,17 +239,17 @@ new Vue({
 
 ```js
 // 하위 컴포넌트
-Vue.component('child-component', {
+Vue.component("child-component", {
   // 상위 컴포넌트의 data 속성인 message를 propsdata라는 속성으로 넘겨받음
-  props: ['propsdata'],
+  props: ["propsdata"],
   template: '<p>{{ "{{ propsdata" }} }}</p>'
 });
 
 // 상위 컴포넌트
 var app = new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    message: 'Hello Vue! from Parent Component',
+    message: "Hello Vue! from Parent Component"
   }
 });
 ```
@@ -277,13 +278,13 @@ var eventBus = new Vue();
 
 new Vue({
   // ...
-})
+});
 ```
 
 이벤트를 발생시킬 컴포넌트에서 `$emit()` 호출
 
 ```js
-eventBus.$emit('refresh', 10);
+eventBus.$emit("refresh", 10);
 ```
 
 이벤트를 받을 컴포넌트에서 `$on()` 이벤트 수신
@@ -292,11 +293,11 @@ eventBus.$emit('refresh', 10);
 // 이벤트 버스 이벤트는 일반적으로 라이프 사이클 함수에서 수신
 new Vue({
   created: function() {
-    eventBus.$on('refresh', function(data) {
+    eventBus.$on("refresh", function(data) {
       console.log(data); // 10
     });
   }
-})
+});
 ```
 
 만약, `eventBus`의 콜백 함수 안에서 해당 컴포넌트의 메서드를 참고하려면 `vm` 사용
@@ -310,12 +311,12 @@ new Vue({
   },
   created() {
     var vm = this;
-    eventBus.$on('refresh', function(data) {
+    eventBus.$on("refresh", function(data) {
       console.log(this); // 여기서의 this는 이벤트 버스용 인스턴스를 가리킴
-      vm.callAnyMethod() // vm은 현재 인스턴스를 가리킴
+      vm.callAnyMethod(); // vm은 현재 인스턴스를 가리킴
     });
   }
-})
+});
 ```
 
 ## Vue Routers
@@ -344,8 +345,8 @@ example.com/#/user
 
 ```js
 new VueRouter({
-  mode: 'history'
-})
+  mode: "history"
+});
 ```
 
 #### Nested Routers
@@ -476,36 +477,36 @@ HTML 태그의 속성에 `v-` 접두사가 붙은 특별한 속성으로 화면�
 new Vue({
   filters: {
     capitalize: function(value) {
-      if (!value) return '';
+      if (!value) return "";
       value = value.toString();
       return value.charAt(0).toUpperCase() + value.slice(1);
     }
   }
-})
+});
 ```
 
 ## Single File Component
 
 특정 화면 영역의 HTML, CSS, JS 코드를 한 파일에서 관리할 수 있는 방법. 파일 확장자는 `vue`이며 HTML 파일에서 뷰 개발을 진행했을 때의 한계점을 극복할 수 있는 방법이기도 하다. 한계점은 아래와 같다.
 
-  1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
-  2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
-  3. js 파일상에서 **css 스타일링 작업이 거의 불가**
-  4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
+1. **모든 컴포넌트에 고유의 이름**을 붙여야 함
+2. js 파일에서 template 안의 html 의 **문법 강조가 되지 않음**
+3. js 파일상에서 **css 스타일링 작업이 거의 불가**
+4. ES5 를 이용하여 계속 앱을 작성할 경우 **Babel 빌드가 지원되지 않음**
 
 싱글 파일 컴포넌트로 개발하려면 Webpack과 같은 번들링 도구가 필요하다. 싱글 파일 컴포넌트의 기본 골격은 다음과 같다.
 
 ```html
 <template>
-<!-- HTML -->
+  <!-- HTML -->
 </template>
 
 <script>
-// Javascript
+  // Javascript
 </script>
 
 <style>
-/* CSS */
+  /* CSS */
 </style>
 ```
 
@@ -549,7 +550,7 @@ npm run serve
 각 주제에 대한 내용을 더 자세히 볼 수 있는 책을 소개합니다 :)
 
 <figure class="third">
-	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1"><img src="{{ site.url }}/images/posts/web/vuejs/doit!_vue.js_cover.png"></a>
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-small.jpg"></a>
 	<figcaption>Do it! Vue.js 입문</figcaption>
 </figure>
 
