@@ -2,6 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <!-- pwa -->
+    <link rel="icon" href="{{ site.url }}/images/share_logo.png" />
+    <meta name="theme-color" content="#343D57" />
+    <!-- pwa - apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/icons/152x.png" />
+    <!-- pwa - ms -->
+    <meta
+      name="msapplication-TileImage"
+      content="{{ site.url }}/images/icons/144x.png"
+    />
+    <meta name="msapplication-TileColor" content="#343D57" />
     <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
@@ -51,12 +68,6 @@
       rel="sitemap"
       title="Sitemap"
     />
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="cleartype" content="on" />
-
     <link rel="stylesheet" href="/css/main.css" />
     <style>
       blockquote p {
@@ -92,10 +103,10 @@
       <!-- 이후에 페이지 네비게이션 관련 추가: page-nav-buttons.html -->
       {% include footer.html %}
     </div>
-
-    {% include service-worker.html %}
+    {% include ask-permission-popup.html %} {% include service-worker.html %}
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
+    <script src="{{ site.url }}/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
     <script src="{{ site.url }}/js/prism.js"></script>
     <script>
