@@ -40,9 +40,9 @@ tags:
 ## 온라인 E북(무료)
 
 <figure class="third">
-	<a href="https://joshua1988.github.io/webpack-guide/"><img src="{{ site.url }}/images/posts/web/webpack/webpack-guide.png" target="_blank"></a>
-	<a href="https://joshua1988.github.io/ts/"><img src="{{ site.url }}/images/posts/web/typescript/ts-handbook.png" target="_blank"></a>
-	<a href="https://joshua1988.github.io/es6-online-book/"><img src="{{ site.url }}/images/posts/web/vuejs/es6-guide.png" target="_blank"></a>
+	<a href="https://joshua1988.github.io/webpack-guide/" target="_blank"><img src="{{ site.url }}/images/posts/web/webpack/webpack-guide.png"></a>
+	<a href="https://joshua1988.github.io/ts/" target="_blank"><img src="{{ site.url }}/images/posts/web/typescript/ts-handbook.png"></a>
+	<a href="https://joshua1988.github.io/es6-online-book/" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/es6-guide.png"></a>
 	<figcaption>Webpack 핸드북, 타입스크립트 핸드북, ES6 핸드북</figcaption>
 </figure>
 
