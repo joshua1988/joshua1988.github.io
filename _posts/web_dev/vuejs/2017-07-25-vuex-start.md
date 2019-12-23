@@ -70,30 +70,33 @@ Vue.js를 잘 모르시거나 이제 막 시작하시는 분들은 [Vue 입문 �
 
 ## Vuex란?
 
-Vue.js의 **상태 관리**를 위한 패턴이자 라이브러리입니다. 다른 상태 관리 패턴이나 라이브러리와 비교했을 때 뷰의 반응성(Reactivity) 체계를 효율적으로 활용하여 화면 업데이트를 한다는 차이점이 있습니다.
+Vue.js의 **상태 관리**를 위한 패턴이자 라이브러리입니다. 다른 상태 관리 패턴이나 라이브러리와 비교했을 때 뷰의 반응성(Reactivity) 체계를 효율적으로 활용하여 화면을 업데이트 한다는 차이점이 있습니다.
 
 ## 상태 관리(State Management)가 왜 필요한가?
 
 컴포넌트 기반 프레임워크에서는 작은 단위로 쪼개진 여러 개의 컴포넌트로 화면을 구성합니다. 예를 들면, header, button, list 등의 화면 요소가 각각 컴포넌트로 구성되어 한 화면에서 많은 컴포넌트를 사용합니다. 이에 따라 **컴포넌트 간의 통신이나 데이터 전달을 좀 더 유기적으로 관리할 필요성이 생깁니다.**
 
-## 상태관리란?
+## 상태 관리란?
 
-상태관리란 여러 컴포넌트 간의 데이터 전달과 이벤트 통신을 한 곳에서 관리하게 쉽게 구조화 하는 것을 의미합니다. 뷰와 성격이 비슷한 프레임워크인 리액트(React)에서는 Redux, Mobx와 같은 상태관리 라이브러리를 사용하고 있고 뷰에서는 Vuex라는 상태관리 라이브러리를 사용합니다.
+상태 관리란 여러 컴포넌트 간의 데이터 전달과 이벤트 통신을 한곳에서 관리하는 패턴을 의미합니다. 뷰와 성격이 비슷한 프레임워크인 리액트(React)에서는 Redux, Mobx와 같은 상태 관리 라이브러리를 사용하고 있고 뷰에서는 Vuex라는 상태 관리 라이브러리를 사용합니다.
 
-## 상태관리로 해결할 수 있는 문제점?
+## 상태 관리로 해결할 수 있는 문제점?
 
 상태 관리는 중대형 규모의 웹 애플리케이션에서 컴포넌트 간에 데이터를 더 효율적으로 전달할 수 있습니다. 일반적으로 앱의 규모가 커지면서 생기는 문제점들은 다음과 같습니다.
 
 1. 뷰의 컴포넌트 통신 방식인 props, event emit 때문에 **중간에 거쳐할 컴포넌트가 많아지거나**
 2. 이를 피하기 위해 Event Bus를 사용하여 **컴포넌트 간 데이터 흐름을 파악하기 어려운 것**
 
-이러한 문제점을 해결하기 위해 모든 데이터 통신을 한 곳에서 중앙 집중식으로 관리하는 것이 상태관리입니다.
+이러한 문제점을 해결하기 위해 모든 데이터 통신을 한 곳에서 중앙 집중식으로 관리하는 것이 상태 관리입니다.
 
-![vuex-diagram]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-diagram.png)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-diagram.png">
+	<figcaption>Vuex 전체 흐름도</figcaption>
+</figure>
 
-## 상태관리 패턴
+## 상태 관리 패턴
 
-상태관리 구성요소는 크게 3가지가 있습니다.
+상태 관리 구성요소는 크게 3가지가 있습니다.
 
 - **state** : 컴포넌트 간에 공유할 **data**
 - **view** : 데이터가 표현될 **template**
@@ -122,16 +125,22 @@ new Vue({
 
 위 구성요소는 아래와 같은 흐름으로 동작합니다.
 
-![vuex-state-one-way-data-flow]({{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-state-one-way-data-flow.png)
+<figure>
+	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-state-one-way-data-flow.png">
+	<figcaption>단방향 흐름 처리를 나타낸 그림</figcaption>
+</figure>
 
 ## Vuex 튜토리얼 #1 - 간단한 Vue App 구성
 
-뷰엑스를 알아보기 위해 Parent 컴포넌트와 Child 컴포넌트를 갖는 애플리케이션을 만들었습니다.
+뷰엑스를 알아보기 위해 버튼으로 숫자를 늘리고 줄일 수 있는 카운터 앱을 만들어보겠습니다.
+Vue CLI로 프로젝트를 생성한 다음 아래와 같이 Parent, Child 컴포넌트를 제작합니다.
 
-<figure class="full">
+<figure class="half">
 	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/demo-ui.png">
 	<figcaption>Parent 컴포넌트와 Child 컴포넌트가 표시된 화면</figcaption>
 </figure>
+
+<!-- ![vuex-app-ui]({{ site.url }}/images/posts/web/vuejs/vuex-1/demo-ui.png) -->
 
 컴포넌트 폴더구조는 아래와 같습니다.
 
@@ -219,7 +228,7 @@ export default {
 
 위 앱의 `+` 버튼을 클릭하면 Parent와 Child 컴포넌트의 숫자가 동일하게 올라갑니다.
 
-<figure class="full">
+<figure class="half">
 	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/click-plus.png">
 	<figcaption>+ 버튼을 두 번 클릭한 결과 화면</figcaption>
 </figure>
@@ -294,7 +303,7 @@ export const store = new Vuex.Store({
 
 state에 정의된 `counter` 속성은
 Parent 컴포넌트에서 사용하던 data 속성 `counter` 와 동일한 역할을 합니다.
-이미 앞 [상태 관리 패턴 챕터](#상태관리-패턴)에서 설명했듯이 **"state는 컴포넌트 간에 공유할 data 속성을 의미합니다."**
+이미 앞 [상태 관리 패턴 챕터](#상태 관리-패턴)에서 설명했듯이 **"state는 컴포넌트 간에 공유할 data 속성을 의미합니다."**
 
 ## Vuex 튜토리얼 #6 - state 접근
 
@@ -345,14 +354,14 @@ export default {
 
 결국 Parent 컴포넌트에서 관리하던 `counter` 데이터를 뷰엑스의 state에 넘겨주었습니다. Child 컴포넌트에서 접근하던 Parent 컴포넌트의 data 속성이 뷰엑스로 갔기 때문에 이제 Child에서는 뷰엑스의 state를 바라보면 됩니다. 이제 Parent와 Child 모두 state를 접근할 수 있게 되었죠. 마찬가지로 어떤 컴포넌트든 이제 뷰엑스로 `counter`를 접근할 수 있습니다.
 
-<figure class="full">
+<figure>
 	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/vuex-data-management.png">
 	<figcaption>뷰엑스의 counter를 접근하는 Parent, Child 컴포넌트의 모습</figcaption>
 </figure>
 
 Parent 컴포넌트의 `+` 버튼을 눌렀을 때 동일하게 동작하는 것을 확인할 수 있습니다.
 
-<figure class="full">
+<figure class="half">
 	<img src="{{ site.url }}/images/posts/web/vuejs/vuex-1/parent-state.png">
 	<figcaption>+ 버튼을 두 번 클릭했을 때 정상적으로 숫자가 올라감</figcaption>
 </figure>
