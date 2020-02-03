@@ -822,6 +822,46 @@ self.__precacheManifest = [
     "revision": "93d40a9331be444953df670826153d3a"
   },
   {
+    "url": "images/posts/web/opinions/retrospect/feconf.jpeg",
+    "revision": "ab814169959d25c50b010b2dd55be144"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/hanoi.jpg",
+    "revision": "554fffae8573cf8722942f0f98eb1d25"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/shield-bae.jpeg",
+    "revision": "1dafeb5279c4f21974ffce8f683cb758"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/sk-class.jpeg",
+    "revision": "be481eeb26e0fe3751323e2e368230fd"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/ts-handbook.png",
+    "revision": "1bf8f6c38b4ffda97a43feb56b44102f"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/ts-intro.png",
+    "revision": "38338bee071b3c389a0efbf412580461"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/vue-jobs.png",
+    "revision": "c0e6a9cfe8ac478db77d3329a89b4f6c"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/w3c.jpg",
+    "revision": "2073252b497069930ec7c2f6681d734e"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/webpack-contributors.png",
+    "revision": "da7388b8f7361a79cd44bf106185d0ac"
+  },
+  {
+    "url": "images/posts/web/opinions/retrospect/webpack.png",
+    "revision": "3d12c7e6e59d7d1f51c9a865bb5aa2d4"
+  },
+  {
     "url": "images/posts/web/opinions/shield.png",
     "revision": "836904d5882a7aec2a05eebccb49c4ab"
   },
