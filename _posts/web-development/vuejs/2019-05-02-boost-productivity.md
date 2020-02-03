@@ -189,6 +189,14 @@ module.exports = {
 
 아무래도 이번 글은 개발 환경 구성과 관련된 글이다보니 따라서 적용하시는게 쉽진 않겠지만 그래도 구성하시는데 도움이 되었으면 좋겠습니다. 잘 구성하셔서 재밌고 편하게 코딩하세요! :)
 
+## 글보다 더 쉽게 배우는 온라인 강좌
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/vue-js-%EB%81%9D%EB%82%B4%EA%B8%B0-%EC%BA%A1%ED%8B%B4%ED%8C%90%EA%B5%90?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
+	<figcaption>인프런 온라인 강좌 : Vue.js 엔드게임</figcaption>
+</figure>
+
 ## 밀착 지도를 받을 수 있는 오프라인 강의
 
 강남역 패스트캠퍼스에서 2020년 1월부터 3월 초까지 두 달 동안 매주 토요일 Vue와 PWA를 제작하는 수업을 진행합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 😄
