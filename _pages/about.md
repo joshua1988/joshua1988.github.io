@@ -72,7 +72,7 @@ tags:
 
 ## 저서
 
-<figure class="half">
+<figure class="third">
 	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg"></a>
 	<figcaption>Do it! Vue.js 입문</figcaption>
 </figure>
