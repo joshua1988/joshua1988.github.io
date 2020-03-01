@@ -116,7 +116,7 @@ getData().then(function(tableData) {
 
 #### Pending(대기)
 
-먼저 아래와 같이 `new Promise()` 메서드를 호출하면 *Pending*(대기) 상태가 됩니다.
+먼저 아래와 같이 `new Promise()` 메서드를 호출하면 대기(Pending) 상태가 됩니다.
 
 ```js
 new Promise();
@@ -132,7 +132,7 @@ new Promise(function(resolve, reject) {
 
 #### Fulfilled(이행)
 
-여기서 콜백 함수의 인자 `resolve`를 아래와 같이 실행하면 *Fulfilled*(이행) 상태가 됩니다.
+여기서 콜백 함수의 인자 `resolve`를 아래와 같이 실행하면 이행(Fulfilled) 상태가 됩니다.
 
 ```js
 new Promise(function(resolve, reject) {
@@ -162,7 +162,7 @@ getData().then(function(resolvedData) {
 #### Rejected(실패)
 
 `new Promise()`로 프로미스 객체를 생성하면 콜백 함수 인자로 `resolve`와 `reject`를 사용할 수 있다고 했습니다.
-여기서 `reject`를 아래와 같이 호출하면 *Rejected*(실패) 상태가 됩니다.
+여기서 `reject`를 아래와 같이 호출하면 실패(Rejected) 상태가 됩니다.
 
 ```js
 new Promise(function(resolve, reject) {
@@ -220,7 +220,7 @@ getData().then(function(data) {
 ## 여러 개의 프로미스 연결하기 (Promise Chaining)
 
 프로미스의 또 다른 특징은 여러 개의 프로미스를 연결하여 사용할 수 있다는 점입니다.
-앞 예제에서 then() 메서드를 호출하고 나면 새로운 프로미스 객체가 반환됩니다.
+앞 예제에서 `then()` 메서드를 호출하고 나면 새로운 프로미스 객체가 반환됩니다.
 따라서, 아래와 같이 코딩이 가능합니다.
 
 ```js
@@ -334,7 +334,7 @@ getData().then(
 getData().then().catch();
 ```
 
-위 2가지 방법 모두 프로미스의 reject() 메서드가 호출되어 실패 상태가 된 경우에 실행됩니다.
+위 2가지 방법 모두 프로미스의 `reject()` 메서드가 호출되어 실패 상태가 된 경우에 실행됩니다.
 간단하게 말해서 프로미스의 로직이 정상적으로 돌아가지 않는 경우 호출되는 거죠. 아래와 같이 말입니다.
 
 ```js
@@ -381,8 +381,8 @@ getData().then(function(result) {
 });
 ```
 
-getData() 함수의 프로미스에서 resolve() 메서드를 호출하여 정상적으로 로직을 처리했지만,
-then()의 첫 번째 콜백 함수 내부에서 오류가 나는 경우 오류를 제대로 잡아내지 못합니다.
+`getData()` 함수의 프로미스에서 `resolve()` 메서드를 호출하여 정상적으로 로직을 처리했지만,
+`then()`의 첫 번째 콜백 함수 내부에서 오류가 나는 경우 오류를 제대로 잡아내지 못합니다.
 따라서 코드를 실행하면 아래와 같은 오류가 납니다.
 
 <figure>
@@ -390,7 +390,7 @@ then()의 첫 번째 콜백 함수 내부에서 오류가 나는 경우 오류�
 	<figcaption>'에러를 잡지 못했습니다(Uncaught Error)' 로그</figcaption>
 </figure>
 
-하지만 똑같은 오류를 catch()로 처리하면 다른 결과가 나옵니다.
+하지만 똑같은 오류를 `catch()`로 처리하면 다른 결과가 나옵니다.
 
 ```js
 // catch()로 오류를 감지하는 코드
@@ -418,6 +418,7 @@ getData().then(function(result) {
 **따라서, 더 많은 예외 처리 상황을 위해 프로미스의 끝에 가급적 catch()를 붙이시기 바랍니다.**
 
 ## 마무리
+
 여태까지 살펴본 설명과 예제로 프로미스의 동작에 대해 감을 좀 잡으셨나요?
 현대 웹 앱의 특성상 앞으로도 프로미스는 더 많이 사용될 것 같습니다.
 숙련된 웹 개발자가 되기 위해 위 개념과 사용법을 꼭 숙지하시기 바랍니다 :)
