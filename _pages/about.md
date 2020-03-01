@@ -72,9 +72,12 @@ tags:
 
 ## 기업 강의
 
-네이버, 이베이, 삼성, SK 그룹 실무자 대상 강의 <br>
-강의 요청 문의는 아래 이메일로 문의해주세요. <br>
-<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
+<figure class="full">
+	<img src="{{ site.url }}/images/corporate-classes.png">
+	<figcaption>네이버, 이베이, 삼성, SK 그룹 실무자 대상 강의</figcaption>
+</figure>
+
+강의 요청 문의는 아래 연락처에 적힌 이메일로 연락주세요.
 
 ## 저서
 
@@ -89,3 +92,5 @@ tags:
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
