@@ -52,14 +52,14 @@ tags:
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv2.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv3.png"></a>
-	<figcaption>Vue.js 시작하기, Vue.js 중급, Vue.js 완벽 가이드</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기, Vue.js 중급, Vue.js 완벽 가이드</figcaption>
 </figure>
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/vue-js-%EB%81%9D%EB%82%B4%EA%B8%B0-%EC%BA%A1%ED%8B%B4%ED%8C%90%EA%B5%90?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
 	<a href="https://www.inflearn.com/course/webpack-%EC%9B%B9%ED%8C%A9-%EA%B0%95%EC%A2%8C?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
 	<a href="https://www.inflearn.com/course/pwa?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/pwa.jpg"></a>
-	<figcaption>Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
 </figure>
 
 ## 오프라인 강의
@@ -69,6 +69,12 @@ tags:
 	<a href="https://www.fastcampus.co.kr/dev_camp_vue" target="_blank"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
 	<figcaption>패스트캠퍼스 Vue로 구현하는 PWA 캠프(20.01.11 ~ 20.03.07), Vue.js 정복 캠프(20.02.24 ~ 20.04.01)</figcaption>
 </figure>
+
+## 기업 강의
+
+네이버, 이베이, 삼성, SK 그룹 실무자 대상 강의 <br>
+강의 요청 문의는 아래 이메일로 문의해주세요. <br>
+<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
 
 ## 저서
 
@@ -83,5 +89,3 @@ tags:
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<br>
-<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
