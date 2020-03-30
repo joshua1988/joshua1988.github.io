@@ -23,7 +23,7 @@ workbox.core.skipWaiting();
 self.__precacheManifest = [
   {
     "url": "css/main.css",
-    "revision": "04d34ae78704170d00fe984055b169cc"
+    "revision": "624374974ef8b5da3138467aee60f1a3"
   },
   {
     "url": "css/prism-nightowl.css",
@@ -386,6 +386,10 @@ self.__precacheManifest = [
     "revision": "fbf27b716f552a299fdf0395b5187360"
   },
   {
+    "url": "images/corporate-classes.png",
+    "revision": "1eae6c6368b8fff2603f58d0738b753c"
+  },
+  {
     "url": "images/icons/120x.png",
     "revision": "a89077ad78c7720b5d7ee01a3b4fa546"
   },
@@ -640,6 +644,22 @@ self.__precacheManifest = [
   {
     "url": "images/posts/web/inflearn/age-of-vue.png",
     "revision": "a19ba88a367cf65e8ef65c973db4586f"
+  },
+  {
+    "url": "images/posts/web/inflearn/lv1.png",
+    "revision": "3115f2d23984f10f7f67aae3ce4ec141"
+  },
+  {
+    "url": "images/posts/web/inflearn/lv2.png",
+    "revision": "32f3fcee82c4d46dede57255745337b6"
+  },
+  {
+    "url": "images/posts/web/inflearn/lv3.png",
+    "revision": "55105ddc37d69925f76ce82e2c261120"
+  },
+  {
+    "url": "images/posts/web/inflearn/lv4.png",
+    "revision": "5527fa50f336027238f7a431e5ba7e71"
   },
   {
     "url": "images/posts/web/inflearn/pwa.jpg",
