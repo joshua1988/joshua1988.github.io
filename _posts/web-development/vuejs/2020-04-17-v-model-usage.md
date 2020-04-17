@@ -5,7 +5,7 @@ date: 2020-04-17 17:25:32 +0900
 categories: [web-development, vuejs]
 excerpt: 'v-model 동작 원리. 한글(IME) 입력 처리. 실용적인 컴포넌트 설계와 활용'
 image:
-  teaser: posts/web/vuejs/logo.png적
+  teaser: posts/web/vuejs/logo.png
   credit: Evan You
   creditlink: https://vuejs.org/
   #url to their site or licensing
@@ -48,7 +48,7 @@ tags:
 
 ## v-model 속성
 
-공식 문서에 안내된 v-model 속성의 사용법은 다음과 같습니다.
+공식 문서에 안내된 v-model 속성의 사용법은 아래와 같습니다.
 
 ```html
 <input v-model="inputText">
@@ -68,7 +68,7 @@ new Vue({
 
 ## v-model은 어떻게 동작할까?
 
-`v-model` 속성은 `v-bind`와 `v-on`의 기능의 조합으로 동작합니다. 매번 사용자가 일일이 `v-bind`와 `v-on` 속성을 다 지정해주지 않아도 좀 더 편하게 개발할 수 있게 고안된 문법인거죠. 앞에서 살펴본 코드를 아래와 같이 변경하더라도 동일하게 동작합니다.
+`v-model` 속성은 `v-bind`와 `v-on`의 기능의 조합으로 동작합니다. 매번 사용자가 일일이 `v-bind`와 `v-on` 속성을 다 지정해 주지 않아도 좀 더 편하게 개발할 수 있게 고안된 문법인 거죠. 앞에서 살펴본 코드를 아래와 같이 변경하더라도 동일하게 동작합니다.
 
 ```html
 <input v-bind:value="inputText" v-on:input="updateInput">
@@ -80,7 +80,7 @@ new Vue({
     inputText: ''
   },
   methods: {
-    updateInput(event) {
+    updateInput: function(event) {
       var updatedText = event.target.value;
       this.inputText = updatedText;
     }
@@ -94,11 +94,11 @@ new Vue({
 - `v-on` 속성은 해당 HTML 요소의 이벤트를 뷰 인스턴스의 로직과 연결할 때 사용한다.
 - 사용자 이벤트에 의해 실행된 뷰 메서드(methods) 함수의 첫 번째 인자에는 해당 이벤트(`event`)가 들어온다.
 
-※ HTML 입력 요소의 종류에 따라 `v-model`이 각각 input 태그에는 `value / input`, checkbox 태그에는 `checked / change`, select 필드에는 `value / change` 쌍으로 구성됩니다.
+<p class="notice">HTML 입력 요소의 종류에 따라 `v-model`이 각각 input 태그에는 `value / input`, checkbox 태그에는 `checked / change`, select 필드에는 `value / change` 쌍으로 구성됩니다.</p>
 
 ## 그럼 v-model이 더 편하니까 이거 쓰면 되는거죠?
 
-빠르게 기능 구현하고 프로토타이핑 해나갈 때는 `v-model`을 사용해도 상관 없습니다. 다만, 현재 시점에서는 IME 입력(한국어, 일본어, 중국어)에 대해서 아래와 같은 한계점이 있습니다.
+빠르게 기능을 구현하고 프로토타이핑 해나갈 때는 `v-model`을 사용해도 상관없습니다. 다만, 현재 시점에서는 [IME 입력](https://en.wikipedia.org/wiki/Input_method)(한국어, 일본어, 중국어)에 대해서 아래와 같은 한계점이 있습니다.
 
 ![v-model-ime]({{ site.url }}/images/posts/web/vuejs/v-model/v-model-ime.gif)
 
@@ -106,11 +106,11 @@ new Vue({
 
 ![v-model]({{ site.url }}/images/posts/web/vuejs/v-model/v-model.gif)
 
-위와 같은 `v-model`의 한계점 때문에 한국어 입력을 다룰 때 뷰 공식 문서에서는 `v-bind:value`와 `v-on:input`를 직접 연결해서 사용하는 것을 권고하고 있습니다.
+위와 같은 `v-model`의 한계점 때문에 뷰 공식 문서에서는 한국어 입력을 다룰 때 `v-bind:value`와 `v-on:input`를 [직접 연결해서 사용하는 것을 권고하고](https://vuejs.org/v2/guide/forms.html#Basic-Usage) 있습니다.
 
 ## v-model 문법을 이용해서 한국어를 처리할 순 없을까요?
 
-이렇게 매번 한국어 입력을 처리할 때 `v-model` 대신에 직접 이벤트와 값을 조합해서 바인딩하는 것이 귀찮게 느껴질 수 있습니다. 이럴 땐 아래와 같이 인풋 컴포넌트를 별도의 컴포넌트로 분리하면 `v-model`로 편하게 처리할 수 있습니다.
+이렇게 매번 한국어 입력을 처리할 때 `v-model` 대신에 직접 이벤트와 값을 조합해서 바인딩 하는 것이 귀찮게 느껴질 수 있습니다. 이럴 땐 아래와 같이 인풋 컴포넌트를 별도의 컴포넌트로 분리하면 `v-model`로 편하게 처리할 수 있습니다.
 
 ```html
 <!-- BaseInput.vue - 싱글 파일 컴포넌트 구조-->
@@ -132,8 +132,8 @@ export default {
 
 위 코드의 동작을 간단하게 설명하자면 다음과 같습니다.
 
-- `BaseInput` 컴포넌트의 상위 컴포넌트에서 받은 `value`를 인풋 태그에 값으로 연결합니다.
-- 인풋 태그에서 값이 입력되면 `input` 이벤트가 발생하고 `updateInput` 메서드가 실행됩니다.
+- `BaseInput` 컴포넌트의 상위 컴포넌트에서 `props`로 받은 `value`를 인풋 태그에 값으로 연결합니다.
+- 인풋 태그에서 값이 입력되면 인풋 태그에서 `input` 이벤트가 발생하고 `updateInput` 메서드가 실행됩니다.
 - `updateInput` 메서드에서 인풋 태그에 입력된 값을 상위 컴포넌트에 `input` 이벤트로 올려 보냅니다.
 
 이제 이 컴포넌트를 등록해서 아래와 같이 사용할 수 있습니다.
@@ -142,12 +142,17 @@ export default {
 <!-- App.vue - 싱글 파일 컴포넌트 구조 -->
 <template>
   <div>
-    <BaseInput v-model="inputText"></BaseInput>
+    <base-input v-model="inputText"></base-input>
   </div>
 </template>
 
 <script>
+import BaseInput from './BaseInput.vue';
+
 export default {
+  components: {
+    'base-input': BaseInput
+  },
   data: function() {
     return {
       inputText: ''
@@ -157,11 +162,13 @@ export default {
 </script>
 ```
 
-여기서 주의 깊게 살펴볼만한 부분은 상위 컴포넌트에서 정의한 데이터 값을 하위 컴포넌트로 내려보내는 부분입니다. 평소에 사용하던 프롭스 속성 대신에 `v-model`을 사용했는데요. 이미 앞 [v-model은 어떻게 동작할까?](#v-model은 어떻게 동작할까?) 부분에서 `v-model` 속성은 `v-bind:value`와 `v-on:input`을 조합해서 만들었다는 것을 배웠기 때문에 `v-model` 속성에 연결한 값이 하위 컴포넌트에 `value` 라는 프롭스 속성으로 내려간다는 사실을 추론할 수 있습니다.
+여기서 주의 깊게 살펴볼 만한 부분은 상위 컴포넌트에서 정의한 데이터 값을 하위 컴포넌트로 내려보내는 부분입니다. 
+
+평소에 사용하던 프롭스 속성 대신에 `v-model`을 사용했는데요. 이미 앞 [v-model은 어떻게 동작할까?](#v-model은-어떻게-동작할까) 챕터에서 `v-model` 속성은 `v-bind:value`와 `v-on:input`을 조합해서 만들었다는 것을 배웠기 때문에 `v-model` 속성에 연결한 값이 하위 컴포넌트에 `value` 라는 프롭스 속성으로 내려간다는 사실을 추론할 수 있습니다.
 
 ## 마무리
 
-오늘은 `v-model`의 기본 문법과 내부 동작 원리 그리고 한국어 입력을 좀 더 효율적으로 처리하는 방법에 대해서 알아보았습니다. 아무래도 이 글을 읽으시는 분들 중에 국내 사용자를 대상으로 웹 서비스를 제작하시는 분들이 많을테니까요. 아무쪼록 제 글이 이 분들께 도움이 되었으면 좋겠네요 :)
+오늘은 `v-model`의 기본 문법과 내부 동작 원리 그리고 한국어 입력을 좀 더 효율적으로 처리하는 방법에 대해서 알아보았습니다. 아무래도 이 글을 읽으시는 분들 중에 국내 사용자를 대상으로 웹 서비스를 제작하시는 분들이 많을 테니까요. 아무쪼록 제 글이 이분들께 도움이 되었으면 좋겠네요 😄
 
 그럼 재밌게 코딩하시고 또 다음에 뵙겠습니다~!
 
