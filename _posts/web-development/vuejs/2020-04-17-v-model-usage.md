@@ -94,7 +94,7 @@ new Vue({
 - `v-on` 속성은 해당 HTML 요소의 이벤트를 뷰 인스턴스의 로직과 연결할 때 사용한다.
 - 사용자 이벤트에 의해 실행된 뷰 메서드(methods) 함수의 첫 번째 인자에는 해당 이벤트(`event`)가 들어온다.
 
-<p class="notice">HTML 입력 요소의 종류에 따라 `v-model`이 각각 input 태그에는 `value / input`, checkbox 태그에는 `checked / change`, select 필드에는 `value / change` 쌍으로 구성됩니다.</p>
+<p class="notice">HTML 입력 요소의 종류에 따라 `v-model` 속성이 각각 다음과 같이 구성됩니다. (1) input 태그에는 `value / input` (2) checkbox 태그에는 `checked / change` (3) select 태그에는 `value / change` </p>
 
 ## 그럼 v-model이 더 편하니까 이거 쓰면 되는거죠?
 
