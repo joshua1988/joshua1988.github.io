@@ -1,0 +1,48 @@
+<div class="permission-popup">
+  <p class="permission-text">
+    새 게시물을 브라우저 푸시 알람으로 받으시겠습니까?
+  </p>
+  <button id="btnYes" class="permission-button yes">네</button>
+  <button id="btnNo" class="permission-button no">아니오</button>
+</div>
+
+<style>
+  .permission-popup {
+    position: fixed;
+    bottom: 1.618em;
+    right: 1.618em;
+    background-color: #2a4365;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 0 solid #232930;
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem;
+    max-width: 30rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .permission-popup.open {
+    display: flex;
+  }
+  .permission-text {
+    margin: 0;
+  }
+  .permission-button {
+    padding: 0.5rem 1rem;
+    border-color: #cbd5e0;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    background: transparent;
+    color: white;
+  }
+  .permission-button.yes {
+    margin-left: 0.5rem;
+  }
+  .permission-button.no {
+    margin-left: 0.5rem;
+    width: 6rem;
+  }
+</style>

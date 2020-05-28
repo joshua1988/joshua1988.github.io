@@ -6,9 +6,22 @@ generateSW({
   skipWaiting: true,
   globDirectory: "_site/",
   globPatterns: [
-    "**/*.{html,js,png,css,jpg,ico,json,eot,svg,ttf,woff,woff2,otf,jpeg,gif}"
+    "**/*.{js,png,css,jpg,ico,json,eot,svg,ttf,woff,woff2,otf,jpeg,gif}",
+    // "index.html"
+    // NOTE: default values
+    // "**/*.{html,js,png,css,jpg,ico,json,eot,svg,ttf,woff,woff2,otf,jpeg,gif}"
+    // NOTE: partial values
+    // "images/*.{png,css,jpg,ico,eot,svg,ttf,woff,woff2,otf,jpeg,gif}",
+    // "fonts/*.{png,css,jpg,ico,eot,svg,ttf,woff,woff2,otf,jpeg,gif}",
+    // "js/*.{js}",
+    // "atom.xml",
+    // "favicon.ico",
+    // "index.html",
+    // "manifest.json",
+    // "sitemap.xml",
   ],
   globIgnores: [
+    // basic
     "_posts/_backup/**",
     "workbox-config.js",
     "pwa-build.js",
@@ -17,7 +30,10 @@ generateSW({
     "js/pwa-push.js",
     "package.json",
     "package-lock.json",
-    "preflight_.png"
+    "preflight_.png",
+    "node_modules",
+    // pwa push file
+    "js/app.js"
   ],
   cleanupOutdatedCaches: true,
   // Increase the limit to 4mb:
@@ -25,21 +41,33 @@ generateSW({
   // Define runtime caching rules.
   runtimeCaching: [
     {
-      // Match any request that ends with .png, .jpg, .jpeg or .svg.
-      urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-
+      urlPattern: /^https:\/\/fonts\.googleapis\.com/,
+      handler: "StaleWhileRevalidate"
+    },
+    {
+      urlPattern: /^https:\/\/fonts\.gstatic\.com/,
       // Apply a cache-first strategy.
       handler: "CacheFirst",
-
       options: {
+        // Fall back to the cache after 10 seconds.
+        // networkTimeoutSeconds: 10,
         // Use a custom cache name.
-        cacheName: "images",
-
-        // Only cache 10 images.
+        cacheName: "google-fonts-webfonts",
+        // cache for a week
         expiration: {
-          maxEntries: 10
+          maxAgeSeconds: 60 * 60 * 24 * 7 // a week long
         }
       }
+    },
+    {
+      urlPattern: /web-development/,
+      handler: "NetworkFirst",
+      options: {
+        cacheName: "pages",
+        expiration: {
+          maxAgeSeconds: 60 * 60 * 24 * 7 // a week long
+        }
+      },
     }
   ]
   // Other configuration options...

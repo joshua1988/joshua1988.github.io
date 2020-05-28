@@ -146,7 +146,7 @@ figure {
       /* Image hover animation */
       @include transition(box-shadow 0.3s);
       &:hover {
-        box-shadow: 0 0 10px rgba($black, .20);
+        box-shadow: 0 0 10px rgba($black, .40);
       }
     }
   }
