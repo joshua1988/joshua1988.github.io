@@ -158,11 +158,3 @@ vue init webpack-simple folder-structure
 	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
 </figure>
 
-## 밀착 지도를 받을 수 있는 오프라인 강의
-
-강남역 패스트캠퍼스에서 2020년 4월 말부터 6월 초까지 두 달 동안 매주 월요일 수요일에 Vue.js 집중반 수업을 진행합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 😄
-
-<figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_vue/" target="_blank"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
-	<figcaption>패스트캠퍼스 Vue.js 정복 캠프(20.4.27 ~ 20.6.8)</figcaption>
-</figure>

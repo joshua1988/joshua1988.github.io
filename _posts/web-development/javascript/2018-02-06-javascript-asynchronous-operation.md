@@ -234,12 +234,3 @@ auth() 메서드로 인증을 거치고 나면 콜백 함수 authDone()이 실�
 	<a href="https://www.inflearn.com/course/pwa?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/pwa.jpg"></a>
 	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
 </figure>
-
-## 밀착 지도를 받을 수 있는 오프라인 강의
-
-강남역 패스트캠퍼스에서 2020년 4월 말부터 6월 초까지 두 달 동안 매주 월요일 수요일에 Vue.js 집중반 수업을 진행합니다. 관심 있으신 분들은 아래 이미지를 클릭해주세요 😄
-
-<figure class="third">
-	<a href="https://www.fastcampus.co.kr/dev_camp_vue/" target="_blank"><img src="{{ site.url }}/images/posts/web/fastcampus/vue.png"></a>
-	<figcaption>패스트캠퍼스 Vue.js 정복 캠프(20.4.27 ~ 20.6.8)</figcaption>
-</figure>
