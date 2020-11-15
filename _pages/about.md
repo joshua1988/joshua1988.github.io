@@ -63,7 +63,7 @@ tags:
 </figure>
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%85%EB%AC%B8/?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/typescript-beginner-kor.png"></a>
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/typescript-beginner-kor.png"></a>
 	<figcaption>인프런 온라인 강의 : 타입스크립트 입문</figcaption>
 </figure>
 
