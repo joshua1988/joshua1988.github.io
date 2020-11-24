@@ -1405,10 +1405,10 @@ self.__precacheManifest = [
     "url": "index.html",
     "revision": "054512bfc5409810843506ab3593afa1"
   },
-  {
-    "url": "intersection-observer/index.html",
-    "revision": "4bc5fe6eb0f70f555c31b29d4128ab09"
-  },
+  // {
+  //   "url": "intersection-observer/index.html",
+  //   "revision": "4bc5fe6eb0f70f555c31b29d4128ab09"
+  // },
   {
     "url": "javascript/index.html",
     "revision": "dfff0f106fa32a56ab22833d93950fb2"
