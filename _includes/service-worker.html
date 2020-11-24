@@ -3,12 +3,6 @@
     window.addEventListener("load", function() {
       navigator.serviceWorker
         .register("/sw.js")
-        .then(function(swReg) {
-          console.log("sw registered", swReg);
-        })
-        .catch(function(error) {
-          console.log("sw registered error", error);
-        });
       // var originDomain = window.location.origin;
       // var flag = /io\/$/i.test(location.href);
 
