@@ -153,23 +153,18 @@ module.exports = {
 ```json
 {
   ...
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
   "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+      {"mode": "auto"}
+  ],
   "eslint.validate": [
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    }
-  ]
+      "javascript",
+      "typescript"
+  ],
 }
 ```
 
