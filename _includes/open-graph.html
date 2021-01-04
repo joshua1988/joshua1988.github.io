@@ -5,8 +5,8 @@
 		<meta property="og:description" content="{{ page.excerpt | strip_html }}">
 		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 		<meta property="og:site_name" content="{{ site.title }}">
-		{% if page.image.teaser %}
-			<meta property="og:image" content="{{ site.url }}/images/{{ page.image.teaser }}"/>
+		{% if page.url == "/" %}
+			<meta property="og:image" content="{{ site.url }}/images/logo_new.png"/>
 		{% else %}
 			<meta property="og:image" content="{{ site.url }}/images/{{ page.image.feature }}"/>
 		{% endif %}
