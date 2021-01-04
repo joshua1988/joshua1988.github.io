@@ -6,7 +6,8 @@
 		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 		<meta property="og:site_name" content="{{ site.title }}">
 		{% if page.url == "/" %}
-			<meta property="og:image" content="{{ site.url }}/images/logo_new.png"/>
+		<!-- TODO: 새 BI 해상도 키운 후 적용 필요 -->
+			<meta property="og:image" content="{{ site.url }}/images/share_logo.png"/>
 		{% else %}
 			<meta property="og:image" content="{{ site.url }}/images/{{ page.image.feature }}"/>
 		{% endif %}
