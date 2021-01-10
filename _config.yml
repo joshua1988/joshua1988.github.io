@@ -20,7 +20,7 @@ kramdown:
   toc_levels: 1..2
   # https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#syntax-highlighting
   syntax_highlighter_opts:
-    disable : true
+    disable: true
 highlighter: rouge
 gems:
   - jekyll-sitemap
