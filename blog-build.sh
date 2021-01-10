@@ -1,1 +1,1 @@
-npm run build
+bundle exec jekyll build && workbox injectManifest workbox-config.js && git add sw.js && git commit -m "publish a new article" && git push
