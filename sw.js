@@ -8,3 +8,19 @@ self.addEventListener('message', function (event) {
     self.skipWaiting();
   }
 });
+
+// TODO: 위의 revision 값과 아래 로직에서 어떻게 연관 시켜서 기존에 생성된 캐시를 지울 수 있을지 알아보기
+// self.addEventListener('activate', function(event) {
+//   event.waitUntil(
+//     caches.keys().then(function(cacheNames) {
+//       return Promise.all(
+//         cacheNames.filter(function(cacheName) {
+//           console.log('deleted')
+//           return true;
+//         }).map(function(cacheName) {
+//           return caches.delete(cacheName);
+//         })
+//       );
+//     })
+//   );
+// });

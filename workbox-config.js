@@ -1,8 +1,10 @@
 module.exports = {
+  "cacheId": "v0.9",
   "globDirectory": "_site/",
   "globPatterns": [
     "**/*.{html,js,png,css,jpg,ico,json,eot,svg,ttf,woff,woff2,otf,jpeg,key,gif}"
   ],
+  "skipWaiting": true,
   "swSrc": "sw-custom.js",
   "swDest": "sw.js",
   "globIgnores": [
