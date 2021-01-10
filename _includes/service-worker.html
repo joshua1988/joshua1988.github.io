@@ -1,21 +1,67 @@
 <script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function() {
-      navigator.serviceWorker
-        .register("/sw.js")
-      // var originDomain = window.location.origin;
-      // var flag = /io\/$/i.test(location.href);
+  (function () {
+    var newWorker;
+    var refreshing;
+    var popup = document.getElementById("update-popup");
 
-      // if (!flag) {
-      //   navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
-      //     console.log('Service Worker is registered', swReg);
+    function showUpdatePopup() {
+      popup.classList.add("show");
+    }
 
-      //     swRegistration = swReg;
-      //     initialiseUI();
-      //   }).catch(function(err) {
-      //     console.log('ServiceWorker registration failed: ', err);
-      //   });
-      // }
+    function closeUpdatePopup() {
+      popup.classList.remove("show");
+    }
+
+    var btn = document.getElementById("refresh-btn");
+    btn.addEventListener("click", function () {
+      console.log("clicked");
+      newWorker.postMessage({ action: "skipWaiting" });
+      closeUpdatePopup();
     });
-  }
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+          reg.addEventListener("updatefound", function () {
+            newWorker = reg.installing;
+            newWorker.addEventListener("statechange", function () {
+              // Has service worker state changed?
+              switch (newWorker.state) {
+                case "installed":
+                  // There is a new service worker available, show the notification
+                  if (navigator.serviceWorker.controller) {
+                    showUpdatePopup();
+                  }
+                  break;
+              }
+            });
+          });
+        });
+
+        navigator.serviceWorker.addEventListener(
+          "controllerchange",
+          function () {
+            if (refreshing) {
+              return;
+            }
+            window.location.reload();
+            refreshing = true;
+          }
+        );
+        // var originDomain = window.location.origin;
+        // var flag = /io\/$/i.test(location.href);
+
+        // if (!flag) {
+        //   navigator.serviceWorker.register(originDomain + '/sw.js').then(function(swReg) {
+        //     console.log('Service Worker is registered', swReg);
+
+        //     swRegistration = swReg;
+        //     initialiseUI();
+        //   }).catch(function(err) {
+        //     console.log('ServiceWorker registration failed: ', err);
+        //   });
+        // }
+      });
+    }
+  })();
 </script>

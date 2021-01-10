@@ -39,7 +39,8 @@
 
 .inline-btn {
   @include clearfix;
-  a, btn {
+  a,
+  btn {
     display: inline-block;
     margin-right: $gutter / 2;
     &:last-child {
@@ -99,8 +100,8 @@
     img {
       // Image hover animation
       &:hover {
-        @include animation(pop .3s 0 linear);
-        box-shadow: 0 0 10px rgba($black, .20);
+        @include animation(pop 0.3s 0 linear);
+        box-shadow: 0 0 10px rgba($black, 0.2);
       }
     }
   }
@@ -136,8 +137,8 @@
     @include media($large) {
       float: left;
       width: 6.575em;
-      margin-right: .25em; // magic number ugh
-      margin-bottom: .25em; // magic number ugh
+      margin-right: 0.25em; // magic number ugh
+      margin-bottom: 0.25em; // magic number ugh
       @include omega(9n);
     }
   }
@@ -145,8 +146,8 @@
     img {
       // Image hover animation
       &:hover {
-        @include animation(pop .3s 0 linear);
-        box-shadow: 0 0 10px rgba($black, .20);
+        @include animation(pop 0.3s 0 linear);
+        box-shadow: 0 0 10px rgba($black, 0.2);
       }
     }
   }
