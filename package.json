@@ -7,7 +7,7 @@
   "license": "The MIT License (MIT)",
   "scripts": {
     "old-build": "bundle exec jekyll build && node pwa-build.js",
-    "build": "bundle exec jekyll build && node workbox-config.js"
+    "build": "bundle exec jekyll build && workbox injectManifest workbox-config.js"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
