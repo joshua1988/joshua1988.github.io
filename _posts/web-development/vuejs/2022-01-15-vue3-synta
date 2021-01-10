@@ -1,0 +1,84 @@
+---
+layout: article
+title: 'Vue 3 가볍게 훑어보기'
+date: 2022-01-10 17:00:32 +0900
+categories: [web-development, vuejs]
+excerpt: '기존 버전과 Vue 3 비교해보기. Vue 3에서 달라진 점과 해결하려는 문제점. 빠르게 훑어보는 Vue 3 공식 문서.'
+image:
+  teaser: posts/web/vuejs/vue3.png
+  credit: Yurim Jin
+  creditlink: https://milooy.wordpress.com/
+  #url to their site or licensing
+locale: 'ko_KR'
+# 리플 옵션
+comments: true
+tags:
+  - Vue.js 3
+  - Vue 3
+  - vue composition api
+  - Vue.js 책
+  - do it! Vue.js 입문
+  - do it! vue.js
+  - vue.js 입문서
+  - vue.js 시작하기
+  - vue.js 장점
+  - vue.js 예제
+  - vue.js 온라인 강의
+  - vue.js 교육
+  - vue.js 강좌
+  - vue.js 강의
+  - vue.js 입문
+  - eslint
+  - prettier
+  - vue eslint
+  - vue prettier
+  - vue.js 프론트엔드 개발자
+  - 패스트캠퍼스 vue.js 강의
+  - 인프런 장기효
+  - Age of Vue.js
+  - 인프런 vue.js 강의
+  - 장기효
+  - 캡틴판교
+  - captain pangyo
+---
+
+{% include toc.html %}
+
+## 들어가며
+
+## Vue 3 달라진 문법
+
+```js
+// 기존
+new Vue({
+  el: '#app'
+})
+new Vue({}).$mount('#app');
+
+// Vue 3
+Vue.createApp({}).mount('#app')
+```
+
+- `createApp()` API 스펙상 인스턴스 속성 옵션을 빈 객체로라도 넘겨줘야 한다.
+
+## Javscript Expression
+
+콧수염 괄호 안에는 자바스크립트 표현식을 쓸 수 있는데 아래와 같은 형태의 자바스크립트를 작성할 수 있다.
+
+```html
+<div>{{ str }}</div>
+<div>{{ firstName + ' ' + lastName }}</div>
+<div>{{ login ? true : false }}</div>
+<div>{{ showAlert() }}</div>
+```
+
+`if` 분기문이나 함수는 선언 불가
+
+## 스타일 바인딩
+
+```html
+<!-- 자바스크립트 표현식 안에 넣기 때문에 `backgroundColor`가 최종적으로 `background-color`로 변환된다. -->
+<div :style="{ backgroundColor: 'red' }"></div>
+<div :style="{ 'background-color': 'red' }"></div>
+```
+
