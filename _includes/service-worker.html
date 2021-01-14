@@ -14,7 +14,6 @@
 
     var btn = document.getElementById("refresh-btn");
     btn.addEventListener("click", function () {
-      console.log("clicked");
       newWorker.postMessage({ action: "skipWaiting" });
       closeUpdatePopup();
     });
