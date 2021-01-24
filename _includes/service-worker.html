@@ -20,33 +20,41 @@
 
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/sw.js").then(function (reg) {
-          reg.addEventListener("updatefound", function () {
-            newWorker = reg.installing;
-            newWorker.addEventListener("statechange", function () {
-              // Has service worker state changed?
-              switch (newWorker.state) {
-                case "installed":
-                  // There is a new service worker available, show the notification
-                  if (navigator.serviceWorker.controller) {
-                    showUpdatePopup();
-                  }
-                  break;
-              }
-            });
-          });
-        });
-
-        navigator.serviceWorker.addEventListener(
-          "controllerchange",
-          function () {
-            if (refreshing) {
-              return;
+        navigator.serviceWorker
+          .getRegistrations()
+          .then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
             }
-            window.location.reload();
-            refreshing = true;
-          }
-        );
+          })
+          .catch(error => console.log(error));
+        // navigator.serviceWorker.register("/sw.js").then(function (reg) {
+        //   reg.addEventListener("updatefound", function () {
+        //     newWorker = reg.installing;
+        //     newWorker.addEventListener("statechange", function () {
+        //       // Has service worker state changed?
+        //       switch (newWorker.state) {
+        //         case "installed":
+        //           // There is a new service worker available, show the notification
+        //           if (navigator.serviceWorker.controller) {
+        //             showUpdatePopup();
+        //           }
+        //           break;
+        //       }
+        //     });
+        //   });
+        // });
+
+        // navigator.serviceWorker.addEventListener(
+        //   "controllerchange",
+        //   function () {
+        //     if (refreshing) {
+        //       return;
+        //     }
+        //     window.location.reload();
+        //     refreshing = true;
+        //   }
+        // );
         // var originDomain = window.location.origin;
         // var flag = /io\/$/i.test(location.href);
 
