@@ -45,11 +45,15 @@ tags:
 
 상담소는 **매주 토요일 오후 3시 30분**에 진행할 예정입니다. 참여하는 방식은 아래 **유튜브 채널로 들어오셔서 실시간 라이브 방송**을 찾아주시면 될 것 같아요.
 
-[프런트엔드 개발 상담소 채널 - 캡틴판교](https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg)
+<a href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank">프런트엔드 개발 상담소 채널 - 캡틴판교</a>
+
+**이번 주 토요일인 1월 30일부터 시작**하려고 합니다. **관심 있으신 분들은 먼저 아래 신청 양식을 간단하게라도 작성해 주세요**. 시청 수요 파악과 방송 준비에 많은 도움이 될 것 같습니다 :)
+
+<a href="https://forms.gle/Ri6Ay5Z8X8cDf8Hk8" target="_blank">프런트엔드 개발 상담소 신청 양식(설문 시간 약 20초 소요 예상)</a>
 
 아마 제 인프런 강의나 블로그 글 혹은 회사 업무를 하면서 이해가 잘 안 가시는 부분들이 있으실 텐데요. 그냥 편하게 친구에게 물어본다고 생각하고 와서 질문해 주시면 좋을 것 같습니다 :) 만약 기술적인 질문을 하시는 거라면 아래 글 참고해서 현재 분석한 에러 상황 - 시도한 방법 - 궁금한 점 등을 잘 정리해서 전달해 주시면 좋을 것 같습니다 :)
 
-[질문을 잘하는 개발자 - 한재엽님 블로그](https://jbee.io/essay/good_questionor/)
+<a href="https://jbee.io/essay/good_questionor/" target="_blank">질문을 잘하는 개발자 - 한재엽님 블로그</a>
 
 ## 멘토링도 하시네요? 요건 뭐가 다른거에요?
 
@@ -59,7 +63,7 @@ tags:
 
 저와 함께 얘기하시고 싶은 분들은 아래 멘토링으로 신청해 주시면 됩니다! :)
 
-[멘토링 신청하기](https://www.inflearn.com/users/@captain)
+<a href="https://www.inflearn.com/users/@captain" target="_blank">멘토링 신청하기</a>
 
 ## 프런트엔드 개발 상담소 유튜브 컨텐츠도 많이 활용해 주세요
 
