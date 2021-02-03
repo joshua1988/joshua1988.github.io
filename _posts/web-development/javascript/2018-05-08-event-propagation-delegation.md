@@ -345,9 +345,16 @@ itemList.addEventListener('click', function(event) {
 <p class="notice">참고 : 위 코드는 현재 인풋 박스의 이벤트만 다루는 것이 아니라 label 태그의 이벤트도 감지합니다. event 객체를 이용하여 인풋 박스의 이벤트만 감지할 수 있도록 구현해보세요.</p>
 
 ## 마무리
+
 오늘은 브라우저가 어떻게 이벤트를 감지하고 그에 따라 우리는 어떻게 이벤트를 다뤄야 하는지에 대해 알아보았습니다.
 위 내용은 어떤 프레임워크를 쓰느냐와 관계없이 기본적인 브라우저의 이벤트 감지 방식이기 때문에 알아두시면 유용하겠네요 :)
 
 그럼 모두 즐겁게 코딩하세요!
 
 “Event bubbling and capturing are two ways of event propagation in the HTML DOM API when an event occurs in an element inside another element, and both elements have registered a handler for that event. The event propagation mode determines in which order the elements receive the event.”
+
+## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
+
+매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
+
+<a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>

@@ -234,3 +234,9 @@ auth() 메서드로 인증을 거치고 나면 콜백 함수 authDone()이 실�
 	<a href="https://www.inflearn.com/course/pwa?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/pwa.jpg"></a>
 	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
 </figure>
+
+## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
+
+매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
+
+<a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>

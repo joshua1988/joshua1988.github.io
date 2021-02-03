@@ -279,8 +279,15 @@ arr.forEach(function () {
 <p class="notice">콜백 함수란 다른 함수의 인자로 전달된 함수를 의미합니다. 자바스크립트가 일급 객체로서 가지는 특징 중 하나죠. 자세한 내용은 <a href="https://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/">여기</a>를 참고하세요.</p>
 
 ## 결론
+
 함수 표현식이 선언식에 비해 가지는 장점이 많지만, 결국에는 이러한 차이점을 인지한 상태에서 일관된 코딩 컨벤션으로
 코드를 작성하는 게 중요하다는 생각이 듭니다. [AirBnb 의 JS Style 가이드](https://github.com/airbnb/javascript) 에서도 함수 선언식보다는 함수 표현식을
 지향하고 있는데요. 그래도 자기가 코딩하기 편한 방식으로 구현하는 게 좋지 않을까요?
 
 <p class="notice">본 글은 <a href="https://www.sitepoint.com/function-expressions-vs-declarations/">Site Point 의 Function Expressions vs Function Declarations</a> 를 참고했습니다.</p>
+
+## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
+
+매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
+
+<a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>
