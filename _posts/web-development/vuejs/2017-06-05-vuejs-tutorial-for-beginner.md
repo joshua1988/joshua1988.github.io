@@ -572,6 +572,10 @@ npm run serve
 	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
 </figure>
 
+<figure class="third">
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/typescript-beginner-kor.png"></a>
+	<figcaption>인프런 온라인 강의 : 타입스크립트 입문</figcaption>
+</figure>
 
 ## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
 
