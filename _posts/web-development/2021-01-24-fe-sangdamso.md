@@ -82,7 +82,7 @@ tags:
 
 ## 프런트엔드 개발 상담소 다시 보기
 
-[프런트엔드 개발 상담소 1회차 방송](https://www.youtube.com/watch?v=b7tUuV8s11I&t=1169s)
+<a href="https://www.youtube.com/watch?v=b7tUuV8s11I" target="_blank">프런트엔드 개발 상담소 1회차 방송</a>
 
 ## 프런트엔드 개발 상담소 Code of Conduct
 
