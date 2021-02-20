@@ -5,7 +5,7 @@ date: 2021-01-24 10:50:32 +0900
 categories: web-development
 excerpt: "프런트엔드 개발 상담소와 인프런 멘토링 프로그램을 소개합니다. 프런트엔드 개발 구직, 이직, 진로 설계, 고민에 대해서 얘기해봐요."
 image:
-  teaser: posts/web/fe-sangdamso-youtube.png
+  teaser: posts/web/youtube/sangdamso.jpeg
   credit: 캡틴판교
   creditlink: https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg
   #url to their site or licensing
