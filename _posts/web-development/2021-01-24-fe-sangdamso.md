@@ -84,6 +84,8 @@ tags:
 
 - <a href="https://www.youtube.com/watch?v=b7tUuV8s11I" target="_blank">프런트엔드 개발 상담소 1회차 방송</a><br>
 - <a href="https://www.youtube.com/watch?v=p23-RA79O3Q" target="_blank">프런트엔드 개발 상담소 2회차 방송</a>
+- <a href="https://www.youtube.com/watch?v=gwdBf1xh9fg" target="_blank">프런트엔드 개발 상담소 3회차 방송</a>
+- <a href="https://www.youtube.com/watch?v=nn71FeLj0bU" target="_blank">프런트엔드 개발 상담소 4회차 방송</a>
 
 ## 프런트엔드 개발 상담소 Code of Conduct
 
