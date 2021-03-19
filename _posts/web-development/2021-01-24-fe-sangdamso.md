@@ -43,7 +43,7 @@ tags:
 
 개발 상담소는 프런트엔드 개발자로서 학습 방법, 진로 설계, 구직 & 이직, 면접 준비, 회사 업무 등 전반적인 내용을 얘기할 수 있는 공간입니다. 이 아이디어는 제가 좋아하는 켄트 옹의 Ask Me Anything 방식에서 착안했어요. 그냥 일주일에 한번 고정된 시간에 말 그대로 아무거나 물어볼 수 있는 채널을 운영하더라구요. 재미있는 아이디어인 것 같아서 저도 한번 해보려고 합니다 :)
 
-상담소는 **매주 토요일 오후 3시 30분**에 진행할 예정입니다. 참여하는 방식은 아래 **유튜브 채널로 들어오셔서 실시간 라이브 방송**을 찾아주시면 될 것 같아요.
+상담소는 **매주 토요일 오후 9시 30분**에 진행할 예정입니다. 참여하는 방식은 아래 **유튜브 채널로 들어오셔서 실시간 라이브 방송**을 찾아주시면 될 것 같아요.
 
 <a href="https://www.youtube.com/channel/UCX04UECIFaAjNnsak6GzpZg" target="_blank">프런트엔드 개발 상담소 채널 - 캡틴판교</a>
 
@@ -86,6 +86,8 @@ tags:
 - <a href="https://www.youtube.com/watch?v=p23-RA79O3Q" target="_blank">프런트엔드 개발 상담소 2회차 방송</a>
 - <a href="https://www.youtube.com/watch?v=gwdBf1xh9fg" target="_blank">프런트엔드 개발 상담소 3회차 방송</a>
 - <a href="https://www.youtube.com/watch?v=nn71FeLj0bU" target="_blank">프런트엔드 개발 상담소 4회차 방송</a>
+- <a href="https://www.youtube.com/watch?v=zWsvypWxS2c" target="_blank">프런트엔드 개발 상담소 5회차 방송</a>
+- <a href="https://www.youtube.com/watch?v=FnswhML4dfY" target="_blank">프런트엔드 개발 상담소 6회차 방송</a>
 
 ## 프런트엔드 개발 상담소 Code of Conduct
 
