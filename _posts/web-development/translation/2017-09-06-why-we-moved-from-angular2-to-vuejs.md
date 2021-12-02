@@ -233,13 +233,20 @@ React 가 나쁜 선택이라는 게 아닙니다. 거대한 React 커뮤니티�
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-중급?inst=dd3b6c65&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv2.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js?inst=c76b3a50&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv3.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 시작하기, Vue.js 중급, Vue.js 완벽 가이드</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / Vue.js 중급 / Vue.js 완벽 가이드</figcaption>
 </figure>
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/vue-js-끝내기-캡틴판교?inst=2071ec73&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
 	<a href="https://www.inflearn.com/course/프런트엔드-웹팩?inst=747606f7&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
 	<a href="https://www.inflearn.com/course/pwa?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/pwa.jpg"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기, 쉽게 배우는 Webpack, PWA 시작하기</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기 / 프런트엔드 개발자를 위한 웹팩 / PWA 시작하기</figcaption>
+</figure>
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
+  <a href="https://www.inflearn.com/course/타입스크립트-실전?inst=e5a8f85e&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts2.png"></a>
+  <a href="https://www.inflearn.com/course/vue-ts?inst=0ced8395&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-ts.png"></a>
+	<figcaption>인프런 온라인 강의 : 타입스크립트 입문 / 실전 프로젝트로 배우는 타입스크립트 / Vue.js + TypeScript 완벽 가이드</figcaption>
 </figure>
 
