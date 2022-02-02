@@ -84,7 +84,7 @@ tags:
 아파트 청약을 하려면 청약 통장이 필요합니다. 보통 정부에서 제공하는 집과 건설사가 제공하는 집을 모두 신청할 수 있는 주택청약종합저축을 많이 하는 것 같습니다. 청약 통장에서 중요한 건 얼마나 오랜 기간 동안 얼마만큼의 금액을 정기적으로 납입했는가입니다. 아래 그림은 최근에 진행한 아파트 분양의 청약 예치 기준 금액입니다.
 
 <figure>
-	<img src="{{ site.url }}/images/posts/life/realestate/청약예치기준금액.png">
+	<img src="{{ site.url }}/images/posts/life/realestate/deposit.png">
 	<figcaption>2022년 경기도 xx아파트 청약예치기준금액</figcaption>
 </figure>
 
