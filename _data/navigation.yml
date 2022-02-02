@@ -7,10 +7,14 @@
   url: /singing/
   excerpt: "Love to sing a song for people"
   image:
-- title: English
-  url: /english/
-  excerpt: "Let's crack the English"
+- title: Life
+  url: /life/
+  excerpt: "Things we do in daily lives"
   image:
+# - title: English
+#   url: /english/
+#   excerpt: "Let's crack the English"
+#   image:
 - title: About
   url: /about/
   excerpt: "Who is Captain Pangyo?"
