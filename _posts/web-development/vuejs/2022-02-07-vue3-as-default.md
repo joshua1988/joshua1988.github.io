@@ -59,7 +59,7 @@ tags:
 ```html
 <body>
   <div id="app">
-    <p>{{ message }}</p>
+    <p>{{ "{{ message" }} }}</p>
   </div>
 
   <script src="https://unpkg.com/vue"></script>
@@ -74,7 +74,7 @@ tags:
 </body>
 ```
 
-여기서 `script` 태그의 소스 주소인 `https://unpkg.com/vue`는 더 이상 Vue 2 라이브러리 소스를 가져오지 않습니다. Vue 3를 기본으로 바라보게 되어 있습니다. 그래서 가급적 위와 같은 주소보다는 아래와 같이 버전을 명시한 CDN 주소를 사용하시는 것을 추천드릴게요 😄
+여기서 `script` 태그의 소스 주소인 `https://unpkg.com/vue`는 더 이상 Vue 2 라이브러리 소스를 가져오지 않습니다. Vue 3를 기본으로 바라보게 되어 있습니다. 그래서 가급적 위와 같은 주소보다는 아래와 같이 버전이 명시된 CDN 주소를 사용하시는 것을 추천드릴게요 😄
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
@@ -89,7 +89,7 @@ Vue 2 라이브러리 CDN 주소와 관련된 글은 아래 링크를 참고하�
 
 ## 주목해야 할 두 번째 변화 - NPM 패키지 버전
 
-뷰의 기본적인 개념을 학습하시고 나면 대부분 NPM과 Vue CLI를 이용해서 프로젝트를 생성하고 라이브러리들을 npm 명령어 기반으로 설치하실 텐데요. 기존에 Vue 2로 학습하고 이미 개발을 하고 계셨던 분들은 아래 명령어가 익숙하실 겁니다.
+뷰의 기본적인 개념을 학습하시고 나면 대부분 NPM과 Vue CLI를 이용해서 프로젝트를 생성하고 라이브러리들을 npm 명령어로 설치하실 텐데요. 기존에 Vue 2로 학습하고 이미 개발을 하고 계셨던 분들은 아래 명령어가 익숙하실 겁니다.
 
 ```sh
 npm i vue
@@ -135,7 +135,7 @@ npm i vuex@3.6.2
 
 ## 주목해야 할 세 번째 변화 - 공식문서 주소
 
-Vue.js를 오랫동안 개발해 오신 분이라면 vuejs.org가 공식 문서 주소라는 걸 알고 계실 겁니다. 20년 9월에 Vue 3가 정식 릴리즈 되고 나서도 Vue 2에서 Vue 3로 소프트 랜딩 시키기 위해 꽤 오랜 기간 Vue 2를 기존 공식 문서로 유지해 왔는데요.
+Vue.js를 오랫동안 개발해 오신 분이라면 vuejs.org가 공식 문서 주소라는 걸 알고 계실 겁니다. 2020년 9월에 Vue 3가 정식 릴리즈 되고 나서도 Vue 2에서 Vue 3로 사용자들이 자연스럽게 넘어갈 수 있도록 꽤 오랜 기간 Vue 2를 기존 공식 문서로 유지해 왔는데요.
 
 오늘부터는 공식 문서의 기준 버전이 Vue 3가 되었습니다. 
 
@@ -154,9 +154,9 @@ Vue.js를 오랫동안 개발해 오신 분이라면 vuejs.org가 공식 문서 
 
 ## Vue 3가 기준 버전이 되었는데 왜 Vue 2를 안내하나요?
 
-실무에서는 여전히 Vue 2를 많이 사용하고 있고 커뮤니티 라이브러리 생태계도 아직은 Vue 2가 더 크고 성숙합니다. 뷰 창시자 에반 입장에서는 커뮤니티가 Vue 2에서 Vue 3로 부드럽게 넘어갈 수 있도록 배려해서 Vue 2를 꽤 오랜 기간 동안 공식 라이브러리로 유지해 준 것 같습니다.
+실무에서는 여전히 Vue 2를 많이 사용하고 있고 커뮤니티 라이브러리 생태계도 아직은 Vue 2가 더 크고 성숙합니다. 뷰 창시자 에반 입장에서는 커뮤니티가 Vue 2에서 Vue 3로 부드럽게 넘어갈 수 있도록 배려해서 Vue 3가 나온 이후에도 Vue 2를 꽤 오랜 기간 동안 공식 라이브러리로 유지해 온 것 같습니다.
 
-그러다 보니 막상 Vue 3로 이동하는 움직임보다 기존 라이브러리 버전인 Vue 2를 고수하는 사용자들이 많았던 것 같습니다. 특히, Vue 3라고 부를 수 있는 가장 큰 특징인 [composition api](https://github.com/vuejs/composition-api)는 Vue 2에서도 사용할 수 있어서 Vue 3로 이동하는 수요가 적었던 것 같아요.
+그러다 보니 막상 Vue 3로 이동하는 움직임보다 기존 라이브러리 버전인 Vue 2를 고수하는 사용자들이 많았던 것 같아요. 특히, Vue 3의 가장 큰 특징인 [composition api](https://github.com/vuejs/composition-api)는 Vue 2에서도 사용할 수 있어서 Vue 3로 이동하는 수요가 적었던 것 같아요.
 
 <figure>
 	<img src="{{ site.url }}/images/posts/web/vuejs/vue3-default/npm-download.png">
@@ -165,7 +165,7 @@ Vue.js를 오랫동안 개발해 오신 분이라면 vuejs.org가 공식 문서 
 
 마지막으로, 실무자 입장에서는 Vue, VueRouter, Vuex와 같은 코어 라이브러리 이외에도 Vuetify, BootstrapVue, VueChart, VueDatepicker, VueTable 등의 커뮤니티 라이브러리를 이용해서 개발을 진행하는데 아직 이 커뮤니티 라이브러리들이 여전히 Vue 3를 제대로 지원하지 못하고 있는 실정입니다.
 
-뷰 코어팀 입장에서는 Vue 3를 기반으로 한 커뮤니티가 충분히 성숙되기를 바라며 시간을 주었는데도 여전히 격차가 크다고 느끼자 Vue 3를 기본 라이브러리로 선택하는 강수를 둔 것으로 보입니다. 이번 변화가 Vue.js 커뮤니티에 긍정적인 영향을 줄 수 있으면 좋겠네요.
+뷰 코어팀 입장에서는 Vue 3를 기반으로 한 커뮤니티가 충분히 성숙되기를 바라며 시간을 주었는데도 여전히 격차가 크다고 느끼자 Vue 3를 기본 라이브러리로 선택하는 강수를 둔 것으로 보입니다. 이번 변화가 Vue.js 커뮤니티에 긍정적인 영향이 되었으면 좋겠네요.
 
 ## FAQ
 
@@ -173,24 +173,27 @@ Vue.js를 오랫동안 개발해 오신 분이라면 vuejs.org가 공식 문서 
 
 ##### Q. Vue 2는 그럼 더 이상 쓰면 안되는거 아닌가요?
 
-[지난번 RFC](https://github.com/vuejs/rfcs/discussions/296)에서 에반이 Vue 3의 주요 특징을 Vue 2에서도 사용할 수 있게 라이브러리 지원을 강화한다고 했습니다. 기준 라이브러리가 Vue 3가 되었다고 해서 커뮤니티의 대다수를 차지하는 라이브러리 버전을 포기하진 못할 겁니다. 점진적으로 커뮤니티 중심 버전이 3이 되도록 기존 Vue 2 사용자들도 지원해 줄 것이라고 봅니다.
+[지난번 RFC](https://github.com/vuejs/rfcs/discussions/296)에서 에반이 Vue 3의 주요 특징을 Vue 2에서도 사용할 수 있게 라이브러리 지원을 강화한다고 했습니다. 기준 라이브러리가 Vue 3가 되었다고 해서 커뮤니티의 대다수를 차지하는 라이브러리 버전을 포기하진 못할 겁니다. 점진적으로 커뮤니티 중심 버전이 3이 되도록 기존 Vue 2 라이브러리도 지원해 줄 것으로 보입니다.
 
 ##### Q. 뷰 CLI로 프로젝트를 생성할 때 그럼 Vue 3만 선택할 수 있는 건가요?
 
-`vue create 프로젝트이름` 명령어를 입력하시면 보통 아래와 같이 `Manually select features`를 선택해서 서비스에 맞게 프로젝트를 
-구성하실텐데요. 이 때 Vue.js 버전을 2 버전으로 선택하시면 됩니다.
+뷰 프로젝트를 생성하기 위해 아래 명령어를 입력하실텐데요.
+
+```sh
+vue create 프로젝트이름
+```
+
+보통 여기서 서비스 성격에 맞춰 프로젝트를 구성하기 위해 `Manually select features`를 선택하실 겁니다. 이 때 Vue.js 버전을 2 버전으로 선택하시면 됩니다.
 
 ![vue-cli-guide]({{ site.url }}/images/posts/web/vuejs/vue3-default/cli-commands.png)
 
 ##### Q. Vue 2로 뷰를 배웠는데 그럼 Vue 3를 다시 배워야 할까요?
 
-Vue 2로 학습하신 내용 모두 Vue 3에서 사용하실 수 있습니다. 반응성, 컴포넌트, 라우터, 뷰엑스 모두 Vue 2와 Vue 3 동일한 개념을 기반으로 하고 있기 때문에 오히려 교육 레퍼런스가 많은 Vue 2로 배우시는게 더 수월하실 거예요. Vue 3는 `setup()` 이라는 API 하나 정도만 더 알고 계시면 됩니다.
+Vue 2로 학습하신 내용 모두 Vue 3에서 사용하실 수 있습니다. 반응성, 컴포넌트, 라우터, 뷰엑스 등의 주요 개념 모두 Vue 2와 Vue 3에서 동일하게 적용되기 때문에 오히려 교육 레퍼런스가 많은 Vue 2로 배우시는게 더 수월하실 거예요. Vue 3는 Vue 2에서 배운 내용을 바탕으로 `setup()` 이라는 API 하나 정도만 더 알고 계시면 됩니다 😄
 
 Vue 2와 Vue 3의 차이점이 궁금하시다면 제가 작년 11월에 발표한 아래 영상을 참고해 보세요 :)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0OG00YQeMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- - <a target="_blank" href="https://www.youtube.com/watch?v=Z0OG00YQeMg">Can I use... Vue 3? 2021 페이스북 프런트엔드 개발자 그룹 컨퍼런스</a> -->
 
 ## 마무리
 
