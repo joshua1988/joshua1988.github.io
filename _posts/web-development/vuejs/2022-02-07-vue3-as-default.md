@@ -3,7 +3,7 @@ layout: article
 title: 'Vue 3, 기본 버전이 되다'
 date: 2022-02-07 23:05:32 +0900
 categories: [web-development, vuejs]
-excerpt: '22년 초에 일어난 Vue.js 진영의 큰 변화를 살펴봅니다. 기본 라이브러리 버전이 된 Vue 3 이야기'
+excerpt: '22년 초에 일어난 Vue.js 진영의 큰 변화를 살펴봅니다. 라이브러리 기본 버전이 된 Vue 3 이야기'
 image:
   teaser: posts/web/vuejs/vue3.png
   credit: Yurim Jin
