@@ -40,10 +40,10 @@ tags:
 ## 온라인 E북(무료)
 
 <figure class="third">
+  <a href="https://joshua1988.github.io/vue-camp/" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/cracking-vuejs.png"></a>
 	<a href="https://joshua1988.github.io/webpack-guide/" target="_blank"><img src="{{ site.url }}/images/posts/web/webpack/webpack-guide.png"></a>
 	<a href="https://joshua1988.github.io/ts/" target="_blank"><img src="{{ site.url }}/images/posts/web/typescript/ts-handbook.png"></a>
-	<a href="https://joshua1988.github.io/es6-online-book/" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/es6-guide.png"></a>
-	<figcaption>Webpack 핸드북, 타입스크립트 핸드북, ES6 핸드북</figcaption>
+	<figcaption>Cracking Vue.js, Webpack 핸드북, 타입스크립트 핸드북</figcaption>
 </figure>
 
 ## 온라인 강의
