@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "개발자도 알면 좋은 UI 디자인"
+title: "개발자도 알면 좋은 UI 디자인과 디자인 시스템"
 date: 2019-12-10 17:30:32 +0900
 categories: [web-development, design]
 excerpt: "개발자들도 알아두면 좋은 UI 디자인과 디자인 시스템"
@@ -22,6 +22,7 @@ tags:
 - 디자인 프로그래밍
 - UI 디자인
 - UI 디자인 시스템
+- 디자인시스템
 - 웹 디자인
 - ui ux
 - ui
