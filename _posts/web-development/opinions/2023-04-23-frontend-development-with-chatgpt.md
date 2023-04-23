@@ -204,3 +204,26 @@ ChatGPT는 무료로도 충분히 사용할 만한 도구입니다. 그런데 �
 오늘은 한 달 넘게 사용한 ChatGPT 후기와 간단한 생각을 적어봤습니다. 블로그 글도 참 오랜만에 썼네요. 1년이 넘는 기간 동안 블로그 글을 쓰지 못한 게 반성이 됩니다. 그렇다고 이 기간 동안 글을 안 쓰진 않았어요. 
 
 곧 제 책 두 권이 출간됩니다. 거진 2년 동안 쓴 것 같아요. 5월과 6월에 각각 한 권씩 나올 것 같은데요. 두 책의 주제는 프런트엔드 개발 이야기와 타입스크립트입니다. 출간되면 또 집필 후기와 기념 이벤트로 찾아뵙겠습니다. 다들 건강하시구요 😄
+
+## 글보다 더 쉽게 배우는 온라인 강좌
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
+	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-중급?inst=dd3b6c65&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv2.png"></a>
+	<a href="https://www.inflearn.com/course/vue-js?inst=c76b3a50&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv3.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / Vue.js 중급 / Vue.js 완벽 가이드</figcaption>
+</figure>
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/vue-js-끝내기-캡틴판교?inst=2071ec73&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
+	<a href="https://www.inflearn.com/course/프런트엔드-웹팩?inst=747606f7&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
+	<a href="https://www.inflearn.com/course/pwa?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/pwa.jpg"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 끝장내기 / 프런트엔드 개발자를 위한 웹팩 / PWA 시작하기</figcaption>
+</figure>
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
+  <a href="https://www.inflearn.com/course/타입스크립트-실전?inst=e5a8f85e&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts2.png"></a>
+  <a href="https://www.inflearn.com/course/vue-ts?inst=0ced8395&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-ts.png"></a>
+	<figcaption>인프런 온라인 강의 : 타입스크립트 입문 / 실전 프로젝트로 배우는 타입스크립트 / Vue.js + TypeScript 완벽 가이드</figcaption>
+</figure>
