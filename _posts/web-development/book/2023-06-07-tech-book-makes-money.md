@@ -42,9 +42,9 @@ tags:
 
 ## 들어가며
 
-안녕하세요. 오랜만에 글을 씁니다. 블로그에 글을 올린지 벌써 1년이 넘었네요. 시간 참 빠르게 지나가는 것 같아요. 작년에 많은 일이 있었습니다. 집도 옮기고 차도 사고 팀도 옮기고 결혼도 하고.. 인생에서 굵직굵직하게 느껴지는 이벤트를 한방에 다 처리했네요. 이러저러한 핑계로 그간 글 하나 못 올린 것 같아요. 그런데 사실 글은 계속 꾸준히 쓰고 있었습니다. 공개가 안되었을 뿐이지.. ㅋㅋ
+안녕하세요. 오랜만에 글을 씁니다. 블로그에 글을 올린지 벌써 1년이 넘었네요. 시간 참 빠르게 지나가는 것 같아요. 작년에 많은 일이 있었습니다. 집도 옮기고 팀도 옮기고 결혼도 하고.. 인생에서 굵직굵직하게 느껴지는 이벤트를 한방에 다 처리했네요. 이러저러한 핑계로 그간 글 하나 못 올린 것 같아요. 그런데 사실 글은 계속 꾸준히 쓰고 있었습니다. 공개가 안되었을 뿐이지.. ㅋㅋ
 
-오늘은 무려 집필 기간 2년에 빛나는 기술 서적에 대해 얘기하려고 합니다. 글의 제목은 창의력이 뿜뿜 솟아나는 제 아내가 추천해 줬어요. 어그로 제목 한번 가자고. 네 그래서 이 글은 어그로성 제목을 달고 있는 저의 집필 후기입니다. 두 번째 저서 [쉽게 시작하는 타입스크립트](https://www.yes24.com/Product/Goods/119410497)가 어떻게 쓰였는지 후기 들려드릴게요.
+오늘은 무려 집필 기간 2년에 빛나는 기술 서적에 대해 얘기하려고 합니다. 글의 제목은 창의력이 뿜뿜 솟아나는 제 아내가 추천해 줬어요. 어그로 제목 한번 가자고. 네 그래서 이 글은 어그로성 제목을 달고 있는 저의 집필 후기입니다. 두 번째 저서 [쉽게 시작하는 타입스크립트](https://www.yes24.com/Product/Goods/119410497)가 어떻게 나오게 됐는지 후기 들려드릴게요.
   
 ## 기술 서적은 돈이 되는가?
 
@@ -86,7 +86,7 @@ tags:
 
 <figure class="third">
   <a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
-    <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.jpg">
+    <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.png">
   </a>
 	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank">
     <img src="{{ site.url }}/images/posts/web/inflearn/ts1.png">
