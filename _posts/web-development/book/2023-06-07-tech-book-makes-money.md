@@ -84,15 +84,13 @@ tags:
 
 만약, 더 자세히 알아보고 싶다면 온라인 강의나 이번에 출간되는 쉽게 시작하는 타입스크립트 도서를 추천드립니다.
 
-<figure>
+<figure class="third">
   <a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
-	  <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.jpg">
+	  <img width="360px" src="{{ site.url }}/images/posts/web/book/ts-book-cover.jpg">
   </a>
-	<figcaption><a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">쉽게 시작하는 타입스크립트</a></figcaption>
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
+	<figcaption><a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">쉽게 시작하는 타입스크립트</a><a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank">타입스크립트 입문 강의</a></figcaption>
 </figure>
-
-- [쉽게 시작하는 타입스크립트](https://www.yes24.com/Product/Goods/119410497)
-- [인프런 타입스크립트 온라인 강의](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%85%EB%AC%B8?inst=f1ae9299&utm_source=instructor&utm_medium=referral&utm_campaign=inflearn_%ED%8A%B8%EB%9E%98%ED%94%BD_promotion-link)
 
 ## 이후의 계획
 
