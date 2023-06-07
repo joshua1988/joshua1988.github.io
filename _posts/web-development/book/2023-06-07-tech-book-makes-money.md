@@ -82,7 +82,7 @@ tags:
 
 [타입스크립트란?](https://joshua1988.github.io/ts/why-ts.html)
 
-만약, 더 자세히 알아보고 싶다면 온라인 강의나 이번에 출간되는 쉽게 시작하는 타입스크립트 도서를 추천드립니다.
+만약, 더 자세히 알아보고 싶다면 온라인 강의나 이번에 출간되는 [쉽게 시작하는 타입스크립트](https://www.yes24.com/Product/Goods/119410497) 도서를 추천드립니다.
 
 <figure class="third">
 	<a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
