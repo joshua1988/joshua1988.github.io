@@ -20,6 +20,12 @@ tags:
 - vue.js 강좌
 - vue.js 한글
 - vue.js 시작
+- 타입스크립트
+- 타입스크립트 핸드북
+- 타입스크립트 강의
+- 타입스크립트 책
+- 타입스크립트 도서
+- 타입스크립트 책 추천
 - 뷰 시작하기
 - vuejs 시작하기
 - 웹 개발 기초
@@ -36,6 +42,16 @@ tags:
 학습과 성장, 교육에 관심이 많은 프런트엔드 개발자입니다.<br/>
 실무에서의 치열한 고민을 쉽게 풀어 주니어의 성장을 이끄는데 관심이 많습니다.<br/>
 그간 작업한 지식 공유 결과물은 아래에서 확인하실 수 있습니다 😄<br/>
+
+## 저서
+
+<figure class="third">
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg"></a>
+  <a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
+    <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.png">
+  </a>
+	<figcaption>Do it! Vue.js 입문(2018) / 쉽게 시작하는 타입스크립트(2023)</figcaption>
+</figure>
 
 ## 온라인 E북(무료)
 
@@ -86,13 +102,6 @@ tags:
 
 강의 요청 문의는 아래 이메일로 연락주세요. <br>
 <a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
-
-## 저서
-
-<figure class="third">
-	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg"></a>
-	<figcaption>Do it! Vue.js 입문</figcaption>
-</figure>
 
 ## SNS
 
