@@ -449,7 +449,7 @@ getData().then(function(result) {
 </figure>
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/typescript-beginner-kor.png"></a>
+	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
   <a href="https://www.inflearn.com/course/타입스크립트-실전?inst=e5a8f85e&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts2.png"></a>
   <a href="https://www.inflearn.com/course/프런트엔드-웹팩?inst=747606f7&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
 	<figcaption>인프런 온라인 강의 : 타입스크립트 입문 / 실전 프로젝트로 배우는 타입스크립트 / 프런트엔드 개발자를 위한 웹팩</figcaption>
@@ -457,7 +457,7 @@ getData().then(function(result) {
 
 ## 신규 도서가 출간되었어요 🎁
 
-프런트엔드 개발의 대세 타입스크립트를 쉽고 재밌게 배울 수 있는 책입니다 😄
+프런트엔드 개발의 대세인 타입스크립트를 쉽고 재밌게 배울 수 있는 책입니다 😄
 
 <figure class="third">
 	<a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
