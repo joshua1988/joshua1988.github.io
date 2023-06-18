@@ -2,11 +2,21 @@
 permalink: about/
 layout: article
 # layout: profile
-title: About Me
+title: 소개
 excerpt: "Singing Computer Scientist"
 tags:
 - 캡틴판교
 - 장기효
+- 타입스크립트
+- 타입스크립트 핸드북
+- 타입스크립트 강의
+- 타입스크립트 책
+- 타입스크립트 도서
+- 타입스크립트 책 추천
+- 프론트엔드 개발 면접
+- 프론트엔드 개발 강의
+- Vue.js 강의
+- typescript 강의
 - vue.js 캡틴판교
 - 프론트엔드 개발
 - 프론트엔드 개발자
@@ -20,12 +30,6 @@ tags:
 - vue.js 강좌
 - vue.js 한글
 - vue.js 시작
-- 타입스크립트
-- 타입스크립트 핸드북
-- 타입스크립트 강의
-- 타입스크립트 책
-- 타입스크립트 도서
-- 타입스크립트 책 추천
 - 뷰 시작하기
 - vuejs 시작하기
 - 웹 개발 기초
@@ -36,8 +40,6 @@ tags:
 - 패스트캠퍼스
 - 패스트캠퍼스 강사
 ---
-
-## 소개
 
 학습과 성장, 교육에 관심이 많은 프런트엔드 개발자입니다.<br/>
 실무에서의 치열한 고민을 쉽게 풀어 주니어의 성장을 이끄는데 관심이 많습니다.<br/>
@@ -109,3 +111,11 @@ tags:
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+## 유튜브 프런트엔드 개발 상담소
+
+프런트엔드 개발 이야기와 취직, 이직 준비, 공부 방법에 대해서 알고 싶다면 아래 유튜브를 참고하세요.
+[https://www.youtube.com/@captainpangyo/](https://www.youtube.com/@captainpangyo/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?start=748" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
