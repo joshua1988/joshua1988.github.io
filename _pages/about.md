@@ -107,8 +107,8 @@ tags:
 
 ## SNS
 
-<a class="btn-social youtube" href="https://www.youtube.com/@captainpangyo/"><i class="fa fa-google" aria-hidden="true"></i></a>
-<a class="btn-social twitter" href="mailto:jangkeehyo@gmail.com"><i class="fa fa-google" aria-hidden="true"></i></a>
+<a class="btn-social youtube" href="https://www.youtube.com/@captainpangyo/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a class="btn-social twitter" href="https://twitter.com/jangkeehyo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 <a class="btn-social github" href="https://github.com/joshua1988"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a class="btn-social linkedin" href="https://www.linkedin.com/in/gihyojoshuajang/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 <a class="btn-social facebook" href="https://www.facebook.com/CaptainPangyo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
