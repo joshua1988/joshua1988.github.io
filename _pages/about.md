@@ -115,7 +115,6 @@ tags:
 ## 유튜브 프런트엔드 개발 상담소
 
 프런트엔드 개발 이야기와 취직, 이직 준비, 공부 방법에 대해서 알고 싶다면 아래 유튜브를 참고하세요.
-[https://www.youtube.com/@captainpangyo/](https://www.youtube.com/@captainpangyo/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?start=748" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
