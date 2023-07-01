@@ -114,7 +114,7 @@ tags:
 보통 요즘의 프론트엔드 개발 커리어는 아래와 같은 흐름으로 만들어 나가는 것 같습니다.
 
 <figure>
-  <img src="{{ site.url }}/images/posts/web/book/ts-book-review/fe-career.png">
+  <img src="{{ site.url }}/images/posts/web/book/ts-book-review/fe-learning-map.png">
 	<figcaption>프론트엔드 개발 학습 로드맵</figcaption>
 </figure>
 
