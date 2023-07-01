@@ -48,11 +48,16 @@ tags:
 ## 저서
 
 <figure class="third">
-	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank"><img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg"></a>
+	<a href="http://www.yes24.com/24/goods/58206961?scode=032&OzSrank=1" target="_blank">
+    <img src="{{ site.url }}/images/posts/web/vuejs/vue-yes24.jpeg">
+  </a>
   <a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
     <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.png">
   </a>
-	<figcaption>Do it! Vue.js 입문(2018) / 쉽게 시작하는 타입스크립트(2023)</figcaption>
+  <a href="https://www.yes24.com/Product/Goods/118444205" target="_blank">
+    <img src="{{ site.url }}/images/posts/web/book/iam-naver-fe.jpeg">
+  </a>
+	<figcaption>Do it! Vue.js 입문(2018) / 쉽게 시작하는 타입스크립트(2023) / 나는 네이버 프런트엔드 개발자입니다(2023)</figcaption>
 </figure>
 
 ## 온라인 E북(무료)
