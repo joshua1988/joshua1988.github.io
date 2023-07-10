@@ -156,14 +156,14 @@ tags:
   <img src="{{ site.url }}/images/posts/web/book/ts-book-review/gilbut.png">
 </figure>
 
-- [쉽게 시작하는 타입스크립트 - Yes 24 도서 구매 링크](https://www.yes24.com/Product/Goods/119410497)
-
 <figure class="third">
 	<a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
     <img src="{{ site.url }}/images/posts/web/book/ts-book-cover.png">
   </a>
 	<figcaption>쉽게 시작하는 타입스크립트 도서</figcaption>
 </figure>
+
+- [쉽게 시작하는 타입스크립트 - Yes 24 도서 구매 링크](https://www.yes24.com/Product/Goods/119410497)
 
 
 
