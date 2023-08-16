@@ -286,6 +286,17 @@ arr.forEach(function () {
 
 <p class="notice">본 글은 <a href="https://www.sitepoint.com/function-expressions-vs-declarations/">Site Point 의 Function Expressions vs Function Declarations</a> 를 참고했습니다.</p>
 
+## 글보다 더 쉽게 배우는 온라인 강좌
+
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
+  <a href="https://www.inflearn.com/roadmaps/3" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-roadmap.png"></a>
+  <a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / Vue.js 프런트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵</figcaption>
+</figure>
+
 ## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
 
 매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
