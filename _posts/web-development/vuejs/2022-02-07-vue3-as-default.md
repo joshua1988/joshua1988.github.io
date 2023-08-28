@@ -44,7 +44,7 @@ tags:
 
 안녕하세요. 오랜만의 기술 글입니다. 작년에는 회사, 멘토링, 유튜브, 개인 작업 때문에 바빠서 기술 글을 많이 못 올렸네요. 올해는 여러분에게 도움 될 만할 글들을 좀 더 자주 올리려고 합니다. 많은 관심 부탁드릴게요 😄
 
-오늘은 Vue 3에 대한 글을 작성합니다. 퇴근하자마자 인프런 질의 게시판에 올라온 질문들을 보니 빨리 정리해서 올려야겠다는 생각이 들어서 글을 쓰게 되었어요. 아마 제 강의나 학습 자료로 Vue.js를 배우고 실무에서 또 사용하고 계시는 분들이 많을 텐데요. 이제 막 Vue.js를 배우시는 분들 그리고 실무에서 오랜만에 뷰 CLI로 프로젝트를 생성하실 분들께 좋은 참고 자료가 되었으면 좋겠습니다 😄
+오늘은 Vue 3에 대한 글을 작성합니다. 이전에 [Vue 3 가볍게 훑어보기](https://joshua1988.github.io/web-development/vuejs/vue3-coming/) 글을 작성했었는데요. 퇴근하자마자 인프런 질의 게시판에 올라온 질문들을 보니 빨리 정리해서 올려야겠다는 생각이 들어서 글을 쓰게 되었어요. 아마 제 강의나 학습 자료로 Vue.js를 배우고 실무에서 또 사용하고 계시는 분들이 많을 텐데요. 이제 막 Vue.js를 배우시는 분들 그리고 실무에서 오랜만에 뷰 CLI로 프로젝트를 생성하실 분들께 좋은 참고 자료가 되었으면 좋겠습니다 😄
 
 그럼 시작할게요!
 
@@ -194,6 +194,10 @@ Vue 2로 학습하신 내용 모두 Vue 3에서 사용하실 수 있습니다. �
 Vue 2와 Vue 3의 차이점이 궁금하시다면 제가 작년 11월에 발표한 아래 영상을 참고해 보세요 :)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0OG00YQeMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### Q. Vue 3에 대한 내용은 어디서 알 수 있을까요?
+
+[Vue 3 가볍게 훑어보기](https://joshua1988.github.io/web-development/vuejs/vue3-coming/) 글을 참고해 보세요 😄
 
 ## 마무리
 
