@@ -92,6 +92,11 @@ tags:
 	<figcaption>인프런 온라인 강의 : 타입스크립트 입문 / 실전 프로젝트로 배우는 타입스크립트 / Vue.js + TypeScript 완벽 가이드</figcaption>
 </figure>
 
+<figure class="third">
+	<a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue 3 시작하기</figcaption>
+</figure>
+
 ## 오프라인 강의
 
 <figure class="half">
