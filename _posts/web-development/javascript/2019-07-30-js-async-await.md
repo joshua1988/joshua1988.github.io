@@ -368,7 +368,7 @@ async function logTodoTitle() {
 
 ## 신규 도서가 출간되었어요 🎁
 
-프런트엔드 개발의 대세인 타입스크립트를 쉽고 재밌게 배울 수 있는 책입니다 😄
+프런트엔드 개발의 대세인 타입스크립트를 쉽고 재밌게 배울 수 있는 책입니다 😄 [저자가 정리한 도서 후기](https://joshua1988.github.io/web-development/tech-book-makes-money/#%EC%9D%B4-%EC%B1%85%EC%9D%98-%ED%8A%B9%EC%A7%95)
 
 <figure class="third">
 	<a href="https://www.yes24.com/Product/Goods/119410497" target="_blank">
