@@ -217,17 +217,27 @@ auth() 메서드로 인증을 거치고 나면 콜백 함수 authDone()이 실�
 - [2탄 - 자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
 - [3탄 - 자바스크립트 async와 await](https://joshua1988.github.io/web-development/javascript/js-async-await/)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+## 글보다 더 쉽게 배우는 온라인 강의
 
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
 
+### 온라인 강의 - 로드맵
+
 <figure class="third">
-	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
   <a href="https://www.inflearn.com/roadmaps/3" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-roadmap.png"></a>
   <a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / Vue.js 프런트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵</figcaption>
+	<a href="https://www.inflearn.com/roadmaps/387" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts-roadmap.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵 / 타입스크립트 학습 로드맵</figcaption>
 </figure>
 
+### 온라인 강의 - 개별
+
+<figure class="third">
+	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
+  <a href="https://inf.run/nGyA" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/learn-react-by-making.png"></a>
+  <a href="https://www.inflearn.com/course/vue-js-끝내기-캡틴판교?inst=2071ec73&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / 만들면서 배우는 리액트 / Vue.js 끝장내기</figcaption>
+</figure>
 <figure class="third">
 	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
   <a href="https://www.inflearn.com/course/타입스크립트-실전?inst=e5a8f85e&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts2.png"></a>

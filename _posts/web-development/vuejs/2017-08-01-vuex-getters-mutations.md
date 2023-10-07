@@ -409,7 +409,7 @@ Vuex 의 마지막 속성인 Actions 와 Vuex 폴더 구조화는 다음 글에�
 [Vuex 시작하기 1탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-start/) <br>
 [Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+## 글보다 더 쉽게 배우는 온라인 강의
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
 
 <figure class="third">

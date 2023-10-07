@@ -205,7 +205,7 @@ ChatGPT는 무료로도 충분히 사용할 만한 도구입니다. 그런데 �
 
 곧 제 책 두 권이 출간됩니다. 거진 2년 동안 쓴 것 같아요. 5월과 6월에 각각 한 권씩 나올 것 같은데요. 두 책의 주제는 프런트엔드 개발 이야기와 타입스크립트입니다. 출간되면 또 집필 후기와 기념 이벤트로 찾아뵙겠습니다. 다들 건강하시구요 😄
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+## 글보다 더 쉽게 배우는 온라인 강의
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>

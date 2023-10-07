@@ -398,7 +398,7 @@ Parent 컴포넌트에서 props 속성으로 `counter`를 전달받던 방식에
 [Vuex 시작하기 2탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-getters-mutations/) <br>
 [Vuex 시작하기 3탄 바로가기](https://joshua1988.github.io/web-development/vuejs/vuex-actions-modules/)
 
-## 글보다 더 쉽게 배우는 온라인 강좌
+## 글보다 더 쉽게 배우는 온라인 강의
 
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
 
