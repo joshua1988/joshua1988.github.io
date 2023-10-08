@@ -1,7 +1,7 @@
 ---
 permalink: singing/
 layout: archive
-title: Sharing my stories through Singing
+title: 노래 녹음
 ---
 <div class="tiles">
 {% for post in site.categories.music %}

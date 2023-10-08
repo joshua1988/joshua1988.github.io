@@ -1,7 +1,7 @@
 ---
 permalink: tech/
 layout: archive
-title: Web & Mobile Technology
+title: 웹 개발 & 프론트엔드 개발
 ---
 <div class="tiles">
 {% for post in site.categories.web-development %}

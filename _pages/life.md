@@ -1,7 +1,7 @@
 ---
 permalink: life/
 layout: archive
-title: Things we do in daily lives
+title: 일상 생활 관련
 ---
 <div class="tiles">
 {% for post in site.categories.life %}
