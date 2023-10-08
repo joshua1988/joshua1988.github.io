@@ -1,6 +1,6 @@
 # Site wide configuration
-title: "캡틴판교"
-description: "Learn, code and sing"
+title: "캡틴판교 블로그"
+description: "프론트엔드 개발 학습 방법과 자료"
 logo: share_logo.png # 120x120 px default image used for Twitter summary card
 # teaser image is 400x250px
 teaser: # 400x250 px default teaser image used in image archive grid
