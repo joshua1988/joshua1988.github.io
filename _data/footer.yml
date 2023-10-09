@@ -1,12 +1,12 @@
 # Footer navigation links
-- title: Tech
+- title: 프론트엔드 개발
   url: /tech/
 
-- title : Singing
+- title : 노래 녹음
   url: /singing/
 
-- title : Life
+- title : 일상 생활
   url: /life/
 
-- title: About
+- title: 프로필
   url: /about/

@@ -1,13 +1,13 @@
 # Site navigation links
-- title: Tech
+- title: 프론트엔드 개발
   url: /tech/
   excerpt: "Useful information in Software Development"
   image:
-- title: Singing
+- title: 노래 녹음
   url: /singing/
   excerpt: "Love to sing a song for people"
   image:
-- title: Life
+- title: 일상 생활
   url: /life/
   excerpt: "Things we do in daily lives"
   image:
@@ -15,7 +15,7 @@
 #   url: /english/
 #   excerpt: "Let's crack the English"
 #   image:
-- title: About
+- title: 프로필
   url: /about/
   excerpt: "Who is Captain Pangyo?"
   image:
