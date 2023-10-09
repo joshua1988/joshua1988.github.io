@@ -5,11 +5,11 @@
   image:
 - title: 노래 녹음
   url: /singing/
-  excerpt: "Love to sing a song for people"
+  excerpt: "홈 레코딩"
   image:
 - title: 일상 생활
   url: /life/
-  excerpt: "Things we do in daily lives"
+  excerpt: "부동산, 경제, 여행, 어학"
   image:
 # - title: English
 #   url: /english/
@@ -17,7 +17,7 @@
 #   image:
 - title: 프로필
   url: /about/
-  excerpt: "Who is Captain Pangyo?"
+  excerpt: "온,오프라인 강의와 저서 및 개발 경력 소개"
   image:
 # Page navigation for categories on sliding navigation
 - title: Progressive Web Apps
