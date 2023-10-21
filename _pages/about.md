@@ -130,6 +130,18 @@ tags:
 강의 요청 문의는 아래 이메일로 연락주세요. 📬<br>
 <a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
 
+## 외부 강연
+
+- [2023 점핏 - 타입스크립트로 FE 개발 레벨업](https://levelup-with-ts.netlify.app/)
+- [2022 W3C HTML5 컨퍼런스 - TypeScript로 Vue.js 다시 쓰기](https://event-us.kr/web/event/51029)
+- [2022 인프콘 - 운영 중인 Vue.js 웹 서비스를 타입스크립트로 다시 쓰기](https://infcon2022-vuets.netlify.app/)
+- [2021 W3C HTML5 컨퍼런스 - Vue Composition과 TypeScript](https://event-us.kr/web/event/23632)
+- [2021 FEConf - Can I use Vue 3?](https://www.youtube.com/watch?v=Z0OG00YQeMg)
+- [2020 W3C HTML5 컨퍼런스 - 2020년의 Web과 PWA](https://m.onoffmix.com/event/225007)
+- [2019 W3C HTML5 컨퍼런스 - Vue 입문자가 실무에서 주의해야 할 5가지 실수](https://m.onoffmix.com/event/194459)
+- [2019 FEConf - Vue 입문자가 실무에서 주의해야 할 5가지 특징](https://www.youtube.com/watch?v=Z9OGUU6G8vM&list=PLZl3coZhX98rhAwsQ7ZuT4ItnsaY1sRcd&index=16)
+- [2018 W3C HTML5 컨퍼런스 - Progressive Web Apps - PWA 활용처와 개발 방법](https://m.onoffmix.com/event/157648)
+
 ## SNS
 
 <a class="btn-social youtube" href="https://www.youtube.com/@captainpangyo/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
@@ -143,4 +155,3 @@ tags:
 프런트엔드 개발 이야기와 취직, 이직 준비, 공부 방법에 대해서 알고 싶다면 아래 유튜브를 참고하세요.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?start=748" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
