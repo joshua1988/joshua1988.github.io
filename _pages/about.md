@@ -138,6 +138,7 @@ tags:
 - [2021 W3C HTML5 컨퍼런스 - Vue Composition과 TypeScript](https://event-us.kr/web/event/23632)
 - [2021 FEConf - Can I use Vue 3?](https://www.youtube.com/watch?v=Z0OG00YQeMg)
 - [2020 W3C HTML5 컨퍼런스 - 2020년의 Web과 PWA](https://m.onoffmix.com/event/225007)
+- [2019 Developer Circles from Facebook in Hanoi - Dev Meetup Speaker]()
 - [2019 W3C HTML5 컨퍼런스 - Vue 입문자가 실무에서 주의해야 할 5가지 실수](https://m.onoffmix.com/event/194459)
 - [2019 FEConf - Vue 입문자가 실무에서 주의해야 할 5가지 특징](https://www.youtube.com/watch?v=Z9OGUU6G8vM&list=PLZl3coZhX98rhAwsQ7ZuT4ItnsaY1sRcd&index=16)
 - [2018 W3C HTML5 컨퍼런스 - Progressive Web Apps - PWA 활용처와 개발 방법](https://m.onoffmix.com/event/157648)
