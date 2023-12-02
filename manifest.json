@@ -3,19 +3,14 @@
   "name": "Captain Pangyo's tech blog",
   "icons": [
     {
-      "src": "images/icons/48x.png",
+      "src": "images/icons/72x.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "72x72"
     },
     {
       "src": "images/icons/96x.png",
       "type": "image/png",
       "sizes": "96x96"
-    },
-    {
-      "src": "images/icons/120x.png",
-      "type": "image/png",
-      "sizes": "120x120"
     },
     {
       "src": "images/icons/128x.png",
@@ -31,16 +26,6 @@
       "src": "images/icons/152x.png",
       "type": "image/png",
       "sizes": "152x152"
-    },
-    {
-      "src": "images/icons/167x.png",
-      "type": "image/png",
-      "sizes": "167x167"
-    },
-    {
-      "src": "images/icons/180x.png",
-      "type": "image/png",
-      "sizes": "180x180"
     },
     {
       "src": "images/icons/192x.png",
