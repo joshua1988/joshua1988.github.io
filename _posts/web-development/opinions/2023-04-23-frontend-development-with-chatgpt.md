@@ -2,7 +2,7 @@
 layout: article
 title: "ChatGPT를 대하는 프런트엔드 개발자의 자세"
 date: 2023-04-23 12:52:32 +0900
-categories: web-development
+categories: [web-development, opinions]
 excerpt: "ChatGPT 소개와 사용방법. ChatGPT 잘쓰는 방법. ChatGPT를 실무에서 써본 후기. ChatGPT는 개발자를 대체할까?"
 image:
   teaser: posts/web/chatgpt/chatgpt-with-fe.png
