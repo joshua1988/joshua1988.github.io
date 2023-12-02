@@ -5,7 +5,7 @@ date: 2023-12-02 14:30:32 +0900
 categories: [web-development, opinions]
 excerpt: "ChatGPT에 질문하는 방법과 질의문 작성 꿀팁. 질문을 어떻게 하면 좋을까?"
 image:
-  teaser: posts/web/chatgpt/how-to-use-chatgpt-part1.jpeg
+  teaser: posts/thumbnails/how-to-use-chatgpt-part1.jpeg
   credit: 캡틴판교
   creditlink: https://www.youtube.com/channel/@captainpangyo
   #url to their site or licensing
@@ -58,7 +58,7 @@ tags:
 
 ## 핵심 원칙 1 - 구체적이고 정확한 질의문 작성
 
-짧은 것보다 긴 것이 대체적으로 더 좋은 결과를 만듭니다.
+짧은 것보다 긴 것이 대체적으로 더 좋은 결과를 만듭니다. 질의문을 할 때 꼭 알아두면 좋은 전략 4가지를 볼게요.
 
 - 전략 1: 구분자를 꼭 사용합니다. 아래 예시를 볼까요.
 

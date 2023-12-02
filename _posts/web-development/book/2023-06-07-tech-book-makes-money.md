@@ -5,7 +5,7 @@ date: 2023-06-07 12:52:32 +0900
 categories: web-development
 excerpt: "기술 서적 집필에 관한 모든 것. 저자 인세에 대한 비밀. 집필 후기. 쉽게 시작하는 타입스크립트 도서 소개"
 image:
-  teaser: posts/web/book/book-make-money.png
+  teaser: posts/thumbnails/tech-book-makes-money.jpeg
   credit: 캡틴판교
   creditlink: https://www.youtube.com/@captainpangyo
   #url to their site or licensing

@@ -5,7 +5,7 @@ date: 2023-08-20 18:30:32 +0900
 categories: web-development
 excerpt: "신입, 주니어 개발자가 알아두면 좋은 성장의 도구들. 질문하는 방법, 코드 리뷰, 기록과 공유"
 image:
-  teaser: posts/web/growth-tools.png
+  teaser: posts/thumbnails/my-growth-tools.jpeg
   credit: 캡틴판교
   creditlink: https://joshua1988.github.io/
   #url to their site or licensing
