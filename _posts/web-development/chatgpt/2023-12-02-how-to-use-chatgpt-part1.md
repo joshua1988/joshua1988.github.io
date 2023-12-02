@@ -5,7 +5,7 @@ date: 2023-12-02 14:30:32 +0900
 categories: [web-development, opinions]
 excerpt: "ChatGPT에 질문하는 방법과 질의문 작성 꿀팁. 질문을 어떻게 하면 좋을까?"
 image:
-  teaser: posts/thumbnails/how-to-use-chatgpt-part1.jpeg
+  teaser: thumbnails/how-to-use-chatgpt-part1.jpeg
   credit: 캡틴판교
   creditlink: https://www.youtube.com/channel/@captainpangyo
   #url to their site or licensing

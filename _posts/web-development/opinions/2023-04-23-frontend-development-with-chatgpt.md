@@ -5,7 +5,7 @@ date: 2023-04-23 12:52:32 +0900
 categories: [web-development, opinions]
 excerpt: "ChatGPT 소개와 사용방법. ChatGPT 잘쓰는 방법. ChatGPT를 실무에서 써본 후기. ChatGPT는 개발자를 대체할까?"
 image:
-  teaser: posts/thumbnails/fe-thoughts-on-chatgpt.jpeg
+  teaser: thumbnails/fe-thoughts-on-chatgpt.jpeg
   credit: 캡틴판교
   creditlink: https://www.youtube.com/channel/@captainpangyo
   #url to their site or licensing

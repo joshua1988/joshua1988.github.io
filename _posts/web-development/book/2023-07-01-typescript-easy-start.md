@@ -5,7 +5,7 @@ date: 2023-07-01 15:52:32 +0900
 categories: web-development
 excerpt: "쉽게 시작하는 타입스크립트 도서 리뷰. 저자가 객관적으로 생각하는 대상 독자. 짧게 요약해 주는 책의 특징. 누가 언제 읽으면 좋을까?"
 image:
-  teaser: posts/thumbnails/author-book-review.jpeg
+  teaser: thumbnails/author-book-review.jpeg
   credit: 캡틴판교
   creditlink: https://www.yes24.com/Product/Goods/119410497
   #url to their site or licensing
