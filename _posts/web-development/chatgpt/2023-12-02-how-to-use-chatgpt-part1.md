@@ -151,20 +151,22 @@ GPT 답변) 학생이 맞습니다.
 
 ## 모델의 한계
 
-- 허언증 : 그럴싸하지만 실제로는 정확하지 않은 정보를 만들어내는 특징입니다.
+허언증이란 그럴싸하지만 실제로는 정확하지 않은 정보를 만들어내는 특징입니다. 아래 이미지는 눈감고 거짓말하는 챗 지피티의 답변입니다.
 
 <figure>
 	<img src="{{ site.url }}/images/posts/web/chatgpt/how-to-use/hallucination.png">
 	<figcaption>허언증을 남발하는 챗 지피티</figcaption>
 </figure>
 
-- 허언증을 피하기 위해서는 다음과 같이 질의하세요.
+그럼 허언증은 어떻게 피할 수 있을까요? 아래와 같이 질문해 보세요.
 
 ```md
 질의) 캡틴판교 회사의 굴 파스타에 대해서 알려줘
 
 캡틴판교 라는 회사가 있어? 굴 파스타도 제조하거나 판매하고 있나? 이 회사와 관련된 정보를 먼저 찾아봐. 그리고 관련 정보를 바탕으로 답변을 해줘.
 ```
+
+앞에서 거짓말 했던 챗 지피티에게 보다 정확한 질의로 참 교육을 시전합니다.
 
 <figure>
 	<img src="{{ site.url }}/images/posts/web/chatgpt/how-to-use/avoid-hallucination.png">
