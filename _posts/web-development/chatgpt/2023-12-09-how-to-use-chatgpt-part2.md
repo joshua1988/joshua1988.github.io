@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "ChatGPT를 더 잘쓰는 방법 2탄"
+title: "ChatGPT를 더 잘 쓰는 방법 2탄"
 date: 2023-12-09 15:30:32 +0900
 categories: [web-development, opinions]
 excerpt: "ChatGPT 질의 결과 올리는 방법 대방출. 반복 질의 방식과 요약, 실전 적용 등"

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "ChatGPT를 더 잘쓰는 방법 1탄"
+title: "ChatGPT를 더 잘 쓰는 방법 1탄"
 date: 2023-12-02 14:30:32 +0900
 categories: [web-development, opinions]
 excerpt: "ChatGPT에 질문하는 방법과 질의문 작성 꿀팁. 질문을 어떻게 하면 좋을까?"
