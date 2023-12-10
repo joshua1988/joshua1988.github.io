@@ -209,6 +209,15 @@ Vue 2와 Vue 3의 차이점이 궁금하시다면 제가 작년 11월에 발표�
 
 <a target="_blank" href="https://blog.vuejs.org/posts/vue-3-as-the-new-default.html">Vue 3 as the New Default</a>
 
+## Vue 3 학습 로드맵
+
+<figure class="third">
+  <a href="https://www.inflearn.com/roadmaps/746" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/466" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-ts-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
+	<figcaption>Vue 3 완벽 마스터 로드맵 / Vue + TypeScript 학습 로드맵 / React + TypeScript 학습 로드맵</figcaption>
+</figure>
+
 ## 캡틴판교의 온라인 강의
 
 프런트엔드 개발과 Vue.js를 배우고 싶은 분들께 추천드립니다 😄
