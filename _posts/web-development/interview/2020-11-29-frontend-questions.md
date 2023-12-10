@@ -140,3 +140,12 @@ tags:
 아무쪼록 힘든 시기지만 다들 원하시는 곳에서 좋은 개발자로 성장하실 수 있었으면 좋겠습니다. 화이팅! :)
 
 **P.S : 혹시 프런트엔드 개발자로 구직, 이직, 학습 방향에 대해 얘기 나눠보고 싶으신 분들은 [인프런의 멘토링 기능](https://www.inflearn.com/instructors/54224/courses?utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner)을 이용해서 제게 연락 주세요. 도움이 필요한 분들에게 도움이 되고 싶습니다 :)**
+
+## 프론트엔드 개발 학습 로드맵 - 온라인 강의
+
+<figure class="third">
+  <a href="https://www.inflearn.com/roadmaps/746" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/466" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-ts-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
+	<figcaption>Vue 3 완벽 마스터 로드맵 / Vue + TypeScript 학습 로드맵 / React + TypeScript 학습 로드맵</figcaption>
+</figure>
