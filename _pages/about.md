@@ -8,7 +8,15 @@ tags:
 - 캡틴판교
 - 장기효
 - 타입스크립트 강의
+- Vue 3
+- Vue 3 강의
+- Vue 3 로드맵
+- Vue 3 온라인 강의
+- 쉽게 시작하는 타입스크립트
+- Vue 3 강의 추천
 - Vue.js 강의
+- 네이버 개발자
+- 네이버 프론트엔드 개발자
 - 프론트엔드 개발 강의
 - 프론트엔드 개발 학습 로드맵
 - Do it! Vue.js 입문
@@ -75,13 +83,13 @@ tags:
 	<figcaption>Cracking Vue.js, Webpack 핸드북, 타입스크립트 핸드북</figcaption>
 </figure>
 
-## 온라인 강의 - 로드맵
+## 온라인 강의 - 학습 로드맵
 
 <figure class="third">
-  <a href="https://www.inflearn.com/roadmaps/3" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-roadmap.png"></a>
-  <a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
-	<a href="https://www.inflearn.com/roadmaps/387" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts-roadmap.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵 / 타입스크립트 학습 로드맵</figcaption>
+  <a href="https://www.inflearn.com/roadmaps/746" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/466" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-ts-roadmap.png"></a>
+	<a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
+	<figcaption>Vue 3 완벽 마스터 로드맵 / Vue + TypeScript 학습 로드맵 / React + TypeScript 학습 로드맵</figcaption>
 </figure>
 
 ## 온라인 강의 - 개별
@@ -109,7 +117,8 @@ tags:
 
 <figure class="third">
 	<a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue 3 시작하기</figcaption>
+  <a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-composition.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue 3 시작하기 / Vue 3 중급 - Composition API</figcaption>
 </figure>
 
 ## 오프라인 강의
