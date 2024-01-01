@@ -117,8 +117,9 @@ FE 실무 개발 10년차 콘텐츠 제작 7년차 크리에이터입니다.<br/
 
 <figure class="third">
 	<a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
-  <a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-composition.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue 3 시작하기 / Vue 3 중급 - Composition API</figcaption>
+  <a href="https://inf.run/MZgCg" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-composition.png"></a>
+  <a href="https://inf.run/fdprC" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-vue-ts.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue 3 시작하기 / Vue 3 중급 - Composition API / React와 Vue로 배우는 타입스크립트 필수 개념</figcaption>
 </figure>
 
 ## 오프라인 강의
