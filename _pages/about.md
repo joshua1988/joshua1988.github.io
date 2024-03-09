@@ -56,7 +56,7 @@ tags:
 - 패스트캠퍼스 강사
 ---
 
-FE 실무 개발 10년차 콘텐츠 제작 7년차 크리에이터입니다.<br/>
+FE 실무 개발 11년차 콘텐츠 제작 8년차 크리에이터입니다.<br/>
 학습과 성장, 교육에 관심이 많습니다.
 
 ## 저서
@@ -95,6 +95,13 @@ FE 실무 개발 10년차 콘텐츠 제작 7년차 크리에이터입니다.<br/
 ## 온라인 강의 - 개별
 
 <figure class="third">
+	<a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
+  <a href="https://inf.run/mGBwi" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-react.png"></a>
+  <a href="https://inf.run/MZgCg" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-composition.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue 3 시작하기 / 만들면서 배우는 리액트 / Vue 3 중급 - Composition API</figcaption>
+</figure>
+
+<figure class="third">
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
 	<a href="https://www.inflearn.com/course/vue-pwa-vue-js-중급?inst=dd3b6c65&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv2.png"></a>
 	<a href="https://www.inflearn.com/course/vue-js?inst=c76b3a50&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv3.png"></a>
@@ -116,10 +123,8 @@ FE 실무 개발 10년차 콘텐츠 제작 7년차 크리에이터입니다.<br/
 </figure>
 
 <figure class="third">
-	<a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
-  <a href="https://inf.run/MZgCg" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-composition.png"></a>
   <a href="https://inf.run/fdprC" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-vue-ts.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue 3 시작하기 / Vue 3 중급 - Composition API / React와 Vue로 배우는 타입스크립트 필수 개념</figcaption>
+	<figcaption>인프런 온라인 강의 : React와 Vue로 배우는 타입스크립트 필수 개념</figcaption>
 </figure>
 
 ## 오프라인 강의
@@ -134,7 +139,7 @@ FE 실무 개발 10년차 콘텐츠 제작 7년차 크리에이터입니다.<br/
 
 <figure class="full">
 	<img src="{{ site.url }}/images/corporate-classes.png">
-	<figcaption>네이버, 삼성, LG, SK, 이베이 실무자 대상 강의</figcaption>
+	<figcaption>네이버, 삼성, LG, SK, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
 </figure>
 
 강의 요청 문의는 아래 이메일로 연락주세요. 📬<br>
