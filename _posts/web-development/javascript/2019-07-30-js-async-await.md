@@ -354,7 +354,7 @@ async function logTodoTitle() {
 
 <figure class="third">
 	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
-  <a href="https://inf.run/nGyA" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/learn-react-by-making.png"></a>
+  <a href="https://inf.run/mGBwi" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-react.png"></a>
   <a href="https://www.inflearn.com/course/vue-js-끝내기-캡틴판교?inst=2071ec73&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
 	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / 만들면서 배우는 리액트 / Vue.js 끝장내기</figcaption>
 </figure>
