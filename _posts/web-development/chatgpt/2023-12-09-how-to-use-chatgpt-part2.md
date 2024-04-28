@@ -24,6 +24,10 @@ tags:
 - 챗지피티
 - 챗지피티 허언증
 - 허언증
+- 챗지피티 실무
+- 챗지피티 업무 활용
+- 챗gpt 업무 자동화
+- 챗gpt 개발자 핸드북
 - Iterative Prompting
 - ChatGPT 반복 질의
 - 반복 질의
