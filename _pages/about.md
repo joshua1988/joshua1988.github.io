@@ -142,7 +142,7 @@ FE 실무 개발 11년차 콘텐츠 제작 8년차 크리에이터입니다.<br/
 	<figcaption>네이버, 삼성, LG, SK, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
 </figure>
 
-강의 요청 문의는 아래 이메일로 연락주세요. 📬<br>
+강의 요청은 아래 이메일로 문의주세요. 📬<br>
 <a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
 
 ## 외부 강연
