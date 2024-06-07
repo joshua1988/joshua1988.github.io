@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "함수 표현식 vs 함수 선언식"
+title: "함수 표현식 vs 함수 선언문"
 date: 2017-08-21 21:42:13 +0900
 categories: [web-development, javascript]
-excerpt: "(기본) 자바스크립트 함수 표현식과 함수 선언식에는 어떠한 차이점이 있는지 알아봅니다."
+excerpt: "(기본) 자바스크립트 함수 표현식과 함수 선언문에는 어떠한 차이점이 있는지 알아봅니다."
 image:
   teaser: posts/web/javascript/js.png
   credit: Frank Liu #name of the person or site you want to credit
@@ -19,10 +19,10 @@ tags:
 - 자바스크립트 기본
 - 자바스크립트 강좌
 - 자바스크립트 함수 표현식
-- 자바스크립트 함수 선언식
-- 함수 표현식 함수 선언식
-- 자바스크립트 함수 표현식 vs 함수 선언식
-- 함수 표현식 vs 함수 선언식
+- 자바스크립트 함수 선언문
+- 함수 표현식 함수 선언문
+- 자바스크립트 함수 표현식 vs 함수 선언문
+- 함수 표현식 vs 함수 선언문
 - 함수 선언문 함수 표현식
 - 함수 선언
 - 함수 선언문
@@ -46,7 +46,7 @@ tags:
 
 {% include toc.html %}
 
-## 함수 선언식 - Function Declarations
+## 함수 선언문 - Function Declarations
 일반적인 프로그래밍 언어에서의 함수 선언과 비슷한 형식이다.
 
 ```js
@@ -80,10 +80,10 @@ var funcExpression = function () {
 funcExpression(); // 'A function expression'
 ```
 
-## 함수 선언식과 표현식의 차이점
-**함수 선언식은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.**
+## 함수 선언문과 표현식의 차이점
+**함수 선언문은 호이스팅에 영향을 받지만, 함수 표현식은 호이스팅에 영향을 받지 않는다.**
 
-함수 선언식은 코드를 구현한 위치와 관계없이 자바스크립트의 특징인 **호이스팅**에 따라
+함수 선언문은 코드를 구현한 위치와 관계없이 자바스크립트의 특징인 **호이스팅**에 따라
 브라우저가 자바스크립트를 해석할 때 맨 위로 끌어 올려진다.
 
 예를 들어, 아래의 코드를 실행할 때
@@ -139,7 +139,7 @@ sumNumbers 는 함수로 인식하지 않고 변수로 인식한다.
 <p class="notice">호이스팅을 제대로 모르더라도 함수와 변수를 가급적 코드 상단부에서 선언하면, 호이스팅으로 인한 스코프 꼬임 현상은 방지할 수 있다.</p>
 
 ## 함수 표현식의 장점
-'함수 표현식이 호이스팅에 영향을 받지 않는다' 는 특징 이외에도 함수 선언식보다 유용하게 쓰이는 경우는 다음과 같다.
+'함수 표현식이 호이스팅에 영향을 받지 않는다' 는 특징 이외에도 함수 선언문보다 유용하게 쓰이는 경우는 다음과 같다.
 
 - 클로져로 사용
 - 콜백으로 사용 (다른 함수의 인자로 넘길 수 있음)
@@ -280,8 +280,8 @@ arr.forEach(function () {
 
 ## 결론
 
-함수 표현식이 선언식에 비해 가지는 장점이 많지만, 결국에는 이러한 차이점을 인지한 상태에서 일관된 코딩 컨벤션으로
-코드를 작성하는 게 중요하다는 생각이 듭니다. [AirBnb 의 JS Style 가이드](https://github.com/airbnb/javascript) 에서도 함수 선언식보다는 함수 표현식을
+함수 표현식이 선언문에 비해 가지는 장점이 많지만, 결국에는 이러한 차이점을 인지한 상태에서 일관된 코딩 컨벤션으로
+코드를 작성하는 게 중요하다는 생각이 듭니다. [AirBnb 의 JS Style 가이드](https://github.com/airbnb/javascript) 에서도 함수 선언문보다는 함수 표현식을
 지향하고 있는데요. 그래도 자기가 코딩하기 편한 방식으로 구현하는 게 좋지 않을까요?
 
 <p class="notice">본 글은 <a href="https://www.sitepoint.com/function-expressions-vs-declarations/">Site Point 의 Function Expressions vs Function Declarations</a> 를 참고했습니다.</p>
