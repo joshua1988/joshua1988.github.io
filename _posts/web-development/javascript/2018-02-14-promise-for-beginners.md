@@ -448,7 +448,7 @@ getData().then(function(result) {
   <a href="https://www.inflearn.com/roadmaps/3" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-roadmap.png"></a>
   <a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
 	<a href="https://www.inflearn.com/roadmaps/387" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts-roadmap.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵 / 타입스크립트 학습 로드맵</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + TypeScript 학습 로드맵 / TypeScript 학습 로드맵</figcaption>
 </figure>
 
 ### React 강의
