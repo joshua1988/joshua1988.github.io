@@ -355,32 +355,44 @@ itemList.addEventListener('click', function(event) {
 
 ## 글보다 더 쉽게 배우는 온라인 강의
 
-좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강의 목록을 확인해 보세요. <br/>
+4만명이 함께한 베스트 셀러 강의 🚀
 
-### 온라인 강의 - 로드맵
+### 프론트엔드 개발 학습 로드맵
 
 <figure class="third">
   <a href="https://www.inflearn.com/roadmaps/3" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue-roadmap.png"></a>
   <a href="https://www.inflearn.com/roadmaps/714" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/react-ts-roadmap.png"></a>
 	<a href="https://www.inflearn.com/roadmaps/387" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts-roadmap.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + 타입스크립트 학습 로드맵 / 타입스크립트 학습 로드맵</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 프론트엔드 개발 학습 로드맵 / React + TypeScript 학습 로드맵 / TypeScript 학습 로드맵</figcaption>
 </figure>
 
-### 온라인 강의 - 개별
+### React 강의
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/Age-of-Vuejs?inst=72986832&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
-  <a href="https://inf.run/nGyA" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/learn-react-by-making.png"></a>
-  <a href="https://www.inflearn.com/course/vue-js-끝내기-캡틴판교?inst=2071ec73&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
-	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / 만들면서 배우는 리액트 / Vue.js 끝장내기</figcaption>
+  <a href="https://inf.run/mGBwi" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-react.png"></a>
+	<a href="https://inf.run/eTqGZ" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/age-of-next.png"></a>
+  <a href="https://inf.run/rizv" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
+	<figcaption>인프런 온라인 강의 : 만들면서 배우는 리액트 / Next.js 시작하기 / 타입스크립트 입문</figcaption>
+</figure>
+
+### Vue 강의
+
+<figure class="third">
+	<a href="https://inf.run/8ET2" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv1.png"></a>
+  <a href="https://inf.run/cXB4" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-learn.png"></a>
+  <a href="https://inf.run/di3m" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv4.png"></a>
+	<figcaption>인프런 온라인 강의 : Vue.js 시작하기 / Vue 3 시작하기 / Vue.js 끝장내기</figcaption>
 </figure>
 
 <figure class="third">
-	<a href="https://www.inflearn.com/course/타입스크립트-입문?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts1.png"></a>
-  <a href="https://www.inflearn.com/course/타입스크립트-실전?inst=e5a8f85e&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/ts2.png"></a>
+  <a href="https://www.inflearn.com/course/vue-pwa-vue-js-중급?inst=dd3b6c65&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv2.png"></a>
+	<a href="https://www.inflearn.com/course/vue-js?inst=c76b3a50&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/lv3.png"></a>
   <a href="https://www.inflearn.com/course/프런트엔드-웹팩?inst=747606f7&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/webpack.png"></a>
-	<figcaption>인프런 온라인 강의 : 타입스크립트 입문 / 실전 프로젝트로 배우는 타입스크립트 / 프런트엔드 개발자를 위한 웹팩</figcaption>
+	<figcaption>인프런 온라인 강의 : Vue.js 중급 / Vue.js 완벽 가이드 / 프런트엔드 개발자를 위한 웹팩</figcaption>
 </figure>
+
+<a href="https://www.inflearn.com/users/@captain" target="_blank">더 많은 강의가 보고 싶다면 클릭!</a>
 
 ## 신규 도서가 출간되었어요 🎁
 
@@ -393,8 +405,10 @@ itemList.addEventListener('click', function(event) {
 	<figcaption>쉽게 시작하는 타입스크립트 도서</figcaption>
 </figure>
 
-## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
+## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 🎤
 
-매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
+대학생, 취준생, 주니어 개발자를 위한 고민 상담소를 운영합니다. 기존에 진행된 라이브 방송들에서 프론트엔드 개발과 관련된 여러 고민과 사연을 들을 수 있어요 :)
 
-<a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?si=XoZEj0DQ2HbNb4EH&amp;start=1232" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<a href="https://www.youtube.com/@captainpangyo/featured" target="_blank">캡틴판교의 프런트엔드 개발 유튜브 채널 바로 가기</a>
