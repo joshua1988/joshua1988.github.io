@@ -495,4 +495,4 @@ getData().then(function(result) {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?si=XoZEj0DQ2HbNb4EH&amp;start=1232" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>
+<a href="https://www.youtube.com/@captainpangyo/featured" target="_blank">캡틴판교의 프런트엔드 개발 유튜브 채널 바로 가기</a>
