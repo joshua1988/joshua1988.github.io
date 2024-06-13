@@ -98,7 +98,6 @@ React의 기본 문법을 익힌 상태로 Next.js가 제공하는 기능들을 
 
 그리고 Next.js를 시작할 때는 최소한의 필수 지식과 동작 원리를 빠르게 파악할 수 있는 자료를 추천드려요. 마침 제가 이번에 열심히 정리해 둔 자료가 있어서 공유합니다. 처음 시작하시는 분들께는 제가 만든 [Next.js 학습 사이트 - Cracking Next.js](https://cracking-next.vercel.app/docs/intro)를 보시라고 권해 드리고 싶네요.
 
-
 <figure>
   <a href="https://cracking-next.vercel.app" target="_blank">
     <img src="{{ site.url }}/images/posts/web/next/cracking-next.png">
@@ -113,19 +112,13 @@ React의 기본 문법을 익힌 상태로 Next.js가 제공하는 기능들을 
 글보다 영상을 선호하시는 분들이라면 제가 이번에 각 잡고 만든 Next.js 시작하기 강의를 들어보시는 걸 추천해 드려요.
 
 <figure>
-  <img src="{{ site.url }}/images/posts/web/next/learn-next-thubmnail.png">
-  <figcaption>인프런 Next.js 시작하기 강의(6월 중순 오픈 예정)</figcaption>
+  <a href="https://inf.run/eTqGZ" target="_blank">
+    <img src="{{ site.url }}/images/posts/web/next/learn-next-thubmnail.png">
+  </a>  
+  <figcaption>인프런 Next.js 시작하기 강의</figcaption>
 </figure>
 
 위에서 안내해 드린 학습 사이트를 어떤 순서로 보면 좋을지 감을 잡을 수 있을 거예요. 학습 사이트는 덤일뿐 진짜 알맹이는 강의에서 함께 만드는 실전 프로젝트입니다. 따라가면서 같이 만들다 보면 어느새 머리 속에 최소한의 필수 지식과 동작 원리가 들어와 있을 거예요 ❤️
-
-강의는 6월 중순에 오픈됩니다. 관심 있으신 분들은 강의 사전 신청 이벤트에 참여해 보세요. 강의가 오픈되면 제가 알림과 함께 선물을 드릴 예정입니다.
-
-#### Next.js 시작하기 강의 사전 신청 이벤트
-
-- 신청 기간 : 6/12(수)까지
-- 신청 링크 : <a href="https://forms.gle/LhPEsauuHJBUgdVk7" target="_blank">https://forms.gle/LhPEsauuHJBUgdVk7</a>
-- 신청 혜택 : 50% 할인 쿠폰, 캡틴판교 강의 수강권(후속 강의 포함), 멘토링 기회
 
 ## 마무리
 
