@@ -439,7 +439,8 @@ getData().then(function(result) {
 
 ## 글보다 더 쉽게 배우는 온라인 강의
 
-좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
+좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄 <br/>
+4만명의 수강생이 선택한 강의 목록 🚀
 
 ### 프론트엔드 개발 학습 로드맵
 
@@ -475,6 +476,8 @@ getData().then(function(result) {
 	<figcaption>인프런 온라인 강의 : Vue.js 중급 / Vue.js 완벽 가이드 / 프런트엔드 개발자를 위한 웹팩</figcaption>
 </figure>
 
+<a href="https://www.inflearn.com/users/@captain" target="_blank">더 많은 강의가 보고 싶다면 클릭!</a>
+
 ## 신규 도서가 출간되었어요 🎁
 
 프런트엔드 개발의 대세인 타입스크립트를 쉽고 재밌게 배울 수 있는 책입니다 😄 [저자가 정리한 도서 후기](https://joshua1988.github.io/web-development/tech-book-makes-money/#%EC%9D%B4-%EC%B1%85%EC%9D%98-%ED%8A%B9%EC%A7%95)
@@ -486,7 +489,7 @@ getData().then(function(result) {
 	<figcaption>쉽게 시작하는 타입스크립트 도서</figcaption>
 </figure>
 
-## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
+## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 🎤
 
 대학생, 취준생, 주니어 개발자를 위한 고민 상담소를 운영합니다. 기존에 진행된 라이브 방송들에서 프론트엔드 개발과 관련된 여러 고민과 사연을 들을 수 있어요 :)
 
