@@ -488,6 +488,8 @@ getData().then(function(result) {
 
 ## 이해가 잘 안되시나요? 방송에서 직접 물어보세요 :)
 
-매주 토요일 오후 3시 30분에 유튜브 라이브 방송을 진행합니다. 프런트엔드 개발 관련해서 아무거나 여쭤보실 수 있으세요 :)
+대학생, 취준생, 주니어 개발자를 위한 고민 상담소를 운영합니다. 기존에 진행된 라이브 방송들에서 프론트엔드 개발과 관련된 여러 고민과 사연을 들을 수 있어요 :)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b7tUuV8s11I?si=XoZEj0DQ2HbNb4EH&amp;start=1232" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <a href="https://www.youtube.com/watch?v=fL39Yg2H0ig" target="_blank">프런트엔드 개발 상담소 바로가기</a>
