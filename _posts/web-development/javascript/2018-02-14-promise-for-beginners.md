@@ -417,6 +417,10 @@ getData().then(function(result) {
 
 **따라서, 더 많은 예외 처리 상황을 위해 프로미스의 끝에 가급적 catch()를 붙이시기 바랍니다.**
 
+## 영상으로 배워보기
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZxYaXHZ4K5Y?si=qxHzvmTZ9EdGv_s9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 마무리
 
 여태까지 살펴본 설명과 예제로 프로미스의 동작에 대해 감을 좀 잡으셨나요?

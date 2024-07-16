@@ -328,6 +328,10 @@ async function logTodoTitle() {
 앞으로 더 프런트엔드의 이벤트와 데이터 처리가 많아질 것이기 때문에 async await에 대해서 정확히 알아놓으시면 도움이 많이 되실 겁니다.
 그럼 재밌게 코딩하세요! 감사합니다 😄
 
+## 영상으로 배우기
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6BTcR8Pn2og?si=nSpNauiS38bzv8jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <!-- ## async & await 레이스 컨디션
 
 ## async & await 내부 구조 -->
