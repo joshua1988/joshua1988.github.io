@@ -286,6 +286,10 @@ arr.forEach(function () {
 
 <p class="notice">본 글은 <a href="https://www.sitepoint.com/function-expressions-vs-declarations/">Site Point 의 Function Expressions vs Function Declarations</a> 를 참고했습니다.</p>
 
+## 영상으로 배우기
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O7k6SSieOXo?si=_2tXgKwCWVX7YVy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 글보다 더 쉽게 배우는 온라인 강의
 
 좀 더 친절하고 상세한 설명을 원하신다면 아래 강좌를 이용해보시는 것도 좋을 것 같아요 😄
