@@ -18,7 +18,16 @@ tags:
 - 자바스크립트 promise
 - 자바스크립트 promise 예제
 - 자바스크립트 promise then
+- 자바스크립트 promise resolve
+- 자바스크립트 promise async await
+- promise란
+- Promise then
+- Promise all
+- promise 객체 값 가져오기
 - 자바스크립트 프로미스 then
+- js promise
+- js promise란
+- promise result값 가져오기
 - 자바스크립트
 - 자바스크립트 기초
 - 자바스크립트 기초 예제
