@@ -56,7 +56,7 @@ tags:
 - 패스트캠퍼스 강사
 ---
 
-FE 실무 개발 11년차 + 콘텐츠 제작 8년차 크리에이터입니다.<br/>
+FE 실무 개발 11년차 + 콘텐츠 제작 8년차 실무 개발자입니다.<br/>
 학습과 성장, 교육에 관심이 많습니다.
 
 ## 저서
@@ -145,14 +145,15 @@ FE 실무 개발 11년차 + 콘텐츠 제작 8년차 크리에이터입니다.<b
 
 <figure class="full">
 	<img src="{{ site.url }}/images/corporate-classes.png">
-	<figcaption>네이버, 삼성, LG, SK, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
+	<figcaption>네이버, 삼성, LG, SK, 현대자동차, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
 </figure>
 
 강의 요청은 아래 이메일로 문의주세요. 📬<br>
 <a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
 
-## 외부 강연
+## 주요 강연
 
+- [2023 네이버 신입공채 기술직군 대상 특강](https://joshua1988.github.io/web-development/growth-tools-for-developer/)
 - [2023 점핏 - 타입스크립트로 FE 개발 레벨업](https://levelup-with-ts.netlify.app/)
 - [2022 W3C HTML5 컨퍼런스 - TypeScript로 Vue.js 다시 쓰기](https://event-us.kr/web/event/51029)
 - [2022 인프콘 - 운영 중인 Vue.js 웹 서비스를 타입스크립트로 다시 쓰기](https://infcon2022-vuets.netlify.app/)
