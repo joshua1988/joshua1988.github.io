@@ -145,7 +145,7 @@ FE 실무 개발 11년차 + 콘텐츠 제작 8년차 실무 개발자입니다.<
 
 <figure class="full">
 	<img src="{{ site.url }}/images/corporate-classes.png">
-	<figcaption>네이버, 삼성, LG, SK, 현대자동차, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
+	<figcaption>네이버, 삼성, 현대자동차, LG, SK, 이베이, CJ, NS홈쇼핑 실무자 대상 강의</figcaption>
 </figure>
 
 강의 요청은 아래 이메일로 문의주세요. 📬<br>
