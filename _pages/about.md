@@ -83,7 +83,7 @@ FE 실무 개발 11년차 + 콘텐츠 제작 8년차 프런트엔드 개발자�
 	<figcaption>Cracking Vue.js, Webpack 핸드북, 타입스크립트 핸드북</figcaption>
 </figure>
 
-## 온라인 강의 - 프론트엔드 개발 학습 로드맵
+<!-- ## 온라인 강의 - 프론트엔드 개발 학습 로드맵
 
 <figure class="third">
   <a href="https://www.inflearn.com/roadmaps/746" target="_blank"><img src="{{ site.url }}/images/posts/web/inflearn/vue3-roadmap.png"></a>
@@ -149,7 +149,7 @@ FE 실무 개발 11년차 + 콘텐츠 제작 8년차 프런트엔드 개발자�
 </figure>
 
 강의 요청은 아래 이메일로 문의주세요. 📬<br>
-<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a>
+<a href="mailto:jangkeehyo@gmail.com">jangkeehyo@gmail.com</a> -->
 
 ## 주요 강연
 
